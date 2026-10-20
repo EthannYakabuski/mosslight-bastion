@@ -1,0 +1,107 @@
+{
+  "checks": 31,
+  "failures": [],
+  "images": [
+    {
+      "height": 960,
+      "path": "res://tests/evidence/desktop-phone-home.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 540
+    },
+    {
+      "height": 960,
+      "path": "res://tests/evidence/desktop-phone-campaign.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 540
+    },
+    {
+      "height": 960,
+      "path": "res://tests/evidence/desktop-phone-battle.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 540
+    },
+    {
+      "height": 960,
+      "path": "res://tests/evidence/desktop-phone-pause.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 540
+    },
+    {
+      "height": 960,
+      "path": "res://tests/evidence/desktop-phone-journal.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 540
+    },
+    {
+      "height": 960,
+      "path": "res://tests/evidence/desktop-tablet7-home.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 600
+    },
+    {
+      "height": 960,
+      "path": "res://tests/evidence/desktop-tablet7-campaign.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 600
+    },
+    {
+      "height": 960,
+      "path": "res://tests/evidence/desktop-tablet7-battle.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 600
+    },
+    {
+      "height": 1280,
+      "path": "res://tests/evidence/desktop-tablet10-home.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 800
+    },
+    {
+      "height": 1280,
+      "path": "res://tests/evidence/desktop-tablet10-campaign.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 800
+    },
+    {
+      "height": 1280,
+      "path": "res://tests/evidence/desktop-tablet10-battle.png",
+      "scope": "Desktop Godot scene with synthetic pointer input and isolated save; not native/store evidence",
+      "width": 800
+    }
+  ],
+  "names": [
+    "Home has six game destinations plus settings",
+    "Home reserves150 fixture logical units below scroll content",
+    "Rendered desktop fixture: phone-home",
+    "Pointer opens campaign with truthful first unlock",
+    "Rendered desktop fixture: phone-campaign",
+    "Pointer opens authored mission brief",
+    "Pointer prepares actual playable battle",
+    "Real pointer hit test selects a glowing build pad",
+    "Pointer purchase builds actual tower and exact supply charge",
+    "Production scene advances actual enemies after Next wave",
+    "Rendered desktop fixture: phone-battle",
+    "System Back pauses full actual scene state",
+    "Rendered desktop fixture: phone-pause",
+    "Pointer Resume advances only after player action",
+    "Pause optional repair invokes explicit fake test adapter",
+    "Earned visible endcard stays paused in rendered UI",
+    "Earned-dismissed UI Resume succeeds",
+    "Abandon returns Home without fabricated round credit",
+    "Actual gift UI pays once and disables repeat",
+    "Workshop actual pointer spends shown100 coins for power1",
+    "Journal creates all24 icon rows and optional backend actions",
+    "Rendered desktop fixture: phone-journal",
+    "Settings privacy and safe service fallback reachable",
+    "Portrait stage fits tablet7",
+    "Rendered desktop fixture: tablet7-home",
+    "Rendered desktop fixture: tablet7-campaign",
+    "Rendered desktop fixture: tablet7-battle",
+    "Portrait stage fits tablet10",
+    "Rendered desktop fixture: tablet10-home",
+    "Rendered desktop fixture: tablet10-campaign",
+    "Rendered desktop fixture: tablet10-battle"
+  ],
+  "passed": 31,
+  "scope": "Desktop Godot scene/synthetic pointer tests with isolated save and named fake service; screenshots are development fixtures, never native/store evidence."
+}

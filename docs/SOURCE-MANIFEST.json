@@ -1,0 +1,4013 @@
+{
+  "game": "Mosslight Bastion",
+  "scope": "Frozen portable project source/content/licenses/marketing/desktop development evidence; excludes generated cache, binaries and private test saves/logs. Not native acceptance.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 167,
+      "sha256": "71D1854B7AB7CE3A6ABBC6124162E1050740A3D844DADEBC570FCCD7C8CD1594"
+    },
+    {
+      "path": ".github/workflows/build-and-deploy.yml",
+      "bytes": 5945,
+      "sha256": "464BF88F9F36CFE1FD1B745C4768AE3B48CBBFF7A050FB29B5918728E842C9C5"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 345,
+      "sha256": "F96654FA5D568FDB3ECF3C271A85274B1F4A7AD3C591527E097E5525C2F365C5"
+    },
+    {
+      "path": "addons/admob/.gitignore",
+      "bytes": 76,
+      "sha256": "29D03900D8126FF17F849B9263534D3E1189617FAAF94E9D90DD5C3990E39513"
+    },
+    {
+      "path": "addons/admob/admob.gd",
+      "bytes": 2415,
+      "sha256": "8A496D189C439BC9A2D90F068D8AC0D4EBB154F79E2AB3DD7ECDE8072E238F35"
+    },
+    {
+      "path": "addons/admob/admob.gd.uid",
+      "bytes": 20,
+      "sha256": "E48B66D2698BC4984A81FDE32CE4B199521DC021944A9711B7EBFC84F6BAF99B"
+    },
+    {
+      "path": "addons/admob/android/.gitignore",
+      "bytes": 53,
+      "sha256": "795C404B861C4F7FAD8AF26D412CA65BFA2C84C346AA143054E6347092C2EB5E"
+    },
+    {
+      "path": "addons/admob/android/bin/ads/libs/poing-godot-admob-ads-debug.aar",
+      "bytes": 134019,
+      "sha256": "FAC3128D6E64B59666B1BAC3097952BBBDE2F1B1573656CD51B9F64F745EDD79"
+    },
+    {
+      "path": "addons/admob/android/bin/ads/libs/poing-godot-admob-ads-release.aar",
+      "bytes": 127494,
+      "sha256": "AECA6A3C813DA770390DC1D574765B17D8BA78FE0CF1CB61438DC08DF1FE1C67"
+    },
+    {
+      "path": "addons/admob/android/bin/ads/libs/poing-godot-admob-core-debug.aar",
+      "bytes": 4776,
+      "sha256": "F78A4075635D4D3F27D7DE66D350FB77C16F21E60E24CEEE702C80EFE5B96E29"
+    },
+    {
+      "path": "addons/admob/android/bin/ads/libs/poing-godot-admob-core-release.aar",
+      "bytes": 4674,
+      "sha256": "F89E3F1096047FABC83208E4E00A3F0AEF847229BCB68CC01E791BD57468FDA0"
+    },
+    {
+      "path": "addons/admob/android/bin/ads/poing_godot_admob_ads.gd",
+      "bytes": 1949,
+      "sha256": "AAF3BA790995E030FD677791D275952EF3D92561FCBA1589ED2324DFE49550F2"
+    },
+    {
+      "path": "addons/admob/android/bin/ads/poing_godot_admob_ads.gd.uid",
+      "bytes": 20,
+      "sha256": "75936E930D7D775BEBF3C65AA1C74CEECDE097AF1282811E0D289DA40EBC9AC1"
+    },
+    {
+      "path": "addons/admob/android/bin/package.gd",
+      "bytes": 63,
+      "sha256": "6BC1F451F6A737380B4A140D1C00F1807371FE7CE1F2ECF437F08FDF4EDA0BE7"
+    },
+    {
+      "path": "addons/admob/android/bin/package.gd.uid",
+      "bytes": 20,
+      "sha256": "5D7B942EF5EBE4C6CC07E78C41CD87BEBCDC99204321AECB4968D392D64AD5AB"
+    },
+    {
+      "path": "addons/admob/assets/android.png",
+      "bytes": 6674,
+      "sha256": "77FB41EFBE709AA107B4ACF72A7DEB407FABB80087E270AEC910A7814C1C5DD7"
+    },
+    {
+      "path": "addons/admob/assets/android.png.import",
+      "bytes": 945,
+      "sha256": "B8F548D0D28BFAF9D777A27C2F7D1CB035B147FAF71BB89A02362BBEE118C3DE"
+    },
+    {
+      "path": "addons/admob/assets/arrow_left.svg",
+      "bytes": 211,
+      "sha256": "F6CD575E85B8C05C6570D6047745BB3869230AD48ECA370EEF644DD631D03751"
+    },
+    {
+      "path": "addons/admob/assets/arrow_left.svg.import",
+      "bytes": 1051,
+      "sha256": "2B91230B3AC548FF6A39B5DCB6DA5C65EA30D21D576638E19A98CEBBD78AF8D1"
+    },
+    {
+      "path": "addons/admob/assets/arrow_right.svg",
+      "bytes": 210,
+      "sha256": "DA5CEE7CBFD4593E177AE62F3A8C7FC83EC8EC7877000C13D3238A7BEEDA257C"
+    },
+    {
+      "path": "addons/admob/assets/arrow_right.svg.import",
+      "bytes": 1054,
+      "sha256": "AE23DAFBCAE44D5A45D257A256E7D3FE31518AFF56FA0A8C5D26E67AF7B75710"
+    },
+    {
+      "path": "addons/admob/assets/donate/Ko-fi_Logo_RGB_ColorBg.png",
+      "bytes": 20680,
+      "sha256": "2D2FC6F5B9C946E248A2CC39934C906C008C61F3E139B4A74CA5175CD30F6DEC"
+    },
+    {
+      "path": "addons/admob/assets/donate/Ko-fi_Logo_RGB_ColorBg.png.import",
+      "bytes": 997,
+      "sha256": "7629D94562E9E48AA4EE1C6E7C062A229DC3E13B89038FE2F15DC53955C00F47"
+    },
+    {
+      "path": "addons/admob/assets/donate/Patreon_logo_with_wordmark.svg",
+      "bytes": 38477,
+      "sha256": "CBABC43B6E51F5D7565956474C3CD3DB434254F111A9A3749584DB48D3E75417"
+    },
+    {
+      "path": "addons/admob/assets/donate/Patreon_logo_with_wordmark.svg.import",
+      "bytes": 1106,
+      "sha256": "0981414C5F55E1E07569AECD6945885E7C9E2D9AAE751856EE880320492AE30B"
+    },
+    {
+      "path": "addons/admob/assets/donate/PayPal.svg",
+      "bytes": 3476,
+      "sha256": "3132624C4D5BA0AA966A8027219298CEEC51551579CA4A1278BC54D73294B2B4"
+    },
+    {
+      "path": "addons/admob/assets/donate/PayPal.svg.import",
+      "bytes": 1045,
+      "sha256": "F4F12655A48FC620B7F1602B6D1EF02792E92C071CF7B1E5CE0B914CA0FC149C"
+    },
+    {
+      "path": "addons/admob/assets/flood_it_icon.svg",
+      "bytes": 836,
+      "sha256": "CD78C09A00FC00105530012137F293F51FC3741C73B082A93D3D7B501E0F4D57"
+    },
+    {
+      "path": "addons/admob/assets/flood_it_icon.svg.import",
+      "bytes": 1060,
+      "sha256": "4939952205CD517D00A0E5DE4932492BDB66BB0CB973E745917134E7DAF8D7E4"
+    },
+    {
+      "path": "addons/admob/assets/fonts/NotoSansSC-Regular.otf",
+      "bytes": 207680,
+      "sha256": "0832CF607170F42922AAEB8DD590E346174E247800C35AA4137055542462DBFA"
+    },
+    {
+      "path": "addons/admob/assets/fonts/NotoSansSC-Regular.otf.import",
+      "bytes": 804,
+      "sha256": "28883C043F0A866E896335CF025EBF859A9E594AD995CF24E6D71399083A381E"
+    },
+    {
+      "path": "addons/admob/assets/format-app-open.svg",
+      "bytes": 10269,
+      "sha256": "CA3D2AFA837CF2143C887B7DBC8A98BCB14D8AFCE129D814EFB24376E8619A28"
+    },
+    {
+      "path": "addons/admob/assets/format-app-open.svg.import",
+      "bytes": 1066,
+      "sha256": "2BCFC3B3C466EE5FF88361952392F8E8FC38B33A3EF65DC6CD9284026B58BF3D"
+    },
+    {
+      "path": "addons/admob/assets/format-banner.svg",
+      "bytes": 4977,
+      "sha256": "EDD808EBFD82272192ACDFB90C52215210C550A5F5E0381216D3C1F36C10C0C8"
+    },
+    {
+      "path": "addons/admob/assets/format-banner.svg.import",
+      "bytes": 1059,
+      "sha256": "7B86AD7E49B58A3238B64944D59D723135A7D7842343A01ACAE3ABFABEC14A70"
+    },
+    {
+      "path": "addons/admob/assets/format-interstitial.svg",
+      "bytes": 5912,
+      "sha256": "E1D4502816A173F5D3F7EB29CCEFC2D271CB9DA890B5305D6D3E1CA1E802D487"
+    },
+    {
+      "path": "addons/admob/assets/format-interstitial.svg.import",
+      "bytes": 1078,
+      "sha256": "92BE0E849DB04B4A6B43A808E1E6C0FCFCC9A785FB2C1FBCA203579830F3044F"
+    },
+    {
+      "path": "addons/admob/assets/format-native.svg",
+      "bytes": 13234,
+      "sha256": "D6F4254A13BF251158AEDD6BDDBD044A39BF309A4D5860CAC8CB09612F87C22F"
+    },
+    {
+      "path": "addons/admob/assets/format-native.svg.import",
+      "bytes": 1059,
+      "sha256": "91C553928920EEFC0FE1392CD0CAF46687591DA2BE75BE17A4282846F3466FB3"
+    },
+    {
+      "path": "addons/admob/assets/format-rewarded-interstitial.svg",
+      "bytes": 4222,
+      "sha256": "6ED80B15370B97EDDC34750F71AD515083C298E818B2D52354E6AFA6C3C94736"
+    },
+    {
+      "path": "addons/admob/assets/format-rewarded-interstitial.svg.import",
+      "bytes": 1104,
+      "sha256": "B0C998A4EB0EAEE847875EF398D61194DD648F44EC97C0587A582576F28B72A1"
+    },
+    {
+      "path": "addons/admob/assets/google_play_icon.svg",
+      "bytes": 292,
+      "sha256": "25DDAAA7F1039F44B6D58ACC85A30DFC7976799D7C980B3CACD1B2C444A5C7E2"
+    },
+    {
+      "path": "addons/admob/assets/google_play_icon.svg.import",
+      "bytes": 1069,
+      "sha256": "66F859FFB4F5FDFC2F97C5D8940F62FEDAED93C3F466252F56882243A82A709F"
+    },
+    {
+      "path": "addons/admob/assets/icon-1024.png",
+      "bytes": 264159,
+      "sha256": "DE18D7F0586AF4885D278969F259759403F9453CFB3CB962C478982A621C98F8"
+    },
+    {
+      "path": "addons/admob/assets/icon-1024.png.import",
+      "bytes": 951,
+      "sha256": "4CB05D87C158B37D2094DA71F7E036FBAC43DF7E5CC66D14D0ECE404FF512237"
+    },
+    {
+      "path": "addons/admob/assets/icon-120.png",
+      "bytes": 13368,
+      "sha256": "2849A40D2E8B230476707127565B1EC37154B62A3EC75FB95CBF348D44BB9260"
+    },
+    {
+      "path": "addons/admob/assets/icon-120.png.import",
+      "bytes": 947,
+      "sha256": "5129A197A665D16B5A32407895B991351BDDEE9A0908C452AB028BA61518BC22"
+    },
+    {
+      "path": "addons/admob/assets/icon-15.png",
+      "bytes": 2507,
+      "sha256": "547DEBC198BD8A98BF89DA4C301DC192EF27BFE13D4FD5EF7F6BEB3457D2DD6E"
+    },
+    {
+      "path": "addons/admob/assets/icon-15.png.import",
+      "bytes": 945,
+      "sha256": "6294FC91B1FC0A87E6119E4412E8D2AC337A174199B9C513F0D14F8BB94D43A7"
+    },
+    {
+      "path": "addons/admob/assets/icon-500.png",
+      "bytes": 56624,
+      "sha256": "CDA04D458B9B1FFA183A40DDD6BD1E86A24270E4F8072A73E855641AFCCBA963"
+    },
+    {
+      "path": "addons/admob/assets/icon-500.png.import",
+      "bytes": 948,
+      "sha256": "5CE871B14DB5675E000B8980E13BB45078371AF37076C5C44F28F5DA1429054D"
+    },
+    {
+      "path": "addons/admob/assets/icon-76.png",
+      "bytes": 7491,
+      "sha256": "9DD97DCD70A1DD1751868BDE436EE8D33D9F732C1AC72954016666BD6F42EAA5"
+    },
+    {
+      "path": "addons/admob/assets/icon-76.png.import",
+      "bytes": 944,
+      "sha256": "7CA351DB9F6DA0B962D3E16FED32140D8CCC066A3CDF276A7DBD1C837209B9A5"
+    },
+    {
+      "path": "addons/admob/assets/ios.png",
+      "bytes": 23445,
+      "sha256": "68CCC979942953CB14D4BED86F82F5A4A234E6579A4B7FDE3143850FCDEC8FA7"
+    },
+    {
+      "path": "addons/admob/assets/ios.png.import",
+      "bytes": 933,
+      "sha256": "853BEAE537B3B8815B7A4FA86536D5E14D04B7CE5E93E431AD108ECF2C376F37"
+    },
+    {
+      "path": "addons/admob/assets/music.ogg",
+      "bytes": 1801126,
+      "sha256": "9AC11FCE7416BD66AF9BDC4D71AF9023B24F2EC2604773B00D675F5B4029655C"
+    },
+    {
+      "path": "addons/admob/assets/music.ogg.import",
+      "bytes": 389,
+      "sha256": "A384770DF707564C64B7A776356794EE0C413A069B8A705868B5A9033772F30F"
+    },
+    {
+      "path": "addons/admob/assets/poing.jpeg",
+      "bytes": 8232,
+      "sha256": "69D53B94104EEC5FBCC5FF2F37636BD8FD295221C0F6834D22229DC46E22B9DF"
+    },
+    {
+      "path": "addons/admob/assets/poing.jpeg.import",
+      "bytes": 941,
+      "sha256": "DE17A1AFB5B6937367C721605AFED4EEF69D16A98418722E652080FC8C4D5BC0"
+    },
+    {
+      "path": "addons/admob/assets/pos_bottom.svg",
+      "bytes": 252,
+      "sha256": "1DCEA04665CC0DCD688EF465FF5316EE8E5643D969C599891F3F8F63DEBC14D7"
+    },
+    {
+      "path": "addons/admob/assets/pos_bottom.svg.import",
+      "bytes": 1050,
+      "sha256": "39B7F495A877E5A0D9FA48389630BBBB13F864CC6A73C8E84EA0BC2872B71317"
+    },
+    {
+      "path": "addons/admob/assets/pos_bottom_left.svg",
+      "bytes": 251,
+      "sha256": "0AB022DDBB31B2CC2582819EECCE88D7CACE8F1AB533249DFEF1DEC137D4367B"
+    },
+    {
+      "path": "addons/admob/assets/pos_bottom_left.svg.import",
+      "bytes": 1066,
+      "sha256": "B418390DF1F748B9C5DAB20BBAB36FE3EBFC5C10E356A0FDB82606FC75D4C773"
+    },
+    {
+      "path": "addons/admob/assets/pos_bottom_right.svg",
+      "bytes": 252,
+      "sha256": "8FEE6BDCD62AE2C1D9FB9886ACBA6FF70B0D76D6C428EFDBCA75F9E00452A976"
+    },
+    {
+      "path": "addons/admob/assets/pos_bottom_right.svg.import",
+      "bytes": 1068,
+      "sha256": "CF3B09FC35ECA867EC3A5E8F3CDC42DB6480170697565D39770D54E941532984"
+    },
+    {
+      "path": "addons/admob/assets/pos_center.svg",
+      "bytes": 252,
+      "sha256": "FB960103562440DF34B612594A572E0B306EA3F3D31B445BB192B27678AEC5BD"
+    },
+    {
+      "path": "addons/admob/assets/pos_center.svg.import",
+      "bytes": 1051,
+      "sha256": "2F26E695E978D06C096486209ADD9309BAB98618437D376E08728C6C9D9BA390"
+    },
+    {
+      "path": "addons/admob/assets/pos_left.svg",
+      "bytes": 251,
+      "sha256": "A694B625F57B5B58E3746680E423E41940CF9A140BB2076D200BD32EA2814498"
+    },
+    {
+      "path": "addons/admob/assets/pos_left.svg.import",
+      "bytes": 1045,
+      "sha256": "FE516F253BE5C7CFEFE7DFFE934529196C51746D566347E21BE741E961385EA1"
+    },
+    {
+      "path": "addons/admob/assets/pos_right.svg",
+      "bytes": 252,
+      "sha256": "EA397B2BAA3A614C20F678ED7B1A8E303C6C8E584194565C0B702EEA6DE838FF"
+    },
+    {
+      "path": "addons/admob/assets/pos_right.svg.import",
+      "bytes": 1048,
+      "sha256": "8900D3EFB26C72CA8A729F2E12892425684BB1EB763D93502B9812602D70E61F"
+    },
+    {
+      "path": "addons/admob/assets/pos_top.svg",
+      "bytes": 251,
+      "sha256": "537F7218AAD42919080ED5D9335350056DBE3F1B67C8614188207365107D2A20"
+    },
+    {
+      "path": "addons/admob/assets/pos_top.svg.import",
+      "bytes": 1041,
+      "sha256": "024B03869AF30D7FA1D4E0854157449F45375867D3163D0370D2F65479CA6E5C"
+    },
+    {
+      "path": "addons/admob/assets/pos_top_left.svg",
+      "bytes": 250,
+      "sha256": "D0FD80A379A15B06ECEB2FC5C97D6801C397B3CEBAA0531AD304895A9B068417"
+    },
+    {
+      "path": "addons/admob/assets/pos_top_left.svg.import",
+      "bytes": 1057,
+      "sha256": "469B45097001476045E8288B26853DAC5BBCDE171188A320443050F50FB234BB"
+    },
+    {
+      "path": "addons/admob/assets/pos_top_right.svg",
+      "bytes": 251,
+      "sha256": "437DB13B35856198A7342EBF5B922742757230CEABDE907B8C4EDD2B0BEEBBB1"
+    },
+    {
+      "path": "addons/admob/assets/pos_top_right.svg.import",
+      "bytes": 1060,
+      "sha256": "42D5925595356BAF1C90919B69BB0368D94F4D81660609340AB5429C59FF18FE"
+    },
+    {
+      "path": "addons/admob/assets/theme_modern.tres",
+      "bytes": 10176,
+      "sha256": "03FFC6A2CE71AE34D48F1100F273D8242D666582F732F8575213337978DD0178"
+    },
+    {
+      "path": "addons/admob/csharp/.gdignore",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "addons/admob/csharp/sample/MainCSharpExample.cs",
+      "bytes": 7401,
+      "sha256": "692A23C8D49A974470F27B95D0E34701F7AA3DF10145FD13D7596D213B884555"
+    },
+    {
+      "path": "addons/admob/csharp/sample/MainCSharpExample.cs.uid",
+      "bytes": 20,
+      "sha256": "74A2FCC678C4148B699DF4360ABFEBE81B2574EC05AF2EB1D6EE356DD8A34B22"
+    },
+    {
+      "path": "addons/admob/csharp/sample/MainCSharpExample.tscn",
+      "bytes": 12317,
+      "sha256": "16D0F8F2CFB7CFF5254CE52F958ECD74CFAEB20EB64971350481B11022395924"
+    },
+    {
+      "path": "addons/admob/csharp/sample/SafeArea.cs",
+      "bytes": 4813,
+      "sha256": "0D796F248640C8FE360DBF9BDF1F98C144091D2465614E2F093E3B06CFA11F78"
+    },
+    {
+      "path": "addons/admob/csharp/sample/SafeArea.cs.uid",
+      "bytes": 20,
+      "sha256": "F68CD97EB4D7265A3933D63110D22F6FAFE966FF54092AE24B6E8CD01EA52546"
+    },
+    {
+      "path": "addons/admob/csharp/sample/SampleRegistry.cs",
+      "bytes": 1577,
+      "sha256": "25E2CC38833B5F06991B3D6372AEFCB0441F31C842A03D8BDB04757C55D57749"
+    },
+    {
+      "path": "addons/admob/csharp/sample/SampleRegistry.cs.uid",
+      "bytes": 20,
+      "sha256": "03138890E77645D7BC55DFC4B073A8A15FFFB158A58E21C8C6F7E895666A3D28"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/AppOpen.cs",
+      "bytes": 5906,
+      "sha256": "7342868D95BCC1375C5344887B47A24CC8F3975A976D63FD03F62AD9FF053EBD"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/AppOpen.cs.uid",
+      "bytes": 20,
+      "sha256": "2670AA8279BA9B614BDFC0E238AD32629844201AA87CBEAAABA74E06D394E285"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/AppOpen.tscn",
+      "bytes": 1727,
+      "sha256": "8DDAB6FBC11E3096AD2F30BE1B73ED0B06B04C1C2D5D73043864AA9CF35A7858"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Banner.cs",
+      "bytes": 9925,
+      "sha256": "6346CD9B6C0A842D96820B621947314D37AF679A65F66B5A767234865F5B6F0D"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Banner.cs.uid",
+      "bytes": 20,
+      "sha256": "0700B58567B61EFC8E8617DFE49D4E94321E870E492E5B1A62B2950CB2E794EF"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Banner.tscn",
+      "bytes": 10483,
+      "sha256": "FA6058455C6A7AFE948E46EC3D9007256580B4871748789A465860EB6787B39C"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/BaseTab.cs",
+      "bytes": 2935,
+      "sha256": "AD3A7FE3FA277AEA1E98ECB012020D6A509EEBD6B263AF2D45EA4E1E420C239D"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/BaseTab.cs.uid",
+      "bytes": 20,
+      "sha256": "6536DD6E432E130279D0FE0AB2802991B922C160194C56B7A52D70C12D19C28A"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Interstitial.cs",
+      "bytes": 3763,
+      "sha256": "347D2A67A8A96F032F13DB2B2A209741987ED4F7B5137BE893417E009419AE87"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Interstitial.cs.uid",
+      "bytes": 20,
+      "sha256": "47207CD679B662553D791069F16521B6EC10D1D42E9B76C7A9174253E4DA45E4"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Interstitial.tscn",
+      "bytes": 1527,
+      "sha256": "2D6CE3711DB0DCD703275EBDC6459AEFC7A8EE4D79BD082A0A1A7AF17D4B1F9D"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/MobileAds.cs",
+      "bytes": 6441,
+      "sha256": "81925FDEBD01168CC4FA5F5186BE35624A7149605E944D0928112A16256524A2"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/MobileAds.cs.uid",
+      "bytes": 20,
+      "sha256": "D351A32A55D9F885B01D2C656755334DBE6976AF9D0654E7DFD3A0EE66F77EAE"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/MobileAds.tscn",
+      "bytes": 3236,
+      "sha256": "A858F03DE6C4D77A8A05FE925F3C95070B0FFF30987DB9AAC79DE1DE51DDD335"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Native.cs",
+      "bytes": 14199,
+      "sha256": "8DF0B69FAEF0408C8C15EED52E802BDF5DE823980EAB0EFDC3843B99BE738764"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Native.cs.uid",
+      "bytes": 19,
+      "sha256": "5A2D0AD34C9E3F518F710F886A9C263833F3464637212F00D1DA182AD9DF0E94"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Native.tscn",
+      "bytes": 16452,
+      "sha256": "C5FB8E3978E70C384BB9E52EBF7EF2661C91B938AE736FD4039939C756A5EDA6"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Rewarded.cs",
+      "bytes": 3918,
+      "sha256": "83D6835987BFB0876C67955D2B59F0CDFCD05C862C31C9594125184F97637731"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Rewarded.cs.uid",
+      "bytes": 20,
+      "sha256": "1B3CD1F57CEB40E1E19515455132F0E4DC97CF8D80A0ABABCB35AEF6AFB70E04"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Rewarded.tscn",
+      "bytes": 1519,
+      "sha256": "B6E52D48B9619C5D4A2FA22EB06931E3F1239E27AA6D2E3D487CD2C80340E033"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/RewardedInterstitial.cs",
+      "bytes": 4110,
+      "sha256": "5984FFEE1815B7BACA646B804D70AA7FEB450379FD2A9B37269225C66B4EE786"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/RewardedInterstitial.cs.uid",
+      "bytes": 20,
+      "sha256": "C6189B0EDCEB6F42437F55E6D3A0C3BEFFD1BB64DD4BD37DF42D36A1D847C30C"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/RewardedInterstitial.tscn",
+      "bytes": 1542,
+      "sha256": "708289A5DB89BD6CFA1337F6D8384A628B610B318CD7EB8DDC6354CB6D5282C0"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Ump.cs",
+      "bytes": 3298,
+      "sha256": "8A0167AC3D79413E831CD5B8BA80AAB2DF12A97B3A8EEA0F860D47008A7604CF"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Ump.cs.uid",
+      "bytes": 19,
+      "sha256": "359C933418FA16F51605359D06395489D93F563ED2C15469FAA9425C7DCC9113"
+    },
+    {
+      "path": "addons/admob/csharp/sample/tabs/Ump.tscn",
+      "bytes": 836,
+      "sha256": "270A6C1BB13C4A6192E6CF11C0E7F329070AA2AC23C5A1E5A840C869AEF817BD"
+    },
+    {
+      "path": "addons/admob/csharp/sample/UIScaler.cs",
+      "bytes": 13463,
+      "sha256": "BEDC4F31A4D971FC8AD93F97B47F8F93B3A67306B4388851F693C9E062C6BCBB"
+    },
+    {
+      "path": "addons/admob/csharp/sample/UIScaler.cs.uid",
+      "bytes": 20,
+      "sha256": "7530D050C7F8E320FEE4053AAF29F118C079B62D81216DD0D11B04FB96EB4807"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/AdView.cs",
+      "bytes": 6251,
+      "sha256": "F22A28C7E21DD59B79F2003E68E8CF372C1ACA88AF56910ABB9D58948B737F70"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/AdView.cs.uid",
+      "bytes": 20,
+      "sha256": "64750E41FC4778EF56816C2431A673D7ACB704868BA61463F3EE12035E9BC56D"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/AppOpenAd.cs",
+      "bytes": 5409,
+      "sha256": "F59DDD587A2E03DD17E0568D2FEA3407C9F9EEA5B41115DCE4DD0B568A8B6E3D"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/AppOpenAd.cs.uid",
+      "bytes": 20,
+      "sha256": "B4173ECFD4C3CA044AE92CC51106AA9DDF000DAD4D52A26F40BFB6ABB2FE75E4"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/AppOpenAdLoader.cs",
+      "bytes": 3437,
+      "sha256": "F33152A8478506BD99793E9DC16033CD803EA426F4506AB8A2DA313B8B073829"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/AppOpenAdLoader.cs.uid",
+      "bytes": 20,
+      "sha256": "ECEBB0D33A115A0B67A3B7FF7826CF8FD22EB4BC7B89AA727F18209E8D1CC063"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdapterResponseInfo.cs",
+      "bytes": 3940,
+      "sha256": "544E2442262661C7D11FDF9E2B099BC6FD69DA11C5587EE4DB8279B97800E360"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdapterResponseInfo.cs.uid",
+      "bytes": 19,
+      "sha256": "9CBD6FCCDDA9C48E12A332D1649D644974C0ACE96FEDD8E8C8CA5BE4EF658AEB"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdapterStatus.cs",
+      "bytes": 1675,
+      "sha256": "FB27D2F850C8C594DD1DC679E8C4CF1EB747106D62878EDC6A14E71734FA9667"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdapterStatus.cs.uid",
+      "bytes": 18,
+      "sha256": "00B40765AC04A8CEBBB9D3A02ACB52A6C80BAC843E9D2BCB03124AF757BC3C4D"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdChoicesPlacement.cs",
+      "bytes": 240,
+      "sha256": "6D532FD677484B77C9B460225920C80583CC0B038D60D801EE5C54D79409F504"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdChoicesPlacement.cs.uid",
+      "bytes": 20,
+      "sha256": "48975C51E98A7A9BB90551F68727A5B2F784874B2F42F3627107B1A2CC22BF8A"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdError.cs",
+      "bytes": 2143,
+      "sha256": "FF20A1645858684FB7752207FF6CB09D9D15758900AD866529E1771713852628"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdError.cs.uid",
+      "bytes": 19,
+      "sha256": "3E19408AEB578538043EA84ED50F8C9E73F21314211557A746142197833BBF7B"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdPosition.cs",
+      "bytes": 2696,
+      "sha256": "CB9B615E7374A8A032AB36C4923992BD6D969A9FA6FF0FBBDAB1371A75C3B25E"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdPosition.cs.uid",
+      "bytes": 20,
+      "sha256": "2AC62925BF00C8DB5EAA88AA926BC7FE8080F8A9ECD90B85C5D06DDF42DA6FB3"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdRequest.cs",
+      "bytes": 2679,
+      "sha256": "2686ED812D94079F6885A9D71387864F99A851C3174BD9EC95EA667B05F7E740"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdRequest.cs.uid",
+      "bytes": 20,
+      "sha256": "B1C43A06ED08B2CAC9FE15135A4647318EBF49016CE37C1BB39F37468AD6517F"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdSize.cs",
+      "bytes": 3385,
+      "sha256": "41DDB4A932792C2E4AF5D8937BC897F674C6B78C7FDD61AF5DF1B5B93E02B942"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdSize.cs.uid",
+      "bytes": 20,
+      "sha256": "328291CDDFF62178063FAA6A0F275D64E43E77D4A1A3ED52AB3AEF5948402F04"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdValue.cs",
+      "bytes": 2162,
+      "sha256": "F25EEC16132733202F362CE6D798EBC99743D7A0087D6728ED49F250335F3866"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdValue.cs.uid",
+      "bytes": 19,
+      "sha256": "7BE4574945051CF219685105E595ADE2CAF35B9F007CE7B93174544ECA97FD9B"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdVideoController.cs",
+      "bytes": 2013,
+      "sha256": "FC1B6FD010D718FB02AA9FE0EB2F3AB0ACA95E3456CC351B06EACC28E66419F8"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdVideoController.cs.uid",
+      "bytes": 20,
+      "sha256": "BA241A15B9308B0328DD4FB2149618B25EC5C2677EB14827F44B82EBFEF14BD2"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdVideoOptions.cs",
+      "bytes": 664,
+      "sha256": "748104F8CD16A6DE7004CBC9067EA1177F82E22DD1BC4CCE3E6130101C56FDD8"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/AdVideoOptions.cs.uid",
+      "bytes": 19,
+      "sha256": "50B1EE95D536DB71F6BF8DA9F2C933BC80FD9B1FF4DBEF955B96D22F4C0D788A"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/LoadAdError.cs",
+      "bytes": 2020,
+      "sha256": "3D572189A876B47A804C020951719BC8743A0703F33AA49999014DBC119EEFB6"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/LoadAdError.cs.uid",
+      "bytes": 20,
+      "sha256": "61647AF545108859C10BD08B8072F6ABCBC7B208000E01A780B0CC8DCE681211"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/MediaContent.cs",
+      "bytes": 2333,
+      "sha256": "9B6D70C237725E7C808853433CD3DE1ABD290D2ECFF856A4210FFAF272851A34"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/MediaContent.cs.uid",
+      "bytes": 20,
+      "sha256": "22AEBEBC463DF1152387D0FFDA440567BEE7F4F2279E39CABFF12B4ECAE01CF8"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/NativeAdOptions.cs",
+      "bytes": 774,
+      "sha256": "C9E4822D78B6A571CFDBACC4DECF8485806D30430BD0471226D02EE917CEBA38"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/NativeAdOptions.cs.uid",
+      "bytes": 20,
+      "sha256": "4E01951F4EBBCB7A9D40BCD071DFD565BA1C863C10F9BAAA3884ABE3DFE4D512"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/NativeMediaAspectRatio.cs",
+      "bytes": 255,
+      "sha256": "33171FA57FA4DC2EBA2C77995BEF697BCEEC9340C6CCD2081A843891F5EEF6C4"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/NativeMediaAspectRatio.cs.uid",
+      "bytes": 19,
+      "sha256": "435C8EFF3E6BDF382C0ABBD8021A6133DA4730CF3803C37B644EFA3212786319"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/NativeTemplateFontStyle.cs",
+      "bytes": 234,
+      "sha256": "433D61340A3CF7D4057C77557CDD7D31416720AE1430F01C411D7706701A61D9"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/NativeTemplateFontStyle.cs.uid",
+      "bytes": 20,
+      "sha256": "A996B9037C91F54CA62A0EBF449B8B2CB21D35F1AA8A5EBDB773A2B240C50861"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/NativeTemplateStyle.cs",
+      "bytes": 1171,
+      "sha256": "801532E2333CBD9CAB61D8DAAF3AF59F08807AC033C17BEDAA1B1356DC27755A"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/NativeTemplateStyle.cs.uid",
+      "bytes": 20,
+      "sha256": "DD51731BC7EA5BB99E9C5571BC6121978D71D8F2B0F32C2F7097613CECB9C81B"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/NativeTemplateTextStyle.cs",
+      "bytes": 745,
+      "sha256": "E3F4CA41A62F99716AE8AB53742BDBEEA615752E018EF0C5828EFAB954D734BE"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/NativeTemplateTextStyle.cs.uid",
+      "bytes": 20,
+      "sha256": "AF8EEFAEB1323BB62E7D2F3C124EBE2255F54E9C095948A84C87CC75217E0BA2"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/RequestConfiguration.cs",
+      "bytes": 2696,
+      "sha256": "1A35E3387940B68626A9A4AFD9B6C5A698BF2C02149B24DDA0E9F85E1D609557"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/RequestConfiguration.cs.uid",
+      "bytes": 20,
+      "sha256": "FCEDACD325637357518DCE7C2C3780792543BC8F2F8A295232458BD806AD8604"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/ResponseInfo.cs",
+      "bytes": 3055,
+      "sha256": "8172EAB7A3E4F331940CAF5B452AA5026346D30E5213EEE8C1C89B57952D0A7B"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/ResponseInfo.cs.uid",
+      "bytes": 19,
+      "sha256": "3078D9D887D0F73806CB5A2C0B9A839DF8BA287E9F5A2779E322F1DCA297A106"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/RewardedItem.cs",
+      "bytes": 1784,
+      "sha256": "F6B2AB21BCE7BDBCEFD2DBD4A6B25F3EAE992C0E27542BEE973F86319F4EFAC5"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/RewardedItem.cs.uid",
+      "bytes": 20,
+      "sha256": "84E21594050A3451CB6E7D2BF8C72315B57E710D499871C2D3A5CD9E8C72C030"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/ServerSideVerificationOptions.cs",
+      "bytes": 1576,
+      "sha256": "1BDB4B77F16780F318AEF528BED9B433015F508C303C663853E75B0FAB310AF4"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Core/ServerSideVerificationOptions.cs.uid",
+      "bytes": 20,
+      "sha256": "03591B4A5F725EED9CFF60AD54DCDB849844FE5577916F13D12E90DE0B9ADDF7"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/InitializationStatus.cs",
+      "bytes": 2273,
+      "sha256": "CE15E0618D2E6AD01E69686D1913F8BBB1136E683B189BB7D80A09C08AB55A99"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/InitializationStatus.cs.uid",
+      "bytes": 20,
+      "sha256": "4AB6C70D91C54AD0D462535C098AE802CC13E6200EBFFE1011109413572471EF"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/InterstitialAd.cs",
+      "bytes": 5044,
+      "sha256": "12024CEEA572555FC6475F24F345E778A9779F4C28E65EC3020FB2A068524D4E"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/InterstitialAd.cs.uid",
+      "bytes": 20,
+      "sha256": "0ED8F0CC44F2F686333BD0211364EAE8B65525337EB400CB6A1B3B3B989F3C2E"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/InterstitialAdLoader.cs",
+      "bytes": 3482,
+      "sha256": "6161B1E08234C501D62BAB68EA192AFB41576E74FF6E055207CF50C5DCEE2D7D"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/InterstitialAdLoader.cs.uid",
+      "bytes": 20,
+      "sha256": "6A22D8373C368E2B8DBA55ABAB7AE76007B387D3BFF3DBB6A72D640A6B95DCF4"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/AdInspectorClosedListener.cs",
+      "bytes": 1354,
+      "sha256": "DF49762545F7746A77DD994FC3C4E38C13886B993948B16E9E521727AC26112B"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/AdInspectorClosedListener.cs.uid",
+      "bytes": 19,
+      "sha256": "DB9388CCA3AC13D53A4368839A1E7A880C2CD18491CDBCA5331431E55B56E90F"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/AdListener.cs",
+      "bytes": 1652,
+      "sha256": "3C4860067D2A9EBD26C7001274224FB904A24FE74CEBD132F9128B5DFE50379F"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/AdListener.cs.uid",
+      "bytes": 20,
+      "sha256": "5D53C67BA4253FCC88EC7117A852F3A7AEB6A56391CB3A758E61C444AA47C591"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/AppOpenAdLoadCallback.cs",
+      "bytes": 1410,
+      "sha256": "79617C6A6879D945FDCDCC0510350FE06F55A15F7A26491DE9CBB10532F97ABD"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/AppOpenAdLoadCallback.cs.uid",
+      "bytes": 20,
+      "sha256": "EAA6F3982A9F0F08960ED595F8E302FF38A7D2CD218714B15BC91B35C1BD43DC"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/FullScreenContentCallback.cs",
+      "bytes": 1657,
+      "sha256": "CD8C82144787695F719E9FA1EB6FD462BCD551615F4F003DD63E8FA75424C47C"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/FullScreenContentCallback.cs.uid",
+      "bytes": 20,
+      "sha256": "F5CD4114EB8760473DFC2B6FEECEF612F1336182DD4C75E23338FAA5821147A4"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/InterstitialAdLoadCallback.cs",
+      "bytes": 1440,
+      "sha256": "EA0FD39BC6C22C577CA28CFB9CE3B5268B5DD596F8EC5A9619EF5254AF3BD680"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/InterstitialAdLoadCallback.cs.uid",
+      "bytes": 19,
+      "sha256": "FB4296FDBC79B2EE37EFF94BF2BF5523784E60ADBBA83458A9D1B8BA697BCC92"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/OnInitializationCompleteListener.cs",
+      "bytes": 1351,
+      "sha256": "E9DB0549322904D8CF997E18B834BC298FDDF1909987B2B66929ABE14897C8B4"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/OnInitializationCompleteListener.cs.uid",
+      "bytes": 20,
+      "sha256": "BBFCA23A0A893116B342B906E057E28E18B0384858587E50FBC5A1AE18EDE0F0"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/OnUserEarnedRewardListener.cs",
+      "bytes": 1366,
+      "sha256": "FD37C5F317348AD0C8B6EDB399225F99A73F47BC0D5DC5030391B2732B7BFA20"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/OnUserEarnedRewardListener.cs.uid",
+      "bytes": 20,
+      "sha256": "B05D0716EB929B87CF09C4EB7507CA81583A505B9FB1909EB5EBB9721D0807C9"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/RewardedAdLoadCallback.cs",
+      "bytes": 1432,
+      "sha256": "1DBFFDC118B291EC77940A160721339C9E787831F56D969FA845EC57A8575AB0"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/RewardedAdLoadCallback.cs.uid",
+      "bytes": 19,
+      "sha256": "C80ABF9A94E674B95CF1E0093E8588A3361FD650FAD5E6296B1CF6A0396D6362"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/RewardedInterstitialAdLoadCallback.cs",
+      "bytes": 1456,
+      "sha256": "71260208DFB1A3DC791446ADD2CF692A0C89C670247A2116B8DECDDB7345E2A1"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/RewardedInterstitialAdLoadCallback.cs.uid",
+      "bytes": 20,
+      "sha256": "51F24335D8420C71E79CB47C71D1DD5634D707059E3DB8D49496061C0B7819FD"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/VideoLifecycleCallbacks.cs",
+      "bytes": 1493,
+      "sha256": "AAA6CF876F6FCFB31B0C9489AAB501CDF9F12E5B483185823B6264B0BED59C82"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/Listeners/VideoLifecycleCallbacks.cs.uid",
+      "bytes": 20,
+      "sha256": "B1624F4DF15EF1CF80FFC67EFA33AE307BF43EE145FA0C06C835562B81ABE584"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/MobileAds.cs",
+      "bytes": 5684,
+      "sha256": "1E2C15AF2B05D93AE355EDA9478654852BF40FE0072A106482E536722119AE77"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/MobileAds.cs.uid",
+      "bytes": 20,
+      "sha256": "5847131A123D3855B060E513D767DBDA3D5490E654F7444135EEE32E94B78AFE"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/NativeOverlayAd.cs",
+      "bytes": 10704,
+      "sha256": "29413FD9CAD77C7E1AC43C756B7FDBE902AE027FFD2928FFC24F0517A9931F38"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/NativeOverlayAd.cs.uid",
+      "bytes": 20,
+      "sha256": "E01AF9A59D7866B49959B51929F56A6145611714D370C85FD98FC0B1F80E85E5"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/RewardedAd.cs",
+      "bytes": 5948,
+      "sha256": "140780B80999D7906F8D531BCC07B686C82C00B000860E3460566BA1892C61EB"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/RewardedAd.cs.uid",
+      "bytes": 20,
+      "sha256": "57669C775EB0E681176AA0D1B228BA1FF8EE13BB871F4F1CA05FC947A35B46D9"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/RewardedAdLoader.cs",
+      "bytes": 3392,
+      "sha256": "07B5AFA7D2D093587C0DBD26A994A785B790839FF8743AFA4CED6AE3F9742626"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/RewardedAdLoader.cs.uid",
+      "bytes": 20,
+      "sha256": "A212E3ECE02D24FA6A9BB919B4309F6E4A54B52FD68343056D8BFB395F23D648"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/RewardedInterstitialAd.cs",
+      "bytes": 6075,
+      "sha256": "2C9B2FEC0A784D49194249E49F6E0DC02C93EE70C46C69B4107C7EDDE9335CC2"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/RewardedInterstitialAd.cs.uid",
+      "bytes": 19,
+      "sha256": "40FD89475AF74879401239AC84C82E81739F7A77730A4657E7BBDA223F0A9A4A"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/RewardedInterstitialAdLoader.cs",
+      "bytes": 3538,
+      "sha256": "EAE91E1BD255B6FDFCE96BA34B4AD3AFB087947ADDBBB3544E8278CEBCEB1F9B"
+    },
+    {
+      "path": "addons/admob/csharp/src/Api/RewardedInterstitialAdLoader.cs.uid",
+      "bytes": 19,
+      "sha256": "01015AEFDBF7DCDB316C74C3DDE1750033D76AEE1B97ADA666D86E684BD74BB1"
+    },
+    {
+      "path": "addons/admob/csharp/src/Core/MobileSingletonPlugin.cs",
+      "bytes": 2538,
+      "sha256": "640BCBC39A713CFCBD341C4048F20A388DBEA99F6CDA6A9C91176779BFD850C1"
+    },
+    {
+      "path": "addons/admob/csharp/src/Core/MobileSingletonPlugin.cs.uid",
+      "bytes": 20,
+      "sha256": "FB2397C9657EEC290640BD7CCB7965A861DD5FBC365CDF76140969A5BA0AD560"
+    },
+    {
+      "path": "addons/admob/csharp/src/Core/PluginConfig.cs",
+      "bytes": 1687,
+      "sha256": "3AB7F3BBFC6D51FA9483690F5CD985D687A4E08A6B743983928942CDDCB7ABDE"
+    },
+    {
+      "path": "addons/admob/csharp/src/Core/PluginConfig.cs.uid",
+      "bytes": 20,
+      "sha256": "CB095E8C8A39B2269B0244612DFE3E27A3FB475ABDD09F4EA4FACCBA64A7186A"
+    },
+    {
+      "path": "addons/admob/csharp/src/Core/PluginVersion.cs",
+      "bytes": 1887,
+      "sha256": "5C7BADEAC295187963EE50874A0443FBD458CB60BA50354AB0CDAE426C3DB98A"
+    },
+    {
+      "path": "addons/admob/csharp/src/Core/PluginVersion.cs.uid",
+      "bytes": 20,
+      "sha256": "B5FB8F0236BFD22580F532FBF27FFB57E2EF6AF890E558AEB38DFB65750A92F2"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/AppLovin/AppLovin.cs",
+      "bytes": 1807,
+      "sha256": "0463E6DD20637C42C5FAF3D52DAD132CAEE60A81DADC0FA627A4146B557EE450"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/AppLovin/AppLovin.cs.uid",
+      "bytes": 20,
+      "sha256": "558C029AC40E723A47E18FAC80E23DA7B69F65B66112564EB976AF455C1B3EB9"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/BidMachine/BidMachine.cs",
+      "bytes": 1900,
+      "sha256": "FCB9E542944FBCFF38D4689097781D9C5C13E6CAF0AB43C155C61742FC8F50E2"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/BidMachine/BidMachine.cs.uid",
+      "bytes": 20,
+      "sha256": "0036A6CB77C211D2662B1D9A1E615354C8046B55616E807B096EFE0CC319586C"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Chartboost/Chartboost.cs",
+      "bytes": 1589,
+      "sha256": "18BA4981669AF940C7800BB6FC7C128BB918B483A283EEB8151B125B27080B1B"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Chartboost/Chartboost.cs.uid",
+      "bytes": 20,
+      "sha256": "0556B4787430B6DE7E00B01D966732DA3528F327031CD4BF7B71146FD03ADB4C"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/DTExchange/DTExchange.cs",
+      "bytes": 1745,
+      "sha256": "39E11921E6D850A2D324B5940C6D9138EC12A60A732247371F7E56F342210B8A"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/DTExchange/DTExchange.cs.uid",
+      "bytes": 19,
+      "sha256": "97C826EE0B29B8B71717DC583F64891127E120A69F2EAF0B2FB5B724ED37ECC8"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/IMobile/IMobile.cs",
+      "bytes": 1416,
+      "sha256": "8E9186EB253423E8FBAF63B11D1988C73BA78438781B2936DB77E7A8722F7663"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/IMobile/IMobile.cs.uid",
+      "bytes": 19,
+      "sha256": "F5A9F407CD88EAB5CAC88C7716328DBEFAA8942C0D52A78243F25FD49E1DAD01"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/InMobi/InMobi.cs",
+      "bytes": 1413,
+      "sha256": "5E5D0E806D7CC12939505665B0E30E5871218848B13FD1688B3492D54AFDF7C1"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/InMobi/InMobi.cs.uid",
+      "bytes": 19,
+      "sha256": "49509D9643ACB1E153A5626295E083C40E716C34D963DB6665AF07498C31D99C"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/IronSource/IronSource.cs",
+      "bytes": 1797,
+      "sha256": "247949D89011BFA57AAE0C7D8473F69F6BE8C9716D67B61EA7C8005D72DF054B"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/IronSource/IronSource.cs.uid",
+      "bytes": 20,
+      "sha256": "230E7F0779B75C019767C28D59AB1746960A41BBF3C4DF1ED1743C98D4EE1B3B"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/LineAds/LineAds.cs",
+      "bytes": 1476,
+      "sha256": "2864EF63845441CFDF220FEAC54B01D26CA6C5A558C0BCA881DFC3159FD405BE"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/LineAds/LineAds.cs.uid",
+      "bytes": 20,
+      "sha256": "54DF46D5BDC9728EF1D1BDA2BC1121276C1F5B5B7EB33835F4D7B484FC1A2E86"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/LineAds/LineMediationExtras.cs",
+      "bytes": 1747,
+      "sha256": "E31EADFA5EA0E5966E9EA735BA1D363407F0B0C0576D24A9465813B7A3645405"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/LineAds/LineMediationExtras.cs.uid",
+      "bytes": 20,
+      "sha256": "3314CF8DC4E21686B7F11176B307F32949E09930BD4DDA3DE54999CDACEADE5C"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Meta/FBAdSettings.cs",
+      "bytes": 1626,
+      "sha256": "9CCDDD0645979FEB1EA38EB04C84E24174C2A9172CD55C813CF780089471B934"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Meta/FBAdSettings.cs.uid",
+      "bytes": 20,
+      "sha256": "0BC95A913892135F909FD1DBF50755952FA0AA4D6251B2EC3E0A6607EC5AC5EB"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/UnityAds/UnityAds.cs",
+      "bytes": 1699,
+      "sha256": "A103D93FCF329F8A392FDD0E4BE613FED988FFB727F053E93CB18FB0D32FCA4D"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/UnityAds/UnityAds.cs.uid",
+      "bytes": 19,
+      "sha256": "386AEBC8D359F48BCD5ACB494E9C0D66242DB41233E9566D47EB527EB1EF422F"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Vungle/Vungle.cs",
+      "bytes": 1837,
+      "sha256": "72C4EA582C75ECB8D3780A95B999DBFB5027AFF172F0623E141591DB5D49EA4E"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Vungle/Vungle.cs.uid",
+      "bytes": 20,
+      "sha256": "A128795E53F0E74297EEF058F64B991B61737744F1DB98C536493F12CF05525E"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Vungle/VungleInterstitialMediationExtras.cs",
+      "bytes": 1464,
+      "sha256": "AAFE7B51F2D8B31F921D2AB865A5A9851403BB701A9224B41469E1AFF3797D0C"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Vungle/VungleInterstitialMediationExtras.cs.uid",
+      "bytes": 20,
+      "sha256": "915BC163FE788FF710B3888E4122192F61B4BDDD681233405245BEF52C9F3379"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Vungle/VungleMediationExtras.cs",
+      "bytes": 1735,
+      "sha256": "D1E17F7E5E830FFAC91EE59CDDFB88A3755CE1C9755D740A0B2ADB63E1E2674D"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Vungle/VungleMediationExtras.cs.uid",
+      "bytes": 19,
+      "sha256": "EA5AD883AB0606BB7AFB35D408A32239C308A147C7FD15DE43AB79BD5BA8EE9F"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Vungle/VungleRewardedMediationExtras.cs",
+      "bytes": 1456,
+      "sha256": "EA1525A8800C8B4CA33CB0662F827A31AA9C77E3189CF490575C2C1616D18D10"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/Extras/Vungle/VungleRewardedMediationExtras.cs.uid",
+      "bytes": 20,
+      "sha256": "E313B9D04DF200073C69A5384DDB9B7F5FB76CA0654624978273694F92AF463E"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/MediationExtras.cs",
+      "bytes": 1755,
+      "sha256": "BCADF26CCAECFE294D7B8069FAE8E06E544EC28E3913646AE301295800F90C8B"
+    },
+    {
+      "path": "addons/admob/csharp/src/Mediation/MediationExtras.cs.uid",
+      "bytes": 20,
+      "sha256": "FC8C332716BB9210E7F460E7430000F1DBE5F6593C6AB21B91182C97D4753C34"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockAdMobFactory.cs",
+      "bytes": 2714,
+      "sha256": "5824DD08137D799D8206A58F3047983F759F4B46EE5C25A6227D38CBD1E13F78"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockAdMobFactory.cs.uid",
+      "bytes": 20,
+      "sha256": "4D95F3DFB7E4392F8B4AD4B04CA678260555E1E59E981178D8AA3211BCDB5420"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockAdSizePlugin.cs",
+      "bytes": 1793,
+      "sha256": "0731AAB95900C63ACA292FD148E2DBBE01D857F034C89B12A3E0D8D168697135"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockAdSizePlugin.cs.uid",
+      "bytes": 20,
+      "sha256": "DD34DF38E7D8E41DD65862A1E98A12C9C3167AEE6BE6770B5DFDBFCBD795DA17"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockAdViewPlugin.cs",
+      "bytes": 22953,
+      "sha256": "E76B8281DE1F8B6C804D5440CF469EBD49141ED2CE9FE1038AFA08F0261F1140"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockAdViewPlugin.cs.uid",
+      "bytes": 20,
+      "sha256": "90FB6E8772723503D8A2CC194B8382948E1CDABDAEFC096ADAAFCEE5D0D7FE27"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockAppOpenAdPlugin.cs",
+      "bytes": 19818,
+      "sha256": "993D049AB1476E00BED4A3184E330507F6BA3190616E31DEB250AFE4B8B3030B"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockAppOpenAdPlugin.cs.uid",
+      "bytes": 20,
+      "sha256": "5689A04ED18159960DFE8B4BDD378DEBD640FD855E76628F91DD62E8AF1B167F"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockInterstitialAdPlugin.cs",
+      "bytes": 12177,
+      "sha256": "046D3E6C5048574D0417C11A72A406C9E3F88DF1106D375B41A6E5E820F98551"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockInterstitialAdPlugin.cs.uid",
+      "bytes": 19,
+      "sha256": "16A56DF2B849B583BA0DBB9B5A775E55FF03FE0114D110B8B860757427F6D8CD"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockMobileAdsPlugin.cs",
+      "bytes": 3721,
+      "sha256": "4CDD156CBA0FCEE3D1883DB7A18124D15AAA68F7218D258E78166AABAD9FB7C7"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockMobileAdsPlugin.cs.uid",
+      "bytes": 19,
+      "sha256": "125DAC03486E5CAC3E89C72B299A53FD5EDF512434703F7342BA11EE3B59873E"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockNativeOverlayAdPlugin.cs",
+      "bytes": 33064,
+      "sha256": "2D70FE0373AB5C40F68652EBDBECEAD8A9E57E974A31749D1E8BD592A6EC138F"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockNativeOverlayAdPlugin.cs.uid",
+      "bytes": 20,
+      "sha256": "7510FC59D85C51344B35C80E57E56C6C265F547717D3F1D5CE15A9A33D56F067"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockRewardedAdPlugin.cs",
+      "bytes": 29220,
+      "sha256": "0B2C87DC89C2F0AED06E06C351EC9168D6A6847D87A6E516D2569364442303C5"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockRewardedAdPlugin.cs.uid",
+      "bytes": 20,
+      "sha256": "B2D69D746F8AE609CB1A66CD73DF05A507FB807DED3C07D38D7A1793269AA4FA"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockRewardedInterstitialAdPlugin.cs",
+      "bytes": 29427,
+      "sha256": "16768759FBAB8D9EA32A7BADDA2C04A9E2F5FD859A8B9278C55AFF11AFBF3F72"
+    },
+    {
+      "path": "addons/admob/csharp/src/mock/MockRewardedInterstitialAdPlugin.cs.uid",
+      "bytes": 20,
+      "sha256": "0CC2B44F0BF91870873872073624AF5EF53384F5887956655092BB239F20F909"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Api/ConsentForm.cs",
+      "bytes": 2610,
+      "sha256": "73E7A01A9F5DB8A64EC4241E1A5D5D4357FE19285C84E9F55BD412EDA6D9DC68"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Api/ConsentForm.cs.uid",
+      "bytes": 20,
+      "sha256": "87BEAA81F5A44E988A3CBA34629E7908EDFC4D3A3C8576E7E323A6FBA825D3F9"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Api/ConsentInformation.cs",
+      "bytes": 4014,
+      "sha256": "C7EAD92D28E23C7B1F136F9A106278E96553037E19F50A9FF7E8645079A82B00"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Api/ConsentInformation.cs.uid",
+      "bytes": 19,
+      "sha256": "924F31615FC0307F5D22374BEB95FE1D0DFE17B4D41B9ACC14C6B42F772E01A2"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Api/UserMessagingPlatform.cs",
+      "bytes": 4156,
+      "sha256": "56ED8CC55518D0B3265E380C7F92E5B95AB735ED842AC970C756CAF96A9A51DD"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Api/UserMessagingPlatform.cs.uid",
+      "bytes": 20,
+      "sha256": "1520499A43AF8C0CE3687CAEDB0C02799FEFCCC4BF65D7EF9CA29FF1EB89F6B4"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Core/ConsentDebugSettings.cs",
+      "bytes": 2008,
+      "sha256": "FBB5F860E57C85F4BC0B88A601A36DCD0E5C135D646D586EC41BFDE311BBCAAD"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Core/ConsentDebugSettings.cs.uid",
+      "bytes": 20,
+      "sha256": "F6E28527E36B22ECA0CFA75B970A01DC1FFD20D2D3B6484493F9D1038DBB2519"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Core/ConsentRequestParameters.cs",
+      "bytes": 1680,
+      "sha256": "ACEB752A0DC27127F847B84786958D5E164CEDD7E540FA1337767DD44EF5F5AD"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Core/ConsentRequestParameters.cs.uid",
+      "bytes": 20,
+      "sha256": "5106AF017446C11F5F149D6DB03BA2A824BE76CE12423756BA3FBED3B12B9249"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Core/DebugGeography.cs",
+      "bytes": 1273,
+      "sha256": "88ACFB6FFB010B529E0038FCBCA38B996420B1EF237F7887F564134B7013A995"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Core/DebugGeography.cs.uid",
+      "bytes": 19,
+      "sha256": "606D75918C3BFA76FB91F3E148FB4078D7A4F435253A10BE3823EF6501B192E0"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Core/FormError.cs",
+      "bytes": 1814,
+      "sha256": "F1EECF8F0B8FE673581BCCC68F6A5B2211F4B9C68A786A496A844B907CF38DA1"
+    },
+    {
+      "path": "addons/admob/csharp/src/Ump/Core/FormError.cs.uid",
+      "bytes": 20,
+      "sha256": "20C1EACF99A27BBD9FC80490CD84EFF932161750C32EB4EBC5E3E4E9C8B419A1"
+    },
+    {
+      "path": "addons/admob/docs/architecture/general.md",
+      "bytes": 1645,
+      "sha256": "69C0F432C43614113C8487DE9904BEAE309F7F05CAC32E479108FE19A4048D4F"
+    },
+    {
+      "path": "addons/admob/docs/architecture/lifecycle.md",
+      "bytes": 1579,
+      "sha256": "7B3BC1EE3CE89330FC7311D7C246360872BA0DD8498F8A580080A543EA2C776E"
+    },
+    {
+      "path": "addons/admob/docs/errors/ERR_002.md",
+      "bytes": 1409,
+      "sha256": "04A9F70785D96C3CB6450FB4F884A751E5C494C10E281E96608CF2F4B7A83942"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/Main.gd",
+      "bytes": 6704,
+      "sha256": "18B3618AEC21F59968EA61E622873896AD06EB299A86F8CD75B2F2EA6B4E2C40"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/Main.gd.uid",
+      "bytes": 20,
+      "sha256": "F70253E309E95715C683488EC8D37ABB0FAB9C5079F81D821256E6116C2A40A5"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/Main.tscn",
+      "bytes": 12652,
+      "sha256": "22BC8C6B1DB22D59C9EDCDD2B744BFE4814E0CE04F0D016C4F1442220BA7BD5B"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/SafeArea.gd",
+      "bytes": 4645,
+      "sha256": "92CBA3D692D14DF153DD0A39F61FFC3E0DF752D7B821A46DC57000864665B906"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/SafeArea.gd.uid",
+      "bytes": 19,
+      "sha256": "9B4773AB29368D40E0BD1C51B2AEB9C1BA61E8706CA65F6E200547FC5E108843"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/SampleTranslationLoader.gd",
+      "bytes": 1411,
+      "sha256": "22BA3644F57A492457632C38038A2370CCB26E721FA6B293CFA0A73CCC79E8DA"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/SampleTranslationLoader.gd.uid",
+      "bytes": 19,
+      "sha256": "73B8470506F0B4CEB637BF9570EB289B13F548E48FA61A79192DE02894F7B853"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/AppOpen.gd",
+      "bytes": 4565,
+      "sha256": "0B5AD7A4911ADE4DB08A19DE7D99E4CB41E6D71226E9E51B3CEBCA291F1FF195"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/AppOpen.gd.uid",
+      "bytes": 19,
+      "sha256": "7290B1351FDE74E328880D0EC18C30061646FFF2D7029C53751E7E257FD9ABE1"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/AppOpen.tscn",
+      "bytes": 1729,
+      "sha256": "B4F488527F8C01D39E67B78B9CBD4A712EC6658A262413874879AAB4DE0FDF63"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Banner.gd",
+      "bytes": 9302,
+      "sha256": "A5142AE43BE1EA1D70B4DC484C6E40D87778ABA3B989EF1247461A942D93604B"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Banner.gd.uid",
+      "bytes": 20,
+      "sha256": "CAF3A707F04CCECF8B11A3996573F6F13F953EFEF750B6B1C3E484DE81117EE9"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Banner.tscn",
+      "bytes": 12609,
+      "sha256": "EE49FE2E463C589283337437D42260323C7042968239689911883EB345CBE92B"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/BaseTab.gd",
+      "bytes": 2254,
+      "sha256": "CFD8F0E5EB989A66D93DCDFECF8781AD3A71A7DEC6B6ED1D9B4CF02EDCF838B9"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/BaseTab.gd.uid",
+      "bytes": 20,
+      "sha256": "67BAB23886A78DE217CFC2BD922A5042D15711B8D0855E41CF6B010035C97D39"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Interstitial.gd",
+      "bytes": 4000,
+      "sha256": "66061FA94AE064F489C143A30AAA5E006FF54B3603B56442CB91CDB80F5EC737"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Interstitial.gd.uid",
+      "bytes": 19,
+      "sha256": "439B24557B6D766E0F3FB98530F2CCE757083F610EB20941CBE6DA22C1133A0B"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Interstitial.tscn",
+      "bytes": 1758,
+      "sha256": "91CAD766764A63E10B494F707CAEB05BA48965C47A0D53AEEF91279ECF1B5B8C"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/MobileAds.gd",
+      "bytes": 5253,
+      "sha256": "9B82F98824CB6CE6535468F7D6B8734CD713450E0E123B28F90B0D18B6A02B62"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/MobileAds.gd.uid",
+      "bytes": 20,
+      "sha256": "A173621137C0A55A899C5CB99ACA6C9A3407E5E58F765644B4B4E36199AEE467"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/MobileAds.tscn",
+      "bytes": 3924,
+      "sha256": "A2624AA7ADF1C929B2533660076391A9E0A19D93DE9D604D9D4EC97A1EE02B08"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Native.gd",
+      "bytes": 11816,
+      "sha256": "B0DC94070B7F393C4D1084EEA25ABBE214E816B95A2CE93550FBDB6ABAB8EFDE"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Native.gd.uid",
+      "bytes": 20,
+      "sha256": "2F23C559A2D72DA845B09A40FD208AD34A1F72FDB81DACD30E689875FA8338D6"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Native.tscn",
+      "bytes": 17472,
+      "sha256": "39D4CF43EA4C2E85FD88C2ABB5C9D3589DDDD1F5AC32C34076343FCE8F897AB7"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Rewarded.gd",
+      "bytes": 4422,
+      "sha256": "AB435193F66FD239665EB3D1004AE5A0637E90AA279AEE8767C665B345E8388F"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Rewarded.gd.uid",
+      "bytes": 20,
+      "sha256": "BAF6A410DA2E417F17E01E8F943D0887A760B95E374CE95FC965F95460CD4163"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Rewarded.tscn",
+      "bytes": 1724,
+      "sha256": "4E9A9BA120D7C30503CAC6FF6FA7B48C3877CD73213BFB4372201D200EF1E5D7"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/RewardedInterstitial.gd",
+      "bytes": 4535,
+      "sha256": "ED13766EE520460F848D66AAACBD6584BCF58F253A6BCDCE14EF57C3EA95C578"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/RewardedInterstitial.gd.uid",
+      "bytes": 20,
+      "sha256": "2D46995808C697EBA27C20CFCD7E038B7765D64649A868ED5EF22423F2FC55E7"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/RewardedInterstitial.tscn",
+      "bytes": 1749,
+      "sha256": "5D25E06D2526F73F15AD3C27C9532B3E932953036B3E2F77EACEF71A592B33D3"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Ump.gd",
+      "bytes": 4270,
+      "sha256": "F5F0F10F0A849CF5268A62E733D5D09755317F6D177EA36D560D306C1EFD5B7E"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Ump.gd.uid",
+      "bytes": 20,
+      "sha256": "840CD4C870BD8EE8703BBDE4297EB228CE022512E930CCD6D12398B970525B9D"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/tabs/Ump.tscn",
+      "bytes": 1169,
+      "sha256": "1717B30DF615D1BD9D2456058457CB6183EED448E1F67A2971130A575D29080F"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/UIScaler.gd",
+      "bytes": 9625,
+      "sha256": "7B0338BEE6E2316345FA0E412BDC488E2BC763E0859334C0726A8AAC627EE96B"
+    },
+    {
+      "path": "addons/admob/gdscript/sample/UIScaler.gd.uid",
+      "bytes": 19,
+      "sha256": "C037E493FA119F890623488D3F6FE09B46CB6008E90995039F12811F508DFDC7"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/AdView.gd",
+      "bytes": 4453,
+      "sha256": "CC6F97BEAA80C38D0473DB1F13F559D7AB12CC11A63B82D4BE4B7CE97B96EC5F"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/AdView.gd.uid",
+      "bytes": 19,
+      "sha256": "6D739EB0D5301D0FE6C4712FAB13E9CFA0AB6C7A502322AF1FB6855DD1C6EEA0"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/AppOpenAd.gd",
+      "bytes": 3713,
+      "sha256": "D8A30C6C04A57D861A1774FA32CC00BFD39CB55BB6712A2687FDEAE9D70FA127"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/AppOpenAd.gd.uid",
+      "bytes": 20,
+      "sha256": "D16C6B65A5564AD8338772C35234092405E37E4E20C5E8DE10D289B07DD664B3"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/AppOpenAdLoader.gd",
+      "bytes": 2289,
+      "sha256": "83FA3FA42D24EF2710F98AE0F3EC613C1D1EED33CA07884B327EF12B04297B6F"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/AppOpenAdLoader.gd.uid",
+      "bytes": 19,
+      "sha256": "C1A6FA4E70A519CE7CD2E857157155EA5A3E0BB15FAD7CFBCC16DA54B5B35BCB"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdapterResponseInfo.gd",
+      "bytes": 3367,
+      "sha256": "126103D893F5391824607B0E16ADBB307EB7F862A15E1C6DA2147044EC31AD26"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdapterResponseInfo.gd.uid",
+      "bytes": 20,
+      "sha256": "BC92807ADCFC09AB5B37CADEFA49CDD431EA223037B0CCDED61F8A4775AF43EE"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdapterStatus.gd",
+      "bytes": 1479,
+      "sha256": "45A60B7AC646785F4A3F80507D32B26DFF2DE38620C67ADCCA01B8FD5A9DD69A"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdapterStatus.gd.uid",
+      "bytes": 20,
+      "sha256": "F75EC2712992193F687DEFB8EE32AFD951A054D659883002668473F575AA809E"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdChoicesPlacement.gd",
+      "bytes": 1227,
+      "sha256": "D3F527792B8BDB43CB2CBB80478A89AC337D8BE1D99F6BD0B9BF3D19D3D56749"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdChoicesPlacement.gd.uid",
+      "bytes": 20,
+      "sha256": "8F380506E35D2B86267FA90A9BD55AFFFB7C3A6AEF304935A9BFE00056106E70"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdError.gd",
+      "bytes": 1748,
+      "sha256": "FB1E2893EBCF079B6F69BCAFF45C078CBBFA26FB5F39BCDABAF55A7005F5E4AA"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdError.gd.uid",
+      "bytes": 20,
+      "sha256": "8F7FE5445233BD03787AD02CEE54A92787FCABBA84581A247CB50DEB5CDC3676"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdPosition.gd",
+      "bytes": 2032,
+      "sha256": "92FEB19DA000DAAE28E7F18DD4DD688924E03794544E9393BAE20C6A235A1716"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdPosition.gd.uid",
+      "bytes": 20,
+      "sha256": "EC767B4F1FED617BB25064FADF4CF137D5263B1303C8154072FC92C623A509B4"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdRequest.gd",
+      "bytes": 1879,
+      "sha256": "F8BBB5A0953545483A25DB71CB3CF9F2A1BE4F31315D7F8D96A02CC74F37E7CD"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdRequest.gd.uid",
+      "bytes": 19,
+      "sha256": "A31CFB66B2A12E5648127F7932A2C914764D3DDAFF5A419D1C28DFAE9693439A"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdSize.gd",
+      "bytes": 2573,
+      "sha256": "1B0E071ABD0C8BBCDF6A4E02245CBB03724A0D5642E2A4BC621D4AD721F86DD3"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdSize.gd.uid",
+      "bytes": 20,
+      "sha256": "CE680B33037EB0AF313C8CDFF3B2C8F8AF6127316F259D00A0BABCB9629984F9"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdValue.gd",
+      "bytes": 1772,
+      "sha256": "5016D43F4FE789428718BC4996BA42F98D600088A793D0F32B88F9FE7EA82A6F"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdValue.gd.uid",
+      "bytes": 20,
+      "sha256": "89C10C962BC3D5BD881DA06EA8B6E031F7B6CAF4C028EAA0400835ED84E9E16D"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdVideoController.gd",
+      "bytes": 1548,
+      "sha256": "A7AD90D99C29CE0CF23AC2734857719CC6EDD2A25A5A88F124C8F6B9F9D896DE"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/AdVideoController.gd.uid",
+      "bytes": 20,
+      "sha256": "9AD34A0AC9E54F85C76AFA47225736AB4387554890387275E301FD5A04F65BE1"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/LoadAdError.gd",
+      "bytes": 1748,
+      "sha256": "9F6A8290975F3CB34C7CB2430B7ADDAF65789FAEDEAEE296E4426EF1297E0B60"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/LoadAdError.gd.uid",
+      "bytes": 20,
+      "sha256": "33FFFA63D7230E1379F0CBF6C21497626C438971B7C25874482E337639EB19D8"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/MediaContent.gd",
+      "bytes": 1768,
+      "sha256": "F927D1B7B8D63C68BC933571A526CAD444C657EDCA07211488B5ED5D2389C892"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/MediaContent.gd.uid",
+      "bytes": 20,
+      "sha256": "D509D7ED9958BD2A8633947C297EACE9EACDFC8C0975B03C7333A1174EE098F0"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/NativeAdOptions.gd",
+      "bytes": 1594,
+      "sha256": "84A7D66F007D6734553726B9A827DABC35201240F8D071893B5334F1B945D8FC"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/NativeAdOptions.gd.uid",
+      "bytes": 20,
+      "sha256": "72CA3DAEA3BA0B9984D3A277E7335D98C421DD8713DCF2FBEF924F2995D417EC"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/NativeMediaAspectRatio.gd",
+      "bytes": 1230,
+      "sha256": "F4DFD5D8402D2CC3F0B29C2771CE2D092373942259B5AD00776D8D3C1FAFA7F8"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/NativeMediaAspectRatio.gd.uid",
+      "bytes": 19,
+      "sha256": "E1B76D8D085F39485B15559833150421528AC2347EA663C6C28D60D9CFD22BF2"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/NativeTemplateFontStyle.gd",
+      "bytes": 1217,
+      "sha256": "0A8F39FDCB5F96EAF40F36D582AB14074451E42809B31F82087E0D8575D45440"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/NativeTemplateFontStyle.gd.uid",
+      "bytes": 20,
+      "sha256": "9CD6E3384266246D34259F6FCB8A0A0EBB927FA6F1370151CDE7A13D511B11A9"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/NativeTemplateStyle.gd",
+      "bytes": 2081,
+      "sha256": "0989B0A9C7D2B559F5C7AF5EE7A7079CF7F770CDEF3E2E4780B651A5F934C73C"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/NativeTemplateStyle.gd.uid",
+      "bytes": 20,
+      "sha256": "4FDD400A99596744D6E8249B6F0AB92DD7114071A52DFAC278F508869901D7F6"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/NativeTemplateTextStyle.gd",
+      "bytes": 1644,
+      "sha256": "1B8E7879FF56B6FF40647408DC146366A2A760DBDC4FF19AC4CDA8C32FC09794"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/NativeTemplateTextStyle.gd.uid",
+      "bytes": 20,
+      "sha256": "7A8C827895679BC482EC0CCFD43EE53DD7694CBE058C2BF8C09DB0BB75A62546"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/RequestConfiguration.gd",
+      "bytes": 2068,
+      "sha256": "B123C64CF7300B87F1EDA28222046AE1737614BF5DA9BE5C04DC1A587E0B14C4"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/RequestConfiguration.gd.uid",
+      "bytes": 20,
+      "sha256": "B48EC581662EC2C94BBB15485FD617361FF4F427AE3926B1B712D84C34FCE629"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/ResponseInfo.gd",
+      "bytes": 2589,
+      "sha256": "9C8B9723F7661905AEE129C41BE78BD6D9890A9DDC13FD1946ED68C96605DE9C"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/ResponseInfo.gd.uid",
+      "bytes": 20,
+      "sha256": "63897E8F47C3C07368E029ED3F7C1D8E278AF65F1E2CBB071965072B6DEEA3EC"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/RewardedItem.gd",
+      "bytes": 1536,
+      "sha256": "EDC627ED873FA598BDFB25B9252FC1C3C842258F84D06E7DAD71A006C8FB903A"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/RewardedItem.gd.uid",
+      "bytes": 20,
+      "sha256": "F0C23BD8A47258DA1115B807F8D31A519A931162FC06E375AB2F43FB5AB852E1"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/ServerSideVerificationOptions.gd",
+      "bytes": 1302,
+      "sha256": "8F9EBA45BA0716E272BA535C7A5B79DAC6DAD86E1DF3B82E65EB2227D924204E"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/ServerSideVerificationOptions.gd.uid",
+      "bytes": 20,
+      "sha256": "3CA9FF5BFB48B2DA1E2E7F31F3F217EF3E4E908BBB27C7C600565186B1D9660F"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/VideoOptions.gd",
+      "bytes": 1465,
+      "sha256": "53099A7F5732BDF922533B98E281AF1AA8E1B2DE4BA7D4B378AAF8522BF6E1B7"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/core/VideoOptions.gd.uid",
+      "bytes": 20,
+      "sha256": "376F1A6A4A0B72170C8F434DFFF9B14E2B41C3AAF24B2077E89F594217576FA8"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/InitializationStatus.gd",
+      "bytes": 2015,
+      "sha256": "6D2EA9B71198604441A4F95EC39AAEB4E7F51111AB8A7386239D30708BDCC77E"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/InitializationStatus.gd.uid",
+      "bytes": 20,
+      "sha256": "F2A00B768A4B7B60D32E28031CDAD4EC41CD71E6BBA0927C62A9B880C4DB8C07"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/InterstitialAd.gd",
+      "bytes": 3530,
+      "sha256": "11CA93081BCBB44AB033D4078FBCCBEE0B83215B2D73B46246117A5BA4D29C9D"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/InterstitialAd.gd.uid",
+      "bytes": 20,
+      "sha256": "784605F3DF639EFF8C4C6D643A27CB34E8DEB0C2894F4087B2CE1D8CCBFB9BA1"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/InterstitialAdLoader.gd",
+      "bytes": 2365,
+      "sha256": "8DEB8870BE64CDA91087B5EF17005EA4A32929DD8168C683561D8F20201D4028"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/InterstitialAdLoader.gd.uid",
+      "bytes": 20,
+      "sha256": "959E345DA9D3015DF7C4874C26F67EC3C33E09D98D8E849D66B200F249C5B895"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/AdInspectorClosedListener.gd",
+      "bytes": 1220,
+      "sha256": "75F15FC99E8848D6F3C075E1B4E8DB4602F35DD672AD9423B9BD75068F3E3C98"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/AdInspectorClosedListener.gd.uid",
+      "bytes": 20,
+      "sha256": "E9093DE6945C83E29E93CC65898B20F8F7A7CF5C91329B480DB7F39E6360C8F0"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/AdListener.gd",
+      "bytes": 1428,
+      "sha256": "8562D3061079FF2D279AD6ABA845414CC9C3179BAF46201A6265C25DFB5D9322"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/AdListener.gd.uid",
+      "bytes": 20,
+      "sha256": "E6BBC07D65E7B061B96509992C3D9382CD6B228A223ACE0A44880D526CE615CF"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/AppOpenAdLoadCallback.gd",
+      "bytes": 1313,
+      "sha256": "0EDA538C2248AF35BEA381A9846DCA2A21F12636029C0945E654ABD943F6BBA9"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/AppOpenAdLoadCallback.gd.uid",
+      "bytes": 20,
+      "sha256": "7930705E5BD6FE5F82A5A8523CCA2E8C5B8D5EAFA2D5DBA417F8FAA5DAC682C9"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/FullScreenContentCallback.gd",
+      "bytes": 1493,
+      "sha256": "50E7E2194B8ECCEEC23F005D8B8A58E12132889360A6D3941557FC65E84672E0"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/FullScreenContentCallback.gd.uid",
+      "bytes": 20,
+      "sha256": "B7F27FD0700A842FBFD96F128E2EBA9609C89F5B7EADFAE6BBF34CFDAE6F6364"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/InterstitialAdLoadCallback.gd",
+      "bytes": 1310,
+      "sha256": "D50FEE29D28C82732A30C521C4F370360EFDCF1CC55C729C70B074992C023A9D"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/InterstitialAdLoadCallback.gd.uid",
+      "bytes": 20,
+      "sha256": "D6E88761A1B79074BE5BDDD0B77D7A17E19294C3B895366CF4369DD684ED657F"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/OnInitializationCompleteListener.gd",
+      "bytes": 1257,
+      "sha256": "8EAD181780F1BAECEDEB0EB5CA4AD7CA7CAB1AC7B920A455BA46FCC302C3BF55"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/OnInitializationCompleteListener.gd.uid",
+      "bytes": 19,
+      "sha256": "90BFFB50790A7FF7530B4B431F94BB03EDA9B660DE203827FC655DA683887691"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/OnUserEarnedRewardListener.gd",
+      "bytes": 1230,
+      "sha256": "09D391D1959B2D6297FFDAF188675FF3FB8FF1B2B23016E565761E81B8CD8E5D"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/OnUserEarnedRewardListener.gd.uid",
+      "bytes": 20,
+      "sha256": "CE178E6185421CAA4FB067C6ACF6A0D1C1F6A0168007E7BC728FB17C39E72EA0"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/RewardedAdLoadCallback.gd",
+      "bytes": 1298,
+      "sha256": "39C31B539FA51365E97BA11CC8540C4CEBFDD375BD34BB16878F8004311BC493"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/RewardedAdLoadCallback.gd.uid",
+      "bytes": 19,
+      "sha256": "E7B7B045536316D46907AE3D5CE457A101B53FAFF375EBEEF8F91E0AE55FDB52"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/RewardedInterstitialAdLoadCallback.gd",
+      "bytes": 1326,
+      "sha256": "52C0607A778A838E2BA701FED9DE6B5EDA916125497889783969BB2D51BFCE48"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/RewardedInterstitialAdLoadCallback.gd.uid",
+      "bytes": 20,
+      "sha256": "4952F28EE560487C7B8416B814ABD133064CC27888326A4D5A9E6DC201A23871"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/VideoLifecycleCallbacks.gd",
+      "bytes": 1400,
+      "sha256": "27E0EED30F479C112B8AAA1925F4CB982F2B3691F5703ED1F12DEB5385A51E81"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/listeners/VideoLifecycleCallbacks.gd.uid",
+      "bytes": 20,
+      "sha256": "0D1F16D30A3615A6F68CA7F1558A603A6C6A2BD71B33E76CC9459831D4EF0432"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/MobileAds.gd",
+      "bytes": 4353,
+      "sha256": "33A86E0BDCEB2298392B7B4FD255251E438DEFE24BA4DBEABB80037E89C74C00"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/MobileAds.gd.uid",
+      "bytes": 20,
+      "sha256": "B442B19775A84E43297BECD2A1C268634DB0F4AA3E054B627594A23403E520E7"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/NativeOverlayAd.gd",
+      "bytes": 8595,
+      "sha256": "36990E5BEAE84D4D1ED18E4ED7618C71E383F6723496085A57DAC925F59C951C"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/NativeOverlayAd.gd.uid",
+      "bytes": 19,
+      "sha256": "4859BC9180995AA58A1D220C608FBD244490D29DFA26B5DC6E91F54803DDCCE6"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/RewardedAd.gd",
+      "bytes": 4242,
+      "sha256": "E4D72C4FA695CEE84943C2F741A60C34FF9939D932A5449F1FAFB64E90310C4B"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/RewardedAd.gd.uid",
+      "bytes": 20,
+      "sha256": "57EF1FB98B6CF42A35D5A4815B1E33A4CDF9F5A26C96A98028283564FB6C151D"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/RewardedAdLoader.gd",
+      "bytes": 2290,
+      "sha256": "456FCD3CF7E71AEECD8C3F20A7C6CD824A13F28363FF766BEE3F3DF27BA82409"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/RewardedAdLoader.gd.uid",
+      "bytes": 20,
+      "sha256": "8A93EC0B9736251B4EEE1EA0621553A10ACACE4835C9F26F654D09EE5990186E"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/RewardedInterstitialAd.gd",
+      "bytes": 4568,
+      "sha256": "85EF3C30344527BADEC42AB5FDA1A6D03D3670266CD575792AF6281D8B59688C"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/RewardedInterstitialAd.gd.uid",
+      "bytes": 20,
+      "sha256": "86C4B5EA102D143B8A22B4337C8C8146252603C3192770F7058CD337390BF6B9"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/RewardedInterstitialAdLoader.gd",
+      "bytes": 2447,
+      "sha256": "871ED276D91D0565B9873FDC920C5A4116DCC2A41A52B4194E75EB0B565535D7"
+    },
+    {
+      "path": "addons/admob/gdscript/src/api/RewardedInterstitialAdLoader.gd.uid",
+      "bytes": 20,
+      "sha256": "31641264E56B6008125969204A762AA6C4B4E703F055AE902796279222D6B575"
+    },
+    {
+      "path": "addons/admob/gdscript/src/core/MobileSingletonPlugin.gd",
+      "bytes": 2417,
+      "sha256": "AE0D156A1BE081F50730901101102E65C408B5BC1496D7764C9F731AD9E8BAB5"
+    },
+    {
+      "path": "addons/admob/gdscript/src/core/MobileSingletonPlugin.gd.uid",
+      "bytes": 20,
+      "sha256": "111237A9497546A4A65AE957EA7D87F71088209495E11EDBC469FE65D2C4EF97"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/applovin/AppLovin.gd",
+      "bytes": 1562,
+      "sha256": "58DC738A17E2D6A64CDA65B064019D8FADE8B1B78737490306C546C5AD0F7F11"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/applovin/AppLovin.gd.uid",
+      "bytes": 20,
+      "sha256": "E925DFEC308879F8CCF64E0EC23FB2A40F09BEAF5D1EC05BFBDE7E4CD0CA8539"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/bidmachine/BidMachine.gd",
+      "bytes": 1624,
+      "sha256": "BEB1D289EA817BEE218FC7E00B51555C4297BDA1BDB7563FF5FF66B8B483D5B0"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/bidmachine/BidMachine.gd.uid",
+      "bytes": 19,
+      "sha256": "AACF34D0CA2719FB1B3841B5902E4F9ABBCC962C4DD4CCF65981DF76B01EA6B6"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/chartboost/Chartboost.gd",
+      "bytes": 1434,
+      "sha256": "279FA45DA9C1A3F1A73CE25391741DB38EB41C4342E727B77C4253D8B8F80BFD"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/chartboost/Chartboost.gd.uid",
+      "bytes": 20,
+      "sha256": "3D54E4A438144EC45CEDC5E02F022C97B1891B776E11D35DD95489D60D9C7B47"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/dtexchange/DTExchange.gd",
+      "bytes": 1590,
+      "sha256": "6838A2A10D1A5096E54D2A8114F77ED9EFCBFBF59167F39AB3B978F84AD6840B"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/dtexchange/DTExchange.gd.uid",
+      "bytes": 20,
+      "sha256": "44C73D296E18AFF05C2AF34EF44AEF0D05E89634030410A6C4674BE465F1ECDE"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/imobile/IMobile.gd",
+      "bytes": 1234,
+      "sha256": "3ADB80146987304B2D3AA65BDD1BAFBDE52E6D60B454F19AA3B7046DA6A5457B"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/imobile/IMobile.gd.uid",
+      "bytes": 19,
+      "sha256": "F4DCBB17D14447F42404344061D5C5933F387D536C5AFAF6A42B4BBB6EF4CF7C"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/inmobi/InMobi.gd",
+      "bytes": 1232,
+      "sha256": "8580E472CDE9ED625F9F9B45E6E5E9501154C0A7A54294FCF77B8F3316D196AB"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/inmobi/InMobi.gd.uid",
+      "bytes": 20,
+      "sha256": "993C5EC290A75EBC129258AF06D5D7FB78AAAE0681CF3C7084F1FA09225204D9"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/ironsource/IronSource.gd",
+      "bytes": 1542,
+      "sha256": "C3A5DD5989F01385DF7DC8753FF8DACB78C00DB62BA91D165B43AE27208305FD"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/ironsource/IronSource.gd.uid",
+      "bytes": 20,
+      "sha256": "D8F5D9524FA05FCCF6B10E2ECA85C9CB5492B614CFBD1A74B2E810A568679108"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/line/LineAds.gd",
+      "bytes": 1329,
+      "sha256": "E860F389D300F947B8F4D68EFDE6931DBA89FCDB82553983A2909C062112E200"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/line/LineAds.gd.uid",
+      "bytes": 20,
+      "sha256": "F72B75087C22CC2A2462C94B311E152DB190EB4E40CFE0B5B6354801ECAC20B1"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/line/LineMediationExtras.gd",
+      "bytes": 1520,
+      "sha256": "36F78DE53A4523BBADECF9D99715D9E73FA02F67ABFCCB63F6E05FACE2140659"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/line/LineMediationExtras.gd.uid",
+      "bytes": 20,
+      "sha256": "C502A52A34AD99EB7B0A20B1D54600C19AA487A4BEA8FE6722F679179EF48453"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/meta/FBAdSettings.gd",
+      "bytes": 1439,
+      "sha256": "137532B879D6FC7982CDE20ADC8E444AA5C411FB3CE7889752B0DDB37F7E1D5C"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/meta/FBAdSettings.gd.uid",
+      "bytes": 20,
+      "sha256": "FA2C92C49FA47C2F5A20D47DF6AE7AD2D5C97CBD6B751B4FED4506CFC66D8176"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/unity_ads/UnityAds.gd",
+      "bytes": 1476,
+      "sha256": "9201C7C33878BA86238FB98A7FA216599A6C02DC016F4613198C4F32D0626A6C"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/unity_ads/UnityAds.gd.uid",
+      "bytes": 20,
+      "sha256": "9C8A9B8345AEAC807FFE8319F5C2F11F025E836D87B79FC131D781964ABDE704"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/vungle/Vungle.gd",
+      "bytes": 1552,
+      "sha256": "C6F9DBB29D458B14EB32A8AFD7DF62C9EF7B760426340C3E7BE5867F7644F48D"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/vungle/Vungle.gd.uid",
+      "bytes": 19,
+      "sha256": "84BB06CEF8AAA7EA9DA9D06C972039D42ED05A0AB5C7D054A5834609776DF08F"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/vungle/VungleInterstitialMediationExtras.gd",
+      "bytes": 1336,
+      "sha256": "2FA291DFD6C7D80A706D70DC04F9879EF0EB74D708334F0401B7F95D46E64C79"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/vungle/VungleInterstitialMediationExtras.gd.uid",
+      "bytes": 20,
+      "sha256": "6FFB514BB9ED4C17DBD44FE238C08F64A501F6EB6430FBB2E6E1D659960633D0"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/vungle/VungleMediationExtras.gd",
+      "bytes": 1362,
+      "sha256": "82A41890A957566C0ABC9D94ECDCEA18C5C59E0DB56E798CDEDD90D9DFEDB0C7"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/vungle/VungleMediationExtras.gd.uid",
+      "bytes": 19,
+      "sha256": "28F09A5966569D2443DF58B4192BD8B42174A3E731F642ECF6149773218C15D2"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/vungle/VungleRewardedMediationExtras.gd",
+      "bytes": 1328,
+      "sha256": "491ABD28519D3E0C39EC5394D88A1BFABE832B7D62B7B61E492103B9AED30F29"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/extras/vungle/VungleRewardedMediationExtras.gd.uid",
+      "bytes": 20,
+      "sha256": "BC1765EF189B49887178551E3502102B70444EF1C33868952D09626FDFF5858B"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/MediationExtras.gd",
+      "bytes": 1605,
+      "sha256": "15CD723CDFBC1CC8F5403228F3990893C8ACB3D48D7730CCCE36BD070F584B96"
+    },
+    {
+      "path": "addons/admob/gdscript/src/mediation/MediationExtras.gd.uid",
+      "bytes": 19,
+      "sha256": "FEE6B0BB05EE1FA88E2CADCE513839C0978910D821A2069C928F97529E4702C3"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/api/ConsentForm.gd",
+      "bytes": 2014,
+      "sha256": "B98035D23610B9731C6E28753AFA4AE7462A7F351039C4FB04DC179C58CDB8D8"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/api/ConsentForm.gd.uid",
+      "bytes": 20,
+      "sha256": "DD1CA261CD5449F8D14F7C3F5EAEC11BFFB75E3589BA02799D73FD7268D9046B"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/api/ConsentInformation.gd",
+      "bytes": 2891,
+      "sha256": "946604C4D61BB05941A5C8BBAE9728451AA4E7777E4CFC540645E39EC6F76C08"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/api/ConsentInformation.gd.uid",
+      "bytes": 20,
+      "sha256": "2AB58341B486F4689E3053704FC408613C3F2EF239309872675FA2930FBABC6D"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/api/UserMessagingPlatform.gd",
+      "bytes": 3290,
+      "sha256": "7F81989362C55D42D48621D1923858F4A8BA693488D586D8A632B44D3CC0B0C6"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/api/UserMessagingPlatform.gd.uid",
+      "bytes": 20,
+      "sha256": "1FE355681E6A97850481A15293AB32F9D22178F3F8CE336D964EE0023B260C58"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/core/ConsentDebugSettings.gd",
+      "bytes": 1651,
+      "sha256": "4AD9CA68A89D12EF1A0981A368BD9F2E6118AA13A324588C18F13ADD7F803CB3"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/core/ConsentDebugSettings.gd.uid",
+      "bytes": 19,
+      "sha256": "F7403804E228F61EADFD7A0C0EAF7012A5C37DEF3F2CA244D1AD2121488DA3A5"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/core/ConsentRequestParameters.gd",
+      "bytes": 1474,
+      "sha256": "9B7E5E2AB52291D139C82A7A391C820D6E896F26769A1189D1633676F0B68A9A"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/core/ConsentRequestParameters.gd.uid",
+      "bytes": 20,
+      "sha256": "79E297430C0F50233E9C0244A50C671A0064009A763E7CAB0880397CE2FF290B"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/core/DebugGeography.gd",
+      "bytes": 1179,
+      "sha256": "10C52B50065190AE397AEA3CE021EEF0E49B768FD93792C8F5133130C2957F99"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/core/DebugGeography.gd.uid",
+      "bytes": 20,
+      "sha256": "F7F7703301BCDE20C69C989B3AB049996CED8EBF39A22AAE1D01468F5C32FC91"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/core/FormError.gd",
+      "bytes": 1492,
+      "sha256": "EA19B8366466ABE0C3E10605C7557156DD6B48EB738C8BF074D50433046C2764"
+    },
+    {
+      "path": "addons/admob/gdscript/src/ump/core/FormError.gd.uid",
+      "bytes": 19,
+      "sha256": "832BD2C21527C1FC7E865157B51DC4836CFF24D0645B5556A2E23DD5A119CA34"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/ai_menu.gd",
+      "bytes": 2818,
+      "sha256": "54D9E762C06BD2A36C0FC318E3DD9248CA81AC67333572743AE7BD4A9CA1D85B"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/ai_menu.gd.uid",
+      "bytes": 20,
+      "sha256": "D2FB91C79C5BE4A914A1E489528765E9148AAEC87B40F77553428958A669669E"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/android_menu.gd",
+      "bytes": 1761,
+      "sha256": "6675D527E66245411BBE7740102AE926FCFA1BFAC27773147D48B4BB8FDB9EBB"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/android_menu.gd.uid",
+      "bytes": 20,
+      "sha256": "BABC30FC1D38641492EC4EE4E1D7BD25AEBF1162A90F3608F639ECA950500C67"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/documents_menu.gd",
+      "bytes": 1427,
+      "sha256": "AD779782A8235331CA4B71997014A97421780F307B544CE213F2AA0C14C5BAE1"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/documents_menu.gd.uid",
+      "bytes": 20,
+      "sha256": "283111C22ED9B46F4C37D27B2F675E043C95775F18E25A5F35630406E96C689E"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/help_menu.gd",
+      "bytes": 1431,
+      "sha256": "9249B1026C60956A5654CBC7314CBEAC628DC8756A2DCBB012C885E910D7B122"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/help_menu.gd.uid",
+      "bytes": 20,
+      "sha256": "A2E664878AC1C8B0699896F3BF3990E78B8AC005527D8C060FAAF445C9C6D2C2"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/ios_menu.gd",
+      "bytes": 1721,
+      "sha256": "54B0AD4DAA34C65C64B47190A023C586EF27133BEABC638A81E9767E3B08939A"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/ios_menu.gd.uid",
+      "bytes": 20,
+      "sha256": "101F1C29908A97F365F93A654C4BABB118F866F624A0DF377425B0B22CC725CD"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/support_menu.gd",
+      "bytes": 1519,
+      "sha256": "1F32A0ED526DDE676216ED7F4139DF7754BF086FB4FB67FF026D29E3FC560D3C"
+    },
+    {
+      "path": "addons/admob/internal/editor/components/support_menu.gd.uid",
+      "bytes": 20,
+      "sha256": "DC24A8CFB45A202CCDE00F97E42802C384E9D16408B96513E704A1CAF1F4E524"
+    },
+    {
+      "path": "addons/admob/internal/editor/editor_menu.gd",
+      "bytes": 3503,
+      "sha256": "AFF56E7AA8E65155F3903336852027972309046BE7C119585360479021399D8F"
+    },
+    {
+      "path": "addons/admob/internal/editor/editor_menu.gd.uid",
+      "bytes": 20,
+      "sha256": "4427B71152C2EADDFCFEB2793D126E922EB90412464E4AB6AFC67112E7C1F5B7"
+    },
+    {
+      "path": "addons/admob/internal/editor/popup_menu.gd",
+      "bytes": 1436,
+      "sha256": "8EB5C8D0903CCB1BD30C61B2F98105BA0A141DA0DF59739CEDF11007C1B0F458"
+    },
+    {
+      "path": "addons/admob/internal/editor/popup_menu.gd.uid",
+      "bytes": 20,
+      "sha256": "AE37D065E5E9277CB28DC066557FB281449F596A49C6336FE5DC7A7AF0D0E700"
+    },
+    {
+      "path": "addons/admob/internal/exporters/android/export_plugin.gd",
+      "bytes": 9966,
+      "sha256": "7529ACF83F9ABB4C72D26B0B6486A6F166366809807C20FDA35928420DBB213C"
+    },
+    {
+      "path": "addons/admob/internal/exporters/android/export_plugin.gd.uid",
+      "bytes": 20,
+      "sha256": "BEDAF1E6A558B7A999683C5192629582C8141FCCDDE77242AC9349386DAFACB6"
+    },
+    {
+      "path": "addons/admob/internal/exporters/android/library.gd",
+      "bytes": 1502,
+      "sha256": "9609840D8EBACB4C37DF9884C1E35BEF312CEBA87B1B31A14C1605FC2C45D708"
+    },
+    {
+      "path": "addons/admob/internal/exporters/android/library.gd.uid",
+      "bytes": 20,
+      "sha256": "605780D50FDAAE4605DC210409202D10616BA396C5014613263A1980C38328A6"
+    },
+    {
+      "path": "addons/admob/internal/exporters/base_export_plugin.gd",
+      "bytes": 2797,
+      "sha256": "170E916554AF7F8AD64A6CE8E7722256D2E544E8712642BB8CFAE3943D96F972"
+    },
+    {
+      "path": "addons/admob/internal/exporters/base_export_plugin.gd.uid",
+      "bytes": 20,
+      "sha256": "A2E2E8F109F1797F9D4BAF433F9C76F54CA03DA485025917F6CAF7DDFDF0480C"
+    },
+    {
+      "path": "addons/admob/internal/exporters/ios/export_plugin.gd",
+      "bytes": 12644,
+      "sha256": "29B1F75550FA69198A4087F99971D23A5249BDDE6591254529E84834A144298D"
+    },
+    {
+      "path": "addons/admob/internal/exporters/ios/export_plugin.gd.uid",
+      "bytes": 19,
+      "sha256": "CBC9169DC6688399CB21D8FC6C038FD25BFCA13030402E2053C955D287B951FF"
+    },
+    {
+      "path": "addons/admob/internal/exporters/ios/library.gd",
+      "bytes": 1684,
+      "sha256": "D57157F6EDFE74D8A99DD5F3B86E1BCD0F64844801DA8129BB933D382C3433B5"
+    },
+    {
+      "path": "addons/admob/internal/exporters/ios/library.gd.uid",
+      "bytes": 20,
+      "sha256": "BEC0D8605C350F54A2B28A6276F86E3AF53B04A1C21129878AC4F94382FE64E5"
+    },
+    {
+      "path": "addons/admob/internal/exporters/main_export_plugin.gd",
+      "bytes": 1672,
+      "sha256": "A8872E23C4B1209F357B2ABF89FFC4542C3A71CD042D5E13FCD107C77C69BF1F"
+    },
+    {
+      "path": "addons/admob/internal/exporters/main_export_plugin.gd.uid",
+      "bytes": 20,
+      "sha256": "7DB629AA7AB42D23A8A4218E913FE605CE8C00FBB3E22AC47863556AE1901392"
+    },
+    {
+      "path": "addons/admob/internal/handlers/android_handler.gd",
+      "bytes": 3218,
+      "sha256": "A42A0FE7A74453D44AF650A194E1B2D054BA0847CEE058A0A4D56F227213648D"
+    },
+    {
+      "path": "addons/admob/internal/handlers/android_handler.gd.uid",
+      "bytes": 20,
+      "sha256": "D9A9E082EB28AE3F2A41045382486C44556BAD889FBC95193733AA4E78BC8B35"
+    },
+    {
+      "path": "addons/admob/internal/handlers/ios_handler.gd",
+      "bytes": 3302,
+      "sha256": "67AA1A85FF1FE1707D1CBB9552E3E43D9D175BF7F9D46ACE0BDBBE094B541CF7"
+    },
+    {
+      "path": "addons/admob/internal/handlers/ios_handler.gd.uid",
+      "bytes": 20,
+      "sha256": "CE2C04E35B3C68DFE85C955CD18AB26C4364235F14F6EB7F8E5F030D0BBA9F82"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_ad_size_plugin.gd",
+      "bytes": 1513,
+      "sha256": "5AC321FC159621D8CCA3F8D122B56744E4C77C728CF35097446FC1A92ADAA7A5"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_ad_size_plugin.gd.uid",
+      "bytes": 20,
+      "sha256": "4F97CB2C5093A6BF392EDDF252F3F7399BF5BB11EBB9C389DFECB9F30100ED9C"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_ad_view_plugin.gd",
+      "bytes": 20118,
+      "sha256": "BF2B4E72C1E09379C9653F4F14F79FCC25E2249E377678BBCC3D1E9FB3157647"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_ad_view_plugin.gd.uid",
+      "bytes": 20,
+      "sha256": "7D84708A6697B50A452E98BC15C0BB602EAA80E15FC8D6E4D22C1C4F6E56B5E0"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_admob_factory.gd",
+      "bytes": 2924,
+      "sha256": "70DB234B74A55E67D15F13BD4A17F76C663677B8BD656BF286C46C9B04BD0A79"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_admob_factory.gd.uid",
+      "bytes": 20,
+      "sha256": "81F0F7ABCB055C17BF7AF08AC42D576E93D570F230BB7D29D25B57E122139734"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_app_open_ad_plugin.gd",
+      "bytes": 17890,
+      "sha256": "D68091A681157E4BE4CA660CF17DE972523701F363E3EC0D9B37D954AE877367"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_app_open_ad_plugin.gd.uid",
+      "bytes": 19,
+      "sha256": "EC90B266284F9626F21E20C99AFF45095C0D816566DBBA941F014A8ACA439645"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_interstitial_ad_plugin.gd",
+      "bytes": 10596,
+      "sha256": "E260A23C4EDCC2EEB621822464F594E28B17085916F1E433421203286F1E1BC1"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_interstitial_ad_plugin.gd.uid",
+      "bytes": 19,
+      "sha256": "DB40E8949D3CC70FF644E6A6AA3154AE5E905659FCC7011483E83854E4A52A78"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_mobile_ads_plugin.gd",
+      "bytes": 2994,
+      "sha256": "FF76A099652481C8D6AA75C49572203A056B7523B55A1769679F7359580A411B"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_mobile_ads_plugin.gd.uid",
+      "bytes": 20,
+      "sha256": "D1945E0E9B29308C3EB945A37064CE494DBE1B81620B0E7AC9AB354C89221ACB"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_native_overlay_ad_plugin.gd",
+      "bytes": 28990,
+      "sha256": "FD76743665C16CDCAE5847FEA4DBA27A87866353D4CB7A949E7D699D8FF917FF"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_native_overlay_ad_plugin.gd.uid",
+      "bytes": 19,
+      "sha256": "66AABCED133680BE31D5518568B02A36AE7991992BE4E08AF05F5AED6B5514F6"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_rewarded_ad_plugin.gd",
+      "bytes": 26244,
+      "sha256": "F884EF7DBE111EC1A7D8974A25B45776B2700C5D2B7CAE8E39EDDD7C85EB8772"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_rewarded_ad_plugin.gd.uid",
+      "bytes": 20,
+      "sha256": "DE9D6F9B9801664A617F2B9C566BD54E160CC49B9E7F72A3CC1DBF0D3EA5B099"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_rewarded_interstitial_ad_plugin.gd",
+      "bytes": 26439,
+      "sha256": "20C5B6B3BF0D8F6DEFB712C4389614F2652B78314AD121DA61DAA2513B920A72"
+    },
+    {
+      "path": "addons/admob/internal/mock/mock_rewarded_interstitial_ad_plugin.gd.uid",
+      "bytes": 19,
+      "sha256": "165CCCE6E239BAEBC28FE0941D1886214265690B46A14FE2D30326F6E76D39EF"
+    },
+    {
+      "path": "addons/admob/internal/sample_registry.gd",
+      "bytes": 1564,
+      "sha256": "359676166669F47B08294DEB402F9FE9A3C67349C3ED0937269A6ECFA052DAD7"
+    },
+    {
+      "path": "addons/admob/internal/sample_registry.gd.uid",
+      "bytes": 20,
+      "sha256": "42D8EA7731DFB97CE938272883B8B300C880E33850C6896F8BF76F5B66061031"
+    },
+    {
+      "path": "addons/admob/internal/services/archive/zip_service.gd",
+      "bytes": 4512,
+      "sha256": "74D94C72A28C2F55F61793366E7281FF2618592ACB8F6636780626BEB73F9419"
+    },
+    {
+      "path": "addons/admob/internal/services/archive/zip_service.gd.uid",
+      "bytes": 20,
+      "sha256": "07F7834A8431299D15673A34240C228E38BC74591C3D5F0F742E9F0615FDD35C"
+    },
+    {
+      "path": "addons/admob/internal/services/csharp_service.gd",
+      "bytes": 2541,
+      "sha256": "FAF06CE5537B1382B6B955A0A12DCBAE3134051F43290CCD2023560D73C1B7F6"
+    },
+    {
+      "path": "addons/admob/internal/services/csharp_service.gd.uid",
+      "bytes": 20,
+      "sha256": "1EB4DB13EF84B11C7A9F12D89B2C559CE632A46362C5E26D67B2CCE772A5B4E4"
+    },
+    {
+      "path": "addons/admob/internal/services/export_service.gd",
+      "bytes": 2162,
+      "sha256": "DA66EFDD70285D93FF84713258A3BFA361F0AF981AFA0B2C14B53D6E564DE136"
+    },
+    {
+      "path": "addons/admob/internal/services/export_service.gd.uid",
+      "bytes": 19,
+      "sha256": "9AA3B64F90C2973631B5566A544AA63A81C7A408444DE21180F3AFF684AD93F0"
+    },
+    {
+      "path": "addons/admob/internal/services/installer_service.gd",
+      "bytes": 1992,
+      "sha256": "9D9A05D0AE9336DFD88F6312EC16B8E5989D8CE70A440F8EDAD47C92F13AB532"
+    },
+    {
+      "path": "addons/admob/internal/services/installer_service.gd.uid",
+      "bytes": 20,
+      "sha256": "878EC5B1131113021901AF73022B8228A88DA011CF9A686BB9D7EFDD913C7CE4"
+    },
+    {
+      "path": "addons/admob/internal/services/network/binary_installer.gd",
+      "bytes": 4620,
+      "sha256": "7AE5BC69BAE3EA9035B9710AE1591A4BC0CDAAE540AC33431E444CC9900DAFF7"
+    },
+    {
+      "path": "addons/admob/internal/services/network/binary_installer.gd.uid",
+      "bytes": 20,
+      "sha256": "76EF99D4AD6612E1B48063DB3CE0B45902DAD8E14AEA30E7A2772BB663D158DD"
+    },
+    {
+      "path": "addons/admob/internal/services/network/download_service.gd",
+      "bytes": 3607,
+      "sha256": "6DF965B8E068CD519BDF6F95CC306B6AAA1B5377E0463F5F8C37A60E035B8288"
+    },
+    {
+      "path": "addons/admob/internal/services/network/download_service.gd.uid",
+      "bytes": 19,
+      "sha256": "A5B3308C3F17C1243F9BCE76DBB6303892612A1899A21345664FA405B0C80942"
+    },
+    {
+      "path": "addons/admob/internal/services/pbxproj_service.gd",
+      "bytes": 4954,
+      "sha256": "9238AA5A20FD2263047613EAC53F138BA869BD2F65D5D47F11F4EF36933D41D5"
+    },
+    {
+      "path": "addons/admob/internal/services/pbxproj_service.gd.uid",
+      "bytes": 19,
+      "sha256": "62F1A4A30D0ED198B7B9A6E17344CDA4DE5E901D9E2B19A9BE36C89FB058C107"
+    },
+    {
+      "path": "addons/admob/internal/services/project_settings_service.gd",
+      "bytes": 4394,
+      "sha256": "9CA0BE1ED0145C2F0A0D0993462D9930DE8BB153D7EA566DA872AA04A9508A4D"
+    },
+    {
+      "path": "addons/admob/internal/services/project_settings_service.gd.uid",
+      "bytes": 20,
+      "sha256": "8DED69596B6DBB126EF50F5C439A6846A63E0CE8BFEF123CE90BC2317B69644B"
+    },
+    {
+      "path": "addons/admob/internal/services/translation_service.gd",
+      "bytes": 2679,
+      "sha256": "9F4200225EE3B5374D540838959FD9BFED977B0A53F85E2067124D45D567A903"
+    },
+    {
+      "path": "addons/admob/internal/services/translation_service.gd.uid",
+      "bytes": 19,
+      "sha256": "EE0A45A598CF764ED8271822B420AA4F670E8829BD87E708CD013FA3DEA6486B"
+    },
+    {
+      "path": "addons/admob/internal/services/ui/dialog_service.gd",
+      "bytes": 1964,
+      "sha256": "DFE83F8DCC8079FB9B7B1BD9F06CD49787822247411D0C8417CB7C756AF7F74A"
+    },
+    {
+      "path": "addons/admob/internal/services/ui/dialog_service.gd.uid",
+      "bytes": 19,
+      "sha256": "C4B28865DF08109E856EF68EE492E44C04D7B2DFD125164861D08CC0C315ACDE"
+    },
+    {
+      "path": "addons/admob/internal/services/ui/file_service.gd",
+      "bytes": 1820,
+      "sha256": "2AA932DB0A4FE2B31FE630FE872219E352AA089B232763FD64A087FB2BDD6CA2"
+    },
+    {
+      "path": "addons/admob/internal/services/ui/file_service.gd.uid",
+      "bytes": 19,
+      "sha256": "9DBC925031E20E26A395ED2FC591D9B2430FF2D881DD31E8387212FE442A0B34"
+    },
+    {
+      "path": "addons/admob/internal/translations/admob_sample.csv",
+      "bytes": 21416,
+      "sha256": "B2E9471084F3F2543B671123123E102F93C3B57CB3BFB7F85DEC93C87B4C9393"
+    },
+    {
+      "path": "addons/admob/internal/translations/admob_sample.csv.import",
+      "bytes": 948,
+      "sha256": "997714216394D6F63D0C611AE32BC28BF10338E29D0EFC63C0B116E8181A068D"
+    },
+    {
+      "path": "addons/admob/internal/translations/admob_sample.en.translation",
+      "bytes": 6542,
+      "sha256": "F01609331248225F8C2EDFCC3CEBDAB7CD6E28634282C9C9D02849CD1DDEC81B"
+    },
+    {
+      "path": "addons/admob/internal/translations/admob_sample.es.translation",
+      "bytes": 7193,
+      "sha256": "98AA7FC184B5B2B575364065FB5770C8F44030001DA685BB140BA75FC9E18F02"
+    },
+    {
+      "path": "addons/admob/internal/translations/admob_sample.ja.translation",
+      "bytes": 8713,
+      "sha256": "57E963CEA505255175E631575642E91B48424FCD9C25DC1C5FC298BCDDD58AFF"
+    },
+    {
+      "path": "addons/admob/internal/translations/admob_sample.pt_BR.translation",
+      "bytes": 7308,
+      "sha256": "D4EB23635CC54BF61D80808160B3B4ADADE96BBEA29D53BED150C904A6618A33"
+    },
+    {
+      "path": "addons/admob/internal/translations/admob_sample.zh_CN.translation",
+      "bytes": 6980,
+      "sha256": "8F681B217BE6CF207551D9C24F05C924FF8676A51CCF540D1423B0219CCF10C2"
+    },
+    {
+      "path": "addons/admob/internal/version/plugin_version.gd",
+      "bytes": 4035,
+      "sha256": "F8FBF0F8376E0495D431C5DB1ED11E046A30C7ED7E9B2CD3176755391CBE70DC"
+    },
+    {
+      "path": "addons/admob/internal/version/plugin_version.gd.uid",
+      "bytes": 20,
+      "sha256": "FF621A25880ADC3A83E85DEBE0DDD0BFB14DF6A841B1E121B7AB4F2243263F27"
+    },
+    {
+      "path": "addons/admob/ios/.gitignore",
+      "bytes": 53,
+      "sha256": "795C404B861C4F7FAD8AF26D412CA65BFA2C84C346AA143054E6347092C2EB5E"
+    },
+    {
+      "path": "addons/admob/LICENSE",
+      "bytes": 1078,
+      "sha256": "9154D410D6795817A45E1A5F2CAA9236111E313152C0B51EA39F48AAF7034834"
+    },
+    {
+      "path": "addons/admob/plugin.cfg",
+      "bytes": 132,
+      "sha256": "A71E116CDE3A13EEAE9DF14260F37CCB6A2CCC9E04275A7B57EA5321C983C9D7"
+    },
+    {
+      "path": "addons/admob/skills/godot-admob-app-open/SKILL.md",
+      "bytes": 4045,
+      "sha256": "7AA0C68493AA03F8A7C5643FDF69040EFBA164404ADEBBAA16DF70DE087EDEFC"
+    },
+    {
+      "path": "addons/admob/skills/godot-admob-banner/SKILL.md",
+      "bytes": 2871,
+      "sha256": "58290E17859F8F4E912AD927686C288D42A20D52EAD04387240E1A577FF0202D"
+    },
+    {
+      "path": "addons/admob/skills/godot-admob-get-started/SKILL.md",
+      "bytes": 4019,
+      "sha256": "25C1B07B2669B65E8FAC779F3007287F8857B7E399EB0559D53415A46E15B9A3"
+    },
+    {
+      "path": "addons/admob/skills/godot-admob-interstitial/SKILL.md",
+      "bytes": 4499,
+      "sha256": "6AE1AFBC3481313C2722BF0ACDE45E85C27D898A369284220B6E03668EBC9156"
+    },
+    {
+      "path": "addons/admob/skills/godot-admob-mediation/SKILL.md",
+      "bytes": 1455,
+      "sha256": "DD6AE7D2D0D40582C2FC7773BE4CC35ECD06345A5BF2234870059BCA6AAE8560"
+    },
+    {
+      "path": "addons/admob/skills/godot-admob-migrate/SKILL.md",
+      "bytes": 4180,
+      "sha256": "79CAD8217018A74CA4BFF9E560B2D530A7640FE1B08A6DD74E9B921082019E61"
+    },
+    {
+      "path": "addons/admob/skills/godot-admob-native-overlay/SKILL.md",
+      "bytes": 4076,
+      "sha256": "362119846ABBFA3BE75C7343C35C2DBD0D280912F65F952785EBDE55DADE009B"
+    },
+    {
+      "path": "addons/admob/skills/godot-admob-privacy/SKILL.md",
+      "bytes": 2482,
+      "sha256": "2B8FBBA9136A217AFFDD352B862EFB1D8EF16B6E3054BC76C0651E50C1F13832"
+    },
+    {
+      "path": "addons/admob/skills/godot-admob-rewarded/SKILL.md",
+      "bytes": 4691,
+      "sha256": "B1BE5B2C236C6D2C3737C6DB85935A8E615F24F73F3BA2E46C2AC14ECE3CDEBB"
+    },
+    {
+      "path": "addons/admob/skills/godot-admob-troubleshoot/SKILL.md",
+      "bytes": 3248,
+      "sha256": "FA845A67F782D2B2A516C1E94BB136FCBE31E9A20B649705F30B885AECB43DF4"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/achievements_client.svg",
+      "bytes": 5180,
+      "sha256": "620C1394E0D5F8B086237431369277BF37649C902F4A84EB28B07136012A7A6F"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/achievements_client.svg.import",
+      "bytes": 1100,
+      "sha256": "5CFB990E58090B49078E9905B7FCF601F3E93711E316482AB3623F67420A3310"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/events_client.svg",
+      "bytes": 1854,
+      "sha256": "9F1AC0A21F9AEB25884822B5262A1D13070B9824409FAF1EF7496C1FF3EFA489"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/events_client.svg.import",
+      "bytes": 1082,
+      "sha256": "ACE75B55818E8D99DCA39152DC78FC68C69CC9C8AA9D31757C7E0FF51EAC695F"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/leaderboards_client.svg",
+      "bytes": 2928,
+      "sha256": "FC080B789A0DDF24A3466F2A5AD97F25005F8691529EAAB3F0CF4A0EA5FA70E6"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/leaderboards_client.svg.import",
+      "bytes": 1099,
+      "sha256": "8BF9893995CEA1544AB55E5296B26DC5D00A07585F37D972467FA183CF1A7699"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/players_client.svg",
+      "bytes": 2054,
+      "sha256": "77FF04BB09A7F4BD28A613B31597B4F7FE85BF352642176599C6AA6B83865F47"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/players_client.svg.import",
+      "bytes": 1085,
+      "sha256": "4320DE3F736CE973BFDBB54EA99DC7DCD5BB07F802D98285B7A0410EA86E0FD5"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/sign_in_client.svg",
+      "bytes": 2185,
+      "sha256": "81DC805E15700EE84DF42B2FECF0CDD9DC9D42AB0121A8F328FC409A185F4483"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/sign_in_client.svg.import",
+      "bytes": 1084,
+      "sha256": "6AD664327E10E581B6F87EB600A0AA220F786296586F59930B248D57F4600EB8"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/snapshots_client.svg",
+      "bytes": 3120,
+      "sha256": "EF2653681F037D51B6ED6E3904A72CAFFED06B7EDD03D98ECD2A8358F8D16A6D"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/assets/icons/snapshots_client.svg.import",
+      "bytes": 1089,
+      "sha256": "E23A422DC15319329B46CEFF248BB42E8BC22159077B0B9785EB18B039BCA676"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/bin/debug/GodotPlayGameServices-debug.aar",
+      "bytes": 88321,
+      "sha256": "75B9EC61C3D8E013C8CA2EB150782E33519144DEE94713B44F96147F2DE55EE9"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/bin/release/GodotPlayGameServices-release.aar",
+      "bytes": 84195,
+      "sha256": "1F5545274A8B532E24D1F4489345DC8AF0E63A1CD506893F85DA34DFCEB2F708"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/export_plugin.gd",
+      "bytes": 3557,
+      "sha256": "22CDFCD823071B7FC19A1779E0C85AA4A89CFF4E9B41799B391C79EED4FB192F"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/export_plugin.gd.uid",
+      "bytes": 20,
+      "sha256": "5901EC56198459C93CB8535ABA5FBB6A8A5BA1DBCC579FA174AD718E937327E7"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/LICENSE",
+      "bytes": 1080,
+      "sha256": "ED364D1A1FE81FCD672EABC639889075173DA2906C69B746753CCB3672B1EA94"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/plugin.cfg",
+      "bytes": 181,
+      "sha256": "A49AD19ADC0C02788768E309D1558C8AF125709B09550E5A4D64C59E8F80E0D2"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/achievements/achievement.gd",
+      "bytes": 4214,
+      "sha256": "1DE479A2B9FB528A5A7047D1DEE543ADAE376405E60274F638362AADF8650656"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/achievements/achievement.gd.uid",
+      "bytes": 19,
+      "sha256": "C70BFF718D336CC8930BEC6DFD141DA15F979E7F78C3925E269DD9634F1F11ED"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/achievements/achievements_client.gd",
+      "bytes": 5300,
+      "sha256": "E348189D6BD0287F1FDFF85E13D9562680E6F952BDD171FA11A04600C21D9AC8"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/achievements/achievements_client.gd.uid",
+      "bytes": 20,
+      "sha256": "D611B5B8E83B8D41B6B9F9CB2B1885611EEA30138AF00F77FF76485A7BDE8C51"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/autoloads/godot_play_game_services.gd",
+      "bytes": 2500,
+      "sha256": "D880EF0D85ADA46621B10D0C0A1070BA7075D633A455E13C3532FC279AA226AC"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/autoloads/godot_play_game_services.gd.uid",
+      "bytes": 19,
+      "sha256": "3FE42C1834BFC564EFF7CCF5F47CE2405DB4702BB295CE2D48B04B4D0D3ECBD9"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/events/event.gd",
+      "bytes": 2015,
+      "sha256": "B36F34CB69AEAAB7B81D31F708238F6BA38A8539FFD3F40C6867AC60BD70B7F7"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/events/event.gd.uid",
+      "bytes": 19,
+      "sha256": "251C527D2A527D6817611DC20651B1037A6B274B726C774CB4AB9FF5C1612D74"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/events/events_client.gd",
+      "bytes": 3037,
+      "sha256": "F844721534117F3C315C1612C11418A71E57930A8E595A4B56BDD24BA68EB56C"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/events/events_client.gd.uid",
+      "bytes": 19,
+      "sha256": "FC54D8AFA7F57F0C84A78E8C6A43A92C19CC712947E119949F52F45D5D075E4F"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/leaderboards/leaderboard.gd",
+      "bytes": 1922,
+      "sha256": "96667B82669B42884C21B3EC262D808B3F71307055614BF046E4981B48775E44"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/leaderboards/leaderboard.gd.uid",
+      "bytes": 20,
+      "sha256": "D7A07E5D14AE2B2AF4D266B48F20C9583DBD3C5B4C429C2F53E4FD7708112805"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/leaderboards/leaderboard_score.gd",
+      "bytes": 2652,
+      "sha256": "8D3D6115E1E4D20BD8A63C5CC9E5BC4583DD19EDE6391A57D637108332B3CD71"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/leaderboards/leaderboard_score.gd.uid",
+      "bytes": 20,
+      "sha256": "BC453668F034397F605851EAE3C4302E97FD8EC710335538CF1702DB5B0F0750"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/leaderboards/leaderboard_scores.gd",
+      "bytes": 1060,
+      "sha256": "F20D86EE3B65E50135E4B2CF54104EC01D448216062E273D4640D2AF45CB39E2"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/leaderboards/leaderboard_scores.gd.uid",
+      "bytes": 20,
+      "sha256": "1E7A089BA328186BFBDFD73A6EE4B9B9CD3F6D84FEF09377EDB05CB51FC3255B"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/leaderboards/leaderboard_variant.gd",
+      "bytes": 2908,
+      "sha256": "5FBAE2B7D716628FE3333FC14E2D558E935E629BF3A303EC9D12324BC1A72EAE"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/leaderboards/leaderboard_variant.gd.uid",
+      "bytes": 20,
+      "sha256": "7B6E5E0A443B4EB9481F3BEF12E2516BBFA47A7957C46B516FE9D7583DEE344D"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/leaderboards/leaderboards_client.gd",
+      "bytes": 10940,
+      "sha256": "15C6F22D862ED169C0B3FF8B9BA8A323A1C92FB1A3F278BB0E6A1A21555EB618"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/leaderboards/leaderboards_client.gd.uid",
+      "bytes": 20,
+      "sha256": "C984798538F86AC3E616CE2562C192A7BAD8CE306A14C04B54AEB45C93E3F242"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/marshalling/json_marshaller.gd",
+      "bytes": 1585,
+      "sha256": "A58613C5F4189BA53B211ACA4ED37EC43B61FC4C07727D2F7648786B5660DD2D"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/marshalling/json_marshaller.gd.uid",
+      "bytes": 20,
+      "sha256": "4B7BDF2CCB72697B0560B631B063D2A44DFBC3FC0C6C1A8CEF6F93A50B5C0225"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/players/player.gd",
+      "bytes": 4331,
+      "sha256": "48DB64BDE49BD1CDD8C933861061EBD45DBF840E1D67CEF918E150C65001D71A"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/players/player.gd.uid",
+      "bytes": 20,
+      "sha256": "4642F1CED648616D878CA99F3D0AF24EB81007441356EC09CB0975CB3970A52C"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/players/player_level.gd",
+      "bytes": 1000,
+      "sha256": "ED5627369028B3E49CCC5D234CD7DA640AD44C3F1A81222C94B031ED1E589E82"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/players/player_level.gd.uid",
+      "bytes": 20,
+      "sha256": "9EAAEDE6964A30A973519082D757F4570561B4C061F51792BCF15F006814ADB5"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/players/player_level_info.gd",
+      "bytes": 1733,
+      "sha256": "ABB3526DAD6EAE9593EE5B63989CCA937F1FB4096DC38A9EC9865C96916F332D"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/players/player_level_info.gd.uid",
+      "bytes": 20,
+      "sha256": "7831F2AE0D2C68682A8C4D906F7BF4EA51C31D45C0584E38A0ABE4B7016A5673"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/players/players_client.gd",
+      "bytes": 5485,
+      "sha256": "3DB338B8D71588746FBBC22660E6B2D2A03F5A559695C0B637CF67CF3AF557D9"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/players/players_client.gd.uid",
+      "bytes": 20,
+      "sha256": "DACE0DA71BFFAF0A54D091D20713722360A3BD3E3CAABE05EA2C68A21DD89712"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/sign_in/sign_in_client.gd",
+      "bytes": 2788,
+      "sha256": "C36CD569438CA82C725A6B3FD6D5319AD90F3FE506DBDDF1003B401DD575ADE7"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/sign_in/sign_in_client.gd.uid",
+      "bytes": 20,
+      "sha256": "FE0818B3E5E62F066A6F0BFCFD32427228DAC54C766E74320D4B4DD0AD7F8402"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/snapshots/game.gd",
+      "bytes": 3450,
+      "sha256": "33F7410E99902C950ADDACD1FC1F2DFFB3D10A5D321DEA5182381A84F3EC2AF5"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/snapshots/game.gd.uid",
+      "bytes": 20,
+      "sha256": "5101DB894B5C4110C7E396F22FED7A4F863A1F0FC149786927B655F97EF89633"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/snapshots/snapshot.gd",
+      "bytes": 999,
+      "sha256": "E7F45B980154AC20461B2745D473A67C63F8AFCD524F627A31A97872C9AD5212"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/snapshots/snapshot.gd.uid",
+      "bytes": 20,
+      "sha256": "C8EB22E2B93AF12D23A575E959A1811B7912D9AB58726035BF9003758450E874"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/snapshots/snapshot_conflict.gd",
+      "bytes": 1574,
+      "sha256": "2EE868A077380BBB7BFE2F343BCDE82DDC16BE80767972834041977084606763"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/snapshots/snapshot_conflict.gd.uid",
+      "bytes": 20,
+      "sha256": "9C18A018E9F0C0EBD1C0A72A3C56760F25BA50F3ECBB1516B1D95EF8B0A03EA1"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/snapshots/snapshot_metadata.gd",
+      "bytes": 3169,
+      "sha256": "0E6C8EE91EFC795FDEF7979E1D9328CAFDC4CEDA8212A2A8DA934149E4101AAB"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/snapshots/snapshot_metadata.gd.uid",
+      "bytes": 20,
+      "sha256": "9B4D35751F31EF158B76C239F45EC0D5FE0F8CC8BBCA2E0650C12F5340629A3A"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/snapshots/snapshots_client.gd",
+      "bytes": 7060,
+      "sha256": "3A79C43A1F359AE4185074E70A4EABF1D9453A4FD91535C5600D0AC1AACA3520"
+    },
+    {
+      "path": "addons/GodotPlayGameServices/scripts/snapshots/snapshots_client.gd.uid",
+      "bytes": 20,
+      "sha256": "C503644EB946D6C944CA255CCAC7E45FB5FD77DE6B2230EDAFEC9FA10E0091DF"
+    },
+    {
+      "path": "assets/audio/back_002.ogg",
+      "bytes": 7029,
+      "sha256": "61581C58194E3F19F531072EDABBC344204C7E0A2887B8EDEDCE4357BCF09195"
+    },
+    {
+      "path": "assets/audio/back_002.ogg.import",
+      "bytes": 392,
+      "sha256": "B13E6CE1F9E1BD9C278332FC55B54C812A2FE10CD367395FD4079B52A2CCA85F"
+    },
+    {
+      "path": "assets/audio/click_002.ogg",
+      "bytes": 4275,
+      "sha256": "ADCD1F4ADC35F1B41BC1B5BBEFEFF7AA44F2F3F0D96D3199B544140C7C1E761C"
+    },
+    {
+      "path": "assets/audio/click_002.ogg.import",
+      "bytes": 395,
+      "sha256": "914A5278599622892EBE4FB19D3D5D7FB763F6D0DC7FF0F0C345456AF550C9A3"
+    },
+    {
+      "path": "assets/audio/confirmation_002.ogg",
+      "bytes": 14169,
+      "sha256": "33B17A9A9A2397C62B285C52C33A907FDFFB476909C99E42DDE603F6A7A8B12C"
+    },
+    {
+      "path": "assets/audio/confirmation_002.ogg.import",
+      "bytes": 417,
+      "sha256": "147DE9F82E2BED9BD8BC54FA8FD44A0F52479AE4B302E2669762A615DCB36A70"
+    },
+    {
+      "path": "assets/audio/woodland.ogg.wav",
+      "bytes": 352844,
+      "sha256": "A392CD5629ADDFB9CAAEA0173AB3B7C5C94F5B67807B36F01339686A5575BA79"
+    },
+    {
+      "path": "assets/audio/woodland.ogg.wav.import",
+      "bytes": 507,
+      "sha256": "A2055385A4C5E73B9DD58B3A77157C9F225CC7C7F88F7AFBD45C51D806079830"
+    },
+    {
+      "path": "assets/dungeon/tilemap_packed.png",
+      "bytes": 5294,
+      "sha256": "D24E60A41E4AC7A745C0304DFDE121143688557F40215F23221C29CFE683825F"
+    },
+    {
+      "path": "assets/dungeon/tilemap_packed.png.import",
+      "bytes": 960,
+      "sha256": "423108A5DB2108D08B05C464D9B9EF7CD33AE39A1FFA40810EB8D3CBB3E1A72F"
+    },
+    {
+      "path": "assets/icons/all_walls.svg",
+      "bytes": 741,
+      "sha256": "E38834C4125911F3438330303B16CB1806685D28C9ECCC43BE7AE3A1C46ECB1A"
+    },
+    {
+      "path": "assets/icons/all_walls.svg.import",
+      "bytes": 1041,
+      "sha256": "FDCB0407099593C03716D0A7956172BC0539231151AF3B97FECFF220BA632DDA"
+    },
+    {
+      "path": "assets/icons/built_20.svg",
+      "bytes": 669,
+      "sha256": "3FB69105C97F495CD2D578ACC98417DFBFDA7C89FD2BE958CDD44536E135C81C"
+    },
+    {
+      "path": "assets/icons/built_20.svg.import",
+      "bytes": 1037,
+      "sha256": "B126D4FEE6EC32BC7853B918E6FEDD036F7449CB618D59568214C5F878FED862"
+    },
+    {
+      "path": "assets/icons/daily_3.svg",
+      "bytes": 717,
+      "sha256": "31EDBEDCC993C9161D8235E142576DF051BB398DB1A52DC50AFBCE742195B624"
+    },
+    {
+      "path": "assets/icons/daily_3.svg.import",
+      "bytes": 1034,
+      "sha256": "9CC848E5347BA8802D5A9B565400C789DEBFC31AB0CC3D98C7FC5747979C2756"
+    },
+    {
+      "path": "assets/icons/endless_5.svg",
+      "bytes": 693,
+      "sha256": "ED6691F746AEAD87AC965AC33079B3BF8BD932735DDC8BD9AEF987CA30FD71E2"
+    },
+    {
+      "path": "assets/icons/endless_5.svg.import",
+      "bytes": 1041,
+      "sha256": "768FC2F04712A690550B334AB2B2EB51C046109C156E45D9E50864F09B52A60F"
+    },
+    {
+      "path": "assets/icons/first_wall.svg",
+      "bytes": 645,
+      "sha256": "9616442A797AE47308FB0B17A915DD5DC774936754CC96BF42E29D5CB0991D28"
+    },
+    {
+      "path": "assets/icons/first_wall.svg.import",
+      "bytes": 1044,
+      "sha256": "140E16F9A3D09F936FDB1B1486BE7E9F17427A31C81102639C3C92FE02820A84"
+    },
+    {
+      "path": "assets/icons/five_walls.svg",
+      "bytes": 669,
+      "sha256": "683F293795715CDDD5C9EF87E93E15766D1D777DAF089C14D177472B5E51B0D4"
+    },
+    {
+      "path": "assets/icons/five_walls.svg.import",
+      "bytes": 1044,
+      "sha256": "8791399D28911E71E4B3AEDB2B2BDF4359F5477D3D8363328592B3DF2BED509B"
+    },
+    {
+      "path": "assets/icons/kills_1000.svg",
+      "bytes": 645,
+      "sha256": "921A9814181836140F194A9C2653A2C46EB862207B2104E848D92ABB4CF4A992"
+    },
+    {
+      "path": "assets/icons/kills_1000.svg.import",
+      "bytes": 1043,
+      "sha256": "72C01B8600CB06F06AA7C2E194534DB99FECC4B38FE3FC637E1F672DC5BE7073"
+    },
+    {
+      "path": "assets/icons/kills_25.svg",
+      "bytes": 717,
+      "sha256": "EEF5CBC06789B20DD9497EF261C5D32A5A59143A60A7413F1305B68377A6B3F9"
+    },
+    {
+      "path": "assets/icons/kills_25.svg.import",
+      "bytes": 1037,
+      "sha256": "72F849598E9D18BDB5388C02A7B9D98970A42874257BD51A0BB3A1F53D5816B4"
+    },
+    {
+      "path": "assets/icons/kills_250.svg",
+      "bytes": 741,
+      "sha256": "B54AD5883C0514A2B21640A47E72BBF127831A75D00E1CEEAAB81E2C5D8306B2"
+    },
+    {
+      "path": "assets/icons/kills_250.svg.import",
+      "bytes": 1041,
+      "sha256": "CE74544F305D14199CCFE626E02EA6500016A96ED5938749C5586E15C505122E"
+    },
+    {
+      "path": "assets/icons/level_10.svg",
+      "bytes": 669,
+      "sha256": "7628521D493B060BE26F54C235CBD59CE2641F2BBE002F4EED01876E70C3CE1E"
+    },
+    {
+      "path": "assets/icons/level_10.svg.import",
+      "bytes": 1038,
+      "sha256": "B00B7BB76DB9538565F0BC3E120B8C7C6B8F273E9404AFA2141900D45665FB07"
+    },
+    {
+      "path": "assets/icons/level_3.svg",
+      "bytes": 741,
+      "sha256": "9FAAB9AEF5F6BCD07B269C223F119A7F13559D8780C2CBF29ED04193D6B623DC"
+    },
+    {
+      "path": "assets/icons/level_3.svg.import",
+      "bytes": 1034,
+      "sha256": "31256E26E854B4954BB579D141CF14A5E5E433F833BCFCAAB28C550C41E946C8"
+    },
+    {
+      "path": "assets/icons/level_6.svg",
+      "bytes": 645,
+      "sha256": "5F13E1007EFF94F3BB3D9E33C61B28200F7582753728EEF5026FD175B4A9CCE5"
+    },
+    {
+      "path": "assets/icons/level_6.svg.import",
+      "bytes": 1035,
+      "sha256": "3E482824C052794F67340FF46BCF9525ED4BA592CEAA180380E3485AB7D66913"
+    },
+    {
+      "path": "assets/icons/player_level.svg",
+      "bytes": 717,
+      "sha256": "C70585F190F6DAFC0ABDBF7F00C3DF8D8468057B087AD052486A4C59B5F8D945"
+    },
+    {
+      "path": "assets/icons/player_level.svg.import",
+      "bytes": 1050,
+      "sha256": "864F87107FEBF976CEAC1C3378E774903B5794180B3A9F45056B9C72DD70ED3D"
+    },
+    {
+      "path": "assets/icons/rally_10.svg",
+      "bytes": 717,
+      "sha256": "16139FF40C9D9FD89A095A89142AA1D47328649AD68B72E5AF113B13B960E579"
+    },
+    {
+      "path": "assets/icons/rally_10.svg.import",
+      "bytes": 1038,
+      "sha256": "BBE9769D232D4B736114CC28D8A4D8D4D5684D4FF259D18D42638BBFBAF02D9E"
+    },
+    {
+      "path": "assets/icons/stars_15.svg",
+      "bytes": 645,
+      "sha256": "13BD53F3B5AC013A8EE0F443166BD423DC454E00751743BFE77B5933EEBBC602"
+    },
+    {
+      "path": "assets/icons/stars_15.svg.import",
+      "bytes": 1038,
+      "sha256": "19265FFF3B7B4E8F9ED87984A916EEC7E2B12B931199003517B95229CBB95279"
+    },
+    {
+      "path": "assets/icons/stars_45.svg",
+      "bytes": 669,
+      "sha256": "EDBEED8C6E00B33D9BED8C30424EC13498CF802367257F51C306783B23A45D0D"
+    },
+    {
+      "path": "assets/icons/stars_45.svg.import",
+      "bytes": 1038,
+      "sha256": "5D53857143B72242F6B92F761B0C3D1441D299AF54CEA3102A41B895E5CEB7CD"
+    },
+    {
+      "path": "assets/icons/stars_90.svg",
+      "bytes": 693,
+      "sha256": "FBC4527A67ED6F26DF487D4A02CD7271969E68C6BE61989C9DAF71A958959BDA"
+    },
+    {
+      "path": "assets/icons/stars_90.svg.import",
+      "bytes": 1038,
+      "sha256": "D09E1415BD43CC4AADD885E1F38BC48706F0CDFD4B9BF727A0402DC98EA5D81E"
+    },
+    {
+      "path": "assets/icons/streak_7.svg",
+      "bytes": 741,
+      "sha256": "7A778037B77AE834FEB1F1C486A9DE77400B3F5F1B0A6EDEF25CEA747DA2277E"
+    },
+    {
+      "path": "assets/icons/streak_7.svg.import",
+      "bytes": 1037,
+      "sha256": "7AA70ECC3BBD7A9228861CF65ABC76D8EA38A8AE56619BF956FA8B51ABB65BA9"
+    },
+    {
+      "path": "assets/icons/ten_walls.svg",
+      "bytes": 693,
+      "sha256": "010796C5B9C32B8339C9B717EA2E3D1140BC07F276CFE20AB54198F9FB1584AD"
+    },
+    {
+      "path": "assets/icons/ten_walls.svg.import",
+      "bytes": 1041,
+      "sha256": "CD752E57F2160CD0D705F2ACB3984A3023567AF41B6B0687671545BDDB82D8C8"
+    },
+    {
+      "path": "assets/icons/twenty_walls.svg",
+      "bytes": 717,
+      "sha256": "4A0E468E5B425A2C29073FFB815D4FDD9D9F2BF176E21BBEA87540D7FC0C6552"
+    },
+    {
+      "path": "assets/icons/twenty_walls.svg.import",
+      "bytes": 1050,
+      "sha256": "EB3EDBDBF52BF3AA7BF5934A73816A0546C04F6F0A82A881B6211C68CD0155F8"
+    },
+    {
+      "path": "assets/icons/unassisted_daily_score.svg",
+      "bytes": 669,
+      "sha256": "40C4E7DA4D53CBB801BBDD1C674361BF4A395A1E1A2254CAF12A8A1C2397A7CD"
+    },
+    {
+      "path": "assets/icons/unassisted_daily_score.svg.import",
+      "bytes": 1080,
+      "sha256": "1B8D119A2E4A867E3F6C1BD5001B7D2A08EFDFE4FFE40D65149F6915C15C1B12"
+    },
+    {
+      "path": "assets/icons/unassisted_endless_score.svg",
+      "bytes": 645,
+      "sha256": "E8C0FAD0B52B865DC82A5C83FA43CDE0D3E8135636491A9BA4861F2D68156EE8"
+    },
+    {
+      "path": "assets/icons/unassisted_endless_score.svg.import",
+      "bytes": 1085,
+      "sha256": "7D3C7E5806F88B0AB65888B44C8BA5784C52E5CD89C8C7DA9F9434F5CAE64A3F"
+    },
+    {
+      "path": "assets/icons/unassisted_stars.svg",
+      "bytes": 693,
+      "sha256": "CE0DC3CF566C03900A5103FDE0CEA9A3D90C5D69AC1C11B11EB8EDA05C056B22"
+    },
+    {
+      "path": "assets/icons/unassisted_stars.svg.import",
+      "bytes": 1062,
+      "sha256": "CEF176AEFE504796D5C0EFFF45DFE01C3313B378B61C7F91A689216D8F33DB10"
+    },
+    {
+      "path": "assets/icons/upgrades_20.svg",
+      "bytes": 693,
+      "sha256": "8FFF7F63179957804C59BE5E72D928B8FBDBFE20C7EC9DA3A5CAC9582D8687D1"
+    },
+    {
+      "path": "assets/icons/upgrades_20.svg.import",
+      "bytes": 1047,
+      "sha256": "AD285AE88C516B3CE0F4882247968B6F85A1D23AFD5B7DE7C936D824DAA82CE2"
+    },
+    {
+      "path": "assets/NOTICES.txt",
+      "bytes": 365,
+      "sha256": "773D970A78347B5F31A80EAB8DA89B75225C625F35FFEC7C375C1AE56A72116A"
+    },
+    {
+      "path": "assets/SOURCE_MAP.json",
+      "bytes": 1665,
+      "sha256": "B567BB265D74FE946BE641E0E9FC66632568D16BF6509AF8B4A3FBBEF22D69C4"
+    },
+    {
+      "path": "assets/town/tilemap_packed.png",
+      "bytes": 5042,
+      "sha256": "3A54D99ECDE790D4FDEA207A3644CF130FC56FA838F1BEB1507C185A95B8E902"
+    },
+    {
+      "path": "assets/town/tilemap_packed.png.import",
+      "bytes": 958,
+      "sha256": "07CE7CD96F1628FC307EC176BE7877C4BFCE8FE1D185816C8C4DE329DA8CBC68"
+    },
+    {
+      "path": "BUILD_SUMMARY.json",
+      "bytes": 1606,
+      "sha256": "44A435A7594F622BF957398D6C2C87784455E2C06F6385E4E8EE73B8B255BF09"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 1839,
+      "sha256": "C235CD39D946C4C1F5A9AA45A7EB08752333960860D6264D2AE26E2510E2A7E9"
+    },
+    {
+      "path": "docs/BUILD_TEST.md",
+      "bytes": 2239,
+      "sha256": "FBAA20705CCB0443BF682611EBC0DDFAC945078ED865C7D3D8DA19C594EAAD19"
+    },
+    {
+      "path": "docs/DESIGN.md",
+      "bytes": 2099,
+      "sha256": "5E609DEAFDADD88AA9838135B958A61AC96A522AE4C01440927A23B471579E73"
+    },
+    {
+      "path": "docs/NATIVE_QA_PLAN.md",
+      "bytes": 1688,
+      "sha256": "75964407F74E053106E31372E7E9FDE7A3D4C6CDBD8C9CB389D22E5F3A5BCD81"
+    },
+    {
+      "path": "docs/PLATFORM_SETUP.md",
+      "bytes": 874,
+      "sha256": "0A7E96B67B4D50EF3A1A088BA4578273C13128E875EA4B000EBDA0BD9BF2E463"
+    },
+    {
+      "path": "export_presets.cfg",
+      "bytes": 2711,
+      "sha256": "27B735CB500FE6EC2460F5D2E2F61442D95B798CC1C8FD0FEB98BFB22558ADFA"
+    },
+    {
+      "path": "game/board.gd",
+      "bytes": 5649,
+      "sha256": "67025EA33046CB57BD3E5423759EBA76162CDC3DD2B4D19FDE76CF1DE9EB9198"
+    },
+    {
+      "path": "game/board.gd.uid",
+      "bytes": 19,
+      "sha256": "0BAFEEB85BC6087D994248645CDA75776D7358BF80AF8F40E6CB9A850BDE8CAF"
+    },
+    {
+      "path": "game/catalog.json",
+      "bytes": 5509,
+      "sha256": "5901AE5DA57022B1BA45763DE419FA37C2196EAB92E7AC8D01326FFF3F0567C0"
+    },
+    {
+      "path": "game/main.gd",
+      "bytes": 30644,
+      "sha256": "E9854D8ACD98CF933E5CD03DFEFEA623EE2190F8CB445CE67033316B6ADCE1FC"
+    },
+    {
+      "path": "game/main.gd.uid",
+      "bytes": 19,
+      "sha256": "A2E79D07344E6BEAE29AD0024B683142859A43C0D5EECC607D5FA3468A2D9460"
+    },
+    {
+      "path": "game/missions.gd",
+      "bytes": 1224,
+      "sha256": "82BA24E563D028D1EAB52D4E686EC16A0028D4DE1BFDFB972ED4C1EE519D2E88"
+    },
+    {
+      "path": "game/missions.gd.uid",
+      "bytes": 20,
+      "sha256": "740DB8A29EC9A31A612C357C22EED643A9B5D5C3B8D0973070E26D46E2000676"
+    },
+    {
+      "path": "game/missions.json",
+      "bytes": 68678,
+      "sha256": "688CBC93EFEEC391C20519307054E9FF4CD3C5480FA156C232ED99B4E5ED7464"
+    },
+    {
+      "path": "game/progress.gd",
+      "bytes": 13613,
+      "sha256": "46BFE691EEFF73566F00ADBE4E0C04565B3ADB57AF1A034CE609B08B49254907"
+    },
+    {
+      "path": "game/progress.gd.uid",
+      "bytes": 20,
+      "sha256": "267372365227EDE03429E48365F2F5E7E61CD3E2A8FD5406273879A594E484DD"
+    },
+    {
+      "path": "game/session.gd",
+      "bytes": 3409,
+      "sha256": "92E2E7150F6C5CD3D73DB4F12D3E0B2490FBD937D1A6EAF5E8E41AC75452E2CA"
+    },
+    {
+      "path": "game/session.gd.uid",
+      "bytes": 20,
+      "sha256": "2D00A5BA39A637293729ED16C9F3A53BD1EB724F3B3D6482D184F3BF1843B6D3"
+    },
+    {
+      "path": "game/simulation.gd",
+      "bytes": 12808,
+      "sha256": "83EC0172160CBEADB8F418E7323E3D517FDFC8BE4B285C072885BC7E161CCC3A"
+    },
+    {
+      "path": "game/simulation.gd.uid",
+      "bytes": 19,
+      "sha256": "A7A65227CCB77299CB9B36ABEC9037CA4561787AFA378BCDD8F273F392478978"
+    },
+    {
+      "path": "HANDOFF.txt",
+      "bytes": 1314,
+      "sha256": "D93A6277892646AD81DF1232D757883DF1767BD2242525405F780162F799FED6"
+    },
+    {
+      "path": "icon.svg",
+      "bytes": 646,
+      "sha256": "43B1CE6200D6926BC4C9DBF8195CA2EA818A9A565FF816A8609B8A7A9647F6AD"
+    },
+    {
+      "path": "icon.svg.import",
+      "bytes": 1012,
+      "sha256": "15B6EAC64E16EDD326FDF7FF0EEBF811C2FD85DEE5E995B72BF74031D27CD6B7"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11560,
+      "sha256": "3DDF9BE5C28FE27DAD143A5DC76EEA25222AD1DD68934A047064E56ED2FA40C5"
+    },
+    {
+      "path": "LICENSES/Assets/kenney_interface-sounds-License.txt",
+      "bytes": 574,
+      "sha256": "F7966C773BBED0ECA6A9C75081C44A178B38EAE112724DBB5FDFBD4192D118A9"
+    },
+    {
+      "path": "LICENSES/Assets/kenney_tiny-dungeon-License.txt",
+      "bytes": 570,
+      "sha256": "9F574A2F1F636A3DB8A0665BA90212F34E2B5E61ECB533D77C05237766374111"
+    },
+    {
+      "path": "LICENSES/Assets/kenney_tiny-town-License.txt",
+      "bytes": 567,
+      "sha256": "C483C167CC3BDFE17C15F957FF847D409F64D81B410B28783636CF3B2B7814C5"
+    },
+    {
+      "path": "LICENSES/INDEX.txt",
+      "bytes": 808,
+      "sha256": "D79EBE5B0568B50677C1776EEA75A9D9F3BA0725FEED5D2604DD24F8B393C7E5"
+    },
+    {
+      "path": "LICENSES/Project/LICENSE.txt",
+      "bytes": 11560,
+      "sha256": "3DDF9BE5C28FE27DAD143A5DC76EEA25222AD1DD68934A047064E56ED2FA40C5"
+    },
+    {
+      "path": "LICENSES/Project/NOTICE.txt",
+      "bytes": 209,
+      "sha256": "52DDA290F2ACF75472424403924A884EBFDD1B6BFFEB62E6143DE122E5666717"
+    },
+    {
+      "path": "LICENSES/ThirdParty/GODOT-4.5.1-AUTHORS.md",
+      "bytes": 10363,
+      "sha256": "A7E071854C78BBF53191277AEC4CEE716467EF34723A9D805FBA734DF1E03A00"
+    },
+    {
+      "path": "LICENSES/ThirdParty/GODOT-4.5.1-COPYRIGHT.txt",
+      "bytes": 97253,
+      "sha256": "2039020F520EBD55592070EDE2EF38DFBC28A6550140008DA004143872789E5D"
+    },
+    {
+      "path": "LICENSES/ThirdParty/GODOT-4.5.1-LICENSE.txt",
+      "bytes": 1149,
+      "sha256": "B0435E3B3E4E55238F05F4B306F30524A1B2E20147810D436EAA554FA6855C80"
+    },
+    {
+      "path": "LICENSES/ThirdParty/NOTO-CJK-OFL-1.1.txt",
+      "bytes": 4301,
+      "sha256": "6A73F9541C2DE74158C0E7CF6B0A58EF774F5A780BF191F2D7EC9CC53EFE2BF2"
+    },
+    {
+      "path": "LICENSES/ThirdParty/NOTO-CJK-SC-NOTICE.txt",
+      "bytes": 571,
+      "sha256": "608BAEC27C2D106C8CEDD4DCE3B6A08E3EF054C681A5C3307EC026465DF0BDEF"
+    },
+    {
+      "path": "LICENSES/ThirdParty/PLAY-GAMES-MIT.txt",
+      "bytes": 1080,
+      "sha256": "ED364D1A1FE81FCD672EABC639889075173DA2906C69B746753CCB3672B1EA94"
+    },
+    {
+      "path": "LICENSES/ThirdParty/POING-ADMOB-MIT.txt",
+      "bytes": 1078,
+      "sha256": "9154D410D6795817A45E1A5F2CAA9236111E313152C0B51EA39F48AAF7034834"
+    },
+    {
+      "path": "main.tscn",
+      "bytes": 294,
+      "sha256": "CFD34F23A07767D28C2F99BAD9C9C964E2435B6A7AE048F636141D76D0B2EE67"
+    },
+    {
+      "path": "marketing/all_walls-512.png",
+      "bytes": 8129,
+      "sha256": "5AA7AC3E654D4BBB5948978D9B7559156894E80F7DFF7C96C5858FABBEAA5FE1"
+    },
+    {
+      "path": "marketing/all_walls-512.png.import",
+      "bytes": 953,
+      "sha256": "C9692E9431F7E89A9E4DB890BC57D88D4DEFD47EB2D4D4B8B132C836C6603DFE"
+    },
+    {
+      "path": "marketing/app-icon-512.png",
+      "bytes": 5852,
+      "sha256": "69FA8A55AF0E37702E2431FD387E4488E04DB5D7F1BBC460ACC4D0EDC4780A10"
+    },
+    {
+      "path": "marketing/app-icon-512.png.import",
+      "bytes": 949,
+      "sha256": "93C2ABF69CE2E152A28652AAA60C511C786381874B34255E617B9F0CA6CC3CCA"
+    },
+    {
+      "path": "marketing/built_20-512.png",
+      "bytes": 7173,
+      "sha256": "5FE5C4983D20BAA96C1D8F827DAEA5306995F4F20BB96457CCC479C29242A59A"
+    },
+    {
+      "path": "marketing/built_20-512.png.import",
+      "bytes": 950,
+      "sha256": "868032F207F58EA7C16D92DAC8A5E1276FAAD5C0DA15F9E0FE702F6F6AB62939"
+    },
+    {
+      "path": "marketing/daily_3-512.png",
+      "bytes": 7540,
+      "sha256": "E6EF4ADC4D0628284097B4363F25278A6EDAEAE2C7E5AF80C57CA9048627E9DB"
+    },
+    {
+      "path": "marketing/daily_3-512.png.import",
+      "bytes": 947,
+      "sha256": "3EF78E253B976C772E07879E37A4F598711DBC4585612A014921D39A2CAB6D7C"
+    },
+    {
+      "path": "marketing/endless_5-512.png",
+      "bytes": 7529,
+      "sha256": "0E98B3D8D6A599E23B67C791E8BB43016FDA4717449B583FB0A828D4EA2A5876"
+    },
+    {
+      "path": "marketing/endless_5-512.png.import",
+      "bytes": 953,
+      "sha256": "95F2225640B819A5853AA93E8898D78E9047FA9696D3E038692B53B9B46049BE"
+    },
+    {
+      "path": "marketing/feature-graphic-1024x500.png",
+      "bytes": 33708,
+      "sha256": "206A767F73E33E521B034552DB51DE1B0D96EAC28DDB4867D25A375F9B6A42B1"
+    },
+    {
+      "path": "marketing/feature-graphic-1024x500.png.import",
+      "bytes": 985,
+      "sha256": "A29EBFAFF59D5E12D98AF2B0D647EC41181D6E7D7AEDA587C8B948A5BF7B15E0"
+    },
+    {
+      "path": "marketing/first_wall-512.png",
+      "bytes": 7351,
+      "sha256": "25831415FFBD510E01846E148552E892723FD6F66D3F24E08B61CD580762E9E0"
+    },
+    {
+      "path": "marketing/first_wall-512.png.import",
+      "bytes": 956,
+      "sha256": "AC5EEF351678746069E1E134C5453C9043B6DE0244E6942856E8B037EE58EC1A"
+    },
+    {
+      "path": "marketing/five_walls-512.png",
+      "bytes": 8201,
+      "sha256": "D09D40552B9595FC2BE89A4816FE6C08566B2F7D229A7AC9A8493B0870EF8437"
+    },
+    {
+      "path": "marketing/five_walls-512.png.import",
+      "bytes": 956,
+      "sha256": "1ED19F395487CDD80AE3C70A091E99978F22D3CF1C17B1A6D3467B33E0FEBDF6"
+    },
+    {
+      "path": "marketing/icon-manifest.json",
+      "bytes": 4817,
+      "sha256": "6DD6056050B54582971CF82C5D955B2D369E8B9551560AE996303602A0247898"
+    },
+    {
+      "path": "marketing/kills_1000-512.png",
+      "bytes": 6026,
+      "sha256": "76FE446B00A477EF8BCF30DCAE480456A538A5CB79146B037A36DE466916338F"
+    },
+    {
+      "path": "marketing/kills_1000-512.png.import",
+      "bytes": 956,
+      "sha256": "49E99F3882B17BB9ADBE0D2DB1BE1BB891030ED1EBAA8D5829EF4343B555168B"
+    },
+    {
+      "path": "marketing/kills_25-512.png",
+      "bytes": 8415,
+      "sha256": "F658E673EF3C0D3EEDAE4FE36D3DC0134F5997D7B6E9DE88C43AC896092D70FB"
+    },
+    {
+      "path": "marketing/kills_25-512.png.import",
+      "bytes": 950,
+      "sha256": "E820445E42D84C7E3A82596AE39C3B62C9D226D12251CB77737DF8C920C05ECC"
+    },
+    {
+      "path": "marketing/kills_250-512.png",
+      "bytes": 7496,
+      "sha256": "703631EE89A6AE3B04305F62316CE50DE0238BBE41C48302F008829B3724C105"
+    },
+    {
+      "path": "marketing/kills_250-512.png.import",
+      "bytes": 953,
+      "sha256": "5F37A01C0BB5ABDE048976B0A68DD07E1BCE9C0EA3C22185A6C55B9C2A3A0ED2"
+    },
+    {
+      "path": "marketing/level_10-512.png",
+      "bytes": 6881,
+      "sha256": "7DE766F54FF4EB75B8B8E706DC5663AEC14CF5ABFC676F47E2887B51BFD8AF8C"
+    },
+    {
+      "path": "marketing/level_10-512.png.import",
+      "bytes": 950,
+      "sha256": "EEE3AF3AB7B992B1C288569F2E8A2B2864B4EADB5AA92BCD1BFA9078A17C7136"
+    },
+    {
+      "path": "marketing/level_3-512.png",
+      "bytes": 7095,
+      "sha256": "98F4429B3D0655C7A50540C76C2E82D99990F46E4CE531C33F343B3AE4C87A77"
+    },
+    {
+      "path": "marketing/level_3-512.png.import",
+      "bytes": 947,
+      "sha256": "AC3658BE868FDB62D80CCBDA9A0BA85463EF5913F7249965D56313AF4BAE94EF"
+    },
+    {
+      "path": "marketing/level_6-512.png",
+      "bytes": 7347,
+      "sha256": "BEA9A242AB2884206FBE7EB82DECC55695C3D7E81FA93A7CAB5D05F5E9B9F1AE"
+    },
+    {
+      "path": "marketing/level_6-512.png.import",
+      "bytes": 947,
+      "sha256": "142C3AF29C621A80644605FF2CA6F9AFC5C9D07DAAE95F7C76BDD641950F8A1D"
+    },
+    {
+      "path": "marketing/player_level-512.png",
+      "bytes": 7330,
+      "sha256": "684A747BC574EE8CD8D4ADF68BE3604B49E18A1F2C614A1CF2CB208ED5967C55"
+    },
+    {
+      "path": "marketing/player_level-512.png.import",
+      "bytes": 961,
+      "sha256": "144AC8F217A9A8C9CA6FA3BF1BC5822DF15A027D6F62228F8E56ED6E1541BBC0"
+    },
+    {
+      "path": "marketing/rally_10-512.png",
+      "bytes": 6752,
+      "sha256": "0990EAD2159C27872417B72A9485645FA5FF6CDAC5DD1D27F8E21B336702CA33"
+    },
+    {
+      "path": "marketing/rally_10-512.png.import",
+      "bytes": 949,
+      "sha256": "925DA462E93AEE52B4872D137416248C5A76F1E452A09B4AF0FF30A958B2ED0E"
+    },
+    {
+      "path": "marketing/stars_15-512.png",
+      "bytes": 8168,
+      "sha256": "9C46A40C96BFAB896BBA7893102391190E407355AAB7CC615A480CF5BA735F1A"
+    },
+    {
+      "path": "marketing/stars_15-512.png.import",
+      "bytes": 950,
+      "sha256": "A44F0EED375032CC50707E98D368FE2CB0E8B3E8CA68D36547A2C83E9085D9CB"
+    },
+    {
+      "path": "marketing/stars_45-512.png",
+      "bytes": 7902,
+      "sha256": "D76DBAF6E1708E4C06833A006B929D583A18BA5BC4CC56513206AE2D6FBD0632"
+    },
+    {
+      "path": "marketing/stars_45-512.png.import",
+      "bytes": 950,
+      "sha256": "781CFFF04948FA3E39F5DEF043FBCB721679260583F6EFAA9DA16F34316294C7"
+    },
+    {
+      "path": "marketing/stars_90-512.png",
+      "bytes": 8550,
+      "sha256": "C109C114336FABB5C7D5B50442BF5E971E46969688E50D5B9E104C6082314174"
+    },
+    {
+      "path": "marketing/stars_90-512.png.import",
+      "bytes": 950,
+      "sha256": "9BB4CDE5A2791AA38F7D0FC548AD4E7D5A4E0C8F66084DC22AD72637EB89E8C6"
+    },
+    {
+      "path": "marketing/streak_7-512.png",
+      "bytes": 8196,
+      "sha256": "AD843DC90524DD69A792B1CD1E68875DDDB5C261D117E1EF52E832813A4ADD14"
+    },
+    {
+      "path": "marketing/streak_7-512.png.import",
+      "bytes": 950,
+      "sha256": "CDC4DF5FEB33520401ABECB7752391D50B2D4865A8D80213BC5854BC0CB6CC71"
+    },
+    {
+      "path": "marketing/ten_walls-512.png",
+      "bytes": 8140,
+      "sha256": "8E43022EE2545AD51FECBA3485D5AA2353A7B42C435B691B8FFD2E4F3BA02005"
+    },
+    {
+      "path": "marketing/ten_walls-512.png.import",
+      "bytes": 953,
+      "sha256": "0257AD48B552E76D2C851EB7D28D1C1BCA9FAF89AFEF5468F3956ACCEDD905B0"
+    },
+    {
+      "path": "marketing/twenty_walls-512.png",
+      "bytes": 7791,
+      "sha256": "D1C4F4C07CD762130D74EFA9970DE085504ABE4C0432BA91060E8097A946538D"
+    },
+    {
+      "path": "marketing/twenty_walls-512.png.import",
+      "bytes": 962,
+      "sha256": "633E3FF5ACFC3AFB8893CB552655392F0BDE67523811D49E8BBBC11F542CA353"
+    },
+    {
+      "path": "marketing/unassisted_daily_score-512.png",
+      "bytes": 7099,
+      "sha256": "A9ED9A03B739D78AD3BB0FAAFE4CB24E752CE301906699F1BB361AEA0E005D70"
+    },
+    {
+      "path": "marketing/unassisted_daily_score-512.png.import",
+      "bytes": 992,
+      "sha256": "33A1E9F7DED3F0A53C47455FDCE288F4A70061FC31230405DADD97041DD2E817"
+    },
+    {
+      "path": "marketing/unassisted_endless_score-512.png",
+      "bytes": 6996,
+      "sha256": "5D85B6B5864215B523BE2AA87A83E831F967CFDD086EFB5598C6F974989E8154"
+    },
+    {
+      "path": "marketing/unassisted_endless_score-512.png.import",
+      "bytes": 998,
+      "sha256": "8C7E8B6FAF6A3EA12B89B3E0A94BCCEB5B50B93A055807865ED4593B3D15BE20"
+    },
+    {
+      "path": "marketing/unassisted_stars-512.png",
+      "bytes": 7909,
+      "sha256": "8D25A776AD6E4C47836AC497A0982E910D0F702510518F8F0EDCCA5CE56E4D94"
+    },
+    {
+      "path": "marketing/unassisted_stars-512.png.import",
+      "bytes": 973,
+      "sha256": "C0A6BB9262616E8EEC49A9E4E956452F8378BC4BBC31207D740F1A853E66C1F0"
+    },
+    {
+      "path": "marketing/upgrades_20-512.png",
+      "bytes": 7242,
+      "sha256": "DEA5B273FD0AC88919CE5F4306807B9EBAE1DC36253B4CC62262CB9FD67B3A37"
+    },
+    {
+      "path": "marketing/upgrades_20-512.png.import",
+      "bytes": 959,
+      "sha256": "39D4A4B1B7423A6CCAC861671F0BDC692C1CC8402ACCBAD2F194A90E0BC9A391"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 209,
+      "sha256": "52DDA290F2ACF75472424403924A884EBFDD1B6BFFEB62E6143DE122E5666717"
+    },
+    {
+      "path": "platform/config.json",
+      "bytes": 1111,
+      "sha256": "AA9540F5EB10F368FBD597425D0306704ABB132E1C7F632CACF61EAD311BC590"
+    },
+    {
+      "path": "platform/services.gd",
+      "bytes": 17731,
+      "sha256": "138572EA2D624CC9FD7BC5D97EE27D6260DB44A8A019EADDABBDADE9DCB46218"
+    },
+    {
+      "path": "platform/services.gd.uid",
+      "bytes": 20,
+      "sha256": "05CFA55B5194907224267D9E52F6E6A069C98F5D80D12674008262843E8EF29E"
+    },
+    {
+      "path": "platform/tests/services_smoke.gd",
+      "bytes": 5239,
+      "sha256": "73F8ED284FE3F68BE85C42F906FD4F8F74DE5BF56EA36E7C6BE96FA098325230"
+    },
+    {
+      "path": "platform/tests/services_smoke.gd.uid",
+      "bytes": 20,
+      "sha256": "C2AA608FDAA1348EA9F4C7A6F6AC8C6F425C0392B4AB1CE02C5E1A2D76B00D04"
+    },
+    {
+      "path": "project.godot",
+      "bytes": 1482,
+      "sha256": "7F6B146EC36978BE05EFA6B3C9769DFFBAFD01B1A31B529F18A5E2FF84F893E0"
+    },
+    {
+      "path": "QA_REPORT.md",
+      "bytes": 2520,
+      "sha256": "D11F95E2846C9D3D107655D05401C9D78AAF33D61CDA0803D796158FD5CB9DC5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2068,
+      "sha256": "9A21469F4EBDC9F367EEA255800B5E697B625B3C772E03F71643391C5EED831E"
+    },
+    {
+      "path": "site/assets/app-icon-512.png",
+      "bytes": 5852,
+      "sha256": "69FA8A55AF0E37702E2431FD387E4488E04DB5D7F1BBC460ACC4D0EDC4780A10"
+    },
+    {
+      "path": "site/assets/app-icon-512.png.import",
+      "bytes": 952,
+      "sha256": "2A56135D2E650658219A1CFA32B14FE4F05F33169381500AE15C72E2A64A2D53"
+    },
+    {
+      "path": "site/assets/feature-graphic-1024x500.png",
+      "bytes": 33708,
+      "sha256": "206A767F73E33E521B034552DB51DE1B0D96EAC28DDB4867D25A375F9B6A42B1"
+    },
+    {
+      "path": "site/assets/feature-graphic-1024x500.png.import",
+      "bytes": 987,
+      "sha256": "655791E66CCF0A417CD936852978252CD99CA347E3EAE729C4B4F58FCD2D2F21"
+    },
+    {
+      "path": "site/index.html",
+      "bytes": 3170,
+      "sha256": "ABF87E496A09761C066DC0681F22693B05058A85FB3621CE0249F6CE5E1AAF84"
+    },
+    {
+      "path": "site/privacy.html",
+      "bytes": 1054,
+      "sha256": "924F73C701271682109722F9EA1E23ECB60E6736B4CF3FE8E35844BA5030F0E3"
+    },
+    {
+      "path": "store/privacy-policy-draft.md",
+      "bytes": 1285,
+      "sha256": "AB9A631E54AEFDCA3EF9D151B1C8F2E3B5C510E7D62E6EB9942878FBA31C14EA"
+    },
+    {
+      "path": "store/store-listing.json",
+      "bytes": 2886,
+      "sha256": "2E9372E8DA9820FBA1875058B4E5E236A586FF5DAE1E0A7B9973BD86B29CC98B"
+    },
+    {
+      "path": "store/website-copy.md",
+      "bytes": 1459,
+      "sha256": "AF014F32115D3905D37EBBFB07537D487E17F98FEECF0D3478DE9817040B2AA7"
+    },
+    {
+      "path": "tests/evidence/core-results.json",
+      "bytes": 6256,
+      "sha256": "F4D5297BB1CD7E0F50D21322BC1BEF09D551FA5FD5097D7F807B2310380B1BF2"
+    },
+    {
+      "path": "tests/evidence/desktop-phone-battle.png",
+      "bytes": 53079,
+      "sha256": "A1F61AA4F8997A13D6CBB6EA7C5E474A9B1FA40CF7EE06CB2FB3A054FD3F81AD"
+    },
+    {
+      "path": "tests/evidence/desktop-phone-battle.png.import",
+      "bytes": 979,
+      "sha256": "96139A2D8213438621D7B2979882A9D3941D467975EDFFFB9F53EE13A99B870F"
+    },
+    {
+      "path": "tests/evidence/desktop-phone-campaign.png",
+      "bytes": 65117,
+      "sha256": "12D1FC39A37E6C74EE4A4E2C321C9D0861D5B41530379D7770599363A3EB8BDE"
+    },
+    {
+      "path": "tests/evidence/desktop-phone-campaign.png.import",
+      "bytes": 984,
+      "sha256": "5BC708EE411BFDD07CF03A671AE471D65FDD1D07C4CE584FBDB5A09B57CCF17F"
+    },
+    {
+      "path": "tests/evidence/desktop-phone-home.png",
+      "bytes": 68143,
+      "sha256": "E462FCA2FC979FEB3B64E743CCFCF3AD5C3C6920F4186D909255E563AD8141ED"
+    },
+    {
+      "path": "tests/evidence/desktop-phone-home.png.import",
+      "bytes": 973,
+      "sha256": "1376C2036A89872F6DDDD2C87DE2B76F24632EAD2FAE1681183101A6E4611EC2"
+    },
+    {
+      "path": "tests/evidence/desktop-phone-journal.png",
+      "bytes": 123935,
+      "sha256": "FB69B70F0D9527677248EDE7789D8157E91B9E88E2CF683E76D147D0906EA7FC"
+    },
+    {
+      "path": "tests/evidence/desktop-phone-journal.png.import",
+      "bytes": 982,
+      "sha256": "F03037FBF556CCF4061CA232807521E79B2E011D6B750CE495D8D4B2373DA48D"
+    },
+    {
+      "path": "tests/evidence/desktop-phone-pause.png",
+      "bytes": 81728,
+      "sha256": "8A51AD6CA984042962CF357C5FBB9B730AB86886393A15944F616F3E4D36DF15"
+    },
+    {
+      "path": "tests/evidence/desktop-phone-pause.png.import",
+      "bytes": 976,
+      "sha256": "99BD6831A86318B59813CF66B98CAB7ED96939958F70FF7D789CF2C0CE8AD541"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet10-battle.png",
+      "bytes": 55595,
+      "sha256": "2D1043C4D748B4A7DD847E4AB2FB314B5C0947A1E2085BF9E7BB814287076A49"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet10-battle.png.import",
+      "bytes": 988,
+      "sha256": "6A160F1048FB3F08DD209CDB29D0216EC116AFC29B4FF789B0F4DAF2FD1D8FD6"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet10-campaign.png",
+      "bytes": 81439,
+      "sha256": "19372C492686539CC0CB337F7748FA2CA3A42E287EE866C7F65796084BB3CC17"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet10-campaign.png.import",
+      "bytes": 994,
+      "sha256": "029BFD20FA77E56278032DE63AFC78BAA14C8FA0B5ED843CA852435CCD6ADE50"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet10-home.png",
+      "bytes": 94885,
+      "sha256": "98985C096CABE72E868E89A2DB4F8650D91AD7A07D92478B3932694154CFF23D"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet10-home.png.import",
+      "bytes": 982,
+      "sha256": "2F7CA483BAF0FB20DACF5E34F672B12F1BC49073ACE8ACC61882A49ABE667BAA"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet7-battle.png",
+      "bytes": 45760,
+      "sha256": "42003DC4F96F2517CD563107539D957069EF4E6814423818B36A39699E0D82EF"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet7-battle.png.import",
+      "bytes": 985,
+      "sha256": "B9F9A75C7D9A67409FCB0CBDF4CBF913D94E568121819A36F4C209DEADF43E9B"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet7-campaign.png",
+      "bytes": 66281,
+      "sha256": "78AAD256B3493DB95F0DC0E8CD0AD4DE256727FE1E767E785820CC57C1CB7892"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet7-campaign.png.import",
+      "bytes": 991,
+      "sha256": "70D84B4D919A9B265B905712D4F312F38547E6F7330CBD57A16E9E7293F3A2E5"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet7-home.png",
+      "bytes": 72765,
+      "sha256": "02F1D81B7538A20753A2D59C20F77D4D4CEED35D55A328B90E88D8B934C1D136"
+    },
+    {
+      "path": "tests/evidence/desktop-tablet7-home.png.import",
+      "bytes": 979,
+      "sha256": "E1522D3564C28B201D3497DAA0362A87FA875D31DD3953F584885111120AAE45"
+    },
+    {
+      "path": "tests/evidence/strategy-witnesses.json",
+      "bytes": 84612,
+      "sha256": "43AFD886C2F8F740A84CEBC19ADF267757D4E4407AE45995B277E34E4076C82C"
+    },
+    {
+      "path": "tests/evidence/ui-results.json",
+      "bytes": 4404,
+      "sha256": "ED700394A7A968505DED23378B1CFDF31F9A295BBF32A4FF5EEA07EEF846A739"
+    },
+    {
+      "path": "tests/strategy_check.gd",
+      "bytes": 3943,
+      "sha256": "4D0F073556075FAB53433914E46D9167DDD17FA2B41FC617E09FC353A01ADF87"
+    },
+    {
+      "path": "tests/strategy_check.gd.uid",
+      "bytes": 20,
+      "sha256": "960DFFEE7382D2A9DDFBA08BDC8912006DE0DB0BAC47AB946CA346F1F99DF532"
+    },
+    {
+      "path": "tests/test_core.gd",
+      "bytes": 15420,
+      "sha256": "132543089902E92CF9D55CE1ED7A6744774A5AE0B76B26C6BD275B807BBB4572"
+    },
+    {
+      "path": "tests/test_core.gd.uid",
+      "bytes": 20,
+      "sha256": "2538477B00D8DF2149D8CF18D4E0542D8DEFD4D91FAAE200D59A218AFED12EF7"
+    },
+    {
+      "path": "tests/test_ui.gd",
+      "bytes": 8524,
+      "sha256": "4DEE2E8C4A5EDE6ED7842CD990D238762BA2F683483A2452CDB04BA4E8B13BFE"
+    },
+    {
+      "path": "tests/test_ui.gd.uid",
+      "bytes": 20,
+      "sha256": "BDC927D529F073F7C63FAC2E4E89737BFB5F4B809B9A81E4077A1A80B6C7D434"
+    }
+  ],
+  "file_count": 801,
+  "total_bytes": 6150836
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "first_wall",
+    "name": "First lantern",
+    "svg": "assets/icons/first_wall.svg",
+    "store_png": "marketing/first_wall-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "five_walls",
+    "name": "Glenkeeper",
+    "svg": "assets/icons/five_walls.svg",
+    "store_png": "marketing/five_walls-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "ten_walls",
+    "name": "Bridgewarden",
+    "svg": "assets/icons/ten_walls.svg",
+    "store_png": "marketing/ten_walls-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "twenty_walls",
+    "name": "Runewarden",
+    "svg": "assets/icons/twenty_walls.svg",
+    "store_png": "marketing/twenty_walls-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "all_walls",
+    "name": "Mosslight dawn",
+    "svg": "assets/icons/all_walls.svg",
+    "store_png": "marketing/all_walls-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "stars_15",
+    "name": "A little brilliance",
+    "svg": "assets/icons/stars_15.svg",
+    "store_png": "marketing/stars_15-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "stars_45",
+    "name": "Lantern keeper",
+    "svg": "assets/icons/stars_45.svg",
+    "store_png": "marketing/stars_45-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "stars_90",
+    "name": "Every light",
+    "svg": "assets/icons/stars_90.svg",
+    "store_png": "marketing/stars_90-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "kills_25",
+    "name": "Clear the footpath",
+    "svg": "assets/icons/kills_25.svg",
+    "store_png": "marketing/kills_25-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "kills_250",
+    "name": "Woodland watch",
+    "svg": "assets/icons/kills_250.svg",
+    "store_png": "marketing/kills_250-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "kills_1000",
+    "name": "The long watch",
+    "svg": "assets/icons/kills_1000.svg",
+    "store_png": "marketing/kills_1000-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "built_20",
+    "name": "A place for every tower",
+    "svg": "assets/icons/built_20.svg",
+    "store_png": "marketing/built_20-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "upgrades_20",
+    "name": "Polished stone",
+    "svg": "assets/icons/upgrades_20.svg",
+    "store_png": "marketing/upgrades_20-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "rally_10",
+    "name": "Raise the lantern",
+    "svg": "assets/icons/rally_10.svg",
+    "store_png": "marketing/rally_10-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "level_3",
+    "name": "Keeper apprentice",
+    "svg": "assets/icons/level_3.svg",
+    "store_png": "marketing/level_3-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "level_6",
+    "name": "Keeper of the glen",
+    "svg": "assets/icons/level_6.svg",
+    "store_png": "marketing/level_6-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "level_10",
+    "name": "Old-light keeper",
+    "svg": "assets/icons/level_10.svg",
+    "store_png": "marketing/level_10-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "endless_5",
+    "name": "Long evening",
+    "svg": "assets/icons/endless_5.svg",
+    "store_png": "marketing/endless_5-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "daily_3",
+    "name": "Three dawns",
+    "svg": "assets/icons/daily_3.svg",
+    "store_png": "marketing/daily_3-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "streak_7",
+    "name": "Seven lanterns",
+    "svg": "assets/icons/streak_7.svg",
+    "store_png": "marketing/streak_7-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "unassisted_endless_score",
+    "name": "Unassisted siege score",
+    "svg": "assets/icons/unassisted_endless_score.svg",
+    "store_png": "marketing/unassisted_endless_score-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "unassisted_daily_score",
+    "name": "Unassisted daily score",
+    "svg": "assets/icons/unassisted_daily_score.svg",
+    "store_png": "marketing/unassisted_daily_score-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "unassisted_stars",
+    "name": "Unassisted campaign stars",
+    "svg": "assets/icons/unassisted_stars.svg",
+    "store_png": "marketing/unassisted_stars-512.png",
+    "license": "Original Apache-2.0"
+  },
+  {
+    "id": "player_level",
+    "name": "Keeper level",
+    "svg": "assets/icons/player_level.svg",
+    "store_png": "marketing/player_level-512.png",
+    "license": "Original Apache-2.0"
+  }
+]

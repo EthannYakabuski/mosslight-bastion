@@ -1,0 +1,22 @@
+{
+  "key": "phone-play",
+  "file": "phone-play.png",
+  "sha256": "5e0e5b4759bdf5957dbf130497d33b6d3a2481bb6c17c8ce847bb794f465fa02",
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "raw_file": "raw/phone-play.png",
+  "raw_sha256": "5e0e5b4759bdf5957dbf130497d33b6d3a2481bb6c17c8ce847bb794f465fa02",
+  "raw_dimensions": [
+    1080,
+    1920
+  ],
+  "game_state": "Actual ONLINE unbanked First Lantern before first wave: ordinary Archer45 and Frost55 spent authored100supplies, health15 of15 and zero supplies, selected Frost, no assistance or fixture.",
+  "platform": "Android11 API30 x86 emulator",
+  "network_mode": "online",
+  "pixel_processing": "none; unchanged guest screenshot bytes",
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+}

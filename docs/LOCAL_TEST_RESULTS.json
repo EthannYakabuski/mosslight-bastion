@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "game": "Mosslight Bastion",
+  "package": "com.ethannyakabuski.mosslightbastion",
+  "verification_date": "2026-10-20",
+  "scope": "Public local-test summary, not raw evidence. Source fixtures are synthetic; native facts are dated scoped observations.",
+  "current_apk_sha256": "E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD",
+  "current_apk_bytes": 184044923,
+  "source_main_sha256": "B7CC6A346B4380C553DEEBEF33C6B27B42E654C7C0D1493E6AAFED844BE866D1",
+  "native_functional_acceptance": true,
+  "broad_final_log_gate_passed": false,
+  "checks": {
+    "same_process_retry_two_natural_results": "Passed: unassisted first win and assisted second win banked once through Results/Retry, no retroactive credit for historical failed run.",
+    "real_sdk_negative": "Visible-X unearned dismissal gave no assistance.",
+    "real_sdk_positive": "Distinct earned repair held93.579seconds after Services earned; returned still paused, hearts10to15capped and supplies100to140. Disabled repeat gave no second grant; first explicit Resume and Back worked.",
+    "interstitial": "Observed after two actual banked rounds; normal dismissal returned Results.",
+    "daily": "Unassisted natural win55defeated/3waves/49seconds/3stars; daily payout observed. Replay not verified.",
+    "progression": "Login and three eligible quests paid once; disabled repeat controls did not pay again. One priced Power0to1 purchase observed.",
+    "back_and_lifecycle": "Combat Back, Gifts to Home, Endless Abandon, genuine25group cold retention passed.",
+    "offline": "Separate actual default-network-none cold launch, ordinary unbanked Archer/Next/Rally/Back, Abandon and25group restart retention passed.",
+    "environment": "Network/display restored; final normal online cold retained25groups; package safely stopped.",
+    "store_roles": "Nine current-APK ONLINE emulator Home/Campaign/unbanked planning images individually reviewed. Three representative views independently reviewed."
+  },
+  "profile_history": "The original read-only emulator host exited and its transient install/data did not survive. Prior actual current-APK gameplay/service proof remains valid for that phase. Same APK installed normally fresh; no old save imported and claims/purchases/SDK/results not replayed. Final fresh unbanked profile150coins0XP/round0/sequence3/Power0; no cross-host retention claim.",
+  "limits": [
+    "Final broad diagnostic gate false: unresolved Chromium WebView cache wrong-size/wrong-file-structure errors were preserved. No Godot SCRIPT ERROR/can_process/FATAL finding was observed. No cache deletion, suppression, filter change or rerun. Earlier creative JavaScript callback diagnostic separately qualified.",
+    "Daily replay/repeat bonus, native cosmetic selection and Settings/privacy preference changes unverified.",
+    "Physical devices/tablets, audible output, interactive Web/audio/WebGL, production services and human balance unverified. Emulator audio disabled.",
+    "Godot4.5.1 Compatibility minAPI24/targetAPI35 reflects export constraint, not current Play release eligibility. Owner provides real IDs/signing, consent/audience, policy/support, Data safety and Play publication."
+  ],
+  "exports": {
+    "android": "Accepted debug export;13scoped runtime inputs frozen byte-identically.",
+    "web": "Accepted single-threaded export; static9sidecars/PCK426 passed. Interactive browser unverified.",
+    "packages": "APK/Web ZIP members and required license notices checked; generated outputs not committed.",
+    "focused_retry_regression": "Legal two-natural-win same-Main regression reproduced5baselinefailures; candidate paired/mouse81checks each passed. No native inference from fixtures."
+  }
+}

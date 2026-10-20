@@ -1,0 +1,43 @@
+MOSSLIGHT BASTION - SOURCE AND LOCAL VERIFICATION
+
+Open project.godot in Godot4.5.1 Compatibility. Place towers on visible pads, call
+Next wave and use free Rally. Android Back pauses; Resume continues and Abandon returns
+Home without result credit. Banked progress persists; unfinished combat does not.
+
+Thirty missions/six regions/12geometries, Endless/Daily, gifts/quests, keeper progression,
+preparation/cosmetics/stars/unlocks/save backup are implemented. Official test AdMob
+IDs and disabled real-ID Play Games placeholders are included.
+
+Actual current-APK native functional testing covered same-process natural Results/Retry
+banking, real unearned/earned SDK repair with a93.579second earned endcard hold, explicit
+Resume/Back, interstitial, unassisted Daily win, once-only claims and a priced Power
+purchase. Separate fresh-profile offline cold25/play/Back/Abandon/restart and final online
+cold25 retention passed; network/display restored and package safely stopped. Original
+read-only emulator install/data did not survive host exit; no cross-host save retention
+claimed. SameAPK reinstalled fresh, no old save imported or claims/purchases/SDK/results
+replayed. Final fresh unbanked profile was150coins0XP/round0/sequence3/Power0.
+
+Nine ONLINE same-emulator raw Home/Campaign/planning screenshots are included. Logical
+tablet viewports are not physical devices. See docs/NATIVE_QA.json and
+docs/LOCAL_TEST_RESULTS.json for concise outcomes and limitations.
+
+Final broad diagnostic gate remains FALSE: unresolved Chromium WebView cache wrong-size/
+wrong-structure messages preserved privately. No Godot SCRIPT ERROR/can_process/FATAL
+finding observed. No cache deletion, suppression, filter change or rerun. Earlier SDK
+creative JavaScript diagnostic separately qualified; no whole-log clean claim.
+
+Exports/package membership/licenses were verified locally; generated APK/Web exports
+are not committed. Test APK identity:
+E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD
+
+Source/build setup: docs/BUILD_TEST.md, docs/PLATFORM_SETUP.md. Store copy/art:
+store/store-listing.json, store/website-copy.md and marketing/. Privacy draft:
+store/privacy-policy-draft.md and site/privacy.html. Required terms/notices: LICENSE,
+NOTICE, LICENSES/INDEX.txt and assets/SOURCE_MAP.json. Apache2covers original work only.
+
+Daily replay/repeat bonus, native cosmetic/Settings/privacy changes, physical devices,
+audible output, interactive Web/audio/WebGL, production services and human balance
+remain unverified. Emulator audio disabled. minAPI24/targetAPI35 is an export constraint,
+not current Play eligibility. Owner handles real IDs/signing/policy/consent/Data safety
+and Play publication. CI build/test/artifact workflow is configured but remote results
+are not asserted. Live Pages is explicitly held with deploy if:false.

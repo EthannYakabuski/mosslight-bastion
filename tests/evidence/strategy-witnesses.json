@@ -1,0 +1,4072 @@
+{
+  "failed": [],
+  "missions": [
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 55,
+          "at": 0.0,
+          "before": 100,
+          "kind": "archer",
+          "pad": 6,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 11.0,
+          "before": 73,
+          "kind": "ember",
+          "pad": 2,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 15.9000000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        }
+      ],
+      "budget": 100,
+      "mission": 1,
+      "name": "First Lantern",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 2,
+        "day": "",
+        "finished": true,
+        "hearts": 15,
+        "kills": 11,
+        "mission": 1,
+        "mode": "campaign",
+        "rallies": 2,
+        "score": 515,
+        "seconds": 27,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 2,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 95,
+          "at": 0.0,
+          "before": 140,
+          "kind": "archer",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 25,
+          "at": 0.0,
+          "before": 95,
+          "kind": "ember",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 13.5000000000001,
+          "before": 55,
+          "kind": "frost",
+          "pad": 2,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 17.8500000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 31.9500000000003,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 8,
+          "at": 52.4999999999992,
+          "before": 108,
+          "kind": "prism",
+          "pad": 5,
+          "wave": 2
+        }
+      ],
+      "budget": 140,
+      "mission": 2,
+      "name": "The Elder's Lesson",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 4,
+        "day": "",
+        "finished": true,
+        "hearts": 15,
+        "kills": 22,
+        "mission": 2,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 780,
+        "seconds": 53,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 100,
+          "at": 0.0,
+          "before": 145,
+          "kind": "archer",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 30,
+          "at": 0.0,
+          "before": 100,
+          "kind": "ember",
+          "pad": 7,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 11,
+          "at": 11.5,
+          "before": 66,
+          "kind": "frost",
+          "pad": 3,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 13.6000000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 20.9500000000002,
+          "wave": 3
+        },
+        {
+          "action": "build",
+          "after": 7,
+          "at": 28.0000000000003,
+          "before": 107,
+          "kind": "prism",
+          "pad": 6,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 34.0000000000002,
+          "before": 45,
+          "kind": "archer",
+          "pad": 0,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        }
+      ],
+      "budget": 145,
+      "mission": 3,
+      "name": "Mushroom Bend",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 5,
+        "day": "",
+        "finished": true,
+        "hearts": 15,
+        "kills": 32,
+        "mission": 3,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 930,
+        "seconds": 36,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 105,
+          "at": 0.0,
+          "before": 150,
+          "kind": "archer",
+          "pad": 6,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 35,
+          "at": 0.0,
+          "before": 105,
+          "kind": "ember",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 3.0,
+          "before": 56,
+          "kind": "frost",
+          "pad": 1,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 8.99999999999999,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 9,
+          "at": 20.6000000000002,
+          "before": 109,
+          "kind": "prism",
+          "pad": 3,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 20.6000000000002,
+          "wave": 3
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 25.0000000000002,
+          "before": 49,
+          "kind": "archer",
+          "pad": 2,
+          "wave": 2
+        }
+      ],
+      "budget": 150,
+      "mission": 4,
+      "name": "Rootside Switch",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 5,
+        "day": "",
+        "finished": true,
+        "hearts": 15,
+        "kills": 39,
+        "mission": 4,
+        "mode": "campaign",
+        "rallies": 2,
+        "score": 1035,
+        "seconds": 28,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 135,
+          "at": 0.0,
+          "before": 180,
+          "kind": "archer",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 65,
+          "at": 0.0,
+          "before": 135,
+          "kind": "ember",
+          "pad": 3,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 10,
+          "at": 0.0,
+          "before": 65,
+          "kind": "frost",
+          "pad": 5,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "next_wave",
+          "at": 15.4500000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 19,
+          "at": 27.0000000000002,
+          "before": 119,
+          "kind": "prism",
+          "pad": 6,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 6,
+          "at": 31.4500000000003,
+          "before": 51,
+          "kind": "archer",
+          "pad": 2,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 31.4500000000003,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 40.4999999999998,
+          "before": 75,
+          "kind": "ember",
+          "pad": 1,
+          "wave": 2
+        }
+      ],
+      "budget": 180,
+      "mission": 5,
+      "name": "Two Garden Gates",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 6,
+        "day": "",
+        "finished": true,
+        "hearts": 16,
+        "kills": 34,
+        "mission": 5,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 970,
+        "seconds": 43,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 105,
+          "at": 0.0,
+          "before": 150,
+          "kind": "archer",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 35,
+          "at": 0.0,
+          "before": 105,
+          "kind": "ember",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 7.49999999999998,
+          "before": 59,
+          "kind": "frost",
+          "pad": 3,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 16.7500000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 10,
+          "at": 29.0000000000003,
+          "before": 110,
+          "kind": "prism",
+          "pad": 0,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 29.0000000000003,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 40.4999999999998,
+          "before": 46,
+          "kind": "archer",
+          "pad": 5,
+          "wave": 2
+        }
+      ],
+      "budget": 150,
+      "mission": 6,
+      "name": "Stone Crossing",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 5,
+        "day": "",
+        "finished": true,
+        "hearts": 15,
+        "kills": 36,
+        "mission": 6,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 990,
+        "seconds": 49,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 110,
+          "at": 0.0,
+          "before": 155,
+          "kind": "archer",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 40,
+          "at": 0.0,
+          "before": 110,
+          "kind": "ember",
+          "pad": 5,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 6,
+          "at": 8.49999999999999,
+          "before": 61,
+          "kind": "frost",
+          "pad": 7,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 16.2500000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 11,
+          "at": 27.5000000000003,
+          "before": 111,
+          "kind": "prism",
+          "pad": 0,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 10,
+          "at": 31.0000000000003,
+          "before": 55,
+          "kind": "archer",
+          "pad": 1,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 32.9500000000003,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 41.4999999999998,
+          "before": 71,
+          "kind": "ember",
+          "pad": 6,
+          "wave": 2
+        }
+      ],
+      "budget": 155,
+      "mission": 7,
+      "name": "River Runners",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 6,
+        "day": "",
+        "finished": true,
+        "hearts": 15,
+        "kills": 42,
+        "mission": 7,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 1080,
+        "seconds": 51,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 135,
+          "at": 0.0,
+          "before": 180,
+          "kind": "archer",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 65,
+          "at": 0.0,
+          "before": 135,
+          "kind": "ember",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 10,
+          "at": 0.0,
+          "before": 65,
+          "kind": "frost",
+          "pad": 5,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 16.0000000000001,
+          "before": 100,
+          "kind": "prism",
+          "pad": 1,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 17.8500000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 2,
+          "at": 23.0000000000002,
+          "before": 47,
+          "kind": "archer",
+          "pad": 3,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 30.7000000000003,
+          "wave": 3
+        },
+        {
+          "action": "build",
+          "after": 2,
+          "at": 31.0000000000003,
+          "before": 72,
+          "kind": "ember",
+          "pad": 4,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 16,
+          "at": 38.9999999999999,
+          "before": 71,
+          "kind": "frost",
+          "pad": 6,
+          "wave": 2
+        }
+      ],
+      "budget": 180,
+      "mission": 8,
+      "name": "Willow Fork",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 7,
+        "day": "",
+        "finished": true,
+        "hearts": 16,
+        "kills": 48,
+        "mission": 8,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 1180,
+        "seconds": 44,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 115,
+          "at": 0.0,
+          "before": 160,
+          "kind": "archer",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 45,
+          "at": 0.0,
+          "before": 115,
+          "kind": "ember",
+          "pad": 6,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 10,
+          "at": 5.99999999999999,
+          "before": 65,
+          "kind": "frost",
+          "pad": 4,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 12.6,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 8,
+          "at": 23.0000000000002,
+          "before": 108,
+          "kind": "prism",
+          "pad": 5,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 26.5000000000002,
+          "before": 49,
+          "kind": "archer",
+          "pad": 0,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 27.3000000000003,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 38.0,
+          "before": 75,
+          "kind": "ember",
+          "pad": 3,
+          "wave": 2
+        }
+      ],
+      "budget": 160,
+      "mission": 9,
+      "name": "Low Tide Lanterns",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 6,
+        "day": "",
+        "finished": true,
+        "hearts": 16,
+        "kills": 52,
+        "mission": 9,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 1240,
+        "seconds": 44,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 150,
+          "at": 0.0,
+          "before": 195,
+          "kind": "archer",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 80,
+          "at": 0.0,
+          "before": 150,
+          "kind": "ember",
+          "pad": 3,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 25,
+          "at": 0.0,
+          "before": 80,
+          "kind": "frost",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 28.5000000000003,
+          "before": 104,
+          "kind": "prism",
+          "pad": 4,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 31.4500000000003,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 37.5,
+          "before": 46,
+          "kind": "archer",
+          "pad": 7,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 51.4999999999992,
+          "before": 73,
+          "kind": "ember",
+          "pad": 5,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 51.4999999999992,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "build",
+          "after": 11,
+          "at": 60.4999999999987,
+          "before": 66,
+          "kind": "frost",
+          "pad": 1,
+          "wave": 2
+        }
+      ],
+      "budget": 195,
+      "mission": 10,
+      "name": "Bridgewatch",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 7,
+        "day": "",
+        "finished": true,
+        "hearts": 16,
+        "kills": 41,
+        "mission": 10,
+        "mode": "campaign",
+        "rallies": 4,
+        "score": 1075,
+        "seconds": 62,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 115,
+          "at": 0.0,
+          "before": 160,
+          "kind": "archer",
+          "pad": 5,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 45,
+          "at": 0.0,
+          "before": 115,
+          "kind": "ember",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 14,
+          "at": 5.99999999999999,
+          "before": 69,
+          "kind": "frost",
+          "pad": 0,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 11.7,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 6,
+          "at": 18.0000000000001,
+          "before": 106,
+          "kind": "prism",
+          "pad": 6,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 22.5000000000002,
+          "before": 48,
+          "kind": "archer",
+          "pad": 2,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 24.8000000000002,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 38.0,
+          "before": 73,
+          "kind": "ember",
+          "pad": 4,
+          "wave": 2
+        }
+      ],
+      "budget": 160,
+      "mission": 11,
+      "name": "Orchard Rush",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 6,
+        "day": "",
+        "finished": true,
+        "hearts": 15,
+        "kills": 55,
+        "mission": 11,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 1275,
+        "seconds": 50,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 135,
+          "at": 0.0,
+          "before": 180,
+          "kind": "archer",
+          "pad": 5,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 65,
+          "at": 0.0,
+          "before": 135,
+          "kind": "ember",
+          "pad": 7,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 10,
+          "at": 0.0,
+          "before": 65,
+          "kind": "frost",
+          "pad": 6,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 18.1500000000001,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 6,
+          "at": 25.0000000000002,
+          "before": 106,
+          "kind": "prism",
+          "pad": 1,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 33.3000000000002,
+          "before": 46,
+          "kind": "archer",
+          "pad": 2,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 33.3000000000002,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 40.9999999999998,
+          "before": 75,
+          "kind": "ember",
+          "pad": 0,
+          "wave": 2
+        }
+      ],
+      "budget": 180,
+      "mission": 12,
+      "name": "Shellfall",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 6,
+        "day": "",
+        "finished": true,
+        "hearts": 16,
+        "kills": 27,
+        "mission": 12,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 865,
+        "seconds": 43,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 165,
+          "at": 0.0,
+          "before": 210,
+          "kind": "archer",
+          "pad": 3,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 95,
+          "at": 0.0,
+          "before": 165,
+          "kind": "ember",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 40,
+          "at": 0.0,
+          "before": 95,
+          "kind": "frost",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 13.5000000000001,
+          "before": 101,
+          "kind": "prism",
+          "pad": 2,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 17.7500000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 20.0000000000001,
+          "before": 48,
+          "kind": "archer",
+          "pad": 0,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 33.5000000000002,
+          "before": 75,
+          "kind": "ember",
+          "pad": 7,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 36.0000000000001,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 2,
+          "at": 40.4999999999998,
+          "before": 57,
+          "kind": "frost",
+          "pad": 5,
+          "wave": 2
+        }
+      ],
+      "budget": 210,
+      "mission": 13,
+      "name": "Golden Switch",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 7,
+        "day": "",
+        "finished": true,
+        "hearts": 17,
+        "kills": 50,
+        "mission": 13,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 1220,
+        "seconds": 48,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 125,
+          "at": 0.0,
+          "before": 170,
+          "kind": "archer",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 55,
+          "at": 0.0,
+          "before": 125,
+          "kind": "ember",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 0.0,
+          "before": 55,
+          "kind": "frost",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "next_wave",
+          "at": 16.2000000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 19.0000000000001,
+          "before": 100,
+          "kind": "prism",
+          "pad": 5,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 27.0000000000002,
+          "before": 45,
+          "kind": "archer",
+          "pad": 3,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 32.0000000000003,
+          "before": 71,
+          "kind": "ember",
+          "pad": 6,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 32.7000000000003,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 2,
+          "at": 40.9999999999998,
+          "before": 57,
+          "kind": "frost",
+          "pad": 7,
+          "wave": 2
+        }
+      ],
+      "budget": 170,
+      "mission": 14,
+      "name": "Ember Road",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 7,
+        "day": "",
+        "finished": true,
+        "hearts": 16,
+        "kills": 75,
+        "mission": 14,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 1585,
+        "seconds": 50,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 175,
+          "at": 0.0,
+          "before": 220,
+          "kind": "archer",
+          "pad": 3,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 105,
+          "at": 0.0,
+          "before": 175,
+          "kind": "ember",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 50,
+          "at": 0.0,
+          "before": 105,
+          "kind": "frost",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 6,
+          "at": 9.5,
+          "before": 106,
+          "kind": "prism",
+          "pad": 5,
+          "wave": 0
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 15.5000000000001,
+          "before": 48,
+          "kind": "archer",
+          "pad": 1,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 16.4500000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 25,
+          "at": 22.5000000000002,
+          "before": 95,
+          "kind": "ember",
+          "pad": 0,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 8,
+          "at": 33.5000000000002,
+          "before": 63,
+          "kind": "frost",
+          "pad": 6,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 37.5,
+          "wave": 3
+        },
+        {
+          "action": "build",
+          "after": 17,
+          "at": 51.9999999999992,
+          "before": 117,
+          "kind": "prism",
+          "pad": 7,
+          "wave": 2
+        },
+        {
+          "action": "next_wave",
+          "at": 52.1999999999992,
+          "wave": 4
+        },
+        {
+          "action": "upgrade",
+          "after": 6,
+          "at": 53.9999999999991,
+          "before": 40,
+          "pad": 3,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "upgrade",
+          "after": 1,
+          "at": 56.4999999999989,
+          "before": 35,
+          "pad": 1,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 8,
+          "at": 59.9999999999987,
+          "before": 49,
+          "pad": 4,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 4,
+          "at": 62.9999999999986,
+          "before": 45,
+          "pad": 6,
+          "wave": 3
+        }
+      ],
+      "budget": 220,
+      "mission": 15,
+      "name": "Harvest Hold",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 17,
+        "kills": 87,
+        "mission": 15,
+        "mode": "campaign",
+        "rallies": 4,
+        "score": 1875,
+        "seconds": 66,
+        "stars": 3,
+        "upgrades": 4,
+        "waves": 4,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 135,
+          "at": 0.0,
+          "before": 180,
+          "kind": "archer",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 65,
+          "at": 0.0,
+          "before": 135,
+          "kind": "ember",
+          "pad": 5,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 10,
+          "at": 0.0,
+          "before": 65,
+          "kind": "frost",
+          "pad": 7,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 18.6500000000001,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 25.5000000000002,
+          "before": 105,
+          "kind": "prism",
+          "pad": 0,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 11,
+          "at": 30.5000000000003,
+          "before": 56,
+          "kind": "archer",
+          "pad": 1,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 35.5000000000001,
+          "before": 75,
+          "kind": "ember",
+          "pad": 6,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 37.4,
+          "wave": 3
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 44.4999999999996,
+          "before": 59,
+          "kind": "frost",
+          "pad": 2,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "build",
+          "after": 7,
+          "at": 55.499999999999,
+          "before": 107,
+          "kind": "prism",
+          "pad": 3,
+          "wave": 2
+        }
+      ],
+      "budget": 180,
+      "mission": 16,
+      "name": "Frozen Wisp",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 16,
+        "kills": 44,
+        "mission": 16,
+        "mode": "campaign",
+        "rallies": 4,
+        "score": 1120,
+        "seconds": 56,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 140,
+          "at": 0.0,
+          "before": 185,
+          "kind": "archer",
+          "pad": 3,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 70,
+          "at": 0.0,
+          "before": 140,
+          "kind": "ember",
+          "pad": 7,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 15,
+          "at": 0.0,
+          "before": 70,
+          "kind": "frost",
+          "pad": 5,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 31.5000000000003,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 11,
+          "at": 39.9999999999999,
+          "before": 111,
+          "kind": "prism",
+          "pad": 6,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 14,
+          "at": 43.9999999999996,
+          "before": 59,
+          "kind": "archer",
+          "pad": 1,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 49.2999999999993,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "build",
+          "after": 14,
+          "at": 57.4999999999989,
+          "before": 84,
+          "kind": "ember",
+          "pad": 4,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 7,
+          "at": 67.9999999999983,
+          "before": 62,
+          "kind": "frost",
+          "pad": 0,
+          "wave": 2
+        }
+      ],
+      "budget": 185,
+      "mission": 17,
+      "name": "Long Reach",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 7,
+        "day": "",
+        "finished": true,
+        "hearts": 16,
+        "kills": 30,
+        "mission": 17,
+        "mode": "campaign",
+        "rallies": 4,
+        "score": 910,
+        "seconds": 71,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 180,
+          "at": 0.0,
+          "before": 225,
+          "kind": "archer",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 110,
+          "at": 0.0,
+          "before": 180,
+          "kind": "ember",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 55,
+          "at": 0.0,
+          "before": 110,
+          "kind": "frost",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 11.5,
+          "before": 101,
+          "kind": "prism",
+          "pad": 2,
+          "wave": 0
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 16.0000000000001,
+          "before": 45,
+          "kind": "archer",
+          "pad": 3,
+          "wave": 0
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 19.3500000000001,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 7,
+          "at": 28.0000000000003,
+          "before": 77,
+          "kind": "ember",
+          "pad": 5,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 31.0000000000003,
+          "before": 55,
+          "kind": "frost",
+          "pad": 6,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 33.9500000000002,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 14,
+          "at": 44.9999999999996,
+          "before": 114,
+          "kind": "prism",
+          "pad": 7,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        }
+      ],
+      "budget": 225,
+      "mission": 18,
+      "name": "Three Drifts",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 18,
+        "kills": 50,
+        "mission": 18,
+        "mode": "campaign",
+        "rallies": 4,
+        "score": 1230,
+        "seconds": 58,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 145,
+          "at": 0.0,
+          "before": 190,
+          "kind": "archer",
+          "pad": 6,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 75,
+          "at": 0.0,
+          "before": 145,
+          "kind": "ember",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 20,
+          "at": 0.0,
+          "before": 75,
+          "kind": "frost",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 10.5,
+          "before": 104,
+          "kind": "prism",
+          "pad": 3,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 11.3,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 7,
+          "at": 17.5000000000001,
+          "before": 52,
+          "kind": "archer",
+          "pad": 2,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 21.5000000000002,
+          "before": 75,
+          "kind": "ember",
+          "pad": 7,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 25.1000000000002,
+          "wave": 3
+        },
+        {
+          "action": "build",
+          "after": 7,
+          "at": 28.0000000000003,
+          "before": 62,
+          "kind": "frost",
+          "pad": 5,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 6,
+          "at": 37.0,
+          "before": 106,
+          "kind": "prism",
+          "pad": 4,
+          "wave": 2
+        }
+      ],
+      "budget": 190,
+      "mission": 19,
+      "name": "Thawline",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 17,
+        "kills": 52,
+        "mission": 19,
+        "mode": "campaign",
+        "rallies": 3,
+        "score": 1250,
+        "seconds": 37,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 195,
+          "at": 0.0,
+          "before": 240,
+          "kind": "archer",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 125,
+          "at": 0.0,
+          "before": 195,
+          "kind": "ember",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 70,
+          "at": 0.0,
+          "before": 125,
+          "kind": "frost",
+          "pad": 6,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 5.99999999999999,
+          "before": 105,
+          "kind": "prism",
+          "pad": 4,
+          "wave": 0
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 13.0000000000001,
+          "before": 50,
+          "kind": "archer",
+          "pad": 3,
+          "wave": 0
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 22.8500000000002,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 28.5000000000003,
+          "before": 75,
+          "kind": "ember",
+          "pad": 7,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 7,
+          "at": 34.0000000000002,
+          "before": 62,
+          "kind": "frost",
+          "pad": 0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 43.5499999999997,
+          "wave": 3
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 53.4999999999991,
+          "before": 100,
+          "kind": "prism",
+          "pad": 5,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "upgrade",
+          "after": 4,
+          "at": 57.9999999999988,
+          "before": 38,
+          "pad": 1,
+          "wave": 2
+        },
+        {
+          "action": "next_wave",
+          "at": 61.5499999999986,
+          "wave": 4
+        },
+        {
+          "action": "upgrade",
+          "after": 6,
+          "at": 64.4999999999985,
+          "before": 40,
+          "pad": 3,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 3,
+          "at": 68.4999999999983,
+          "before": 56,
+          "pad": 2,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 3,
+          "at": 70.9999999999981,
+          "before": 44,
+          "pad": 6,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 72.0499999999981
+        },
+        {
+          "action": "upgrade",
+          "after": 3,
+          "at": 73.499999999998,
+          "before": 44,
+          "pad": 0,
+          "wave": 3
+        }
+      ],
+      "budget": 240,
+      "mission": 20,
+      "name": "The White Wall",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 18,
+        "kills": 75,
+        "mission": 20,
+        "mode": "campaign",
+        "rallies": 5,
+        "score": 1705,
+        "seconds": 76,
+        "stars": 3,
+        "upgrades": 5,
+        "waves": 4,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 145,
+          "at": 0.0,
+          "before": 190,
+          "kind": "archer",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 75,
+          "at": 0.0,
+          "before": 145,
+          "kind": "ember",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 20,
+          "at": 0.0,
+          "before": 75,
+          "kind": "frost",
+          "pad": 3,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 16.3500000000001,
+          "before": 104,
+          "kind": "prism",
+          "pad": 2,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 16.3500000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 27.5000000000003,
+          "before": 48,
+          "kind": "archer",
+          "pad": 7,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 32.5000000000003,
+          "before": 70,
+          "kind": "ember",
+          "pad": 1,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 37.0,
+          "before": 60,
+          "kind": "frost",
+          "pad": 5,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 37.05,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "build",
+          "after": 2,
+          "at": 71.4999999999981,
+          "before": 102,
+          "kind": "prism",
+          "pad": 6,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 72.0499999999981
+        }
+      ],
+      "budget": 190,
+      "mission": 21,
+      "name": "Twilight Thread",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 16,
+        "kills": 51,
+        "mission": 21,
+        "mode": "campaign",
+        "rallies": 5,
+        "score": 1225,
+        "seconds": 73,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 150,
+          "at": 0.0,
+          "before": 195,
+          "kind": "archer",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 80,
+          "at": 0.0,
+          "before": 150,
+          "kind": "ember",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 25,
+          "at": 0.0,
+          "before": 80,
+          "kind": "frost",
+          "pad": 7,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 31.5500000000003,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 6,
+          "at": 38.5,
+          "before": 106,
+          "kind": "prism",
+          "pad": 3,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 41.9999999999998,
+          "before": 48,
+          "kind": "archer",
+          "pad": 4,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "next_wave",
+          "at": 61.9999999999986,
+          "wave": 3
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 66.4999999999984,
+          "before": 73,
+          "kind": "ember",
+          "pad": 2,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 71.9999999999981,
+          "before": 59,
+          "kind": "frost",
+          "pad": 6,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 72.0499999999981
+        }
+      ],
+      "budget": 195,
+      "mission": 22,
+      "name": "Armored Root",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 7,
+        "day": "",
+        "finished": true,
+        "hearts": 17,
+        "kills": 37,
+        "mission": 22,
+        "mode": "campaign",
+        "rallies": 5,
+        "score": 1025,
+        "seconds": 82,
+        "stars": 3,
+        "upgrades": 0,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 200,
+          "at": 0.0,
+          "before": 245,
+          "kind": "archer",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 130,
+          "at": 0.0,
+          "before": 200,
+          "kind": "ember",
+          "pad": 3,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 75,
+          "at": 0.0,
+          "before": 130,
+          "kind": "frost",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 10.0,
+          "before": 105,
+          "kind": "prism",
+          "pad": 1,
+          "wave": 0
+        },
+        {
+          "action": "build",
+          "after": 6,
+          "at": 14.0000000000001,
+          "before": 51,
+          "kind": "archer",
+          "pad": 6,
+          "wave": 0
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 21.0000000000002,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 22.5000000000002,
+          "before": 71,
+          "kind": "ember",
+          "pad": 4,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 2,
+          "at": 30.5000000000003,
+          "before": 57,
+          "kind": "frost",
+          "pad": 7,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 47.7499999999994,
+          "wave": 3
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 53.4999999999991,
+          "before": 100,
+          "kind": "prism",
+          "pad": 5,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "upgrade",
+          "after": 1,
+          "at": 55.999999999999,
+          "before": 35,
+          "pad": 2,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 6,
+          "at": 58.4999999999988,
+          "before": 40,
+          "pad": 6,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 11,
+          "at": 62.9999999999986,
+          "before": 52,
+          "pad": 0,
+          "wave": 2
+        }
+      ],
+      "budget": 245,
+      "mission": 23,
+      "name": "Split Echo",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 17,
+        "kills": 62,
+        "mission": 23,
+        "mode": "campaign",
+        "rallies": 4,
+        "score": 1400,
+        "seconds": 65,
+        "stars": 2,
+        "upgrades": 3,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 150,
+          "at": 0.0,
+          "before": 195,
+          "kind": "archer",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 80,
+          "at": 0.0,
+          "before": 150,
+          "kind": "ember",
+          "pad": 7,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 25,
+          "at": 0.0,
+          "before": 80,
+          "kind": "frost",
+          "pad": 3,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 10.5,
+          "before": 105,
+          "kind": "prism",
+          "pad": 6,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 12.6,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 15.0000000000001,
+          "before": 45,
+          "kind": "archer",
+          "pad": 0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 2,
+          "at": 22.0000000000002,
+          "before": 72,
+          "kind": "ember",
+          "pad": 1,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 33.5000000000002,
+          "before": 60,
+          "kind": "frost",
+          "pad": 2,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 35.6000000000001,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 5,
+          "at": 45.4999999999996,
+          "before": 105,
+          "kind": "prism",
+          "pad": 5,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 1,
+          "at": 47.9999999999994,
+          "before": 35,
+          "pad": 4,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 1,
+          "at": 49.9999999999993,
+          "before": 42,
+          "pad": 3,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 0,
+          "at": 51.9999999999992,
+          "before": 34,
+          "pad": 0,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        }
+      ],
+      "budget": 195,
+      "mission": 24,
+      "name": "Spore Cloud",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 17,
+        "kills": 96,
+        "mission": 24,
+        "mode": "campaign",
+        "rallies": 4,
+        "score": 1910,
+        "seconds": 54,
+        "stars": 3,
+        "upgrades": 3,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 205,
+          "at": 0.0,
+          "before": 250,
+          "kind": "archer",
+          "pad": 5,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 135,
+          "at": 0.0,
+          "before": 205,
+          "kind": "ember",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 80,
+          "at": 0.0,
+          "before": 135,
+          "kind": "frost",
+          "pad": 6,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 7,
+          "at": 6.49999999999998,
+          "before": 107,
+          "kind": "prism",
+          "pad": 7,
+          "wave": 0
+        },
+        {
+          "action": "build",
+          "after": 7,
+          "at": 12.5,
+          "before": 52,
+          "kind": "archer",
+          "pad": 3,
+          "wave": 0
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 23.8000000000002,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 16,
+          "at": 26.0000000000002,
+          "before": 86,
+          "kind": "ember",
+          "pad": 2,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 28.0000000000003,
+          "before": 58,
+          "kind": "frost",
+          "pad": 0,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 35.5000000000001,
+          "before": 100,
+          "kind": "prism",
+          "pad": 1,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "upgrade",
+          "after": 1,
+          "at": 37.95,
+          "before": 35,
+          "pad": 5,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 37.95,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 0,
+          "at": 48.4999999999994,
+          "before": 41,
+          "pad": 6,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 4,
+          "at": 52.9999999999991,
+          "before": 38,
+          "pad": 3,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "next_wave",
+          "at": 56.3499999999989,
+          "wave": 4
+        },
+        {
+          "action": "upgrade",
+          "after": 5,
+          "at": 58.4999999999988,
+          "before": 58,
+          "pad": 4,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 0,
+          "at": 62.4999999999986,
+          "before": 53,
+          "pad": 2,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 6,
+          "at": 65.4999999999984,
+          "before": 47,
+          "pad": 0,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 15,
+          "at": 69.9999999999982,
+          "before": 83,
+          "pad": 5,
+          "wave": 3
+        }
+      ],
+      "budget": 250,
+      "mission": 25,
+      "name": "Rune Watch",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 19,
+        "kills": 99,
+        "mission": 25,
+        "mode": "campaign",
+        "rallies": 4,
+        "score": 2075,
+        "seconds": 70,
+        "stars": 3,
+        "upgrades": 7,
+        "waves": 4,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 155,
+          "at": 0.0,
+          "before": 200,
+          "kind": "archer",
+          "pad": 5,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 85,
+          "at": 0.0,
+          "before": 155,
+          "kind": "ember",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 30,
+          "at": 0.0,
+          "before": 85,
+          "kind": "frost",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 2,
+          "at": 10.5,
+          "before": 102,
+          "kind": "prism",
+          "pad": 1,
+          "wave": 0
+        },
+        {
+          "action": "build",
+          "after": 6,
+          "at": 13.0000000000001,
+          "before": 51,
+          "kind": "archer",
+          "pad": 4,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 14.9500000000001,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 24.5000000000002,
+          "before": 74,
+          "kind": "ember",
+          "pad": 6,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 31.5000000000003,
+          "before": 59,
+          "kind": "frost",
+          "pad": 3,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 42.0499999999997,
+          "wave": 3
+        },
+        {
+          "action": "build",
+          "after": 2,
+          "at": 50.9999999999992,
+          "before": 102,
+          "kind": "prism",
+          "pad": 7,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 0,
+          "at": 52.4999999999992,
+          "before": 34,
+          "pad": 5,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "upgrade",
+          "after": 6,
+          "at": 54.499999999999,
+          "before": 40,
+          "pad": 4,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 1,
+          "at": 60.4999999999987,
+          "before": 54,
+          "pad": 2,
+          "wave": 2
+        }
+      ],
+      "budget": 200,
+      "mission": 26,
+      "name": "The Last Orchard",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 17,
+        "kills": 76,
+        "mission": 26,
+        "mode": "campaign",
+        "rallies": 4,
+        "score": 1610,
+        "seconds": 63,
+        "stars": 3,
+        "upgrades": 3,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 165,
+          "at": 0.0,
+          "before": 210,
+          "kind": "archer",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 95,
+          "at": 0.0,
+          "before": 165,
+          "kind": "ember",
+          "pad": 6,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 40,
+          "at": 0.0,
+          "before": 95,
+          "kind": "frost",
+          "pad": 4,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 17.0000000000001,
+          "before": 103,
+          "kind": "prism",
+          "pad": 5,
+          "wave": 0
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 20.5000000000002,
+          "before": 48,
+          "kind": "archer",
+          "pad": 0,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 21.3000000000002,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 29.0000000000003,
+          "before": 70,
+          "kind": "ember",
+          "pad": 3,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 35.0000000000001,
+          "before": 56,
+          "kind": "frost",
+          "pad": 7,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 47.5999999999994,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 55.499999999999,
+          "before": 104,
+          "kind": "prism",
+          "pad": 1,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 6,
+          "at": 58.9999999999988,
+          "before": 40,
+          "pad": 2,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 10,
+          "at": 64.4999999999985,
+          "before": 51,
+          "pad": 4,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 3,
+          "at": 68.9999999999982,
+          "before": 37,
+          "pad": 0,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 72.0499999999981
+        }
+      ],
+      "budget": 210,
+      "mission": 27,
+      "name": "Glass Pass",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 18,
+        "kills": 53,
+        "mission": 27,
+        "mode": "campaign",
+        "rallies": 5,
+        "score": 1275,
+        "seconds": 75,
+        "stars": 3,
+        "upgrades": 3,
+        "waves": 3,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 215,
+          "at": 0.0,
+          "before": 260,
+          "kind": "archer",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 145,
+          "at": 0.0,
+          "before": 215,
+          "kind": "ember",
+          "pad": 3,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 90,
+          "at": 0.0,
+          "before": 145,
+          "kind": "frost",
+          "pad": 6,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 4.49999999999999,
+          "before": 104,
+          "kind": "prism",
+          "pad": 0,
+          "wave": 0
+        },
+        {
+          "action": "build",
+          "after": 1,
+          "at": 10.5,
+          "before": 46,
+          "kind": "archer",
+          "pad": 2,
+          "wave": 0
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 9,
+          "at": 20.4500000000002,
+          "before": 79,
+          "kind": "ember",
+          "pad": 4,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 20.4500000000002,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 8,
+          "at": 25.5000000000002,
+          "before": 63,
+          "kind": "frost",
+          "pad": 7,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 30.5000000000003,
+          "before": 103,
+          "kind": "prism",
+          "pad": 5,
+          "wave": 1
+        },
+        {
+          "action": "upgrade",
+          "after": 5,
+          "at": 35.0000000000001,
+          "before": 39,
+          "pad": 1,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 36.0500000000001,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 36.1000000000001
+        },
+        {
+          "action": "upgrade",
+          "after": 5,
+          "at": 39.4999999999999,
+          "before": 39,
+          "pad": 2,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 6,
+          "at": 42.4999999999997,
+          "before": 47,
+          "pad": 6,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 4,
+          "at": 44.4999999999996,
+          "before": 45,
+          "pad": 7,
+          "wave": 2
+        },
+        {
+          "action": "next_wave",
+          "at": 47.0999999999995,
+          "wave": 4
+        },
+        {
+          "action": "upgrade",
+          "after": 1,
+          "at": 48.4999999999994,
+          "before": 54,
+          "pad": 3,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 54.0999999999991
+        },
+        {
+          "action": "upgrade",
+          "after": 4,
+          "at": 56.4999999999989,
+          "before": 57,
+          "pad": 4,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 6,
+          "at": 59.9999999999987,
+          "before": 74,
+          "pad": 1,
+          "wave": 3
+        }
+      ],
+      "budget": 260,
+      "mission": 28,
+      "name": "Fourfold March",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 19,
+        "kills": 108,
+        "mission": 28,
+        "mode": "campaign",
+        "rallies": 4,
+        "score": 2210,
+        "seconds": 64,
+        "stars": 3,
+        "upgrades": 7,
+        "waves": 4,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 220,
+          "at": 0.0,
+          "before": 265,
+          "kind": "archer",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 150,
+          "at": 0.0,
+          "before": 220,
+          "kind": "ember",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 95,
+          "at": 0.0,
+          "before": 150,
+          "kind": "frost",
+          "pad": 6,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 3.5,
+          "before": 104,
+          "kind": "prism",
+          "pad": 4,
+          "wave": 0
+        },
+        {
+          "action": "build",
+          "after": 4,
+          "at": 9.5,
+          "before": 49,
+          "kind": "archer",
+          "pad": 3,
+          "wave": 0
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 22.5000000000002,
+          "before": 70,
+          "kind": "ember",
+          "pad": 7,
+          "wave": 0
+        },
+        {
+          "action": "next_wave",
+          "at": 33.8500000000002,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 40.4999999999998,
+          "before": 55,
+          "kind": "frost",
+          "pad": 0,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 6,
+          "at": 53.4999999999991,
+          "before": 106,
+          "kind": "prism",
+          "pad": 5,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "upgrade",
+          "after": 7,
+          "at": 56.8499999999989,
+          "before": 41,
+          "pad": 1,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 56.8499999999989,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 3,
+          "at": 64.9999999999985,
+          "before": 37,
+          "pad": 3,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 2,
+          "at": 68.9999999999982,
+          "before": 43,
+          "pad": 6,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 72.0499999999981
+        },
+        {
+          "action": "upgrade",
+          "after": 7,
+          "at": 73.499999999998,
+          "before": 48,
+          "pad": 0,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 1,
+          "at": 79.9999999999976,
+          "before": 69,
+          "pad": 1,
+          "wave": 2
+        },
+        {
+          "action": "next_wave",
+          "at": 80.8999999999975,
+          "wave": 4
+        },
+        {
+          "action": "upgrade",
+          "after": 5,
+          "at": 87.9999999999971,
+          "before": 58,
+          "pad": 2,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 90.049999999997
+        },
+        {
+          "action": "upgrade",
+          "after": 6,
+          "at": 92.4999999999969,
+          "before": 59,
+          "pad": 7,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 1,
+          "at": 98.4999999999965,
+          "before": 69,
+          "pad": 3,
+          "wave": 3
+        }
+      ],
+      "budget": 265,
+      "mission": 29,
+      "name": "Iron Bloom",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 20,
+        "kills": 90,
+        "mission": 29,
+        "mode": "campaign",
+        "rallies": 6,
+        "score": 1950,
+        "seconds": 103,
+        "stars": 3,
+        "upgrades": 8,
+        "waves": 4,
+        "won": true
+      },
+      "strategy": 0
+    },
+    {
+      "actions": [
+        {
+          "action": "build",
+          "after": 235,
+          "at": 0.0,
+          "before": 280,
+          "kind": "archer",
+          "pad": 1,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 165,
+          "at": 0.0,
+          "before": 235,
+          "kind": "ember",
+          "pad": 2,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 110,
+          "at": 0.0,
+          "before": 165,
+          "kind": "frost",
+          "pad": 3,
+          "wave": -1
+        },
+        {
+          "action": "build",
+          "after": 10,
+          "at": 0.0,
+          "before": 110,
+          "kind": "prism",
+          "pad": 0,
+          "wave": -1
+        },
+        {
+          "action": "next_wave",
+          "at": 0.0,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 0.05
+        },
+        {
+          "action": "build",
+          "after": 0,
+          "at": 6.99999999999998,
+          "before": 45,
+          "kind": "archer",
+          "pad": 5,
+          "wave": 0
+        },
+        {
+          "action": "build",
+          "after": 3,
+          "at": 15.5000000000001,
+          "before": 73,
+          "kind": "ember",
+          "pad": 6,
+          "wave": 0
+        },
+        {
+          "action": "rally",
+          "at": 18.0500000000001
+        },
+        {
+          "action": "next_wave",
+          "at": 21.4000000000002,
+          "wave": 2
+        },
+        {
+          "action": "build",
+          "after": 2,
+          "at": 22.0000000000002,
+          "before": 57,
+          "kind": "frost",
+          "pad": 7,
+          "wave": 1
+        },
+        {
+          "action": "build",
+          "after": 8,
+          "at": 31.0000000000003,
+          "before": 108,
+          "kind": "prism",
+          "pad": 4,
+          "wave": 1
+        },
+        {
+          "action": "upgrade",
+          "after": 11,
+          "at": 32.5000000000003,
+          "before": 45,
+          "pad": 1,
+          "wave": 1
+        },
+        {
+          "action": "upgrade",
+          "after": 4,
+          "at": 35.0000000000001,
+          "before": 38,
+          "pad": 5,
+          "wave": 1
+        },
+        {
+          "action": "rally",
+          "at": 36.0500000000001
+        },
+        {
+          "action": "upgrade",
+          "after": 8,
+          "at": 38.5,
+          "before": 49,
+          "pad": 3,
+          "wave": 1
+        },
+        {
+          "action": "next_wave",
+          "at": 39.1999999999999,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 4,
+          "at": 43.9999999999996,
+          "before": 45,
+          "pad": 7,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 0,
+          "at": 48.4999999999994,
+          "before": 53,
+          "pad": 2,
+          "wave": 2
+        },
+        {
+          "action": "upgrade",
+          "after": 0,
+          "at": 53.9999999999991,
+          "before": 53,
+          "pad": 6,
+          "wave": 2
+        },
+        {
+          "action": "rally",
+          "at": 54.0499999999991
+        },
+        {
+          "action": "next_wave",
+          "at": 64.1499999999985,
+          "wave": 4
+        },
+        {
+          "action": "upgrade",
+          "after": 4,
+          "at": 66.9999999999983,
+          "before": 72,
+          "pad": 1,
+          "wave": 3
+        },
+        {
+          "action": "rally",
+          "at": 72.0499999999981
+        },
+        {
+          "action": "upgrade",
+          "after": 5,
+          "at": 72.999999999998,
+          "before": 73,
+          "pad": 5,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 7,
+          "at": 74.9999999999979,
+          "before": 90,
+          "pad": 3,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 2,
+          "at": 77.9999999999977,
+          "before": 77,
+          "pad": 0,
+          "wave": 3
+        },
+        {
+          "action": "upgrade",
+          "after": 5,
+          "at": 87.4999999999972,
+          "before": 80,
+          "pad": 4,
+          "wave": 3
+        }
+      ],
+      "budget": 280,
+      "mission": 30,
+      "name": "Mosslight Dawn",
+      "preparation": {
+        "fortify": 0,
+        "power": 0
+      },
+      "result": {
+        "assisted": false,
+        "built": 8,
+        "day": "",
+        "finished": true,
+        "hearts": 20,
+        "kills": 131,
+        "mission": 30,
+        "mode": "campaign",
+        "rallies": 5,
+        "score": 2565,
+        "seconds": 88,
+        "stars": 3,
+        "upgrades": 11,
+        "waves": 4,
+        "won": true
+      },
+      "strategy": 0
+    }
+  ],
+  "scope": "Production deterministic model; legal build/upgrade/Rally/next-wave/advance only; zero preparation or earned assistance. Not native QA."
+}

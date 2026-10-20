@@ -1,0 +1,22 @@
+{
+  "key": "phone-collection",
+  "file": "phone-collection.png",
+  "sha256": "3dccce791a0cd16d5afdda8eec7541093a028c9347618378ebc11dee20cd58c6",
+  "dimensions": [
+    1080,
+    1920
+  ],
+  "raw_file": "raw/phone-collection.png",
+  "raw_sha256": "3dccce791a0cd16d5afdda8eec7541093a028c9347618378ebc11dee20cd58c6",
+  "raw_dimensions": [
+    1080,
+    1920
+  ],
+  "game_state": "Actual ONLINE Campaign list in fresh E9 profile: zero of30 missions, zero of90 stars, first mission enabled and later missions locked, normal scroll navigation.",
+  "platform": "Android11 API30 x86 emulator",
+  "network_mode": "online",
+  "pixel_processing": "none; unchanged guest screenshot bytes",
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+}

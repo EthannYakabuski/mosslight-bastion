@@ -1,0 +1,190 @@
+{
+  "achievements": [
+    {
+      "id": "first_wall",
+      "name": "First lantern",
+      "description": "Complete your first mission.",
+      "metric": "clears",
+      "target": 1,
+      "icon": "res://assets/icons/first_wall.svg"
+    },
+    {
+      "id": "five_walls",
+      "name": "Glenkeeper",
+      "description": "Complete five missions.",
+      "metric": "clears",
+      "target": 5,
+      "icon": "res://assets/icons/five_walls.svg"
+    },
+    {
+      "id": "ten_walls",
+      "name": "Bridgewarden",
+      "description": "Complete ten missions.",
+      "metric": "clears",
+      "target": 10,
+      "icon": "res://assets/icons/ten_walls.svg"
+    },
+    {
+      "id": "twenty_walls",
+      "name": "Runewarden",
+      "description": "Complete twenty missions.",
+      "metric": "clears",
+      "target": 20,
+      "icon": "res://assets/icons/twenty_walls.svg"
+    },
+    {
+      "id": "all_walls",
+      "name": "Mosslight dawn",
+      "description": "Complete all 30 missions.",
+      "metric": "clears",
+      "target": 30,
+      "icon": "res://assets/icons/all_walls.svg"
+    },
+    {
+      "id": "stars_15",
+      "name": "A little brilliance",
+      "description": "Earn 15 campaign stars.",
+      "metric": "stars",
+      "target": 15,
+      "icon": "res://assets/icons/stars_15.svg"
+    },
+    {
+      "id": "stars_45",
+      "name": "Lantern keeper",
+      "description": "Earn 45 campaign stars.",
+      "metric": "stars",
+      "target": 45,
+      "icon": "res://assets/icons/stars_45.svg"
+    },
+    {
+      "id": "stars_90",
+      "name": "Every light",
+      "description": "Earn 90 campaign stars.",
+      "metric": "stars",
+      "target": 90,
+      "icon": "res://assets/icons/stars_90.svg"
+    },
+    {
+      "id": "kills_25",
+      "name": "Clear the footpath",
+      "description": "Defeat25 enemies.",
+      "metric": "kills",
+      "target": 25,
+      "icon": "res://assets/icons/kills_25.svg"
+    },
+    {
+      "id": "kills_250",
+      "name": "Woodland watch",
+      "description": "Defeat250 enemies.",
+      "metric": "kills",
+      "target": 250,
+      "icon": "res://assets/icons/kills_250.svg"
+    },
+    {
+      "id": "kills_1000",
+      "name": "The long watch",
+      "description": "Defeat1000 enemies.",
+      "metric": "kills",
+      "target": 1000,
+      "icon": "res://assets/icons/kills_1000.svg"
+    },
+    {
+      "id": "built_20",
+      "name": "A place for every tower",
+      "description": "Build20 towers in completed rounds.",
+      "metric": "towers_built",
+      "target": 20,
+      "icon": "res://assets/icons/built_20.svg"
+    },
+    {
+      "id": "upgrades_20",
+      "name": "Polished stone",
+      "description": "Buy20 run tower upgrades.",
+      "metric": "upgrades_bought",
+      "target": 20,
+      "icon": "res://assets/icons/upgrades_20.svg"
+    },
+    {
+      "id": "rally_10",
+      "name": "Raise the lantern",
+      "description": "Use free Rally10 times in completed rounds.",
+      "metric": "rallies",
+      "target": 10,
+      "icon": "res://assets/icons/rally_10.svg"
+    },
+    {
+      "id": "level_3",
+      "name": "Keeper apprentice",
+      "description": "Reach keeper level3.",
+      "metric": "level",
+      "target": 3,
+      "icon": "res://assets/icons/level_3.svg"
+    },
+    {
+      "id": "level_6",
+      "name": "Keeper of the glen",
+      "description": "Reach keeper level6.",
+      "metric": "level",
+      "target": 6,
+      "icon": "res://assets/icons/level_6.svg"
+    },
+    {
+      "id": "level_10",
+      "name": "Old-light keeper",
+      "description": "Reach keeper level10.",
+      "metric": "level",
+      "target": 10,
+      "icon": "res://assets/icons/level_10.svg"
+    },
+    {
+      "id": "endless_5",
+      "name": "Long evening",
+      "description": "Clear5 waves in one unassisted endless siege.",
+      "metric": "endless_wave",
+      "target": 5,
+      "icon": "res://assets/icons/endless_5.svg"
+    },
+    {
+      "id": "daily_3",
+      "name": "Three dawns",
+      "description": "Complete daily defenses on3 different saved days.",
+      "metric": "daily_clears",
+      "target": 3,
+      "icon": "res://assets/icons/daily_3.svg"
+    },
+    {
+      "id": "streak_7",
+      "name": "Seven lanterns",
+      "description": "Claim the seventh consecutive login gift.",
+      "metric": "streak",
+      "target": 7,
+      "icon": "res://assets/icons/streak_7.svg"
+    }
+  ],
+  "leaderboards": [
+    {
+      "id": "unassisted_endless_score",
+      "name": "Unassisted siege score",
+      "description": "Best unassisted endless score.",
+      "icon": "res://assets/icons/unassisted_endless_score.svg"
+    },
+    {
+      "id": "unassisted_daily_score",
+      "name": "Unassisted daily score",
+      "description": "Best current daily unassisted score; configure a suitable reset policy in the backend.",
+      "icon": "res://assets/icons/unassisted_daily_score.svg"
+    },
+    {
+      "id": "unassisted_stars",
+      "name": "Unassisted campaign stars",
+      "description": "Sum of best unassisted campaign stars.",
+      "icon": "res://assets/icons/unassisted_stars.svg"
+    },
+    {
+      "id": "player_level",
+      "name": "Keeper level",
+      "description": "Highest ordinary keeper level. Rewards may contribute to ordinary progression.",
+      "icon": "res://assets/icons/player_level.svg"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "asset": "assets/town/tilemap_packed.png",
+    "source_pack": "kenney_tiny-town",
+    "source_relative_path": "Tilemap/tilemap_packed.png",
+    "sha256": "3a54d99ecde790d4fdea207a3644cf130fc56fa838f1beb1507c185a95b8e902",
+    "license": "CC0",
+    "notice": "LICENSES/Assets/kenney_tiny-town-License.txt"
+  },
+  {
+    "asset": "assets/dungeon/tilemap_packed.png",
+    "source_pack": "kenney_tiny-dungeon",
+    "source_relative_path": "Tilemap/tilemap_packed.png",
+    "sha256": "d24e60a41e4ac7a745c0304dfde121143688557f40215f23221c29cfe683825f",
+    "license": "CC0",
+    "notice": "LICENSES/Assets/kenney_tiny-dungeon-License.txt"
+  },
+  {
+    "asset": "assets/audio/click_002.ogg",
+    "source_pack": "kenney_interface-sounds",
+    "source_relative_path": "Audio/click_002.ogg",
+    "sha256": "adcd1f4adc35f1b41bc1b5bbefeff7aa44f2f3f0d96d3199b544140c7c1e761c",
+    "license": "CC0",
+    "notice": "LICENSES/Assets/kenney_interface-sounds-License.txt"
+  },
+  {
+    "asset": "assets/audio/confirmation_002.ogg",
+    "source_pack": "kenney_interface-sounds",
+    "source_relative_path": "Audio/confirmation_002.ogg",
+    "sha256": "33b17a9a9a2397c62b285c52c33a907fdffb476909c99e42dde603f6a7a8b12c",
+    "license": "CC0",
+    "notice": "LICENSES/Assets/kenney_interface-sounds-License.txt"
+  },
+  {
+    "asset": "assets/audio/back_002.ogg",
+    "source_pack": "kenney_interface-sounds",
+    "source_relative_path": "Audio/back_002.ogg",
+    "sha256": "61581c58194e3f19f531072edabbc344204c7e0a2887b8ededce4357bcf09195",
+    "license": "CC0",
+    "notice": "LICENSES/Assets/kenney_interface-sounds-License.txt"
+  }
+]

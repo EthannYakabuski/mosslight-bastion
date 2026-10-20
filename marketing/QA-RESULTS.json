@@ -1,0 +1,28 @@
+{
+  "capture_count": 9,
+  "capture_manifest": "screenshots/capture-manifest.json",
+  "source_apk_sha256": "E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD",
+  "raw_image_bytes_reviewed": true,
+  "crop_resize_rotation_or_overlay": false,
+  "viewports": {
+    "phone": [
+      1080,
+      1920
+    ],
+    "logical7": [
+      1200,
+      1920
+    ],
+    "logical10": [
+      1600,
+      2560
+    ]
+  },
+  "scope": "All9AIoperator-reviewed;3representative coordinator-reviewed. ONLINE same-emulator views only, not physical devices.",
+  "limits": [
+    "Final broad diagnostic gate false: unresolved Chromium WebView cache wrong-size/wrong-file-structure errors were preserved. No Godot SCRIPT ERROR/can_process/FATAL finding was observed. No cache deletion, suppression, filter change or rerun. Earlier creative JavaScript callback diagnostic separately qualified.",
+    "Daily replay/repeat bonus, native cosmetic selection and Settings/privacy preference changes unverified.",
+    "Physical devices/tablets, audible output, interactive Web/audio/WebGL, production services and human balance unverified. Emulator audio disabled.",
+    "Godot4.5.1 Compatibility minAPI24/targetAPI35 reflects export constraint, not current Play release eligibility. Owner provides real IDs/signing, consent/audience, policy/support, Data safety and Play publication."
+  ]
+}

@@ -1,0 +1,3951 @@
+{
+  "schema": 1,
+  "authorship": "30 explicit mission rows across six regions using12 hand-drawn cardinal lane geometries. Fixed pad priorities, budgets, health scales and every enemy group/timing are authored above; no RNG generates the campaign.",
+  "regions": [
+    {
+      "name": "Fernwake Glen",
+      "subtitle": "A lantern and a patient archer",
+      "ground": "#49754d",
+      "edge": "#1f4337",
+      "accent": "#efd892",
+      "tile": 0
+    },
+    {
+      "name": "Willow Crossing",
+      "subtitle": "Watch both banks of the brook",
+      "ground": "#497b72",
+      "edge": "#254d55",
+      "accent": "#a5e1db",
+      "tile": 1
+    },
+    {
+      "name": "Amber Orchard",
+      "subtitle": "Warm embers, crowded paths",
+      "ground": "#80643c",
+      "edge": "#59442e",
+      "accent": "#ffcd80",
+      "tile": 2
+    },
+    {
+      "name": "Snowmoss Reach",
+      "subtitle": "Some lights refuse to slow",
+      "ground": "#739397",
+      "edge": "#405b6b",
+      "accent": "#d6eff0",
+      "tile": 0
+    },
+    {
+      "name": "Violet Ruins",
+      "subtitle": "Ancient armor and split echoes",
+      "ground": "#746380",
+      "edge": "#443d62",
+      "accent": "#d8c2ef",
+      "tile": 1
+    },
+    {
+      "name": "The Mosslight Wall",
+      "subtitle": "Every tower has its moment",
+      "ground": "#4d655b",
+      "edge": "#25393c",
+      "accent": "#eddd9a",
+      "tile": 2
+    }
+  ],
+  "missions": [
+    {
+      "id": 1,
+      "name": "First Lantern",
+      "region": 0,
+      "layout": 0,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            8,
+            6
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "budget": 100,
+      "hearts": 15,
+      "hp_scale": 1.0,
+      "waves": [
+        [
+          {
+            "type": "sprig",
+            "count": 5,
+            "interval": 1.5,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "runner",
+            "count": 6,
+            "interval": 1.25,
+            "route": 0,
+            "delay": 0.0
+          }
+        ]
+      ],
+      "hint": "Tap a build pad, inspect range, then place an Archer before Next wave.",
+      "mode": "campaign"
+    },
+    {
+      "id": 2,
+      "name": "The Elder's Lesson",
+      "region": 0,
+      "layout": 1,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "budget": 140,
+      "hearts": 15,
+      "hp_scale": 1.0,
+      "waves": [
+        [
+          {
+            "type": "sprig",
+            "count": 7,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "runner",
+            "count": 8,
+            "interval": 0.95,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 2,
+            "interval": 2.6,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "sprig",
+            "count": 5,
+            "interval": 0.9,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Upgrade a tower between waves. Free Rally quickens every tower briefly.",
+      "mode": "campaign"
+    },
+    {
+      "id": 3,
+      "name": "Mushroom Bend",
+      "region": 0,
+      "layout": 2,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "budget": 145,
+      "hearts": 15,
+      "hp_scale": 1.0,
+      "waves": [
+        [
+          {
+            "type": "sprig",
+            "count": 8,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 14,
+            "interval": 0.28,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "runner",
+            "count": 8,
+            "interval": 0.75,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 2,
+            "interval": 2.5,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Ember splashes catch close groups. Supplies from defeats fund later towers.",
+      "mode": "campaign"
+    },
+    {
+      "id": 4,
+      "name": "Rootside Switch",
+      "region": 0,
+      "layout": 3,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "budget": 150,
+      "hearts": 15,
+      "hp_scale": 1.02,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 9,
+            "interval": 0.9,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 3,
+            "interval": 2.2,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "sprig",
+            "count": 6,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 16,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 5,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Frost extends the time your damage towers can aim at runners.",
+      "mode": "campaign"
+    },
+    {
+      "id": 5,
+      "name": "Two Garden Gates",
+      "region": 0,
+      "layout": 4,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "budget": 180,
+      "hearts": 16,
+      "hp_scale": 1.04,
+      "waves": [
+        [
+          {
+            "type": "sprig",
+            "count": 6,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 5,
+            "interval": 1.1,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 10,
+            "interval": 0.35,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 3,
+            "interval": 2.5,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 3,
+            "interval": 2.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 7,
+            "interval": 0.8,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Two fixed lanes share the keep. Choose coverage, not a blocked route.",
+      "mode": "campaign"
+    },
+    {
+      "id": 6,
+      "name": "Stone Crossing",
+      "region": 1,
+      "layout": 5,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            6
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "budget": 150,
+      "hearts": 15,
+      "hp_scale": 1.04,
+      "waves": [
+        [
+          {
+            "type": "sprig",
+            "count": 10,
+            "interval": 0.9,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.4,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 12,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Prism is expensive but armor never reduces its damage.",
+      "mode": "campaign"
+    },
+    {
+      "id": 7,
+      "name": "River Runners",
+      "region": 1,
+      "layout": 6,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            8,
+            5
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "budget": 155,
+      "hearts": 15,
+      "hp_scale": 1.05,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.75,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.55,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 8,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.4,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 8,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Long corners reward slowing and overlapping range.",
+      "mode": "campaign"
+    },
+    {
+      "id": 8,
+      "name": "Willow Fork",
+      "region": 1,
+      "layout": 8,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "budget": 180,
+      "hearts": 16,
+      "hp_scale": 1.06,
+      "waves": [
+        [
+          {
+            "type": "sprig",
+            "count": 8,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "sprig",
+            "count": 8,
+            "interval": 0.8,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "runner",
+            "count": 8,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 12,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.2,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 8,
+            "interval": 0.75,
+            "route": 1,
+            "delay": 0.0
+          }
+        ]
+      ],
+      "hint": "The shorter lane asks for a different pad than the longer lane.",
+      "mode": "campaign"
+    },
+    {
+      "id": 9,
+      "name": "Low Tide Lanterns",
+      "region": 1,
+      "layout": 7,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "budget": 160,
+      "hearts": 16,
+      "hp_scale": 1.07,
+      "waves": [
+        [
+          {
+            "type": "swarm",
+            "count": 18,
+            "interval": 0.28,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "wisp",
+            "count": 6,
+            "interval": 1.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 6,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.4,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 18,
+            "interval": 0.26,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Wisps ignore frost slow. Archer and prism still hit them.",
+      "mode": "campaign"
+    },
+    {
+      "id": 10,
+      "name": "Bridgewatch",
+      "region": 1,
+      "layout": 10,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          6
+        ]
+      ],
+      "budget": 195,
+      "hearts": 16,
+      "hp_scale": 1.08,
+      "waves": [
+        [
+          {
+            "type": "sprig",
+            "count": 8,
+            "interval": 0.9,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 7,
+            "interval": 0.9,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 14,
+            "interval": 0.28,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 1,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 7,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "A Bramble costs three hearts if it reaches the keep.",
+      "mode": "campaign"
+    },
+    {
+      "id": 11,
+      "name": "Orchard Rush",
+      "region": 2,
+      "layout": 2,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "budget": 160,
+      "hearts": 15,
+      "hp_scale": 1.1,
+      "waves": [
+        [
+          {
+            "type": "swarm",
+            "count": 22,
+            "interval": 0.24,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.65,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 16,
+            "interval": 0.28,
+            "route": 0,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Splash is worth more when enemies arrive close together.",
+      "mode": "campaign"
+    },
+    {
+      "id": 12,
+      "name": "Shellfall",
+      "region": 2,
+      "layout": 9,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "budget": 180,
+      "hearts": 16,
+      "hp_scale": 1.11,
+      "waves": [
+        [
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "sprig",
+            "count": 6,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 4.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 9,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 1.0
+          }
+        ]
+      ],
+      "hint": "Shellguards block sixty percent of arrows, not prism light.",
+      "mode": "campaign"
+    },
+    {
+      "id": 13,
+      "name": "Golden Switch",
+      "region": 2,
+      "layout": 11,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "budget": 210,
+      "hearts": 17,
+      "hp_scale": 1.12,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 8,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "sprig",
+            "count": 8,
+            "interval": 0.8,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 14,
+            "interval": 0.25,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.3,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "wisp",
+            "count": 7,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 9,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "A central prism can cover a bend without chasing both exits.",
+      "mode": "campaign"
+    },
+    {
+      "id": 14,
+      "name": "Ember Road",
+      "region": 2,
+      "layout": 1,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "budget": 170,
+      "hearts": 16,
+      "hp_scale": 1.13,
+      "waves": [
+        [
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.22,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 16,
+            "interval": 0.25,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.65,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 20,
+            "interval": 0.25,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Upgraded ember expands damage, not a secret paid advantage.",
+      "mode": "campaign"
+    },
+    {
+      "id": 15,
+      "name": "Harvest Hold",
+      "region": 2,
+      "layout": 4,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          2
+        ]
+      ],
+      "budget": 220,
+      "hearts": 17,
+      "hp_scale": 1.14,
+      "waves": [
+        [
+          {
+            "type": "sprig",
+            "count": 10,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 8,
+            "interval": 0.8,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 1.9,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 18,
+            "interval": 0.25,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 4.0,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 8,
+            "interval": 0.9,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.24,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.6,
+            "route": 1,
+            "delay": 1.0
+          }
+        ]
+      ],
+      "hint": "Four waves leave time to plan between each assault.",
+      "mode": "campaign"
+    },
+    {
+      "id": 16,
+      "name": "Frozen Wisp",
+      "region": 3,
+      "layout": 6,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            8,
+            5
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "budget": 180,
+      "hearts": 16,
+      "hp_scale": 1.16,
+      "waves": [
+        [
+          {
+            "type": "wisp",
+            "count": 9,
+            "interval": 1.1,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.6,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 8,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 1.0
+          }
+        ]
+      ],
+      "hint": "Do not spend all your supplies on slow against immune wisps.",
+      "mode": "campaign"
+    },
+    {
+      "id": 17,
+      "name": "Long Reach",
+      "region": 3,
+      "layout": 7,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "budget": 185,
+      "hearts": 16,
+      "hp_scale": 1.17,
+      "waves": [
+        [
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.2,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 0.85,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 8,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Range previews make the distant turn a deliberate choice.",
+      "mode": "campaign"
+    },
+    {
+      "id": 18,
+      "name": "Three Drifts",
+      "region": 3,
+      "layout": 8,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "budget": 225,
+      "hearts": 18,
+      "hp_scale": 1.18,
+      "waves": [
+        [
+          {
+            "type": "wisp",
+            "count": 6,
+            "interval": 1.2,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 9,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 18,
+            "interval": 0.25,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 0.85,
+            "route": 1,
+            "delay": 1.0
+          }
+        ]
+      ],
+      "hint": "Mixed roles need mixed answers. Rally is always free.",
+      "mode": "campaign"
+    },
+    {
+      "id": 19,
+      "name": "Thawline",
+      "region": 3,
+      "layout": 3,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "budget": 190,
+      "hearts": 17,
+      "hp_scale": 1.19,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.6,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 18,
+            "interval": 0.25,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "wisp",
+            "count": 12,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 4.0,
+            "route": 0,
+            "delay": 1.0
+          }
+        ]
+      ],
+      "hint": "Sell refunds seventy percent of spending, never more.",
+      "mode": "campaign"
+    },
+    {
+      "id": 20,
+      "name": "The White Wall",
+      "region": 3,
+      "layout": 10,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "budget": 240,
+      "hearts": 18,
+      "hp_scale": 1.2,
+      "waves": [
+        [
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 22,
+            "interval": 0.24,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 8,
+            "interval": 0.9,
+            "route": 0,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 1.8,
+            "route": 1,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "wisp",
+            "count": 12,
+            "interval": 0.75,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.6,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Hold the white wall with both lanes in view.",
+      "mode": "campaign"
+    },
+    {
+      "id": 21,
+      "name": "Twilight Thread",
+      "region": 4,
+      "layout": 0,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            8,
+            6
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "budget": 190,
+      "hearts": 16,
+      "hp_scale": 1.22,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.65,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "wisp",
+            "count": 12,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 18,
+            "interval": 0.25,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 7,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "A short lane makes early coverage matter.",
+      "mode": "campaign"
+    },
+    {
+      "id": 22,
+      "name": "Armored Root",
+      "region": 4,
+      "layout": 9,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          4,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "budget": 195,
+      "hearts": 17,
+      "hp_scale": 1.23,
+      "waves": [
+        [
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.65,
+            "route": 0,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 8,
+            "interval": 1.6,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Prism pays for armor piercing; archer still handles the stragglers.",
+      "mode": "campaign"
+    },
+    {
+      "id": 23,
+      "name": "Split Echo",
+      "region": 4,
+      "layout": 11,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          6,
+          8
+        ]
+      ],
+      "budget": 245,
+      "hearts": 18,
+      "hp_scale": 1.24,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.6,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 8,
+            "interval": 0.9,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 22,
+            "interval": 0.25,
+            "route": 1,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.0,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.55,
+            "route": 0,
+            "delay": 1.0
+          }
+        ]
+      ],
+      "hint": "Read the route letters before calling each wave.",
+      "mode": "campaign"
+    },
+    {
+      "id": 24,
+      "name": "Spore Cloud",
+      "region": 4,
+      "layout": 2,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "budget": 195,
+      "hearts": 17,
+      "hp_scale": 1.25,
+      "waves": [
+        [
+          {
+            "type": "swarm",
+            "count": 28,
+            "interval": 0.21,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 22,
+            "interval": 0.23,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 1.9,
+            "route": 0,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "wisp",
+            "count": 12,
+            "interval": 0.75,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 28,
+            "interval": 0.22,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Two embers can answer a crowd, but do not neglect the wisps.",
+      "mode": "campaign"
+    },
+    {
+      "id": 25,
+      "name": "Rune Watch",
+      "region": 4,
+      "layout": 4,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          2
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "budget": 250,
+      "hearts": 19,
+      "hp_scale": 1.26,
+      "waves": [
+        [
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 1.9,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 9,
+            "interval": 0.9,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.23,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.6,
+            "route": 0,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 1.8,
+            "route": 1,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "wisp",
+            "count": 14,
+            "interval": 0.75,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.22,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "The keep has no paid gate: retry and adjust your plan freely.",
+      "mode": "campaign"
+    },
+    {
+      "id": 26,
+      "name": "The Last Orchard",
+      "region": 5,
+      "layout": 5,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            6
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "budget": 200,
+      "hearts": 17,
+      "hp_scale": 1.28,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.6,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 16,
+            "interval": 0.24,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 7,
+            "interval": 1.7,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.22,
+            "route": 0,
+            "delay": 1.0
+          }
+        ]
+      ],
+      "hint": "Upgrade the pad with the best exposure, not merely the first pad.",
+      "mode": "campaign"
+    },
+    {
+      "id": 27,
+      "name": "Glass Pass",
+      "region": 5,
+      "layout": 7,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "budget": 210,
+      "hearts": 18,
+      "hp_scale": 1.29,
+      "waves": [
+        [
+          {
+            "type": "wisp",
+            "count": 14,
+            "interval": 0.75,
+            "route": 0,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "runner",
+            "count": 16,
+            "interval": 0.55,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 14,
+            "interval": 0.75,
+            "route": 0,
+            "delay": 1.0
+          }
+        ]
+      ],
+      "hint": "Keep a fast tower behind the slow prism shots.",
+      "mode": "campaign"
+    },
+    {
+      "id": 28,
+      "name": "Fourfold March",
+      "region": 5,
+      "layout": 8,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            6
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "budget": 260,
+      "hearts": 19,
+      "hp_scale": 1.3,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.6,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.22,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.0,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.55,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 8,
+            "interval": 1.6,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 30,
+            "interval": 0.21,
+            "route": 0,
+            "delay": 1.0
+          }
+        ]
+      ],
+      "hint": "All four towers have a role. Every wave is shown before you commit.",
+      "mode": "campaign"
+    },
+    {
+      "id": 29,
+      "name": "Iron Bloom",
+      "region": 5,
+      "layout": 10,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          4,
+          8
+        ]
+      ],
+      "budget": 265,
+      "hearts": 20,
+      "hp_scale": 1.31,
+      "waves": [
+        [
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 0.85,
+            "route": 1,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.0,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 16,
+            "interval": 0.55,
+            "route": 0,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 30,
+            "interval": 0.21,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 7,
+            "interval": 1.7,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 2.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 14,
+            "interval": 0.75,
+            "route": 1,
+            "delay": 1.0
+          }
+        ]
+      ],
+      "hint": "Free Rally can bridge a difficult overlap without an ad.",
+      "mode": "campaign"
+    },
+    {
+      "id": 30,
+      "name": "Mosslight Dawn",
+      "region": 5,
+      "layout": 11,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      "budget": 280,
+      "hearts": 20,
+      "hp_scale": 1.32,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.55,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 1.8,
+            "route": 1,
+            "delay": 0.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 30,
+            "interval": 0.21,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 12,
+            "interval": 0.75,
+            "route": 0,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 2.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 16,
+            "interval": 0.55,
+            "route": 1,
+            "delay": 1.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 9,
+            "interval": 1.6,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 16,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.23,
+            "route": 1,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "One last long dawn. Earn the wall with a plan of your own.",
+      "mode": "campaign"
+    }
+  ]
+}

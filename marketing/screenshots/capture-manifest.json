@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "game": "Mosslight Bastion",
+  "source_apk_sha256": "E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD",
+  "capture_count": 9,
+  "capture_scope": "Nine ONLINE same-emulator roles; logical phone/7/10 viewports, not physical devices. Separate offline verification is summarized in docs/NATIVE_QA.json.",
+  "reviewed_source_scope": "13runtime source inputs byte-frozen across exports; version attestation, not reproducible APK-to-source binding.",
+  "captures": [
+    {
+      "key": "phone-home",
+      "file": "phone-home.png",
+      "sha256": "c4fa4e0a059d27a0b7586041ae17279bb79dce9ed24240d5ec08df51fdb4736b",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/phone-home.png",
+      "raw_sha256": "c4fa4e0a059d27a0b7586041ae17279bb79dce9ed24240d5ec08df51fdb4736b",
+      "raw_dimensions": [
+        1080,
+        1920
+      ],
+      "game_state": "Actual ONLINE Home in new recovered-host fresh E9 profile, 150 coins and zero XP, no replayed claims or result credit.",
+      "platform": "Android11 API30 x86 emulator",
+      "network_mode": "online",
+      "pixel_processing": "none; unchanged guest screenshot bytes",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+    },
+    {
+      "key": "phone-play",
+      "file": "phone-play.png",
+      "sha256": "5e0e5b4759bdf5957dbf130497d33b6d3a2481bb6c17c8ce847bb794f465fa02",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/phone-play.png",
+      "raw_sha256": "5e0e5b4759bdf5957dbf130497d33b6d3a2481bb6c17c8ce847bb794f465fa02",
+      "raw_dimensions": [
+        1080,
+        1920
+      ],
+      "game_state": "Actual ONLINE unbanked First Lantern before first wave: ordinary Archer45 and Frost55 spent authored100supplies, health15 of15 and zero supplies, selected Frost, no assistance or fixture.",
+      "platform": "Android11 API30 x86 emulator",
+      "network_mode": "online",
+      "pixel_processing": "none; unchanged guest screenshot bytes",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+    },
+    {
+      "key": "phone-collection",
+      "file": "phone-collection.png",
+      "sha256": "3dccce791a0cd16d5afdda8eec7541093a028c9347618378ebc11dee20cd58c6",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "raw_file": "raw/phone-collection.png",
+      "raw_sha256": "3dccce791a0cd16d5afdda8eec7541093a028c9347618378ebc11dee20cd58c6",
+      "raw_dimensions": [
+        1080,
+        1920
+      ],
+      "game_state": "Actual ONLINE Campaign list in fresh E9 profile: zero of30 missions, zero of90 stars, first mission enabled and later missions locked, normal scroll navigation.",
+      "platform": "Android11 API30 x86 emulator",
+      "network_mode": "online",
+      "pixel_processing": "none; unchanged guest screenshot bytes",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+    },
+    {
+      "key": "tablet-7-home",
+      "file": "tablet-7-home.png",
+      "sha256": "65ee17f316322f2315bfe8fde9b700676f5fdd0a4e6d087f569cccc27d5b9989",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "raw_file": "raw/tablet-7-home.png",
+      "raw_sha256": "65ee17f316322f2315bfe8fde9b700676f5fdd0a4e6d087f569cccc27d5b9989",
+      "raw_dimensions": [
+        1200,
+        1920
+      ],
+      "game_state": "Actual ONLINE Home in new recovered-host fresh E9 profile, 150 coins and zero XP, no replayed claims or result credit.",
+      "platform": "Android11 API30 x86 emulator",
+      "network_mode": "online",
+      "pixel_processing": "none; unchanged guest screenshot bytes",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+    },
+    {
+      "key": "tablet-7-play",
+      "file": "tablet-7-play.png",
+      "sha256": "286756c8eaf02ec19c6e1b4868a04f7fddc25ee44f0074fb2e5ee8379cccf14a",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "raw_file": "raw/tablet-7-play.png",
+      "raw_sha256": "286756c8eaf02ec19c6e1b4868a04f7fddc25ee44f0074fb2e5ee8379cccf14a",
+      "raw_dimensions": [
+        1200,
+        1920
+      ],
+      "game_state": "Actual ONLINE unbanked First Lantern before first wave: ordinary Archer45 and Frost55 spent authored100supplies, health15 of15 and zero supplies, selected Frost, no assistance or fixture.",
+      "platform": "Android11 API30 x86 emulator",
+      "network_mode": "online",
+      "pixel_processing": "none; unchanged guest screenshot bytes",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+    },
+    {
+      "key": "tablet-7-collection",
+      "file": "tablet-7-collection.png",
+      "sha256": "42a5ebd57343cd07d703bf92433020d66d30f737d766dd235b0fe8fd1229cb41",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "raw_file": "raw/tablet-7-collection.png",
+      "raw_sha256": "42a5ebd57343cd07d703bf92433020d66d30f737d766dd235b0fe8fd1229cb41",
+      "raw_dimensions": [
+        1200,
+        1920
+      ],
+      "game_state": "Actual ONLINE Campaign list in fresh E9 profile: zero of30 missions, zero of90 stars, first mission enabled and later missions locked, normal scroll navigation.",
+      "platform": "Android11 API30 x86 emulator",
+      "network_mode": "online",
+      "pixel_processing": "none; unchanged guest screenshot bytes",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+    },
+    {
+      "key": "tablet-10-home",
+      "file": "tablet-10-home.png",
+      "sha256": "295b7afdd8ff94c7815ae27cc8c717645aa34d6e2219c1f7415c0dfdb3db3a3b",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "raw_file": "raw/tablet-10-home.png",
+      "raw_sha256": "295b7afdd8ff94c7815ae27cc8c717645aa34d6e2219c1f7415c0dfdb3db3a3b",
+      "raw_dimensions": [
+        1600,
+        2560
+      ],
+      "game_state": "Actual ONLINE Home in new recovered-host fresh E9 profile, 150 coins and zero XP, no replayed claims or result credit.",
+      "platform": "Android11 API30 x86 emulator",
+      "network_mode": "online",
+      "pixel_processing": "none; unchanged guest screenshot bytes",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+    },
+    {
+      "key": "tablet-10-play",
+      "file": "tablet-10-play.png",
+      "sha256": "ac7660dc6dde5f3fa3ea507f0e6373d794cd57462fb823a660fb3d19136a5753",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "raw_file": "raw/tablet-10-play.png",
+      "raw_sha256": "ac7660dc6dde5f3fa3ea507f0e6373d794cd57462fb823a660fb3d19136a5753",
+      "raw_dimensions": [
+        1600,
+        2560
+      ],
+      "game_state": "Actual ONLINE unbanked First Lantern before first wave: ordinary Archer45 and Frost55 spent authored100supplies, health15 of15 and zero supplies, selected Frost, no assistance or fixture.",
+      "platform": "Android11 API30 x86 emulator",
+      "network_mode": "online",
+      "pixel_processing": "none; unchanged guest screenshot bytes",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+    },
+    {
+      "key": "tablet-10-collection",
+      "file": "tablet-10-collection.png",
+      "sha256": "6b67b12ce6a58a69be1bc1217832cb1b9f64f9f715742b7c4b8d273a8d174d5e",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "raw_file": "raw/tablet-10-collection.png",
+      "raw_sha256": "6b67b12ce6a58a69be1bc1217832cb1b9f64f9f715742b7c4b8d273a8d174d5e",
+      "raw_dimensions": [
+        1600,
+        2560
+      ],
+      "game_state": "Actual ONLINE Campaign list in fresh E9 profile: zero of30 missions, zero of90 stars, first mission enabled and later missions locked, normal scroll navigation.",
+      "platform": "Android11 API30 x86 emulator",
+      "network_mode": "online",
+      "pixel_processing": "none; unchanged guest screenshot bytes",
+      "physical_device_test": false,
+      "physical_tablet_test": false,
+      "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+    }
+  ],
+  "physical_device_test": false,
+  "physical_tablet_test": false
+}

@@ -1,0 +1,11 @@
+# Build and test
+
+Use Godot4.5.1 and matching templates. Import once with `godot --headless --editor --path . --import`. Then run `godot --headless --path . --script tests/strategy_check.gd`, `tests/test_core.gd`, `tests/test_ui.gd` and `platform/tests/services_smoke.gd` in that order. The strategy run writes witnesses; the core run independently replays them. UI headless tests do not render screenshots. Run the UI script with an actual Compatibility graphics driver to retain development viewport PNGs.
+
+Use an isolated per-process desktop application-data directory for tests; never point tests at real player saves. The authored tests create unique user:// filenames. Desktop fixtures and fake service adapters test code paths only. They must never be submitted as screenshots of real native gameplay or SDK behavior.
+
+Android uses the real supplied native plugins, SDK min24/target35, ARM64 plus x86 test support and the established debug signing environment. Current proven engine target35 is a release limitation and does not establish current Google Play eligibility. Owner must supply production signing, real backend IDs/configuration, audit current release requirements and complete human/production testing. Do not commit keystores or credentials. No desktop distribution build is requested.
+
+Web preset uses Compatibility, no threads, no native extensions and no simulated native rewards. Root coordinates actual Android/Web exports and native testing. Hosted CI source installs pinned Godot/templates, checks services/game tests, builds Android debug and Web artifacts, and retains license notices. CI has not run remotely in this staging project. Live Pages deploy remains explicitly disabled pending the separately held publication action.
+
+Initial restricted-permission runs reported `Failed to read the root certificate store`; their strict diagnostic gate was false. A normally approved final run with fresh isolated process application data passed all five phases with no error diagnostics, including no certificate-store error. No trust, security, credential or certificate setting changed. The initial default-user-log crash was isolated by process-local test application data; no real save was edited.

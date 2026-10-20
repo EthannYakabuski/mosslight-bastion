@@ -1,0 +1,22 @@
+{
+  "key": "tablet-10-collection",
+  "file": "tablet-10-collection.png",
+  "sha256": "6b67b12ce6a58a69be1bc1217832cb1b9f64f9f715742b7c4b8d273a8d174d5e",
+  "dimensions": [
+    1600,
+    2560
+  ],
+  "raw_file": "raw/tablet-10-collection.png",
+  "raw_sha256": "6b67b12ce6a58a69be1bc1217832cb1b9f64f9f715742b7c4b8d273a8d174d5e",
+  "raw_dimensions": [
+    1600,
+    2560
+  ],
+  "game_state": "Actual ONLINE Campaign list in fresh E9 profile: zero of30 missions, zero of90 stars, first mission enabled and later missions locked, normal scroll navigation.",
+  "platform": "Android11 API30 x86 emulator",
+  "network_mode": "online",
+  "pixel_processing": "none; unchanged guest screenshot bytes",
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+}

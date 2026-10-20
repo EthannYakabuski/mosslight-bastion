@@ -1,0 +1,22 @@
+{
+  "key": "tablet-7-collection",
+  "file": "tablet-7-collection.png",
+  "sha256": "42a5ebd57343cd07d703bf92433020d66d30f737d766dd235b0fe8fd1229cb41",
+  "dimensions": [
+    1200,
+    1920
+  ],
+  "raw_file": "raw/tablet-7-collection.png",
+  "raw_sha256": "42a5ebd57343cd07d703bf92433020d66d30f737d766dd235b0fe8fd1229cb41",
+  "raw_dimensions": [
+    1200,
+    1920
+  ],
+  "game_state": "Actual ONLINE Campaign list in fresh E9 profile: zero of30 missions, zero of90 stars, first mission enabled and later missions locked, normal scroll navigation.",
+  "platform": "Android11 API30 x86 emulator",
+  "network_mode": "online",
+  "pixel_processing": "none; unchanged guest screenshot bytes",
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+}

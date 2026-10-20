@@ -1,0 +1,22 @@
+{
+  "key": "tablet-10-home",
+  "file": "tablet-10-home.png",
+  "sha256": "295b7afdd8ff94c7815ae27cc8c717645aa34d6e2219c1f7415c0dfdb3db3a3b",
+  "dimensions": [
+    1600,
+    2560
+  ],
+  "raw_file": "raw/tablet-10-home.png",
+  "raw_sha256": "295b7afdd8ff94c7815ae27cc8c717645aa34d6e2219c1f7415c0dfdb3db3a3b",
+  "raw_dimensions": [
+    1600,
+    2560
+  ],
+  "game_state": "Actual ONLINE Home in new recovered-host fresh E9 profile, 150 coins and zero XP, no replayed claims or result credit.",
+  "platform": "Android11 API30 x86 emulator",
+  "network_mode": "online",
+  "pixel_processing": "none; unchanged guest screenshot bytes",
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "visual_review": "AI operator approved exact raw PNG; independent coordinator reviewed three representative roles."
+}
