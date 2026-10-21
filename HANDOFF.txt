@@ -1,43 +1,76 @@
-MOSSLIGHT BASTION - SOURCE AND LOCAL VERIFICATION
+MOSSLIGHT BASTION - CONTINUATION AND LOCAL TEST HANDOFF
+Status: Local test package ready with the qualifications below. Canonical
+Apps/mosslight-bastion is the single development Git working copy after consolidation.
+Preserved original folders and prior publication copies are archives.
 
-Open project.godot in Godot4.5.1 Compatibility. Place towers on visible pads, call
-Next wave and use free Rally. Android Back pauses; Resume continues and Abandon returns
-Home without result credit. Banked progress persists; unfinished combat does not.
+START A FOCUSED UPDATE
+Read AGENTS.md, README.md, docs/DEVELOPER.md, docs/BUILD_TEST.md and
+docs/PLATFORM_SETUP.md. Inspect Git status/origin and preserve user edits. A new
+Codex task needs its desired change or console ID mappings explicitly; it should
+not assume another conversation's context.
 
-Thirty missions/six regions/12geometries, Endless/Daily, gifts/quests, keeper progression,
-preparation/cosmetics/stars/unlocks/save backup are implemented. Official test AdMob
-IDs and disabled real-ID Play Games placeholders are included.
+PLAY AND ORIGINAL LOCAL APK
+Place towers on visible pads, call Next wave and use free Rally. Back pauses;
+Resume continues and Abandon returns Home without result credit. Banked progress
+persists; unfinished combat is intentionally discarded on cold start.
+Original native-tested APK: build/android/game-debug.apk, when restored locally.
+Bytes: 184044923
+SHA256: E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD
+Generated APK/Web exports are not tracked by Git. Source-only clones need an export
+or separately supplied local package. Preserve original packages and accompanying
+notices; these documentation changes do not rebuild or revalidate their binaries.
 
-Actual current-APK native functional testing covered same-process natural Results/Retry
-banking, real unearned/earned SDK repair with a93.579second earned endcard hold, explicit
-Resume/Back, interstitial, unassisted Daily win, once-only claims and a priced Power
-purchase. Separate fresh-profile offline cold25/play/Back/Abandon/restart and final online
-cold25 retention passed; network/display restored and package safely stopped. Original
-read-only emulator install/data did not survive host exit; no cross-host save retention
-claimed. SameAPK reinstalled fresh, no old save imported or claims/purchases/SDK/results
-replayed. Final fresh unbanked profile was150coins0XP/round0/sequence3/Power0.
+ACTUAL NATIVE SCOPE
+The current APK passed natural same-process Results/Retry banking, an unearned
+SDK dismissal with no grant, and an earned repair with a 93.579-second endcard hold.
+The earned callback returned still paused, applied one repair, disabled repeats,
+and required explicit Resume. Back and ordinary controls remained usable. A real
+between-round interstitial closed normally. An unassisted Daily victory, once-only
+login/quest claims and a priced Power upgrade were tested in that original session.
 
-Nine ONLINE same-emulator raw Home/Campaign/planning screenshots are included. Logical
-tablet viewports are not physical devices. See docs/NATIVE_QA.json and
-docs/LOCAL_TEST_RESULTS.json for concise outcomes and limitations.
+The original read-only emulator session lost its installed package/data at host
+exit. Its genuine progressed save was preserved privately. This was an AVD session
+loss; no application retention across that exit is claimed. The same APK was then
+normally installed fresh, with no old save imported and no replay of claims,
+purchases, SDK tests or terminal results to recreate progression.
 
-Final broad diagnostic gate remains FALSE: unresolved Chromium WebView cache wrong-size/
-wrong-structure messages preserved privately. No Godot SCRIPT ERROR/can_process/FATAL
-finding observed. No cache deletion, suppression, filter change or rerun. Earlier SDK
-creative JavaScript diagnostic separately qualified; no whole-log clean claim.
+In that separate fresh profile, actual offline cold start, ordinary play, Back,
+Abandon, offline restart and final online cold start retained all 25 typed save
+groups. The final unbanked profile was 150 coins/0 XP/round 0/sequence 3/Power 0.
+Nine reviewed ONLINE phone/logical-seven/logical-ten Home/Campaign/planning captures
+are included. They are ordinary emulator views, not offline or physical-tablet
+proof. Network/display settings were restored and the package safely stopped.
 
-Exports/package membership/licenses were verified locally; generated APK/Web exports
-are not committed. Test APK identity:
-E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD
+DIAGNOSTICS AND TEST LIMITS
+The final broad native diagnostic gate remains FALSE because Chromium WebView cache
+wrong-size/wrong-structure errors were observed; cause remains unresolved. No Godot
+SCRIPT ERROR/can_process/FATAL finding was observed. No cache deletion, suppression,
+filter weakening or rerun was used to erase this result. An earlier ad-creative
+JavaScript callback diagnostic is separately qualified. The nine capture logs were
+separately clean. See docs/NATIVE_QA.json and docs/LOCAL_TEST_RESULTS.json for public
+summaries; raw logs, saves and machine records remain private.
 
-Source/build setup: docs/BUILD_TEST.md, docs/PLATFORM_SETUP.md. Store copy/art:
-store/store-listing.json, store/website-copy.md and marketing/. Privacy draft:
-store/privacy-policy-draft.md and site/privacy.html. Required terms/notices: LICENSE,
-NOTICE, LICENSES/INDEX.txt and assets/SOURCE_MAP.json. Apache2covers original work only.
+SOURCE AND HOSTED CI
+https://github.com/EthannYakabuski/mosslight-bastion
+Verified published baseline: 90d304a426486aedb5ae1dcb061f64ce182be1f4
+Hosted CI PASS: https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/39527297049
+That dated run passed tests and Android/Web exports. Hosted artifacts are separate
+binaries and have not received the original local APK's native QA. Later commits
+must cite their own CI outcomes. Pages remains disabled; no Library or Play release
+is implied.
 
-Daily replay/repeat bonus, native cosmetic/Settings/privacy changes, physical devices,
-audible output, interactive Web/audio/WebGL, production services and human balance
-remain unverified. Emulator audio disabled. minAPI24/targetAPI35 is an export constraint,
-not current Play eligibility. Owner handles real IDs/signing/policy/consent/Data safety
-and Play publication. CI build/test/artifact workflow is configured but remote results
-are not asserted. Live Pages is explicitly held with deploy if:false.
+SERVICES AND NEXT STEPS
+Definitions use id in game/catalog.json (20 achievements/four leaderboards).
+Supply console IDs in platform/config.json play_games maps, match the numeric
+game_id in the Android export preset, and enable PGS after owner OAuth/signing setup.
+AdMob unit IDs are in platform/config.json; the manifest App ID comes from Godot
+Project Settings admob/general/android/app_id in project.godot. JSON app_id is a
+reference value. test_mode changes wording only; it does not make production units
+test requests. Follow docs/PLATFORM_SETUP.md before changing service configuration.
+
+Daily replay/repeat bonus, native cosmetic/Settings/privacy changes, physical
+devices, audible output, interactive Web/audio/WebGL, production services and human
+balance remain unverified. Emulator audio was disabled. Godot 4.5.1 Compatibility
+min API 24/target API 35 is an observed export constraint, not current Play eligibility.
+The owner supplies real backend/IDs/signing, policy/contact/consent/Data safety and
+Google Play publication. Preserve LICENSE, NOTICE and LICENSES/ with redistribution.
