@@ -6,7 +6,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "5aa7ac3e654d4bbb5948978d9b7559156894e80f7dff7c96c5858fabbeaa5fe1"
+    "sha256": "d1d4892c6bc43121e87f0f6a8168760cf644579d6de170a73f29cb3353ee0e80"
   },
   {
     "file": "app-icon-512.png",
@@ -24,7 +24,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "5fe5c4983d20baa96c1d8f827daea5306995f4f20bb96457ccc479c29242a59a"
+    "sha256": "5d70fc598bbf9153466543dbe0dd3c84d5c541b6798a08e8743f6d5183aae2df"
   },
   {
     "file": "daily_3-512.png",
@@ -33,7 +33,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "e6ef4adc4d0628284097b4363f25278a6edaeae2c7e5af80c57ca9048627e9db"
+    "sha256": "c4df5793897742c1ce3a5f45b7f36e0c2545082bd38dab2b43cd3a2fc7cc9244"
   },
   {
     "file": "endless_5-512.png",
@@ -42,7 +42,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "0e98b3d8d6a599e23b67c791e8bb43016fda4717449b583fb0a828d4ea2a5876"
+    "sha256": "72b01edd33e2a1d4c3d8df22830666165e8afa545f159f51cb4cb1b63ecfa1b5"
   },
   {
     "file": "feature-graphic-1024x500.png",
@@ -60,7 +60,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "25831415ffbd510e01846e148552e892723fd6f66d3f24e08b61cd580762e9e0"
+    "sha256": "4a4e15c876d83d3a6ec6645ffe10c7ac764808e9f7e0fb43c0832dfcae144f3b"
   },
   {
     "file": "five_walls-512.png",
@@ -69,7 +69,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "d09d40552b9595fc2be89a4816fe6c08566b2f7d229a7ac9a8493b0870ef8437"
+    "sha256": "89d50570e438ffcc906b81ba160b4270050098cb6eefb5026c90ec350458f11c"
   },
   {
     "file": "kills_1000-512.png",
@@ -78,7 +78,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "76fe446b00a477ef8bcf30dcae480456a538a5cb79146b037a36de466916338f"
+    "sha256": "6345bbc0ecc8ada5fce1ea6bf6509694ed6653c2a88710a7bc2e696537f5839c"
   },
   {
     "file": "kills_25-512.png",
@@ -87,7 +87,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "f658e673ef3c0d3eedae4fe36d3dc0134f5997d7b6e9de88c43ac896092d70fb"
+    "sha256": "4d66905fd82ea791ab5718e9608947eb304750d66cbe2382c60d3cc07a5fbb5e"
   },
   {
     "file": "kills_250-512.png",
@@ -96,7 +96,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "703631ee89a6ae3b04305f62316ce50de0238bbe41c48302f008829b3724c105"
+    "sha256": "1bb739205268b6b40a8db32d28b1264482d5d6aa641139edf6fa630509df3ba7"
   },
   {
     "file": "level_10-512.png",
@@ -105,7 +105,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "7de766f54ff4eb75b8b8e706dc5663aec14cf5abfc676f47e2887b51bfd8af8c"
+    "sha256": "85a087ad67173fb4231e9ada110d5349bdd8786960e8cd3e308df54312cc648e"
   },
   {
     "file": "level_3-512.png",
@@ -114,7 +114,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "98f4429b3d0655c7a50540c76c2e82d99990f46e4ce531c33f343b3ae4c87a77"
+    "sha256": "06f86edc648887dad2089644b159d21045c59dfc7416cf1bc9c9bc9ceeacc3a9"
   },
   {
     "file": "level_6-512.png",
@@ -123,7 +123,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "bea9a242ab2884206fbe7eb82decc55695c3d7e81fa93a7cab5d05f5e9b9f1ae"
+    "sha256": "cf48c198ac9d713a31287ff1f1d652cc5c055a39b20f788c7fce3a594b426a51"
   },
   {
     "file": "player_level-512.png",
@@ -132,7 +132,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "684a747bc574ee8cd8d4adf68be3604b49e18a1f2c614a1cf2cb208ed5967c55"
+    "sha256": "8e33c91555a7d587dcc93eb6a28e5412276701f2d9fb5be635b59502fc5ef991"
   },
   {
     "file": "rally_10-512.png",
@@ -141,7 +141,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "0990ead2159c27872417b72a9485645fa5ff6cdac5dd1d27f8e21b336702ca33"
+    "sha256": "da57c48416154a82cf5a3545db9fbdc73a35a810f664cdad1fdaeba5b32c97f5"
   },
   {
     "file": "screenshots/phone-collection.png",
@@ -312,7 +312,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "9c46a40c96bfab896bba7893102391190e407355aab7cc615a480cf5ba735f1a"
+    "sha256": "b08ecd3aed2c8aef6b7826961178d54627947bd95bb09258db744535b29e68dd"
   },
   {
     "file": "stars_45-512.png",
@@ -321,7 +321,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "d76dbaf6e1708e4c06833a006b929d583a18ba5bc4cc56513206ae2d6fbd0632"
+    "sha256": "afeb71a8e19788042695393d85c79d49eda839ea706e320def31e9c8bcabf33f"
   },
   {
     "file": "stars_90-512.png",
@@ -330,7 +330,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "c109c114336fabb5c7d5b50442bf5e971e46969688e50d5b9e104c6082314174"
+    "sha256": "bb5bdff3aea91a5ddda94ac6892959de5bfe5b01ad4737a709a4677ae7491bf4"
   },
   {
     "file": "streak_7-512.png",
@@ -339,7 +339,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "ad843dc90524dd69a792b1cd1e68875dddb5c261d117e1ef52e832813a4add14"
+    "sha256": "b40060ff26e19a4bde1240e1d2029c6c0e07667463f3f8d022c4dfa77d8b984c"
   },
   {
     "file": "ten_walls-512.png",
@@ -348,7 +348,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "8e43022ee2545ad51fecba3485d5aa2353a7b42c435b691b8ffd2e4f3ba02005"
+    "sha256": "e9761eaf6fa578e9f22be1ee8b3073e81a2eccee2dc263f806fe4832201f12d4"
   },
   {
     "file": "twenty_walls-512.png",
@@ -357,7 +357,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "d1c4f4c07cd762130d74efa9970de085504abe4c0432ba91060e8097a946538d"
+    "sha256": "616771964ae8d5b30f09c769cc8015e002696eb37fa2ee5feed082579e491202"
   },
   {
     "file": "unassisted_daily_score-512.png",
@@ -366,7 +366,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "a9ed9a03b739d78ad3bb0faafe4cb24e752ce301906699f1bb361aea0e005d70"
+    "sha256": "6beb17b9f7daa6da6f0f4b2e46e2251c9b36ec6b25f6be15297971f474df1900"
   },
   {
     "file": "unassisted_endless_score-512.png",
@@ -375,7 +375,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "5d85b6b5864215b523be2aa87a83e831f967cfdd086efb5598c6f974989e8154"
+    "sha256": "fff2e4ee9ce98fe62f6fb9c7af0a91b3ffb0654d20cff5217d9f35aa0db562d7"
   },
   {
     "file": "unassisted_stars-512.png",
@@ -384,7 +384,7 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "8d25a776ad6e4c47836ac497a0982e910d0f702510518f8f0edcca5ce56e4d94"
+    "sha256": "a49fbe97f2c0bf11bbb5e8d8f31d24e3ef9b209311fdd61eea3a406a4b9ab804"
   },
   {
     "file": "upgrades_20-512.png",
@@ -393,6 +393,6 @@
       512
     ],
     "mode": "RGB",
-    "sha256": "dea5b273fd0ac88919ce5f4306807b9ebae1dc36253b4cc62262cb9fd67b3a37"
+    "sha256": "44ce892d9a026299abe2931115d1ab5859b96f773d74cecaf1490a8e9a9771ec"
   }
 ]

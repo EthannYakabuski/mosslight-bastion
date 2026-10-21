@@ -53,6 +53,392 @@
     }
   ],
   "visual_review": "Final512px icons,64px thumbnails and1024x500 feature graphics visually inspected by AIoperator. All titles fully visible.",
-  "shipping": "Only512px launcher PNG ships; marketing/source art excluded by export filters.",
-  "native_export_verification": "Pending new Android/Web exports and native package review; no new native acceptance claimed."
+  "shipping": "Only runtime launcher and catalogue-linked512px badges ship; marketing originals/provenance/store art excluded by export filters.",
+  "native_export_verification": "Pending new Android/Web exports and native package review; no new native acceptance claimed.",
+  "badges": [
+    {
+      "id": "first_wall",
+      "kind": "achievement",
+      "name": "First lantern",
+      "runtime_png": "assets/badges/first_wall.png",
+      "store_png": "marketing/first_wall-512.png",
+      "sha256": "4A4E15C876D83D3A6EC6645FFE10C7AC764808E9F7E0FB43C0832DFCAE144F3B",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "FE355AC1E4C0CC929F7B39E9B84B32A56A2FA661498C3F4F67992CD3F46D9807",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "five_walls",
+      "kind": "achievement",
+      "name": "Glenkeeper",
+      "runtime_png": "assets/badges/five_walls.png",
+      "store_png": "marketing/five_walls-512.png",
+      "sha256": "89D50570E438FFCC906B81BA160B4270050098CB6EEFB5026C90EC350458F11C",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "AD87102731B7920D26EC2D055B5915C37512C5150092EDA5491A8A1A6AA0E3FB",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "ten_walls",
+      "kind": "achievement",
+      "name": "Bridgewarden",
+      "runtime_png": "assets/badges/ten_walls.png",
+      "store_png": "marketing/ten_walls-512.png",
+      "sha256": "E9761EAF6FA578E9F22BE1EE8B3073E81A2ECCEE2DC263F806FE4832201F12D4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "8191119660ED67049E389E5F602E324456E295A44A8F1F338085A2773FBAFDE4",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "twenty_walls",
+      "kind": "achievement",
+      "name": "Runewarden",
+      "runtime_png": "assets/badges/twenty_walls.png",
+      "store_png": "marketing/twenty_walls-512.png",
+      "sha256": "616771964AE8D5B30F09C769CC8015E002696EB37FA2EE5FEED082579E491202",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "E7E90F3B1B216DF381AA59F6ECB503C6EDC74F604728281D649374BEF837D0CC",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "all_walls",
+      "kind": "achievement",
+      "name": "Mosslight dawn",
+      "runtime_png": "assets/badges/all_walls.png",
+      "store_png": "marketing/all_walls-512.png",
+      "sha256": "D1D4892C6BC43121E87F0F6A8168760CF644579D6DE170A73F29CB3353EE0E80",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "6F4795D8756C6B2A6871CA60F13F9B20C5D1FECAB724847D0C49DCF7F5D1BD5F",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "stars_15",
+      "kind": "achievement",
+      "name": "A little brilliance",
+      "runtime_png": "assets/badges/stars_15.png",
+      "store_png": "marketing/stars_15-512.png",
+      "sha256": "B08ECD3AED2C8AEF6B7826961178D54627947BD95BB09258DB744535B29E68DD",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "E9021341A7CBB387BBC0165C86150862F5C1CE81AA22A19D5AB426121A45F716",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "stars_45",
+      "kind": "achievement",
+      "name": "Lantern keeper",
+      "runtime_png": "assets/badges/stars_45.png",
+      "store_png": "marketing/stars_45-512.png",
+      "sha256": "AFEB71A8E19788042695393D85C79D49EDA839EA706E320DEF31E9C8BCABF33F",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "C2355FE5FB1F7981817867A1CEC450DD48A1894E3465AF1C77667B308824E1AB",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "stars_90",
+      "kind": "achievement",
+      "name": "Every light",
+      "runtime_png": "assets/badges/stars_90.png",
+      "store_png": "marketing/stars_90-512.png",
+      "sha256": "BB5BDFF3AEA91A5DDDA94AC6892959DE5BFE5B01AD4737A709A4677AE7491BF4",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "41225E64630AFA369A0735DB056E919B5087DE46B9C2C7B706EC38898661C29C",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "kills_25",
+      "kind": "achievement",
+      "name": "Clear the footpath",
+      "runtime_png": "assets/badges/kills_25.png",
+      "store_png": "marketing/kills_25-512.png",
+      "sha256": "4D66905FD82EA791AB5718E9608947EB304750D66CBE2382C60D3CC07A5FBB5E",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "050911DEBB68C79F2720A1FA2753E2CA3FE6B41BD5268692A8A755AE81A7969B",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "kills_250",
+      "kind": "achievement",
+      "name": "Woodland watch",
+      "runtime_png": "assets/badges/kills_250.png",
+      "store_png": "marketing/kills_250-512.png",
+      "sha256": "1BB739205268B6B40A8DB32D28B1264482D5D6AA641139EDF6FA630509DF3BA7",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "4C036E39D8627562D2264BF9E43BFD9F159DFD951F6A9B28D1C43E5BDA2A41B9",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "kills_1000",
+      "kind": "achievement",
+      "name": "The long watch",
+      "runtime_png": "assets/badges/kills_1000.png",
+      "store_png": "marketing/kills_1000-512.png",
+      "sha256": "6345BBC0ECC8ADA5FCE1EA6BF6509694ED6653C2A88710A7BC2E696537F5839C",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "60019F23465223A55CB5A3AB4C5A0D092DBEF1EDA06FA1D7E2C45078F681E6A5",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "built_20",
+      "kind": "achievement",
+      "name": "A place for every tower",
+      "runtime_png": "assets/badges/built_20.png",
+      "store_png": "marketing/built_20-512.png",
+      "sha256": "5D70FC598BBF9153466543DBE0DD3C84D5C541B6798A08E8743F6D5183AAE2DF",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "E6946A221D88F89FDC7D4B2933199C167F588F9C654A35468D05E7F6212BD906",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "upgrades_20",
+      "kind": "achievement",
+      "name": "Polished stone",
+      "runtime_png": "assets/badges/upgrades_20.png",
+      "store_png": "marketing/upgrades_20-512.png",
+      "sha256": "44CE892D9A026299ABE2931115D1AB5859B96F773D74CECAF1490A8E9A9771EC",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "939EBE6981E244BD504912EA4890906570EB9DA75FFD2D198EA1720658B6489D",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "rally_10",
+      "kind": "achievement",
+      "name": "Raise the lantern",
+      "runtime_png": "assets/badges/rally_10.png",
+      "store_png": "marketing/rally_10-512.png",
+      "sha256": "DA57C48416154A82CF5A3545DB9FBDC73A35A810F664CDAD1FDAEBA5B32C97F5",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "F8F2200EDCF11F1C4A9C89A6557788D7CEF3DB8DC9770504FB249BE807E4C320",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "level_3",
+      "kind": "achievement",
+      "name": "Keeper apprentice",
+      "runtime_png": "assets/badges/level_3.png",
+      "store_png": "marketing/level_3-512.png",
+      "sha256": "06F86EDC648887DAD2089644B159D21045C59DFC7416CF1BC9C9BC9CEEACC3A9",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "5F27CBDD0C9819A396C57BC18A97B81E92B1F71424F5134AAD069C127BD6C153",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "level_6",
+      "kind": "achievement",
+      "name": "Keeper of the glen",
+      "runtime_png": "assets/badges/level_6.png",
+      "store_png": "marketing/level_6-512.png",
+      "sha256": "CF48C198AC9D713A31287FF1F1D652CC5C055A39B20F788C7FCE3A594B426A51",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "09691DFB3FD161D6E9C53CBE3D93E6FF5A754FA2F8FDA817DE54263BE844B32D",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "level_10",
+      "kind": "achievement",
+      "name": "Old-light keeper",
+      "runtime_png": "assets/badges/level_10.png",
+      "store_png": "marketing/level_10-512.png",
+      "sha256": "85A087AD67173FB4231E9ADA110D5349BDD8786960E8CD3E308DF54312CC648E",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "9429C9B85990B1AFC250B180EC344E2BB08D0403D143E2EE49C8194E0010B1F3",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "endless_5",
+      "kind": "achievement",
+      "name": "Long evening",
+      "runtime_png": "assets/badges/endless_5.png",
+      "store_png": "marketing/endless_5-512.png",
+      "sha256": "72B01EDD33E2A1D4C3D8DF22830666165E8AFA545F159F51CB4CB1B63ECFA1B5",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "9DB2C6B231FF02F80535BAA8CFE23CAD4A98FD8E452422431900CAC028961E17",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "daily_3",
+      "kind": "achievement",
+      "name": "Three dawns",
+      "runtime_png": "assets/badges/daily_3.png",
+      "store_png": "marketing/daily_3-512.png",
+      "sha256": "C4DF5793897742C1CE3A5F45B7F36E0C2545082BD38DAB2B43CD3A2FC7CC9244",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "8117E9A1A4518A1182BC7D87B77EDCF70780CFC42BE756BAC9CEA68E198934BD",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "streak_7",
+      "kind": "achievement",
+      "name": "Seven lanterns",
+      "runtime_png": "assets/badges/streak_7.png",
+      "store_png": "marketing/streak_7-512.png",
+      "sha256": "B40060FF26E19A4BDE1240E1D2029C6C0E07667463F3F8D022C4DFA77D8B984C",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "9720BE144450D0211B2593E088D6F2EB43CE076B77AA5CEAF453FA7EDD3F64D0",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "unassisted_endless_score",
+      "kind": "leaderboard",
+      "name": "Unassisted siege score",
+      "runtime_png": "assets/badges/unassisted_endless_score.png",
+      "store_png": "marketing/unassisted_endless_score-512.png",
+      "sha256": "FFF2E4EE9CE98FE62F6FB9C7AF0A91B3FFB0654D20CFF5217D9F35AA0DB562D7",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "1832DAAF69C84F0E910B67FC02C7F2AAF4CCED11A21440C94B692791133CCE01",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "unassisted_daily_score",
+      "kind": "leaderboard",
+      "name": "Unassisted daily score",
+      "runtime_png": "assets/badges/unassisted_daily_score.png",
+      "store_png": "marketing/unassisted_daily_score-512.png",
+      "sha256": "6BEB17B9F7DAA6DA6F0F4B2E46E2251C9B36EC6B25F6BE15297971F474DF1900",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "EB7337FA6A5F076E287386269CFC3AB861596587E79DC557EB85EFBA23F9E3B5",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "unassisted_stars",
+      "kind": "leaderboard",
+      "name": "Unassisted campaign stars",
+      "runtime_png": "assets/badges/unassisted_stars.png",
+      "store_png": "marketing/unassisted_stars-512.png",
+      "sha256": "A49FBE97F2C0BF11BBB5E8D8F31D24E3EF9B209311FDD61EEA3A406A4B9AB804",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "26771C89ABE3CC291A1DFECE6A5C6E520C48B0A9767B9BABCCCDF92DD245BA35",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    },
+    {
+      "id": "player_level",
+      "kind": "leaderboard",
+      "name": "Keeper level",
+      "runtime_png": "assets/badges/player_level.png",
+      "store_png": "marketing/player_level-512.png",
+      "sha256": "8E33C91555A7D587DCC93EB6A28E5412276701F2D9FB5BE635B59502FC5EF991",
+      "dimensions": [
+        512,
+        512
+      ],
+      "original_sha256": "48EA34D2159EDEFBDADE0BD904EEEF503E327378830BCAA06E271E0FE1E06C1C",
+      "license": "Original generated illustration; project Apache-2.0",
+      "method": "One distinct built-in imagegen call per catalogue badge; exact original+prompt retained; Godot LANCZOS resize only",
+      "visual_review": "512px asset and64px thumbnail inspected by AIoperator; illustrative badge, not gameplay proof"
+    }
+  ]
 }

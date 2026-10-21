@@ -200,7 +200,10 @@ func _record_heading(content: VBoxContainer, text: String, icon_path: String, co
 	row.add_theme_constant_override("separation",12)
 	var icon := TextureRect.new()
 	icon.texture=load(icon_path)
-	icon.custom_minimum_size=Vector2(48,48)
+	icon.custom_minimum_size=Vector2(64,64)
+	icon.name="Badge"+icon_path.get_file().get_basename()
+	icon.size_flags_vertical=Control.SIZE_SHRINK_CENTER
+	icon.mouse_filter=Control.MOUSE_FILTER_IGNORE
 	icon.expand_mode=TextureRect.EXPAND_IGNORE_SIZE
 	icon.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED
 	row.add_child(icon)
