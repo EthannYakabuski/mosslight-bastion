@@ -1,0 +1,58 @@
+{
+  "revision": "Round Two 2026-10-21",
+  "art_type": "Original illustrated promotional key art; not gameplay screenshots",
+  "outputs": [
+    {
+      "file": "marketing/app-icon-512.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "sha256": "D26A18B749FBF15F0FE15CC4D0AB9750B2BE97D2153379C108F77274A6659809"
+    },
+    {
+      "file": "marketing/feature-graphic-1024x500.png",
+      "dimensions": [
+        1024,
+        500
+      ],
+      "mode": "RGB",
+      "sha256": "48E1952340820D0AA7D9846A9CD2F1B5EEA0A4BF85B5B6FEBEBC1676EF0309B2"
+    },
+    {
+      "file": "assets/branding/app-icon-512.png",
+      "dimensions": [
+        512,
+        512
+      ],
+      "mode": "RGB",
+      "sha256": "D26A18B749FBF15F0FE15CC4D0AB9750B2BE97D2153379C108F77274A6659809"
+    }
+  ],
+  "original_provenance": [
+    {
+      "kind": "app-icon",
+      "original_sha256": "347162834E6598E5DBF2A246DEDAB0F0C5C3E296EA3F2C133473ACFD0F0D7E5C",
+      "original_dimensions": [
+        1254,
+        1254
+      ],
+      "prompt": "Create a finished premium mobile game app icon, square full-bleed raster illustration, no rounded corners, no border, NO text. Original tower defense game MOSSlight BASTION. A beautifully crafted ancient woodland stone keep towers over a magical amber lantern, moss and tiny ferns on stone, a tiny hooded emerald archer defender in foreground holding a wooden bow. Hint at four guardian elements through one ember-red turret, an icy cyan crystal turret and a faceted violet prism turret around the keep; main focus the warm glowing lantern and safe fortress. Curving forest path and distant small shadow creatures below, old dark teal pines framing the heroic silhouette. Rich handmade pixel-art key illustration, fine clustered pixels, luminous honey gold against deep evergreen and midnight blue, sophisticated ambient shading and tactile natural materials. Distinctive memorable tower/lantern silhouette at 64px, clear thumbnail composition, delightful quality comparable to premium illustrated fantasy game art, not vector clipart or simple geometric symbols, no UI, no fake badges, no photorealism.\n",
+      "method": "Built-in image generation, one distinct call; original retained privately; standard Godot LANCZOS resize only. Full feature wordmark retained with quiet teal padding."
+    },
+    {
+      "kind": "feature",
+      "original_sha256": "A0D683EC0F4E9F96B4151FA69B7D43EB2D8257C3BB47391370EBA86AFE313A8E",
+      "original_dimensions": [
+        1795,
+        876
+      ],
+      "prompt": "Create a polished Google Play feature graphic for original woodland tower-defense game MOSSLIGHT BASTION. Wide landscape raster near 1024:500 (2.048:1), safe composition for exact crop. Rich handcrafted detailed pixel-art key illustration: a winding woodland path sweeps from lower left toward an old mossy stone bastion, glowing amber lantern at its gate, four visually distinct defender towers integrated into forest architecture: wooden archer platform, ember brazier tower, frosty cyan crystal tower and violet prism tower. Tiny original forest monsters approach along the clear winding path. Ancient pines, ferns, mossy ruins, soft fog layers and fireflies give deep evergreen magical atmosphere with gold and restrained coral highlights. Right half holds a highly legible large bespoke fantasy-pixel title 'MOSSLIGHT BASTION' in warm cream-gold lettering, subtle moss and lantern ornaments. Small tagline below: 'Hold the path. Keep the light.' The picture should feel inhabited, inviting and strategic, not a screenshot, not vector shape diagrams, not generic badge clipart. No store logos, rating claims or fake gameplay UI.\n",
+      "method": "Built-in image generation, one distinct call; original retained privately; standard Godot LANCZOS resize only. Full feature wordmark retained with quiet teal padding."
+    }
+  ],
+  "visual_review": "Final512px icons,64px thumbnails and1024x500 feature graphics visually inspected by AIoperator. All titles fully visible.",
+  "shipping": "Only512px launcher PNG ships; marketing/source art excluded by export filters.",
+  "native_export_verification": "Pending new Android/Web exports and native package review; no new native acceptance claimed."
+}
