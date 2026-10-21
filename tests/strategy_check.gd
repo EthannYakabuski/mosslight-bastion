@@ -9,7 +9,7 @@ func _init() -> void:
 	call_deferred("run")
 
 func run() -> void:
-	for number in range(1,31):
+	for number in range(1,Missions.count()+1):
 		var best: Dictionary = {}
 		for strategy in range(12):
 			var attempt: Dictionary = solve(Missions.campaign(number),strategy)

@@ -1,6 +1,6 @@
 # Source map
 
-- game/missions.json: explicit campaign and six region palettes; missions.gd: campaign/date/endless selection.
+- game/missions.json: 60 explicit campaign missions and twelve region palettes; missions.gd: campaign/date/endless selection.
 - game/simulation.gd: deterministic20Hz combat, legal purchases, waves, projectiles, counters and result accounting.
 - game/progress.gd:25 typed save groups; bounded numbers/date validation; monotonic saved day; atomic temp validation, previous-valid backup and corrupt-primary recovery.
 - game/session.gd: run identity, actual terminal banking, pending/fullscreen pause boundary and one earned callback entitlement. A callback never implies ad dismissal. Safe explicit Resume consumes a dismissal edge.

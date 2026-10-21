@@ -49,6 +49,54 @@
       "edge": "#25393c",
       "accent": "#eddd9a",
       "tile": 2
+    },
+    {
+      "name": "Copperleaf Cloister",
+      "subtitle": "Corners reward patient crossfire",
+      "ground": "#766345",
+      "edge": "#263f39",
+      "accent": "#edc58b",
+      "tile": 0
+    },
+    {
+      "name": "Rainbell Marsh",
+      "subtitle": "A winding causeway across wet ground",
+      "ground": "#426f73",
+      "edge": "#263f39",
+      "accent": "#a4dfe6",
+      "tile": 1
+    },
+    {
+      "name": "Sunken Archive",
+      "subtitle": "Read the long outer aisles",
+      "ground": "#65628b",
+      "edge": "#263f39",
+      "accent": "#d3c8ef",
+      "tile": 2
+    },
+    {
+      "name": "Rowan Escarpment",
+      "subtitle": "Two approaches meet at the wall",
+      "ground": "#8d674c",
+      "edge": "#263f39",
+      "accent": "#ffd3a1",
+      "tile": 0
+    },
+    {
+      "name": "Moonfen Observatory",
+      "subtitle": "Three lanes need complementary guardians",
+      "ground": "#4f657a",
+      "edge": "#263f39",
+      "accent": "#bed8fa",
+      "tile": 1
+    },
+    {
+      "name": "Elderroot Sanctuary",
+      "subtitle": "A final winding defense beneath old roots",
+      "ground": "#53684d",
+      "edge": "#263f39",
+      "accent": "#e4e5ae",
+      "tile": 2
     }
   ],
   "missions": [
@@ -3945,6 +3993,4708 @@
         ]
       ],
       "hint": "One last long dawn. Earn the wall with a plan of your own.",
+      "mode": "campaign"
+    },
+    {
+      "id": 31,
+      "name": "Copper Gate",
+      "region": 6,
+      "layout": 12,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            8,
+            2
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          0
+        ]
+      ],
+      "budget": 280,
+      "hearts": 20,
+      "hp_scale": 1.2,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 20,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 7,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Corners reward patient crossfire. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 32,
+      "name": "The Long Veranda",
+      "region": 6,
+      "layout": 13,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        [
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            8
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          5,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          7,
+          7
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "budget": 280,
+      "hearts": 20,
+      "hp_scale": 1.2,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 22,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 7,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 11,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Corners reward patient crossfire. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 33,
+      "name": "Two Courtyards",
+      "region": 6,
+      "layout": 14,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            8,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          8
+        ]
+      ],
+      "budget": 280,
+      "hearts": 20,
+      "hp_scale": 1.2,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 7,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Corners reward patient crossfire. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 34,
+      "name": "Cloister Bells",
+      "region": 6,
+      "layout": 15,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        [
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          3,
+          3
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "budget": 280,
+      "hearts": 20,
+      "hp_scale": 1.2,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 15,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 7,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 1.8,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Corners reward patient crossfire. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 35,
+      "name": "Copperleaf Vigil",
+      "region": 6,
+      "layout": 16,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            0,
+            7
+          ]
+        ],
+        [
+          [
+            8,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "budget": 280,
+      "hearts": 20,
+      "hp_scale": 1.2,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 16,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 28,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 7,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Corners reward patient crossfire. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 36,
+      "name": "Rainbell Steps",
+      "region": 7,
+      "layout": 17,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          5,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          7,
+          4
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "budget": 290,
+      "hearts": 20,
+      "hp_scale": 1.225,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 20,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 8,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "A winding causeway across wet ground. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 37,
+      "name": "Reedwalk",
+      "region": 7,
+      "layout": 18,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            8
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "budget": 290,
+      "hearts": 20,
+      "hp_scale": 1.225,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 22,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 8,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 11,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "A winding causeway across wet ground. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 38,
+      "name": "The Bent Causeway",
+      "region": 7,
+      "layout": 19,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            7
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        [
+          [
+            8,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            0,
+            5
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "budget": 290,
+      "hearts": 20,
+      "hp_scale": 1.225,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 8,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "A winding causeway across wet ground. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 39,
+      "name": "Misted Islands",
+      "region": 7,
+      "layout": 20,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        [
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          5
+        ]
+      ],
+      "budget": 290,
+      "hearts": 20,
+      "hp_scale": 1.225,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 15,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 8,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 1.8,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "A winding causeway across wet ground. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 40,
+      "name": "Marshlight Watch",
+      "region": 7,
+      "layout": 21,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            8,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "budget": 290,
+      "hearts": 20,
+      "hp_scale": 1.225,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 16,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 4,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 28,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 8,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 2,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "A winding causeway across wet ground. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 41,
+      "name": "Archive Door",
+      "region": 8,
+      "layout": 22,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ]
+      ],
+      "budget": 300,
+      "hearts": 20,
+      "hp_scale": 1.25,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 20,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 9,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Read the long outer aisles. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 42,
+      "name": "The Outer Shelf",
+      "region": 8,
+      "layout": 23,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            8
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "budget": 300,
+      "hearts": 20,
+      "hp_scale": 1.25,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 22,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 9,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 11,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Read the long outer aisles. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 43,
+      "name": "Dust and Lanterns",
+      "region": 8,
+      "layout": 24,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          6,
+          3
+        ]
+      ],
+      "budget": 300,
+      "hearts": 20,
+      "hp_scale": 1.25,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 9,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Read the long outer aisles. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 44,
+      "name": "Index of Echoes",
+      "region": 8,
+      "layout": 25,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            0
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          6,
+          2
+        ]
+      ],
+      "budget": 300,
+      "hearts": 20,
+      "hp_scale": 1.25,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 15,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 9,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 7,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Read the long outer aisles. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 45,
+      "name": "The Last Volume",
+      "region": 8,
+      "layout": 26,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          2,
+          6
+        ]
+      ],
+      "budget": 300,
+      "hearts": 20,
+      "hp_scale": 1.25,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 16,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 28,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 9,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.7,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 7,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Read the long outer aisles. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 46,
+      "name": "Rowan Rise",
+      "region": 9,
+      "layout": 27,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "budget": 310,
+      "hearts": 20,
+      "hp_scale": 1.275,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 20,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Two approaches meet at the wall. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 47,
+      "name": "Three Landings",
+      "region": 9,
+      "layout": 28,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            8
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            8
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          6,
+          4
+        ]
+      ],
+      "budget": 310,
+      "hearts": 20,
+      "hp_scale": 1.275,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 22,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 11,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Two approaches meet at the wall. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 48,
+      "name": "The Red Stair",
+      "region": 9,
+      "layout": 29,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "budget": 310,
+      "hearts": 20,
+      "hp_scale": 1.275,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Two approaches meet at the wall. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 49,
+      "name": "Paired Beacons",
+      "region": 9,
+      "layout": 30,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        [
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            0
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          2,
+          4
+        ]
+      ],
+      "budget": 310,
+      "hearts": 20,
+      "hp_scale": 1.275,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 15,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 8,
+            "interval": 1.8,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Two approaches meet at the wall. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 50,
+      "name": "Escarpment Dawn",
+      "region": 9,
+      "layout": 31,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            7
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "budget": 310,
+      "hearts": 20,
+      "hp_scale": 1.275,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 16,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 5,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 28,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 10,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 3,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 8,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Two approaches meet at the wall. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 51,
+      "name": "Moonfen Lens",
+      "region": 10,
+      "layout": 32,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            8
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          7,
+          3
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "budget": 320,
+      "hearts": 20,
+      "hp_scale": 1.3,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 20,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 11,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.7,
+            "route": 2,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Three lanes need complementary guardians. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 52,
+      "name": "Constellation Walk",
+      "region": 10,
+      "layout": 33,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            0
+          ],
+          [
+            8,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ]
+        ],
+        [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            8
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            8
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          5,
+          7
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "budget": 320,
+      "hearts": 20,
+      "hp_scale": 1.3,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 22,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 11,
+            "interval": 1.0,
+            "route": 2,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 11,
+            "interval": 0.7,
+            "route": 2,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Three lanes need complementary guardians. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 53,
+      "name": "The Middle Watch",
+      "region": 10,
+      "layout": 34,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            8
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            0
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          5,
+          5
+        ]
+      ],
+      "budget": 320,
+      "hearts": 20,
+      "hp_scale": 1.3,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 2,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 11,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.7,
+            "route": 2,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "Three lanes need complementary guardians. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 54,
+      "name": "Three Quiet Stars",
+      "region": 10,
+      "layout": 35,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        [
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            0
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          0
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "budget": 320,
+      "hearts": 20,
+      "hp_scale": 1.3,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 15,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 11,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.7,
+            "route": 2,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 9,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Three lanes need complementary guardians. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 55,
+      "name": "Observatory Night",
+      "region": 10,
+      "layout": 36,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        [
+          [
+            8,
+            8
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "budget": 320,
+      "hearts": 20,
+      "hp_scale": 1.3,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 16,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 28,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 11,
+            "interval": 1.0,
+            "route": 2,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.7,
+            "route": 2,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 9,
+            "interval": 1.8,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 2,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "Three lanes need complementary guardians. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 56,
+      "name": "Elderroot Gate",
+      "region": 11,
+      "layout": 37,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "budget": 330,
+      "hearts": 20,
+      "hp_scale": 1.325,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 20,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 12,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 10,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "A final winding defense beneath old roots. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 57,
+      "name": "The Root Labyrinth",
+      "region": 11,
+      "layout": 38,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            8,
+            5
+          ],
+          [
+            8,
+            8
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          6,
+          6
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          8,
+          4
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "budget": 330,
+      "hearts": 20,
+      "hp_scale": 1.325,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 22,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 12,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 11,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "A final winding defense beneath old roots. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 58,
+      "name": "Lantern Procession",
+      "region": 11,
+      "layout": 39,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            7
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            8,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            0,
+            8
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          5,
+          4
+        ]
+      ],
+      "budget": 330,
+      "hearts": 20,
+      "hp_scale": 1.325,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 12,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 12,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ]
+      ],
+      "hint": "A final winding defense beneath old roots. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 59,
+      "name": "Sanctuary Keep",
+      "region": 11,
+      "layout": 40,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            7,
+            0
+          ]
+        ],
+        [
+          [
+            7,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          6,
+          3
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "budget": 330,
+      "hearts": 20,
+      "hp_scale": 1.325,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 15,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 12,
+            "interval": 1.0,
+            "route": 0,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 13,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 10,
+            "interval": 1.8,
+            "route": 1,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 24,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "A final winding defense beneath old roots. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
+      "mode": "campaign"
+    },
+    {
+      "id": 60,
+      "name": "A Brighter Tomorrow",
+      "region": 11,
+      "layout": 41,
+      "grid": [
+        9,
+        9
+      ],
+      "routes": [
+        [
+          [
+            8,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            0,
+            7
+          ]
+        ],
+        [
+          [
+            8,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      ],
+      "pads": [
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "budget": 330,
+      "hearts": 20,
+      "hp_scale": 1.325,
+      "waves": [
+        [
+          {
+            "type": "runner",
+            "count": 16,
+            "interval": 0.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "shell",
+            "count": 6,
+            "interval": 2.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "swarm",
+            "count": 28,
+            "interval": 0.3,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "wisp",
+            "count": 12,
+            "interval": 1.0,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "bramble",
+            "count": 4,
+            "interval": 3.5,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "runner",
+            "count": 14,
+            "interval": 0.7,
+            "route": 1,
+            "delay": 2.0
+          }
+        ],
+        [
+          {
+            "type": "shell",
+            "count": 10,
+            "interval": 1.8,
+            "route": 0,
+            "delay": 0.0
+          },
+          {
+            "type": "swarm",
+            "count": 26,
+            "interval": 0.3,
+            "route": 1,
+            "delay": 3.0
+          }
+        ]
+      ],
+      "hint": "A final winding defense beneath old roots. Inspect each approach before spending; Rally is free, and upgraded coverage matters.",
       "mode": "campaign"
     }
   ]

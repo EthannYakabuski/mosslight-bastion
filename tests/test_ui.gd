@@ -91,6 +91,7 @@ func run() -> void:
 	for child in game.stage.get_children():
 		if child is ScrollContainer: scroll=child
 	check(scroll!=null and scroll.position.y+scroll.size.y<=810.0,"Home reserves150 fixture logical units below scroll content")
+	check(absf(game.buttons.campaign.get_global_rect().get_center().x-game.get_viewport_rect().size.x*.5)<1.0,"Phone Home controls centered including actual scrollbar gutter")
 	await capture("phone-home")
 	await press("campaign")
 	check(game.page=="campaign" and not game.buttons.mission_1.disabled and game.buttons.mission_2.disabled,"Pointer opens campaign with truthful first unlock")
@@ -153,6 +154,8 @@ func run() -> void:
 		game.show_home()
 		await frames()
 		check(game.stage.scale.x>0.0 and game.stage.get_global_rect().size.x<=float(root.size.x)+1.0,"Portrait stage fits "+str(profile.name))
+		check(absf(game.buttons.campaign.get_global_rect().get_center().x-game.get_viewport_rect().size.x*.5)<1.0,"Home controls centered including actual scrollbar gutter "+str(profile.name))
+		check(game.stage.get_global_rect().get_center().distance_to(game.get_viewport_rect().size*.5)<1.0,"Whole Home stage centered "+str(profile.name))
 		await capture(str(profile.name)+"-home")
 		game.show_campaign(); await frames(); await capture(str(profile.name)+"-campaign")
 		game.show_brief(BastionMissions.campaign(1)); game._start_battle(); await frames(); await capture(str(profile.name)+"-battle")

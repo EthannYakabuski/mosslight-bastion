@@ -2,8 +2,8 @@
 
 Hold the lane. Keep the mosslight burning.
 
-A portrait woodland defense game for Godot 4.5.1 Compatibility: thirty authored
-campaign missions across six regions, four complementary towers, six enemy roles,
+A portrait woodland defense game for Godot 4.5.1 Compatibility: sixty authored
+campaign missions across twelve regions, four complementary towers, six enemy roles,
 Endless siege, date-seeded Daily defense, keeper progression, twenty achievements
 and four record categories. Preparation and cosmetic lantern upgrades use coins
 earned in ordinary play.
@@ -13,7 +13,7 @@ earned in ordinary play.
 Open `project.godot` and run `main.tscn`. Tap a build pad and inspect price/range
 before choosing a tower. Upgrade or sell a selected tower, call Next wave and use
 free Rally when enemies cluster. Android Back pauses combat; Resume continues and
-Abandon returns Home without result credit. Ordinary retries are free.
+Abandon returns Home without result credit. Ordinary retries are free. After a campaign victory, Next level opens the next unlocked briefing directly.
 
 The optional native earned repair is limited once per run. It leaves combat paused
 through the fullscreen endcard until explicit Resume. Assisted runs keep ordinary

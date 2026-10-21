@@ -35,7 +35,7 @@
     {
       "id": "all_walls",
       "name": "Mosslight dawn",
-      "description": "Complete all 30 missions.",
+      "description": "Complete the original 30 missions.",
       "metric": "clears",
       "target": 30,
       "icon": "res://assets/icons/all_walls.svg"

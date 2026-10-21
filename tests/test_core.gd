@@ -212,7 +212,7 @@ func _replay_witnesses() -> void:
 	if not parsed is Dictionary:
 		check(false,"Strategy witness file must exist before core replay")
 		return
-	check(parsed.missions.size()==30 and parsed.failed.is_empty(),"Every authored mission has a successful recorded legal strategy")
+	check(parsed.missions.size()==Missions.count() and parsed.failed.is_empty(),"Every authored mission has a successful recorded legal strategy")
 	for witness in parsed.missions:
 		var sim: BastionSimulation=Sim.new(Missions.campaign(int(witness.mission)),{"power":0,"fortify":0})
 		var valid: bool=true

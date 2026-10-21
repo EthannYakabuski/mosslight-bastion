@@ -28,6 +28,7 @@ var _last_battle_status: String = ""
 var _ending: bool = false
 var _speed: float = 1.0
 var _pause_signature: String = ""
+var _home_gutter: MarginContainer
 
 func platform() -> Node:
 	return service_override if is_instance_valid(service_override) else get_node_or_null("/root/Services")
@@ -132,6 +133,7 @@ func _retire_ui(control: Control) -> void:
 	control.queue_free()
 
 func _page(name_value: String, title: String, subtitle: String) -> VBoxContainer:
+	_home_gutter=null
 	page=name_value
 	buttons.clear()
 	board=null
@@ -151,10 +153,12 @@ func _page(name_value: String, title: String, subtitle: String) -> VBoxContainer
 	var heading := _label(title,28,GOLD)
 	heading.position=Vector2(20,20)
 	heading.size=Vector2(500,42)
+	if name_value=="home": heading.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	stage.add_child(heading)
 	var sub := _label(subtitle,16,MUTED)
 	sub.position=Vector2(20,66)
 	sub.size=Vector2(500,64)
+	if name_value=="home": sub.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	stage.add_child(sub)
 	var native: Node = platform()
 	if native!=null and native.has_method("set_menu_visible"): native.set_menu_visible(page=="home")
@@ -166,8 +170,23 @@ func _page(name_value: String, title: String, subtitle: String) -> VBoxContainer
 	var content := VBoxContainer.new()
 	content.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 	content.add_theme_constant_override("separation",12)
-	scroll.add_child(content)
+	if name_value=="home":
+		_home_gutter=MarginContainer.new()
+		_home_gutter.size_flags_horizontal=Control.SIZE_EXPAND_FILL
+		scroll.add_child(_home_gutter)
+		_home_gutter.add_child(content)
+		scroll.get_v_scroll_bar().visibility_changed.connect(_center_home_menu)
+		_center_home_menu.call_deferred()
+	else: scroll.add_child(content)
 	return content
+
+func _center_home_menu() -> void:
+	# A visible right scrollbar reduces the content viewport. Reserve the same
+	# gutter on the left so real Home controls stay centered under the heading.
+	if page!="home" or not is_instance_valid(_home_gutter): return
+	var scroll: ScrollContainer=_home_gutter.get_parent() as ScrollContainer
+	var bar: VScrollBar=scroll.get_v_scroll_bar()
+	_home_gutter.add_theme_constant_override("margin_left",ceili(bar.get_combined_minimum_size().x) if bar.visible else 0)
 
 func _footer(content: VBoxContainer) -> void:
 	var label := _label("Progress saves on this device. Optional online services never gate play.",14,MUTED)
@@ -193,7 +212,9 @@ func _record_heading(content: VBoxContainer, text: String, icon_path: String, co
 func show_home() -> void:
 	_ending=false
 	var content: VBoxContainer = _page("home","Mosslight Bastion","Hold the lane. Keep the mosslight burning.")
-	content.add_child(_label("Keeper Lv %d   ·   %d coins   ·   %d XP"%[progress.level(),int(progress.data.coins),int(progress.data.xp)],20,GOLD))
+	var balance: Label=_label("Keeper Lv %d   ·   %d coins   ·   %d XP"%[progress.level(),int(progress.data.coins),int(progress.data.xp)],20,GOLD)
+	balance.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
+	content.add_child(balance)
 	var hero_row := HBoxContainer.new()
 	hero_row.add_theme_constant_override("separation",16)
 	content.add_child(hero_row)
@@ -215,7 +236,7 @@ func show_home() -> void:
 	welcome.add_child(_label("A little light.\nA wall worth holding.",23,GOLD))
 	welcome.add_child(_label("Place guardians, read the lanes, and rally when the woodland presses close.",17,MUTED))
 	welcome.add_child(_label("Lantern: "+str(progress.data.settings.skin).capitalize(),15))
-	content.add_child(_button("Campaign ·30 authored missions",show_campaign,"campaign"))
+	content.add_child(_button("Campaign ·60 authored missions",show_campaign,"campaign"))
 	content.add_child(_button("Daily defense · "+progress.current_day(),func() -> void: show_brief(Missions.daily(progress.current_day())),"daily"))
 	content.add_child(_button("Endless siege",func() -> void: show_brief(Missions.endless()),"endless"))
 	content.add_child(_button("Workshop · preparation and lanterns",show_workshop,"workshop"))
@@ -232,10 +253,10 @@ func _service_status() -> String:
 	return str(native.status()) if native!=null and native.has_method("status") else "Offline progress is available."
 
 func show_campaign() -> void:
-	var content: VBoxContainer = _page("campaign","The six woodland walls","%d/30 missions · %d/90 stars. Every mission has a shown route and budget."%[progress.data.completed.size(),progress.star_total()])
+	var content: VBoxContainer = _page("campaign","The twelve woodland walls","%d/60 missions · %d/180 stars. Every mission has a shown route and budget."%[progress.data.completed.size(),progress.star_total()])
 	content.add_child(_button("Back to Home",show_home,"back",true))
 	var data: Dictionary = Missions.data()
-	for region_index in range(6):
+	for region_index in range(data.regions.size()):
 		content.add_child(_label(str(data.regions[region_index].name),23,Color(str(data.regions[region_index].accent))))
 		content.add_child(_label(str(data.regions[region_index].subtitle),16,MUTED))
 		for number in range(region_index*5+1,region_index*5+6):
@@ -480,9 +501,20 @@ func _finish_result() -> void:
 	if int(receipt.get("level_bonus",0))>0: content.add_child(_label("Includes %d coins from your new keeper level."%int(receipt.level_bonus),17))
 	content.add_child(_label("★".repeat(sim.stars()) if sim.status=="won" else "Free retries. Your banked progress is safe.",25))
 	content.add_child(_label("Assisted successes keep ordinary progress. Only unassisted records can replace competitive bests.",16,MUTED))
+	if sim.status=="won" and str(sim.definition.get("mode","campaign"))=="campaign" and int(sim.definition.id)<Missions.count():
+		content.add_child(_button("Next level · "+str(Missions.campaign(int(sim.definition.id)+1).name),_next_level,"next_level"))
 	content.add_child(_button("Try this wall again · free",func() -> void: show_brief(selected_mission),"retry"))
 	content.add_child(_button("Return Home",show_home,"home"))
 	_footer(content)
+
+func _next_level() -> void:
+	# A settled, banked campaign victory owns this transition. Never skip a loss,
+	# Daily/Endless attempt or an undismissed fullscreen activity.
+	if session==null or session.simulation==null or not session.banked or session.fullscreen_active() or session.reward_pending: return
+	var sim: BastionSimulation=session.simulation
+	var number: int=int(sim.definition.get("id",0))+1
+	if sim.status!="won" or str(sim.definition.get("mode",""))!="campaign" or number>Missions.count() or not progress.available(number): return
+	show_brief(Missions.campaign(number))
 
 func show_gifts() -> void:
 	progress.roll_day()

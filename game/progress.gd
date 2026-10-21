@@ -55,7 +55,7 @@ func _normalize(raw: Dictionary) -> Dictionary:
 		var stored: Variant = raw.get(key,{})
 		if stored is Dictionary:
 			for mission in stored:
-				if str(mission).is_valid_int() and int(mission)>=1 and int(mission)<=30:
+				if str(mission).is_valid_int() and int(mission)>=1 and int(mission)<=60:
 					var stars: int = _bounded(stored[mission],0,3)
 					if stars>0: clean[key][str(int(mission))] = stars
 	for key in ["day","login_day"]:
@@ -174,7 +174,7 @@ func _add_xp(amount: int) -> int:
 	return bonus
 
 func available(number: int) -> bool:
-	return number==1 or data.completed.has(str(number-1))
+	return number>=1 and number<=60 and (number==1 or data.completed.has(str(number-1)))
 
 func star_total(unassisted: bool = false) -> int:
 	var total: int = 0
@@ -187,7 +187,7 @@ func record_result(run_id: String, result: Dictionary) -> Dictionary:
 	var mode: String = str(result.get("mode",""))
 	if mode not in ["campaign","daily","endless"]: return {"recorded":false}
 	var mission: int = int(result.get("mission",0))
-	if mode=="campaign" and (mission<1 or mission>30 or not available(mission)): return {"recorded":false}
+	if mode=="campaign" and (mission<1 or mission>60 or not available(mission)): return {"recorded":false}
 	roll_day()
 	var kills: int = _bounded(result.get("kills",0),0,1000000)
 	var waves: int = _bounded(result.get("waves",0),0,100000)

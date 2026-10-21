@@ -4,10 +4,10 @@ extends RefCounted
 
 const DT: float = 0.05
 const TOWERS: Dictionary = {
-	"archer": {"name":"Archer", "cost":45, "damage":7.0, "period":0.45, "range":2.65, "splash":0.0, "slow":0.0, "role":"Quick shots; efficient against ordinary runners.", "sprite":85},
-	"ember": {"name":"Ember", "cost":70, "damage":17.0, "period":1.15, "range":2.5, "splash":1.0, "slow":0.0, "role":"Splash catches clusters; partially bypasses armor.", "sprite":84},
-	"frost": {"name":"Frost", "cost":55, "damage":5.0, "period":0.8, "range":2.8, "splash":0.0, "slow":0.5, "role":"Slows most enemies; wisps ignore the chill.", "sprite":89},
-	"prism": {"name":"Prism", "cost":100, "damage":34.0, "period":1.35, "range":4.0, "splash":0.0, "slow":0.0, "role":"Long reach and true damage; slower against crowds.", "sprite":88}
+	"archer": {"name":"Archer", "cost":45, "damage":4.2, "period":0.5, "range":2.65, "splash":0.0, "slow":0.0, "role":"Quick shots; efficient against ordinary runners.", "sprite":85},
+	"ember": {"name":"Ember", "cost":70, "damage":10.0, "period":1.25, "range":2.5, "splash":1.0, "slow":0.0, "role":"Splash catches clusters; partially bypasses armor.", "sprite":84},
+	"frost": {"name":"Frost", "cost":55, "damage":3.0, "period":0.9, "range":2.8, "splash":0.0, "slow":0.5, "role":"Slows most enemies; wisps ignore the chill.", "sprite":89},
+	"prism": {"name":"Prism", "cost":100, "damage":20.0, "period":1.5, "range":4.0, "splash":0.0, "slow":0.0, "role":"Long reach and true damage; slower against crowds.", "sprite":88}
 }
 const ENEMIES: Dictionary = {
 	"sprig": {"name":"Sprig", "hp":32.0, "speed":0.65, "armor":0.0, "bounty":6, "leak":1, "immune":false, "sprite":96, "role":"Ordinary woodland visitor."},

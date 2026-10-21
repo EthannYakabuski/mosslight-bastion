@@ -1,3 +1,6 @@
+ROUND TWO SOURCE UPDATE — 2026-10-21
+Engineering tests passed for 60 missions, Next Level, tower balance and centered Home. New Android/Web exports/native acceptance and marketing integration are pending; preserved original QA below applies only to its named APK. See docs/ROUND_TWO_UPDATE.md.
+
 MOSSLIGHT BASTION - CONTINUATION AND LOCAL TEST HANDOFF
 Status: Local test package ready with the qualifications below. Canonical
 Apps/mosslight-bastion is the single development Git working copy after consolidation.

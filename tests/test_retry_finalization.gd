@@ -57,7 +57,7 @@ func natural_win(number: int) -> void:
 		if not ember and sim.supplies>=70:
 			await pad(2);await press("build_ember");ember=true
 			check(sim.tower_at(2).get("kind","")=="ember","legal earned-supply Ember purchase")
-		if sim.status=="ready":await press("wave")
+		if sim.status=="ready" and not game.buttons.wave.disabled:await press("wave")
 		if sim.status=="running" and sim.rally_cooldown<=0 and not sim.enemies.is_empty() and not game.buttons.rally.disabled:await press("rally")
 		game._process(0.05)
 		steps+=1
@@ -68,13 +68,13 @@ func natural_win(number: int) -> void:
 	var sim=game.session.simulation
 	var snapshot={"run":number,"run_id":game.session.run_id,"page":game.page,"status":sim.status,"hearts":sim.hearts,"supplies":sim.supplies,"kills":sim.killed,"waves":sim.waves_cleared,"elapsed":sim.elapsed,"banked":game.session.banked,"ending":game._ending,"coins":game.progress.data.coins,"xp":game.progress.data.xp,"rounds":game.progress.data.rounds,"run_sequence":game.progress.data.run_sequence,"credited_runs":game.progress.data.credited_runs.duplicate(),"receipt":game.session.last_receipt.duplicate(true)}
 	runs.append(snapshot);print("MOSS_RETRY_NATURAL ",JSON.stringify(snapshot))
-	check(sim.status=="won" and sim.killed==11 and sim.waves_cleared==2 and sim.hearts==15 and not sim.assisted,"natural authored two-wave unassisted victory%d"%number)
+	check(sim.status=="won" and sim.killed==10 and sim.waves_cleared==2 and sim.hearts==14 and not sim.assisted,"natural authored two-wave unassisted victory%d"%number)
 	check(game.page=="results" and game.session.banked,"natural result shown and banked%d"%number)
 	check(int(game.progress.data.rounds)==number and game.progress.data.credited_runs.size()==number,"single bank for each legal run%d"%number)
 	if number==1:
-		check(int(game.progress.data.coins)==267 and int(game.progress.data.xp)==80,"first-clear exact source payout117coins80XP")
+		check(int(game.progress.data.coins)==265 and int(game.progress.data.xp)==78,"nerfed first-clear exact source payout115coins78XP")
 	else:
-		check(int(game.progress.data.coins)==359 and int(game.progress.data.xp)==130,"replay exact source payout52coins50XP plus40level bonus")
+		check(int(game.progress.data.coins)==355 and int(game.progress.data.xp)==126,"nerfed replay exact source payout50coins48XP plus40level bonus")
 	var bank=game.progress.data.duplicate(true)
 	for index in range(40):game._process(0.05)
 	await frames()
@@ -97,6 +97,14 @@ func run() -> void:
 	await natural_win(2)
 	check(service.rounds==2,"service cadence sees exactly two natural accepted results")
 	check(game.progress.data.credited_runs==["2026-10-20:1","2026-10-20:2"],"two unique credited source run ids")
+	check(game.buttons.has("next_level") and not game.buttons.next_level.disabled,"banked campaign win offers Next level")
+	var second_bank=game.progress.data.duplicate(true)
+	await press("next_level")
+	check(game.page=="brief" and int(game.selected_mission.id)==2 and game.progress.data==second_bank,"Next level opens the newly unlocked mission without Home, charge or duplicate credit")
+	await press("start")
+	check(game.page=="play" and game.session.simulation.status=="ready" and not game._ending and int(game.progress.data.run_sequence)==3,"Next level starts a fresh ordinary battle and resets finalization")
+	await press("pause");await press("abandon")
+	check(game.page=="home" and int(game.progress.data.rounds)==2,"abandon new level does not fabricate a third bank")
 	var restored=Progress.new(game.progress.path,"2026-10-20")
 	check(restored.data==game.progress.data and game.progress.last_save_ok,"all typed progress roundtrips after natural retry results")
 	print("MOSSLIGHT RETRY CHECKS %d failures %d; mode=%s; ordinary UI and production time; isolated no-ads fixture; no native acceptance"%[checks,failures,"paired" if paired else "mouse"])
