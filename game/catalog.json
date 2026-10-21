@@ -171,7 +171,7 @@
     {
       "id": "unassisted_daily_score",
       "name": "Unassisted daily score",
-      "description": "Best current daily unassisted score; configure a suitable reset policy in the backend.",
+      "description": "Best unassisted score from today's daily defense.",
       "icon": "res://assets/badges/unassisted_daily_score.png"
     },
     {
