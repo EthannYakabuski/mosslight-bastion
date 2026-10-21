@@ -45,6 +45,10 @@ through Godot's `admob/general/android/app_id` Project Setting; changing only JS
 production ad unit IDs into test requests. See the platform guide before changing
 IDs, consent settings or signing configuration.
 
+## Round Two source status
+
+The current source contains 60 missions across twelve regions, Next Level, revised tower balance and centered Home. Illustrated app/feature art and all 20 achievement/4 leaderboard badges are integrated. See [the engineering update](docs/ROUND_TWO_UPDATE.md) for verification and continuity. New Android/Web exports, affected native regression and final-build captures remain pending with the coordinator. The original APK and dated CI below are historical builds; their native QA does not verify the Round Two update.
+
 ## Verification and release
 
 The original local QA APK and actual native qualifications are recorded in
