@@ -1,12 +1,11 @@
-Mosslight Bastion - public marketing assets
+MOSSLIGHT BASTION - ROUND TWO QUALIFIED MARKETING HANDOFF
 
-Nine current-APK ONLINE Android emulator Home/Campaign/unbanked planning images are
-individually AI-operator reviewed; three representative roles had independent coordinator
-review. Phone1080x1920, logical7 1200x1920 and logical10 1600x2560 are one emulator, not
-physical devices. Raw/portrait PNGs are unchanged guest screenshot bytes: no crop,
-resize, rotation or overlays. Private device records/evidence coordinates are omitted.
+Current runtime9f84e66e63c354692a6b514a670a801fe7ab6b51; AndroidSHA256 28962971847F38998301D6A6EF76DEFA6AA873CF56A6C6C80682CA9E4D45106E. Versioned Android/Web and two new *-28962971.zip distributions are selected in ../HANDOFF.txt and local packages/PACKAGE-RECEIPT.json.
 
-See screenshots/capture-manifest.json, docs/NATIVE_QA.json and docs/LOCAL_TEST_RESULTS.json
-for dated outcomes and qualifications. Production service IDs, physical-device/human
-testing, signing, policy/consent/Data safety and Play submission remain owner work.
-Generated exports and private logs/saves are not source files. Live Pages remains held.
+Nine current raw emulator Home/live-defense/journal PNGs are in screenshots-round-two/ with its safe relative manifest. All nine were independently reviewed by operator and coordinator. Logical phone/seven/ten profiles are one emulator, not physical devices. No crop/resize/rotation/overlay or oldD890 relabeling. Original E9CF images/manifest remain untouched under screenshots/.
+
+New woodland app/feature and20achievement/4leaderboard illustrations are catalog-linked. ROUND_TWO_ARTWORK.json/icon-manifest.json preserve original hashes/prompts and512/64 visual review. Original full-generation PNGs are privately retained as recorded; committed output art is included. Illustrations are not gameplay screenshots. Store copy is in ../store/.
+
+Current affected-copy/controls/save/views accepted; D890 critical combat/ad/offline evidence is separately qualified. BROAD NATIVE LOG GATE FALSE for one Chromium image-reader queue diagnostic, no observed visible failure, unresolved cause/impact. Scoped final game/fatal counts zero do not establish a full-lifetime clean log. Historical E9CF cache errors/AVD loss remain separate. See ../docs/NATIVE_QA.json and ../docs/LOCAL_TEST_RESULTS.json.
+
+Production IDs/backend, consent/audience/policy, signing, current Play eligibility and publication remain owner work. Physical/audio/interactive-Web/native simultaneous multitouch/human balance remain unverified. minAPI24/targetAPI35 is the tested engine constraint. Keep complete LICENSE/NOTICE/LICENSES. Public pushes remain held; no Pages/Library/Play action occurs here.

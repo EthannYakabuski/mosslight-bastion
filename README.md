@@ -47,15 +47,11 @@ IDs, consent settings or signing configuration.
 
 ## Round Two source status
 
-The current source contains 60 missions across twelve regions, Next Level, revised tower balance and centered Home. Illustrated app/feature art and all 20 achievement/4 leaderboard badges are integrated. See [the engineering update](docs/ROUND_TWO_UPDATE.md) for verification and continuity. New Android/Web exports, affected native regression and final-build captures remain pending with the coordinator. The original APK and dated CI below are historical builds; their native QA does not verify the Round Two update.
+The current source contains 60 missions across twelve regions, Next Level, revised tower balance and centered Home. Illustrated app/feature art and all 20 achievement/4 leaderboard badges are integrated. See [the engineering update](docs/ROUND_TWO_UPDATE.md) for verification and continuity. Current Android/Web exports are accepted at runtime `9f84e66e63c354692a6b514a670a801fe7ab6b51` under `build/round-two-9f84e66e-a1/`. Current affected copy/controls/save and nine raw native emulator views are complete; critical combat/ad/offline evidence belongs to the qualified D890 predecessor. The broad native diagnostic gate remains false for one unresolved Chromium image-reader buffer-queue diagnostic. See HANDOFF for exact selectors and limitations.
 
 ## Verification and release
 
-The original local QA APK and actual native qualifications are recorded in
-`HANDOFF.txt`, `docs/NATIVE_QA.json` and `docs/LOCAL_TEST_RESULTS.json`. The original
-read-only emulator session lost its install/data at host exit; separate fresh-profile
-offline testing does not establish retention across that loss. The final broad
-native diagnostic gate remains false for unresolved Chromium cache diagnostics.
+The current qualified local package is recorded in `HANDOFF.txt`, `docs/NATIVE_QA.json` and `docs/LOCAL_TEST_RESULTS.json`. Its broad native log gate remains false for one Chromium image-reader queue diagnostic with no observed visible failure and unresolved cause/impact. Original E9CF cache diagnostics and AVD install/data loss remain separate historical evidence. The old progressed backup was not merged with the later genuine fresh profile.
 
 Public source: https://github.com/EthannYakabuski/mosslight-bastion
 
@@ -73,6 +69,5 @@ and human balance remain unverified. Emulator audio was disabled.
 
 See `docs/DESIGN.md` and `docs/ARCHITECTURE.md` for gameplay and source structure.
 Store copy/art is in `store/` and `marketing/`. `tests/evidence` contains synthetic
-desktop fixtures; `marketing/screenshots` contains separately reviewed native
-captures. Preserve `LICENSE`, `NOTICE`, `LICENSES/` and `assets/SOURCE_MAP.json`.
+desktop fixtures; `marketing/screenshots-round-two` contains the nine current raw native emulator views; `marketing/screenshots` retains the original images/manifest. Preserve `LICENSE`, `NOTICE`, `LICENSES/` and `assets/SOURCE_MAP.json`.
 Apache-2.0 covers original code/content/art/music; third-party terms remain intact.

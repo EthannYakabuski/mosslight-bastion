@@ -1,9 +1,11 @@
 {
   "capture_count": 9,
-  "capture_manifest": "screenshots/capture-manifest.json",
-  "source_apk_sha256": "E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD",
+  "capture_manifest": "screenshots-round-two/capture-manifest.json",
+  "source_apk_sha256": "28962971847F38998301D6A6EF76DEFA6AA873CF56A6C6C80682CA9E4D45106E",
   "raw_image_bytes_reviewed": true,
   "crop_resize_rotation_or_overlay": false,
+  "all_nine_native_operator_and_root_reviewed": true,
+  "illustrated_art": "ROUND_TWO_ARTWORK.json and icon-manifest.json;24badges reviewed512/64 and journal tested",
   "viewports": {
     "phone": [
       1080,
@@ -18,11 +20,19 @@
       2560
     ]
   },
-  "scope": "All9AIoperator-reviewed;3representative coordinator-reviewed. ONLINE same-emulator views only, not physical devices.",
+  "native_functional_acceptance": true,
+  "broad_final_log_gate_passed": false,
+  "scope": "Current exactAPK emulator images only; no physical-device proof or erased diagnostic.",
   "limits": [
-    "Final broad diagnostic gate false: unresolved Chromium WebView cache wrong-size/wrong-file-structure errors were preserved. No Godot SCRIPT ERROR/can_process/FATAL finding was observed. No cache deletion, suppression, filter change or rerun. Earlier creative JavaScript callback diagnostic separately qualified.",
-    "Daily replay/repeat bonus, native cosmetic selection and Settings/privacy preference changes unverified.",
-    "Physical devices/tablets, audible output, interactive Web/audio/WebGL, production services and human balance unverified. Emulator audio disabled.",
-    "Godot4.5.1 Compatibility minAPI24/targetAPI35 reflects export constraint, not current Play release eligibility. Owner provides real IDs/signing, consent/audience, policy/support, Data safety and Play publication."
+    "Broad native diagnostic gate is FALSE: one Chromium image-reader buffer-queue error occurred in the captured final process. Cause/impact is not established; no visible failure was observed. No suppression or rerun erased it.",
+    "Captured final-process SCRIPT ERROR/can_process/FATAL EXCEPTION/E godot counts are zero; this is not a full-lifetime clean-log claim.",
+    "The original E9CF build has separate unresolved Chromium cache wrong-size/structure diagnostics and historical AVD session loss. Neither is erased by new exports or scoped native success.",
+    "D890 critical gameplay/ad/offline observations are qualified predecessor evidence, not replays on the one-description-only2896 successor.",
+    "The official test creative earned before attempted Back, so an unearned native dismissal callback is not proven in this Round Two session. Offline unavailable repair/no-grant was observed.",
+    "Physical devices/tablets, audible Android output, interactive Web/WebGL/audio, simultaneous native multitouch, production services and human balance remain unverified. Emulator audio output was disabled.",
+    "Sixty legal zero-preparation strategy witnesses are source-model evidence, not sixty native mission completions. Daily replay/repeat bonus, cosmetic/settings changes, long sessions and multi-day mechanisms are not all newly native-tested.",
+    "Godot4.5.1 Compatibility minAPI24/targetAPI35 is the tested engine constraint; current Play-release eligibility is not claimed. Owner supplies production IDs/backend/signing, consent/audience/policy/support and Google Play publication.",
+    "Unfinished combat is discarded on cold start; banked progress is retained. Local saves/offline clocks are not anti-cheat secure.",
+    "Public source updates remain held after approval denials. No new hosted Linux CI, Pages deployment or Library action is claimed."
   ]
 }

@@ -1,0 +1,12 @@
+{
+  "capture_manifest": "screenshots/capture-manifest.json",
+  "capture_count": 9,
+  "capture_apk_sha256": "E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD",
+  "native_functional_acceptance": true,
+  "broad_final_log_gate_passed": false,
+  "physical_device_test": false,
+  "physical_tablet_test": false,
+  "source_only": true,
+  "pages_deployment": "held; workflow deploy if:false",
+  "scope": "Actual verification summary; generated exports/private runtime records omitted."
+}

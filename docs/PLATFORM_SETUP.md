@@ -54,8 +54,7 @@ An earned callback can grant one repair but cannot dismiss the ad or resume comb
 Explicit Resume is required after return; keep stale callbacks from affecting a
 new battle. Natural completed rounds alone advance interstitial cadence.
 
-Headless fixtures test code paths, not SDK acceptance. Actual native QA and its
-unresolved diagnostics are in `HANDOFF.txt` and `docs/NATIVE_QA.json`. Preserve
+Headless fixtures test code paths, not SDK acceptance. Dated per-binary native QA and unresolved diagnostics are in `HANDOFF.txt` and `docs/NATIVE_QA.json`; original E9CF cache errors and current Chromium queue diagnostics are separate. Preserve
 original local packages and real saves. Tests must isolate application data,
 including `user://platform_pending_v1.json`, from the player's real data.
 
@@ -63,3 +62,7 @@ The owner handles production IDs/backend/signing, release requirements and Googl
 Play publication. Physical-device, audible-output, interactive Web and real-service
 verification are still needed. Live Pages/Library activation is outside this
 continuation task; leave the existing held configuration unchanged.
+
+## Daily leaderboard reset policy
+
+For `unassisted_daily_score`, configure a suitable daily reset/period policy in the owner backend or leaderboard service and verify it with owner test accounts. Client labels and submissions do not configure the service policy. Keep this setup guidance outside player-facing collection descriptions.

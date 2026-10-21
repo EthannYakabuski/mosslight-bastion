@@ -144,6 +144,87 @@
     "sha256": "da57c48416154a82cf5a3545db9fbdc73a35a810f664cdad1fdaeba5b32c97f5"
   },
   {
+    "file": "screenshots-round-two/10inch/01-home.png",
+    "dimensions": [
+      1600,
+      2560
+    ],
+    "mode": "RGBA",
+    "sha256": "62e1ab43eceb7fa7cdf69cf730ecce8f0c79e17aa51247340b7a57b5be1a381e"
+  },
+  {
+    "file": "screenshots-round-two/10inch/02-live-defense.png",
+    "dimensions": [
+      1600,
+      2560
+    ],
+    "mode": "RGBA",
+    "sha256": "edcd35f316ac5bb51bd287a74ec04fe73232c8779774d3c8a011d20b84c04099"
+  },
+  {
+    "file": "screenshots-round-two/10inch/03-journal.png",
+    "dimensions": [
+      1600,
+      2560
+    ],
+    "mode": "RGBA",
+    "sha256": "754ed1e0b8ff27dca079d1c40d5024a0a11cfad2e6f991d7867787b2c314b094"
+  },
+  {
+    "file": "screenshots-round-two/7inch/01-home.png",
+    "dimensions": [
+      1200,
+      1920
+    ],
+    "mode": "RGBA",
+    "sha256": "0f6061a5b37865afa66f8fcdd691327047ad1c7e28b9bbe164fa578c5ce400dd"
+  },
+  {
+    "file": "screenshots-round-two/7inch/02-live-defense.png",
+    "dimensions": [
+      1200,
+      1920
+    ],
+    "mode": "RGBA",
+    "sha256": "00f64a27c13a7c52f3b0c03e52ad936a2bb4fef4d868bc5a2adc3f2b8f3e0a04"
+  },
+  {
+    "file": "screenshots-round-two/7inch/03-journal.png",
+    "dimensions": [
+      1200,
+      1920
+    ],
+    "mode": "RGBA",
+    "sha256": "8dad7b7e232f81ac68701c366146f34ec92980e95f769d983fd5fe00fd99b2e3"
+  },
+  {
+    "file": "screenshots-round-two/phone/01-home.png",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "mode": "RGBA",
+    "sha256": "c169fb9a544b4e0b8e2c3b66c59581ead5fe025f18ae327c859535f78678c438"
+  },
+  {
+    "file": "screenshots-round-two/phone/02-live-defense.png",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "mode": "RGBA",
+    "sha256": "e504801997109710155782aef4d4440e9326fadd80dc64ad91d6041638def769"
+  },
+  {
+    "file": "screenshots-round-two/phone/03-journal.png",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "mode": "RGBA",
+    "sha256": "25c7d802a4ade0959b06a35fa565d81ed55af72fa6c22a35424f94aa0ecc037e"
+  },
+  {
     "file": "screenshots/phone-collection.png",
     "dimensions": [
       1080,

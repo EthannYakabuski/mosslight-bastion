@@ -2,7 +2,7 @@
 Hold the lane. Keep the mosslight burning.
 
 ## Hold the lane
-Thirty authored defenses through six woodland regions. Read the fixed routes, choose a pad and call the next wave when your wall is ready.
+Sixty authored defenses through twelve woodland regions. Read the fixed routes, choose a pad and call the next wave when your wall is ready.
 
 ## Four towers, a thousand decisions
 Quick archers, clustered embers, slowing frost and armor-piercing prisms. Clear costs and counters turn a little supply budget into a plan.
@@ -14,7 +14,7 @@ Keeper levels, campaign stars, preparation and lantern colors. A seven-day gift,
 The old keep never had a king. It had gardeners, lantern keepers, and a low wall held together with patient hands. When the woodland grew restless, its keepers did what they had always done: light the lamps, mend the stone, and make room for one another behind the bastion.
 
 ## Technical
-Godot4.5.1 Compatibility; portrait2D; fixed20Hz deterministic simulation; Android primary; feasible single-threaded Web. The ordinary loop is offline, with local save/backup. No account or real ad entitlement is simulated on Web. Native SDK test behavior still needs device acceptance.
+Godot4.5.1 Compatibility; portrait2D; fixed20Hz deterministic simulation; Android primary; feasible single-threaded Web. The ordinary loop is offline, with local save/backup. No account or real ad entitlement is simulated on Web. Scoped native emulator test behavior and its unresolved diagnostic are recorded in HANDOFF; production device/service acceptance remains owner work.
 
 ## Future DLC concept
 Winter Lanterns: twelve new snow passes with shelter timing, new authored wave combinations and cosmetic lantern roofs. A concept only; not included, sold or promised in this edition.

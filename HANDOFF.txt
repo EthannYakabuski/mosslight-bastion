@@ -1,79 +1,47 @@
-ROUND TWO SOURCE/ART UPDATE - 2026-10-21
-Engineering and illustrated marketing integration are complete: 60 missions across twelve regions, Next Level, tower balance, centered Home, new app/feature art and all 20 achievement/4 leaderboard badges. New Android/Web exports, affected native regression and final-build captures remain pending with the coordinator. Preserved original QA below applies only to its named original APK. See docs/ROUND_TWO_UPDATE.md.
+MOSSLIGHT BASTION - ROUND TWO QUALIFIED LOCAL TEST HANDOFF
+Updated 2026-10-21. Local functional/capture scope is complete for owner testing. BROAD NATIVE LOG GATE REMAINS FALSE for the recorded Chromium diagnostic below. Production release is owner work.
 
-MOSSLIGHT BASTION - CONTINUATION AND LOCAL TEST HANDOFF
-Status: Historical first-pass local test package ready with the qualifications below. Current Round Two source awaits new exports/native/capture acceptance. Canonical
-Apps/mosslight-bastion is the single development Git working copy after consolidation.
-Preserved original folders and prior publication copies are archives.
+EXACT CURRENT ARTIFACTS
+Runtime commit: 9f84e66e63c354692a6b514a670a801fe7ab6b51
+Android: build/round-two-9f84e66e-a1/android/mosslight-bastion-debug.apk
+SHA256 28962971847F38998301D6A6EF76DEFA6AA873CF56A6C6C80682CA9E4D45106E
+196615734 bytes; debug/test IDs; minimum API24/target API35.
+Web entry: build/round-two-9f84e66e-a1/web/index.html
+HTML SHA256 0DBC887E406A3663C69A37404FAA7B97420ADE219A5643EECEA2F2D10C75D885
+PCK SHA256 67960D2F22603946D5B27C490D2C09D6FDC6713B5250B5CC0F1F5EA98D56280A
+Both exports exited0 with exact before/after committed runtime binding, stable inputs, empty strict error lists and full matching LICENSE/NOTICE/LICENSES. Keep all Web sidecars. Editor-exit Orphan StringName Node warnings remain recorded; no warning was suppressed. Browser interaction remains unverified.
 
-START A FOCUSED UPDATE
-Read AGENTS.md, README.md, docs/DEVELOPER.md, docs/BUILD_TEST.md and
-docs/PLATFORM_SETUP.md. Inspect Git status/origin and preserve user edits. A new
-Codex task needs its desired change or console ID mappings explicitly; it should
-not assume another conversation's context.
+NEW DISTRIBUTIONS
+build/round-two-9f84e66e-a1/packages/mosslight-bastion-android-test-28962971.zip
+build/round-two-9f84e66e-a1/packages/mosslight-bastion-round-two-complete-28962971.zip
+The test ZIP contains the exact APK/notices. The complete ZIP contains Android, Web, this handoff and the exact final committed project/store/art/docs tree. Source is read as raw Git blobs with object IDs verified, preserving committed bytes despite Windows line-ending filters. Internal PACKAGE-MANIFEST.json records runtime/handoff commit distinction and payload hashes; sibling PACKAGE-RECEIPT.json records final ZIP hashes/bytes. No original package is overwritten. Artwork provenance records original images privately retained; the source bundle includes committed512px artwork/provenance, not untracked private originals.
 
-PLAY AND ORIGINAL LOCAL APK
-Place towers on visible pads, call Next wave and use free Rally. Back pauses;
-Resume continues and Abandon returns Home without result credit. Banked progress
-persists; unfinished combat is intentionally discarded on cold start.
-Original native-tested APK: build/android/game-debug.apk, when restored locally.
-Bytes: 184044923
-SHA256: E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD
-Generated APK/Web exports are not tracked by Git. Source-only clones need an export
-or separately supplied local package. Preserve original packages and accompanying
-notices; these documentation changes do not rebuild or revalidate their binaries.
+PLAY / ROUND TWO UPDATE
+Place towers on visible pads, inspect prices/ranges, call Next wave and use free Rally. Back pauses; explicit Resume continues; Abandon returns Home without credit. Ordinary retries are free. Next Level follows a settled banked campaign victory and opens the next unlocked briefing without extra credit.
+Sixty authored missions span twelve regions, retaining original thirty mission/enemy definitions and adding thirty route/pad layouts. Four towers have about46-47% lower base DPS; enemy values, prices/ranges and counter roles remain intact. Centered Home controls account for the scrollbar gutter. Legacy typed progress, original thirty-clear achievement ID and old unlocks remain compatible.
+The illustrated woodland keep/lantern app512 and feature1024x500 plus20achievement/4leaderboard badges are included. Each badge was individually generated;512/64 outputs were inspected, with original hashes/prompts preserved in marketing provenance. Journal loads all24 runtime images without intercepting scroll. Store copy is in store/; marketing art is illustration, not gameplay proof. Future concept: Winter Lanterns, twelve snow passes with authored waves/shelter timing/cosmetic roofs; not included or sold.
 
-ACTUAL NATIVE SCOPE
-The current APK passed natural same-process Results/Retry banking, an unearned
-SDK dismissal with no grant, and an earned repair with a 93.579-second endcard hold.
-The earned callback returned still paused, applied one repair, disabled repeats,
-and required explicit Resume. Back and ordinary controls remained usable. A real
-between-round interstitial closed normally. An unassisted Daily victory, once-only
-login/quest claims and a priced Power upgrade were tested in that original session.
+SOURCE / BUILD TEST SCOPE
+60 legal zero-preparation/unassisted strategy witnesses;125core/268RoundTwo/103Retry-Next paired+mouse+GPU/96dispatch/25headless alignment/36GPU UI/66GPU journal+60headless passed in isolated source tests. The one player-copy successor separately passed the existing60-check journal/catalogue regression with no strict errors. These are synthetic development fixtures, not native completion or human balance proof. Source tests/evidence remain explicitly labelled fixtures. No strict gate was weakened.
 
-The original read-only emulator session lost its installed package/data at host
-exit. Its genuine progressed save was preserved privately. This was an AVD session
-loss; no application retention across that exit is claimed. The same APK was then
-normally installed fresh, with no old save imported and no replay of claims,
-purchases, SDK tests or terminal results to recreate progression.
+ACTUAL CURRENT2896 SUCCESSOR SCOPE
+Regular update retained25genuine groups before and after first launch. The daily record description now reads: Best unassisted score from today's daily defense. Native journal copy, ordinary tower controls/short defense/Back/Abandon and nine new raw Home/live-defense/journal frames were checked. Phone/logical7/logical10 are three emulator profiles, not physical tablets. Current captures are in marketing/screenshots-round-two/ with relative hashes in its manifest. No D890 or original PNG was relabelled.
+Normal restored-profile cold launch and final safe stop retained25groups byte-identically; full private backup matched. Original display/radio settings and actual connectivity were restored. Real save files, backup blobs, raw SDK logs, device identifiers and private evidence paths are not in public source.
 
-In that separate fresh profile, actual offline cold start, ordinary play, Back,
-Abandon, offline restart and final online cold start retained all 25 typed save
-groups. The final unbanked profile was 150 coins/0 XP/round 0/sequence 3/Power 0.
-Nine reviewed ONLINE phone/logical-seven/logical-ten Home/Campaign/planning captures
-are included. They are ordinary emulator views, not offline or physical-tablet
-proof. Network/display settings were restored and the package safely stopped.
+QUALIFIED D890 CRITICAL PREDECESSOR
+APK D8907AA69E3D7B05A8C1218634F355BEA8295EFED75A51D9838527ED5B8F2C81, runtime b13f41d34180b68023ad1f967c62d38ffdaef1bc, supplied critical gameplay/ad/offline observations. New2896 changes only one player-facing catalogue description; IDs, gameplay, services and saves are unchanged. D890 tests were not replayed on the successor.
+An ordinary unassisted first-mission victory at39HUDseconds/10foes/2waves/2stars banked115coins/78XP once. Next Level opened mission2 without duplicate banking. An official test repair added40supplies once/capped hearts15, with31.494seconds fullscreen including26.118seconds after earning. Combat remained at07seconds until explicit Resume, then advanced; repeat repair was disabled and Abandon preserved the bank. A natural underbuilt mission2 loss at102seconds credited2coins/10XP once after Accept; no Next on loss and free Retry gave no duplicate credit.
+An initial settings-only offline attempt still had a default network and was not accepted. One normal guest reboot established actual default-network-none; cold retention, ordinary towers/combat/Back, disabled repair/no grant and Abandon retained25groups. Settings/connectivity were restored. The creative earned before attempted Back, so current Round Two unearned dismissal is NOT verified. No fresh interstitial replay is claimed from this scope.
 
-DIAGNOSTICS AND TEST LIMITS
-The final broad native diagnostic gate remains FALSE because Chromium WebView cache
-wrong-size/wrong-structure errors were observed; cause remains unresolved. No Godot
-SCRIPT ERROR/can_process/FATAL finding was observed. No cache deletion, suppression,
-filter weakening or rerun was used to erase this result. An earlier ad-creative
-JavaScript callback diagnostic is separately qualified. The nine capture logs were
-separately clean. See docs/NATIVE_QA.json and docs/LOCAL_TEST_RESULTS.json for public
-summaries; raw logs, saves and machine records remain private.
+DIAGNOSTIC QUALIFICATION
+Broad current native log gate is FALSE for one Chromium image-reader buffer-queue diagnostic. No visible failure was observed; cause and impact are not established. Captured final-process SCRIPT ERROR/can_process/FATAL EXCEPTION/E godot counts were zero, which is not a full-lifetime clean-log claim. The error was retained without suppression, cache deletion or rerun to erase it. Original E9CF Chromium cache wrong-size/structure errors remain separate unresolved historical evidence. Export success does not erase either finding. See docs/NATIVE_QA.json and docs/LOCAL_TEST_RESULTS.json.
 
-SOURCE AND HOSTED CI
-https://github.com/EthannYakabuski/mosslight-bastion
-Verified published baseline: 90d304a426486aedb5ae1dcb061f64ce182be1f4
-Hosted CI PASS: https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/39527297049
-That dated run passed tests and Android/Web exports. Hosted artifacts are separate
-binaries and have not received the original local APK's native QA. Later commits
-must cite their own CI outcomes. Pages remains disabled; no Library or Play release
-is implied.
+PROFILE / ORIGINAL HISTORY
+The original E9CF AVD host session lost its installed package/data. Its progressed backup remains private and separate; it was not imported into the later fresh profile used here. Do not claim retention across that historical AVD loss or merge its bank with this session.
+Original build/android/game-debug.apk remains E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD /184044923bytes. Original test ZIPs/build/web/old screenshots/reports and D890 outputs remain distinct and preserved. The untouched R1 capture manifest is marketing/screenshots/capture-manifest.json. Earlier reports/metadata are retained in docs/history/pre-round-two-handoff/ and marketing/history/.
 
-SERVICES AND NEXT STEPS
-Definitions use id in game/catalog.json (20 achievements/four leaderboards).
-Supply console IDs in platform/config.json play_games maps, match the numeric
-game_id in the Android export preset, and enable PGS after owner OAuth/signing setup.
-AdMob unit IDs are in platform/config.json; the manifest App ID comes from Godot
-Project Settings admob/general/android/app_id in project.godot. JSON app_id is a
-reference value. test_mode changes wording only; it does not make production units
-test requests. Follow docs/PLATFORM_SETUP.md before changing service configuration.
-
-Daily replay/repeat bonus, native cosmetic/Settings/privacy changes, physical
-devices, audible output, interactive Web/audio/WebGL, production services and human
-balance remain unverified. Emulator audio was disabled. Godot 4.5.1 Compatibility
-min API 24/target API 35 is an observed export constraint, not current Play eligibility.
-The owner supplies real backend/IDs/signing, policy/contact/consent/Data safety and
-Google Play publication. Preserve LICENSE, NOTICE and LICENSES/ with redistribution.
+CONTINUATION / A-E / OWNER WORK
+This is the canonical Git working copy. Read AGENTS.md, README.md, docs/DEVELOPER.md, BUILD_TEST.md, ROUND_TWO_UPDATE.md and PLATFORM_SETUP.md. Preserve user edits, all prior artifacts and notices. Isolate game and shared Services test data. Banked progress persists; unfinished combat is discarded on cold start.
+Daily replay/quests/login streak, preparation/cosmetics,60campaign missions, Endless and Daily defense are implemented; not all daily/cosmetic/settings/long-session combinations were newly native-tested. PGS has20achievement/4leaderboard placeholders keyed by id in game/catalog.json, mapped in platform/config.json; owner supplies numeric game ID, OAuth/signing/package/tester setup. AdMob unit IDs come from JSON; manifest App ID separately comes from admob/general/android/app_id in project.godot. test_mode changes wording, not requests. Preserve official test IDs until configured deliberately. Daily leaderboard reset policy is owner/backend guidance in PLATFORM_SETUP, not player UI.
+Physical devices, audible Android, interactive Web/WebGL/audio, simultaneous native multitouch, production IDs/backend/consent/signing, human balance and current Play-release eligibility remain unverified/owner work. Preserve Apache original-code LICENSE and all third-party notices. Current minAPI24/targetAPI35 is the tested engine constraint, not release eligibility.
+Public source remains held after prior approval denials; no retry or fresh hosted CI is claimed. Dated baseline90d304a426486aedb5ae1dcb061f64ce182be1f4 passed https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/39527297049 for that old commit only. Pages/Library/Google Play publication is not performed here.

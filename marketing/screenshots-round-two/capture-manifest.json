@@ -1,0 +1,142 @@
+{
+  "schema": "public-screenshot-manifest-v2",
+  "game": "Mosslight Bastion",
+  "package": "com.ethannyakabuski.mosslightbastion",
+  "runtime_commit": "9f84e66e63c354692a6b514a670a801fe7ab6b51",
+  "source_apk_sha256": "28962971847F38998301D6A6EF76DEFA6AA873CF56A6C6C80682CA9E4D45106E",
+  "source_apk_bytes": 196615734,
+  "capture_count": 9,
+  "capture_method": "Unmodified ordinary Android guest screenshots; no resize/crop/overlay, capture hooks or save injection.",
+  "scope": "Home/live defense/illustrated journal on three logical emulator profiles. No physical-device acceptance.",
+  "captures": [
+    {
+      "file": "phone/01-home.png",
+      "role": "home",
+      "logical_profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 127913,
+      "sha256": "C169FB9A544B4E0B8E2C3B66C59581EAD5FE025F18AE327C859535F78678C438",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Native operator and coordinator independently accepted this exact current-APK frame."
+    },
+    {
+      "file": "phone/02-live-defense.png",
+      "role": "live-defense",
+      "logical_profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 101952,
+      "sha256": "E504801997109710155782AEF4D4440E9326FADD80DC64AD91D6041638DEF769",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Native operator and coordinator independently accepted this exact current-APK frame."
+    },
+    {
+      "file": "phone/03-journal.png",
+      "role": "journal",
+      "logical_profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 341017,
+      "sha256": "25C7D802A4ADE0959B06A35FA565D81ED55AF72FA6C22A35424F94AA0ECC037E",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Native operator and coordinator independently accepted this exact current-APK frame."
+    },
+    {
+      "file": "7inch/01-home.png",
+      "role": "home",
+      "logical_profile": "7-inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 136237,
+      "sha256": "0F6061A5B37865AFA66F8FCDD691327047AD1C7E28B9BBE164FA578C5CE400DD",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Native operator and coordinator independently accepted this exact current-APK frame."
+    },
+    {
+      "file": "7inch/02-live-defense.png",
+      "role": "live-defense",
+      "logical_profile": "7-inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 102253,
+      "sha256": "00F64A27C13A7C52F3B0C03E52AD936A2BB4FEF4D868BC5A2ADC3F2B8F3E0A04",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Native operator and coordinator independently accepted this exact current-APK frame."
+    },
+    {
+      "file": "7inch/03-journal.png",
+      "role": "journal",
+      "logical_profile": "7-inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 432235,
+      "sha256": "8DAD7B7E232F81AC68701C366146F34EC92980E95F769D983FD5FE00FD99B2E3",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Native operator and coordinator independently accepted this exact current-APK frame."
+    },
+    {
+      "file": "10inch/01-home.png",
+      "role": "home",
+      "logical_profile": "10-inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGBA",
+      "bytes": 223485,
+      "sha256": "62E1AB43ECEB7FA7CDF69CF730ECCE8F0C79E17AA51247340B7A57B5BE1A381E",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Native operator and coordinator independently accepted this exact current-APK frame."
+    },
+    {
+      "file": "10inch/02-live-defense.png",
+      "role": "live-defense",
+      "logical_profile": "10-inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGBA",
+      "bytes": 142469,
+      "sha256": "EDCD35F316AC5BB51BD287A74EC04FE73232C8779774D3C8A011D20B84C04099",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Native operator and coordinator independently accepted this exact current-APK frame."
+    },
+    {
+      "file": "10inch/03-journal.png",
+      "role": "journal",
+      "logical_profile": "10-inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGBA",
+      "bytes": 709139,
+      "sha256": "754ED1E0B8FF27DCA079D1C40D5024A0A11CFAD2E6F991D7867787B2C314B094",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Native operator and coordinator independently accepted this exact current-APK frame."
+    }
+  ],
+  "original_E9CF_capture_manifest": "../screenshots/capture-manifest.json",
+  "D890_screens_not_relabelled": true,
+  "native_diagnostic_qualification": "Broad native log gate remains false for one Chromium image-reader buffer-queue diagnostic. Cause/impact not established; no visible failure was observed."
+}

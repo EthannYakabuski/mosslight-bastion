@@ -36,7 +36,6 @@ That is a dated result, not a claim about later edits. Hosted artifacts have not
 received the original local APK's native QA. The deploy job remains `if: false`;
 no live Pages site is established.
 
-`HANDOFF.txt` preserves actual native scope and unresolved Chromium cache
-diagnostics. Keep strict checks intact; do not suppress errors to produce a pass.
+`HANDOFF.txt` selects current runtime `9f84e66e63c354692a6b514a670a801fe7ab6b51` and versioned Android/Web/package outputs. It preserves the current unresolved Chromium queue diagnostic and separately dated original E9CF cache errors. Keep strict checks intact; do not suppress errors to produce a pass.
 Production configuration, physical-device/audio/interactive-Web checks and human
 acceptance remain separate. A documentation-only change does not require a new APK.

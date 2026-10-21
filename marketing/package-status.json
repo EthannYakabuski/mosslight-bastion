@@ -1,12 +1,17 @@
 {
-  "capture_manifest": "screenshots/capture-manifest.json",
+  "runtime_commit": "9f84e66e63c354692a6b514a670a801fe7ab6b51",
+  "android_apk_sha256": "28962971847F38998301D6A6EF76DEFA6AA873CF56A6C6C80682CA9E4D45106E",
+  "capture_manifest": "screenshots-round-two/capture-manifest.json",
   "capture_count": 9,
-  "capture_apk_sha256": "E9CF751578F2BD94BC0DB74AF0B9D859C3953AE097D3070CBFC56034D2010EFD",
+  "capture_apk_sha256": "28962971847F38998301D6A6EF76DEFA6AA873CF56A6C6C80682CA9E4D45106E",
   "native_functional_acceptance": true,
   "broad_final_log_gate_passed": false,
   "physical_device_test": false,
   "physical_tablet_test": false,
   "source_only": true,
+  "accepted_android_web_exports": true,
+  "critical_predecessor_apk_sha256": "D8907AA69E3D7B05A8C1218634F355BEA8295EFED75A51D9838527ED5B8F2C81",
+  "illustrated_art": "ROUND_TWO_ARTWORK.json;20achievement/4leaderboard badges, app and feature",
   "pages_deployment": "held; workflow deploy if:false",
-  "scope": "Actual verification summary; generated exports/private runtime records omitted."
+  "scope": "Qualified current affected-copy/control/save/capture summary; D890 core/ad/offline and oldE9 history separated; raw private records omitted."
 }
