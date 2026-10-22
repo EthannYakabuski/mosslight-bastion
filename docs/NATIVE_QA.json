@@ -48,7 +48,21 @@
     "Sixty legal zero-preparation strategy witnesses are source-model evidence, not sixty native mission completions. Daily replay/repeat bonus, cosmetic/settings changes, long sessions and multi-day mechanisms are not all newly native-tested.",
     "Godot4.5.1 Compatibility minAPI24/targetAPI35 is the tested engine constraint; current Play-release eligibility is not claimed. Owner supplies production IDs/backend/signing, consent/audience/policy/support and Google Play publication.",
     "Unfinished combat is discarded on cold start; banked progress is retained. Local saves/offline clocks are not anti-cheat secure.",
-    "Public source updates remain held after approval denials. No new hosted Linux CI, Pages deployment or Library action is claimed."
+    "Public source baseline 6632ffd453ce2df2b882bba8a8772229210b300f was verified on remote main on2026-10-22; exact-commit hosted CI39701092106 passed. Later screenshot/document changes need their own commit/CI verification. Hosted artifacts are separate from local native-tested APKs; no Pages deployment or Library action is claimed."
   ],
-  "historical_original_report": "history/pre-round-two-handoff/NATIVE_QA.json"
+  "historical_original_report": "history/pre-round-two-handoff/NATIVE_QA.json",
+  "round_three_screenshot_expansion": {
+    "date": "2026-10-22",
+    "runtime_commit": "9f84e66e63c354692a6b514a670a801fe7ab6b51",
+    "apk_sha256": "28962971847F38998301D6A6EF76DEFA6AA873CF56A6C6C80682CA9E4D45106E",
+    "capture_count": 18,
+    "retained_round_two_images": 9,
+    "new_ordinary_menu_images": 9,
+    "per_profile": 6,
+    "manifest": "marketing/screenshots-round-three/capture-manifest.json",
+    "summary": "Same exact accepted APK. Retained Home/live-defense/journal; added campaign roster, mission2 briefing and workshop. No new round, purchase, claim or rewarded-ad request. Genuine-profile restoration and normal daily rollover are distinct from cross-session retention.",
+    "physical_device_test": false,
+    "historical_native_qualifications_unchanged": true,
+    "runtime_rebuilt": false
+  }
 }

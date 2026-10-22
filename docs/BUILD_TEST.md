@@ -30,8 +30,8 @@ commit generated exports, keys, credentials, raw logs or real saves.
 The workflow `.github/workflows/build-and-deploy.yml` pins Godot/templates, checks
 imports and services, runs strategy/game tests under strict error gates, builds
 Android debug and Web artifacts, and includes license notices. The published
-baseline `90d304a426486aedb5ae1dcb061f64ce182be1f4` passed
-[run 39527297049](https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/39527297049).
+baseline `6632ffd453ce2df2b882bba8a8772229210b300f` was verified on remote main on October 22, 2026 and passed
+[run 39701092106](https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/39701092106).
 That is a dated result, not a claim about later edits. Hosted artifacts have not
 received the original local APK's native QA. The deploy job remains `if: false`;
 no live Pages site is established.

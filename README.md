@@ -55,8 +55,8 @@ The current qualified local package is recorded in `HANDOFF.txt`, `docs/NATIVE_Q
 
 Public source: https://github.com/EthannYakabuski/mosslight-bastion
 
-The published baseline `90d304a426486aedb5ae1dcb061f64ce182be1f4` passed
-[hosted build/test CI](https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/39527297049).
+The public source baseline `6632ffd453ce2df2b882bba8a8772229210b300f` was verified on remote main on October 22, 2026 and passed
+[exact-commit hosted build/test CI](https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/39701092106). This dated result does not cover the subsequent screenshot/document changes until their own commit and CI run are verified.
 That dated run built Android/Web artifacts; its binaries have not received the
 original local APK's native QA. Documentation-only changes do not rebuild or
 reverify that APK. Pages deployment remains disabled; no Library or Google Play
@@ -71,3 +71,7 @@ See `docs/DESIGN.md` and `docs/ARCHITECTURE.md` for gameplay and source structur
 Store copy/art is in `store/` and `marketing/`. `tests/evidence` contains synthetic
 desktop fixtures; `marketing/screenshots-round-two` contains the nine current raw native emulator views; `marketing/screenshots` retains the original images/manifest. Preserve `LICENSE`, `NOTICE`, `LICENSES/` and `assets/SOURCE_MAP.json`.
 Apache-2.0 covers original code/content/art/music; third-party terms remain intact.
+
+## Round Three screenshot expansion
+
+[The expanded native screenshot set](docs/SCREENSHOTS_ROUND_THREE.md) supplies six genuine views per phone/logical7/logical10 profile in `marketing/screenshots-round-three/`. It combines the nine unchanged accepted Round Two views with nine ordinary menu captures from the same exact APK. Runtime exports and the retained native diagnostic qualification are unchanged.

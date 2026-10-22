@@ -1,0 +1,376 @@
+{
+  "schema": 2,
+  "game": "Mosslight Bastion",
+  "package": "com.ethannyakabuski.mosslightbastion",
+  "runtime_commit": "9f84e66e63c354692a6b514a670a801fe7ab6b51",
+  "source_apk_sha256": "28962971847F38998301D6A6EF76DEFA6AA873CF56A6C6C80682CA9E4D45106E",
+  "source_apk_bytes": 196615734,
+  "capture_count": 18,
+  "capture_method": "Unmodified actual Android guest PNGs, ordinary gameplay and menus. Nine accepted Round Two views are retained exactly; nine new menu views expand the same APK to six distinct contexts per profile. No fixtures, crop, resize, overlays or rotation.",
+  "scope": "One API30 x86 emulator; phone 1080x1920 at420dpi, logical7 1200x1920 at320dpi, logical10 1600x2560 at300dpi. Logical emulation is not physical phone/tablet acceptance.",
+  "captures": [
+    {
+      "file": "10inch/01-home.png",
+      "role": "home",
+      "logical_profile": "10-inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGBA",
+      "bytes": 223485,
+      "sha256": "62E1AB43ECEB7FA7CDF69CF730ECCE8F0C79E17AA51247340B7A57B5BE1A381E",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted individual raw PNG; retained unchanged from the recorded Round Two set.",
+      "provenance": {
+        "kind": "retained exact accepted capture",
+        "prior_public_file": "marketing/screenshots-round-two/10inch/01-home.png",
+        "same_exact_apk": true
+      }
+    },
+    {
+      "file": "10inch/02-live-defense.png",
+      "role": "live-defense",
+      "logical_profile": "10-inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGBA",
+      "bytes": 142469,
+      "sha256": "EDCD35F316AC5BB51BD287A74EC04FE73232C8779774D3C8A011D20B84C04099",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted individual raw PNG; retained unchanged from the recorded Round Two set.",
+      "provenance": {
+        "kind": "retained exact accepted capture",
+        "prior_public_file": "marketing/screenshots-round-two/10inch/02-live-defense.png",
+        "same_exact_apk": true
+      }
+    },
+    {
+      "file": "10inch/03-journal.png",
+      "role": "journal",
+      "logical_profile": "10-inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGBA",
+      "bytes": 709139,
+      "sha256": "754ED1E0B8FF27DCA079D1C40D5024A0A11CFAD2E6F991D7867787B2C314B094",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted individual raw PNG; retained unchanged from the recorded Round Two set.",
+      "provenance": {
+        "kind": "retained exact accepted capture",
+        "prior_public_file": "marketing/screenshots-round-two/10inch/03-journal.png",
+        "same_exact_apk": true
+      }
+    },
+    {
+      "file": "10inch/04-campaign.png",
+      "role": "campaign-roster",
+      "logical_profile": "10inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGBA",
+      "bytes": 189357,
+      "sha256": "6F50F411E33A36E806D31D0EB9C880944BB0209BA4903C7408D3ECB64B240103",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted after operator original-PNG inspection and independent final review; readable ordinary menus and matching logical profile labels.",
+      "provenance": {
+        "kind": "fresh ordinary Android menu capture",
+        "captured_utc": "2026-10-22T14:07:38.273243+00:00",
+        "actual_wm_size": "Physical size: 1080x1920\r\nOverride size: 1600x2560",
+        "actual_wm_density": "Physical density: 420\r\nOverride density: 300",
+        "no_round_start_purchase_claim_or_rewarded_ad_input": true
+      }
+    },
+    {
+      "file": "10inch/05-mission-brief.png",
+      "role": "mission2-briefing",
+      "logical_profile": "10inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGBA",
+      "bytes": 245029,
+      "sha256": "6117836E31C631D628565B1D4F30C1448BD48C41E8FAFD99BF3D10C2DF51AA33",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted after operator original-PNG inspection and independent final review; readable ordinary menus and matching logical profile labels.",
+      "provenance": {
+        "kind": "fresh ordinary Android menu capture",
+        "captured_utc": "2026-10-22T14:08:35.449160+00:00",
+        "actual_wm_size": "Physical size: 1080x1920\r\nOverride size: 1600x2560",
+        "actual_wm_density": "Physical density: 420\r\nOverride density: 300",
+        "no_round_start_purchase_claim_or_rewarded_ad_input": true
+      }
+    },
+    {
+      "file": "10inch/06-workshop.png",
+      "role": "workshop",
+      "logical_profile": "10inch",
+      "dimensions": [
+        1600,
+        2560
+      ],
+      "mode": "RGBA",
+      "bytes": 190541,
+      "sha256": "A24AF6BA92AA64893A015A5AADC7C9463489F01EE013937D5163BD3A2636C68C",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted after operator original-PNG inspection and independent final review; readable ordinary menus and matching logical profile labels.",
+      "provenance": {
+        "kind": "fresh ordinary Android menu capture",
+        "captured_utc": "2026-10-22T14:06:24.533467+00:00",
+        "actual_wm_size": "Physical size: 1080x1920\r\nOverride size: 1600x2560",
+        "actual_wm_density": "Physical density: 420\r\nOverride density: 300",
+        "no_round_start_purchase_claim_or_rewarded_ad_input": true
+      }
+    },
+    {
+      "file": "7inch/01-home.png",
+      "role": "home",
+      "logical_profile": "7-inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 136237,
+      "sha256": "0F6061A5B37865AFA66F8FCDD691327047AD1C7E28B9BBE164FA578C5CE400DD",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted individual raw PNG; retained unchanged from the recorded Round Two set.",
+      "provenance": {
+        "kind": "retained exact accepted capture",
+        "prior_public_file": "marketing/screenshots-round-two/7inch/01-home.png",
+        "same_exact_apk": true
+      }
+    },
+    {
+      "file": "7inch/02-live-defense.png",
+      "role": "live-defense",
+      "logical_profile": "7-inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 102253,
+      "sha256": "00F64A27C13A7C52F3B0C03E52AD936A2BB4FEF4D868BC5A2ADC3F2B8F3E0A04",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted individual raw PNG; retained unchanged from the recorded Round Two set.",
+      "provenance": {
+        "kind": "retained exact accepted capture",
+        "prior_public_file": "marketing/screenshots-round-two/7inch/02-live-defense.png",
+        "same_exact_apk": true
+      }
+    },
+    {
+      "file": "7inch/03-journal.png",
+      "role": "journal",
+      "logical_profile": "7-inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 432235,
+      "sha256": "8DAD7B7E232F81AC68701C366146F34EC92980E95F769D983FD5FE00FD99B2E3",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted individual raw PNG; retained unchanged from the recorded Round Two set.",
+      "provenance": {
+        "kind": "retained exact accepted capture",
+        "prior_public_file": "marketing/screenshots-round-two/7inch/03-journal.png",
+        "same_exact_apk": true
+      }
+    },
+    {
+      "file": "7inch/04-campaign.png",
+      "role": "campaign-roster",
+      "logical_profile": "7inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 134385,
+      "sha256": "11099923ECE5347445FB044B100EF60E28E4642E4EDE19B2E76066D8E98F978A",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted after operator original-PNG inspection and independent final review; readable ordinary menus and matching logical profile labels.",
+      "provenance": {
+        "kind": "fresh ordinary Android menu capture",
+        "captured_utc": "2026-10-22T14:04:17.792177+00:00",
+        "actual_wm_size": "Physical size: 1080x1920\r\nOverride size: 1200x1920",
+        "actual_wm_density": "Physical density: 420\r\nOverride density: 320",
+        "no_round_start_purchase_claim_or_rewarded_ad_input": true
+      }
+    },
+    {
+      "file": "7inch/05-mission-brief.png",
+      "role": "mission2-briefing",
+      "logical_profile": "7inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 173146,
+      "sha256": "7D7DE7AABB7F6FFE5FBED9AF7E434D903FE25EBDD5F437FFBCBE77092AB77AC4",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted after operator original-PNG inspection and independent final review; readable ordinary menus and matching logical profile labels.",
+      "provenance": {
+        "kind": "fresh ordinary Android menu capture",
+        "captured_utc": "2026-10-22T14:04:48.498798+00:00",
+        "actual_wm_size": "Physical size: 1080x1920\r\nOverride size: 1200x1920",
+        "actual_wm_density": "Physical density: 420\r\nOverride density: 320",
+        "no_round_start_purchase_claim_or_rewarded_ad_input": true
+      }
+    },
+    {
+      "file": "7inch/06-workshop.png",
+      "role": "workshop",
+      "logical_profile": "7inch",
+      "dimensions": [
+        1200,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 134703,
+      "sha256": "4A5E3313A791935001D6C2F48D7B05E23FB621B2715B6EE36232E5B5B8E2810D",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted after operator original-PNG inspection and independent final review; readable ordinary menus and matching logical profile labels.",
+      "provenance": {
+        "kind": "fresh ordinary Android menu capture",
+        "captured_utc": "2026-10-22T14:05:25.563332+00:00",
+        "actual_wm_size": "Physical size: 1080x1920\r\nOverride size: 1200x1920",
+        "actual_wm_density": "Physical density: 420\r\nOverride density: 320",
+        "no_round_start_purchase_claim_or_rewarded_ad_input": true
+      }
+    },
+    {
+      "file": "phone/01-home.png",
+      "role": "home",
+      "logical_profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 127913,
+      "sha256": "C169FB9A544B4E0B8E2C3B66C59581EAD5FE025F18AE327C859535F78678C438",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted individual raw PNG; retained unchanged from the recorded Round Two set.",
+      "provenance": {
+        "kind": "retained exact accepted capture",
+        "prior_public_file": "marketing/screenshots-round-two/phone/01-home.png",
+        "same_exact_apk": true
+      }
+    },
+    {
+      "file": "phone/02-live-defense.png",
+      "role": "live-defense",
+      "logical_profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 101952,
+      "sha256": "E504801997109710155782AEF4D4440E9326FADD80DC64AD91D6041638DEF769",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted individual raw PNG; retained unchanged from the recorded Round Two set.",
+      "provenance": {
+        "kind": "retained exact accepted capture",
+        "prior_public_file": "marketing/screenshots-round-two/phone/02-live-defense.png",
+        "same_exact_apk": true
+      }
+    },
+    {
+      "file": "phone/03-journal.png",
+      "role": "journal",
+      "logical_profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 341017,
+      "sha256": "25C7D802A4ADE0959B06A35FA565D81ED55AF72FA6C22A35424F94AA0ECC037E",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted individual raw PNG; retained unchanged from the recorded Round Two set.",
+      "provenance": {
+        "kind": "retained exact accepted capture",
+        "prior_public_file": "marketing/screenshots-round-two/phone/03-journal.png",
+        "same_exact_apk": true
+      }
+    },
+    {
+      "file": "phone/04-campaign.png",
+      "role": "campaign-roster",
+      "logical_profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 134681,
+      "sha256": "F26460E0BEAE0BDB703AD9C8A7E16EB89EB64EE0BF874F0ED418B0F49D96AA10",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted after operator original-PNG inspection and independent final review; readable ordinary menus and matching logical profile labels.",
+      "provenance": {
+        "kind": "fresh ordinary Android menu capture",
+        "captured_utc": "2026-10-22T13:58:58.030777+00:00",
+        "actual_wm_size": "Physical size: 1080x1920",
+        "actual_wm_density": "Physical density: 420",
+        "no_round_start_purchase_claim_or_rewarded_ad_input": true
+      }
+    },
+    {
+      "file": "phone/05-mission-brief.png",
+      "role": "mission2-briefing",
+      "logical_profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 172148,
+      "sha256": "F6FD0FE07F52679982FBBB07AEC635852185571B36B09817E4A7CBC6383817DF",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted after operator original-PNG inspection and independent final review; readable ordinary menus and matching logical profile labels.",
+      "provenance": {
+        "kind": "fresh ordinary Android menu capture",
+        "captured_utc": "2026-10-22T13:59:31.749648+00:00",
+        "actual_wm_size": "Physical size: 1080x1920",
+        "actual_wm_density": "Physical density: 420",
+        "no_round_start_purchase_claim_or_rewarded_ad_input": true
+      }
+    },
+    {
+      "file": "phone/06-workshop.png",
+      "role": "workshop",
+      "logical_profile": "phone",
+      "dimensions": [
+        1080,
+        1920
+      ],
+      "mode": "RGBA",
+      "bytes": 132333,
+      "sha256": "C0FAFC80428C9B935AEB37F8D68459868537519277F40970AC7AF918FAC8B342",
+      "raw_guest_png_unchanged": true,
+      "visual_review": "Accepted after operator original-PNG inspection and independent final review; readable ordinary menus and matching logical profile labels.",
+      "provenance": {
+        "kind": "fresh ordinary Android menu capture",
+        "captured_utc": "2026-10-22T14:01:04.377568+00:00",
+        "actual_wm_size": "Physical size: 1080x1920",
+        "actual_wm_density": "Physical density: 420",
+        "no_round_start_purchase_claim_or_rewarded_ad_input": true
+      }
+    }
+  ],
+  "native_diagnostic_qualification": "This screenshot expansion does not replace Round Two functional/ad/offline evidence or resolve its retained Chromium diagnostic. See docs/NATIVE_QA.json and HANDOFF.txt.",
+  "private_records_distributed": false,
+  "review_scope": "Nine new images: operator reviewed individual original PNGs, independent final review used a hash-checked contact sheet and full ten-inch briefing original. Nine retained images preserve prior acceptance. No PNG bytes changed."
+}
