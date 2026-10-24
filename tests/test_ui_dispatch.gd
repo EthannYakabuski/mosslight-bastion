@@ -72,7 +72,7 @@ func run() -> void:
 	game.service_override=service;root.add_child(game);game.set_process(false);await frames()
 	await press("journal","journal");await press("back","home")
 	await press("settings","settings");await press("back","home")
-	await press("campaign","campaign");await press("mission_1","brief");await press("start","play")
+	await press("campaign","campaign");await press("mission_1","play")
 	var point=game.board.get_global_transform_with_canvas()*game.board.center(game.session.simulation.pads[2])
 	# Actual board hit-test using the same valid mouse-before-touch event pair.
 	send_mouse(point,true)

@@ -10,10 +10,13 @@ earned in ordinary play.
 
 ## Play
 
-Open `project.godot` and run `main.tscn`. Tap a build pad and inspect price/range
-before choosing a tower. Upgrade or sell a selected tower, call Next wave and use
+Open `project.godot` and run `main.tscn`. Tap a build pad and choose a pictured guardian at its shown supply cost.
+The selected tower shows its range on the board. Upgrade or sell a selected tower, call Next wave and use
 free Rally when enemies cluster. Android Back pauses combat; Resume continues and
-Abandon returns Home without result credit. Ordinary retries are free. After a campaign victory, Next level opens the next unlocked briefing directly.
+Abandon returns Home without result credit. Ordinary retries are free. Campaign cards show wave count and enemy portraits and start the selected defense
+directly. Retry and Next level also enter the defense directly. Cycle the speed
+button through 1x, 2x, 3x and 4x; Pause freezes every speed. The keep has a visible
+health meter and a distinct damage cue when enemies reach it.
 
 The optional native earned repair is limited once per run. It leaves combat paused
 through the fullscreen endcard until explicit Resume. Assisted runs keep ordinary
@@ -75,3 +78,11 @@ Apache-2.0 covers original code/content/art/music; third-party terms remain inta
 ## Round Three screenshot expansion
 
 [The expanded native screenshot set](docs/SCREENSHOTS_ROUND_THREE.md) supplies six genuine views per phone/logical7/logical10 profile in `marketing/screenshots-round-three/`. It combines the nine unchanged accepted Round Two views with nine ordinary menu captures from the same exact APK. Runtime exports and the retained native diagnostic qualification are unchanged.
+
+## Round Four gameplay update
+
+The requested concise campaign/build UI, direct mission entry, four playback speeds,
+new keep illustration, damage sound and health gauge are implemented. See
+[Round Four source verification](docs/ROUND_FOUR_UPDATE.md). Existing qualified
+native artifacts and screenshots remain historical evidence; they do not cover
+these visual/runtime changes until the coordinator records a new native pass.

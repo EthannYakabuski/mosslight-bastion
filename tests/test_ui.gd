@@ -97,8 +97,7 @@ func run() -> void:
 	check(game.page=="campaign" and not game.buttons.mission_1.disabled and game.buttons.mission_2.disabled,"Pointer opens campaign with truthful first unlock")
 	await capture("phone-campaign")
 	await press("mission_1")
-	check(game.page=="brief" and game.buttons.has("start"),"Pointer opens authored mission brief")
-	await press("start")
+	check(game.page=="play" and not game.buttons.has("start"),"Campaign card enters play directly without a briefing")
 	check(game.page=="play" and game.session.simulation.status=="ready","Pointer prepares actual playable battle")
 	await frames()
 	var board: Control=game.board
@@ -158,7 +157,7 @@ func run() -> void:
 		check(game.stage.get_global_rect().get_center().distance_to(game.get_viewport_rect().size*.5)<1.0,"Whole Home stage centered "+str(profile.name))
 		await capture(str(profile.name)+"-home")
 		game.show_campaign(); await frames(); await capture(str(profile.name)+"-campaign")
-		game.show_brief(BastionMissions.campaign(1)); game._start_battle(); await frames(); await capture(str(profile.name)+"-battle")
+		game.launch_mission(BastionMissions.campaign(1)); await frames(); await capture(str(profile.name)+"-battle")
 	var file:=FileAccess.open("res://tests/evidence/ui-results.json",FileAccess.WRITE)
 	file.store_string(JSON.stringify({"scope":"Desktop Godot scene/synthetic pointer tests with isolated save and named fake service; screenshots are development fixtures, never native/store evidence.","checks":checks.size(),"passed":checks.size()-failures.size(),"failures":failures,"images":images,"names":checks},"  "))
 	file.close()

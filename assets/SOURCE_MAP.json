@@ -38,5 +38,13 @@
     "sha256": "61581c58194e3f19f531072edabbc344204c7e0a2887b8ededce4357bcf09195",
     "license": "CC0",
     "notice": "LICENSES/Assets/kenney_interface-sounds-License.txt"
+  },
+  {
+    "asset": "assets/audio/base-impact.ogg",
+    "source_pack": "kenney_impact-sounds",
+    "source_relative_path": "Audio/impactWood_heavy_000.ogg",
+    "sha256": "15ff82332f342c30e469215539e1cc57e11b221aa2cf7e11e811d313a9927f3d",
+    "license": "CC0",
+    "notice": "LICENSES/Assets/kenney_impact-sounds-License.txt"
   }
 ]

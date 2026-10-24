@@ -6,6 +6,8 @@ var region: Dictionary = {}
 var selected: int = -1
 var decorative: bool = false
 var lantern_skin: String = "moss"
+var damage_flash: float = 0.0
+const KEEP = preload("res://assets/keep/woodland-keep.png")
 const TOWN = preload("res://assets/town/tilemap_packed.png")
 const DUNGEON = preload("res://assets/dungeon/tilemap_packed.png")
 const COLORS: Dictionary = {"archer":Color("e3ce84"),"ember":Color("f49b68"),"frost":Color("9ddcde"),"prism":Color("d7aff0")}
@@ -61,9 +63,12 @@ func _draw() -> void:
 		draw_circle(center(route[0]),cell*0.19,Color("f4d782"))
 		draw_string(get_theme_default_font(),center(route[0])+Vector2(-5,5),String.chr(65+route_index),HORIZONTAL_ALIGNMENT_LEFT,-1,16,Color("263c38"))
 		var keep: Vector2 = center(route.back())
-		draw_rect(Rect2(keep-Vector2(cell*0.33,cell*0.35),Vector2(cell*0.66,cell*0.7)),Color("a7bea1"))
-		draw_rect(Rect2(keep-Vector2(cell*0.1,0),Vector2(cell*0.2,cell*0.36)),Color("284a3a"))
-		draw_circle(keep-Vector2(0,cell*0.22),cell*0.1,lantern_color)
+		draw_circle(keep,cell*0.44,Color(0.05,0.12,0.10,0.35))
+		var keep_top: Vector2=keep-Vector2(cell*0.60,cell*0.76)
+		keep_top=keep_top.clamp(Vector2.ZERO,Vector2.ONE*cell*7.8)
+		draw_texture_rect(KEEP,Rect2(keep_top,Vector2(cell*1.20,cell*1.20)),false,Color("ffb29a") if damage_flash>0.0 else Color.WHITE)
+		draw_circle(keep-Vector2(0,cell*0.18),cell*0.07,lantern_color)
+
 	if selected>=0 and selected<simulation.pads.size():
 		var tower: Dictionary = simulation.tower_at(selected)
 		if not tower.is_empty():

@@ -1,5 +1,6 @@
 class_name BastionSimulation
 extends RefCounted
+signal base_damaged(amount: int)
 ## Production deterministic20Hz combat. Rendering and native callbacks never own time.
 
 const DT: float = 0.05
@@ -220,8 +221,10 @@ func _fixed_step() -> void:
 		var enemy_traits: Dictionary = ENEMIES[str(enemy.type)]
 		enemy.distance = float(enemy.distance)+float(enemy_traits.speed)*DT*(0.5 if float(enemy.slow)>0.0 else 1.0)
 		if float(enemy.distance)>=float(routes[int(enemy.route)].size()-1):
+			var damage: int=mini(hearts,int(enemy_traits.leak))
 			hearts = maxi(0,hearts-int(enemy_traits.leak))
 			leaked += 1
+			base_damaged.emit(damage)
 			enemies.erase(enemy)
 			if hearts<=0:
 				status = "lost"

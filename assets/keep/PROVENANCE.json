@@ -1,0 +1,10 @@
+{
+  "asset": "assets/keep/woodland-keep.png",
+  "method": "OpenAI built-in imagegen",
+  "date": "2026-10-24",
+  "category": "stylized-concept",
+  "original_generated_png_sha256": "b769a47dffab740ecc4d36480e245255fc841bcc4a29179e7d6a8b70f6b3faf5",
+  "processing": "Original generated PNG copied unchanged; generated transparency preserved. No screenshot is represented.",
+  "license": "Original project illustration; Apache-2.0 project terms. No third-party likeness or trademark requested.",
+  "prompt": "Use case: stylized-concept. Asset type: transparent in-game home-base sprite for Mosslight Bastion, a cozy woodland lane-defense game. Create one charming small fortified woodland keep, shown from a readable slightly elevated front view. Moss-covered chunky stone walls, two modest timber-roof towers, warm amber lantern beside a visible gate, sage and deep pine greens, cream-gray stone and restrained copper roof accents. Polished hand-painted game illustration with bold readable silhouette, simplified clean forms, crisp edges, subtle pixel-game friendliness; it must read at 64 pixels as well as a 180-pixel menu illustration. Center the whole keep, leave safe transparent margin on every side; isolated subject with truly transparent background. No scenery outside the small mossy foundation, no ground plane filling image, no characters, no text or letters, no UI, no watermark, no cast shadow extending beyond foundation."
+}
