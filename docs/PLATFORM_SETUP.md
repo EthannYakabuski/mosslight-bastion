@@ -4,7 +4,7 @@
 
 The preset currently uses minimum API **24** / target API **35**, Gradle **AAB**, and ARM64, x86 and x86_64. These settings are configurable choices, not a fixed Godot target-SDK limit. Follow the [Round 4 Android guide](ROUND_FOUR_ANDROID.md); create a new unused output directory, export a debug `.aab`, then run `tools/verify_android_bundle.py` on the actual bundle.
 
-The debug AAB is test-signed; release signing stays with the owner outside Git. ABI validation alone does not establish native gameplay, production services or Google Play acceptance. Exact Round 4 source CI and affected native checks are pending in this dated 2026-10-24 snapshot unless later source-bound handoff records establish them. Preserve historical APK/native QA identities; no new-game work is authorized by this continuation.
+The debug AAB is test-signed; release signing stays with the owner outside Git. ABI validation alone does not establish native gameplay, production services or Google Play acceptance. Public Round Four source `38f0e87b750a2c29a82e941e018c5de7e647c591` has [passing exact-commit hosted CI](https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/40125532538). Affected native acceptance remains pending; see the current qualified export/browser scope in `../HANDOFF.txt`. The AAB/Web/package retain their recorded as-built source identities and bytes. Preserve historical APK/native QA identities; no new-game work is authorized by this continuation.
 
 Use Godot 4.5.1 Compatibility and matching export templates. Android is primary;
 single-threaded Web keeps native-service fallbacks. Android requires Java 17 and

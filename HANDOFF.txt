@@ -1,3 +1,23 @@
+ROUND FOUR - QUALIFIED EXPORT-ONLY TEST HANDOFF
+Current Round Four features: Mission cards enter defense directly with wave/enemy previews; pictured build choices, 1x-4x speeds and the illustrated keep health/impact presentation are updated.
+Updated 2026-10-24. Affected Round Four native gameplay and current Android screenshot acceptance remain pending. Earlier native APKs/captures retain only their original named source/build provenance.
+Verified public source: 38f0e87b750a2c29a82e941e018c5de7e647c591
+Exact-commit hosted CI: SUCCESS - https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/40125532538
+Android AAB: build/round-four-ci-38f0e87b-run40125532538/game-debug.aab
+AAB SHA256: 06203F8D9949987EAD64254B297D7263B0EE3A91D1339C11453C8A922DD1E666
+AAB as-built source: 38f0e87b750a2c29a82e941e018c5de7e647c591
+Web: build/round-four-web-002/index.html
+Web HTML SHA256: 63F860B98634AF3081D71C5243CD7F716F24B0A3FF1B1F502D0554254C069EB7
+Web as-built source: 38f0e87b750a2c29a82e941e018c5de7e647c591
+Qualified export-test ZIP: build/round-four-export-only-06203f8d-web002/packages/mosslight-bastion-round-four-export-test.zip
+ZIP SHA256: A0D3B9131A5950CC758578007C5A5415AB057EE562131792D675D6E2DE76D667
+The existing package passed CRC and every-member size/SHA256 checks, carries complete notices, and omits screenshots. It preserves its frozen component bytes and their separate as-built source identities; a later documentation/UID commit does not rebuild or relabel them.
+The AAB is debug/test signed; release signing, physical-device play, audible output, production services and Google Play acceptance are not established.
+Limited interactive Web checks in an isolated browser profile on the frozen Web export verified campaign wave/enemy previews, direct campaign entry without a separate detail modal, pictured guardian choices without range labels, the 1x/2x/3x/4x controls and an actual keep-health drop from 15 to 12. An ordinary two-wave victory awarded 101 coins and 64 XP once; result dismissal and a Home/Campaign/Home roundtrip showed no duplicate banking. This does not establish persistence across browser restart, audible output, Android/native SDK behavior or production services. Missing result-symbol glyphs and aborted startup resource requests remain qualified; successful play is not a blanket clean-log claim.
+Still required: affected Android/native checks of direct entry, guardian choice, keep health/impact and speed controls; real SDK lifecycle/reward/ad and banked-save checks on the new binary; materially changed current-build Android captures; browser-restart retention; intended physical-device, audible-output and production-service testing.
+No new Round Four Android screenshots are accepted. Current native work is parked; browser frames are not Android/store captures. Earlier native evidence is not transferred to these frozen exports.
+
+PRESERVED EARLIER HANDOFF / DATED EVIDENCE — each passage retains its named source/build scope; current qualification above supersedes earlier readiness statements.
 MOSSLIGHT BASTION - ROUND TWO QUALIFIED LOCAL TEST HANDOFF
 Updated 2026-10-21. Local functional/capture scope is complete for owner testing. BROAD NATIVE LOG GATE REMAINS FALSE for the recorded Chromium diagnostic below. Production release is owner work.
 

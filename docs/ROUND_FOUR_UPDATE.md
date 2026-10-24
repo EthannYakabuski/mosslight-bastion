@@ -49,3 +49,11 @@ visually inspected. The broader regression pass included all 60 strategy witness
 125 core, 25 UI, 91 paired dispatch, 96 natural Retry/Next, 268 Round Two, 60 badge
 checks and services. These counts describe isolated source fixtures only. No strict
 Godot diagnostics were reported by these runs.
+
+## Qualified source/export and limited Web checkpoint (2026-10-24)
+
+Public source `38f0e87b750a2c29a82e941e018c5de7e647c591` has [passing exact-commit hosted CI](https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/40125532538). `../HANDOFF.txt` records the frozen AAB/Web/test-ZIP component source identities and hashes; no rebuild or archive change is made by this documentation update.
+
+Limited interactive Web checks in an isolated browser profile on the frozen Web export verified campaign wave/enemy previews, direct campaign entry without a separate detail modal, pictured guardian choices without range labels, the 1x/2x/3x/4x controls and an actual keep-health drop from 15 to 12. An ordinary two-wave victory awarded 101 coins and 64 XP once; result dismissal and a Home/Campaign/Home roundtrip showed no duplicate banking. This does not establish persistence across browser restart, audible output, Android/native SDK behavior or production services. Missing result-symbol glyphs and aborted startup resource requests remain qualified; successful play is not a blanket clean-log claim.
+
+Still required: affected Android/native checks of direct entry, guardian choice, keep health/impact and speed controls; real SDK lifecycle/reward/ad and banked-save checks on the new binary; materially changed current-build Android captures; browser-restart retention; intended physical-device, audible-output and production-service testing. No new Round Four Android screenshots are accepted. Historical APKs, screenshots and earlier checkpoint text retain only their named source/build scope.
