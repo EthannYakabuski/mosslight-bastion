@@ -1,5 +1,11 @@
 # Mosslight Bastion continuation
 
+## Round 4 continuation
+
+Work only on the requested Round 4 changes; do not start new games. The current Android default is Gradle **AAB**, min API **24** / target API **35**, with ARM64, x86 and x86_64. Follow the [Round 4 Android guide](docs/ROUND_FOUR_ANDROID.md) for current export instructions instead of older APK examples in historical guides.
+
+The 2026-10-24 continuation snapshot does not claim passing exact-current-source CI or native acceptance for rebuilt Round 4 binaries. Record later source-bound checks in `HANDOFF.txt`; keep all dated original APK evidence intact. Debug AABs are test-signed bundles, distinct from owner-signed releases. Preserve user configuration and untracked files.
+
 Work in this game's canonical `Apps/mosslight-bastion` Git working copy. Earlier
 publication copies and preserved original folders are archives, not parallel
 development locations. A new task must read this file, `README.md`, `HANDOFF.txt`,
@@ -8,7 +14,7 @@ it inherits another chat. Inspect Git status, origin and the requested change
 before editing. Preserve user edits.
 
 - Use Godot 4.5.1 Compatibility. Android is primary; Web is single-threaded.
-  Observed min API 24/target API 35 is a release limitation, not Play eligibility.
+  Current preset min API 24/target API 35 does not establish Play eligibility.
 - Service IDs: definitions use `id` in `game/catalog.json`; put console IDs in
   the matching `platform/config.json` maps. The numeric PGS game ID also belongs
   in Android `export_presets.cfg` at `godot_play_game_services/game_id`.
@@ -27,7 +33,7 @@ before editing. Preserve user edits.
   tracked QA documents too: ignore rules do not protect already tracked paths.
 - Retain `LICENSE`, `NOTICE` and all `LICENSES/` notices. Original code's Apache-2.0
   does not relicense third-party assets or plugins.
-- Complete only the requested game update. The ten-game cap remains in effect.
+- Complete only the requested game update. This continuation is Round 4 only; do not start new games.
   Do not activate Pages/Library, publish to Google Play or change security settings.
   Production IDs/backend/signing, physical/audio/Web interaction and human balance
   acceptance remain owner setup or unverified tests as recorded in `HANDOFF.txt`.

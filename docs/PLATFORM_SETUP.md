@@ -1,9 +1,15 @@
 # Platform setup
 
+## Current Round 4 Android export
+
+The preset currently uses minimum API **24** / target API **35**, Gradle **AAB**, and ARM64, x86 and x86_64. These settings are configurable choices, not a fixed Godot target-SDK limit. Follow the [Round 4 Android guide](ROUND_FOUR_ANDROID.md); create a new unused output directory, export a debug `.aab`, then run `tools/verify_android_bundle.py` on the actual bundle.
+
+The debug AAB is test-signed; release signing stays with the owner outside Git. ABI validation alone does not establish native gameplay, production services or Google Play acceptance. Exact Round 4 source CI and affected native checks are pending in this dated 2026-10-24 snapshot unless later source-bound handoff records establish them. Preserve historical APK/native QA identities; no new-game work is authorized by this continuation.
+
 Use Godot 4.5.1 Compatibility and matching export templates. Android is primary;
 single-threaded Web keeps native-service fallbacks. Android requires Java 17 and
 the SDK/Gradle environment described by the workflow. The actual presets use
-min API 24/target API 35 and ARM64 plus x86 test support. These values describe the
+min API 24/target API 35 and ARM64, x86 and x86_64 support. These values describe the
 tested engine configuration, not current Google Play release eligibility.
 
 ## Play Games IDs
