@@ -2,7 +2,7 @@
 Hold the lane. Keep the mosslight burning.
 
 ## Hold the lane
-Sixty authored defenses through twelve woodland regions. Read the fixed routes, choose a pad and call the next wave when your wall is ready.
+One hundred authored defenses through twenty woodland regions. Read the routes, place guardians and meet five to ten timed waves, each mission ending with a distinctive boss. Start a cleared wave sooner with Send now or let the countdown take care of it.
 
 ## Four towers, a thousand decisions
 Quick archers, clustered embers, slowing frost and armor-piercing prisms. Clear costs and counters turn a little supply budget into a plan.

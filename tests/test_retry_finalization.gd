@@ -48,33 +48,45 @@ func natural_win(number: int) -> void:
 	check(game.page=="play" and game.session.simulation.status=="ready","legal fresh ready run%d"%number)
 	check(int(game.progress.data.run_sequence)==number,"one new run id at Start%d"%number)
 	check(game.session.run_id=="2026-10-20:%d"%number,"distinct source-created run id%d"%number)
-	await pad(6);await press("build_archer")
-	check(game.session.simulation.supplies==55,"Archer spends45 from authored100 budget")
-	var ember=false
-	var steps=0
-	while game.session.simulation.status in ["ready","running"] and steps<2400:
-		var sim=game.session.simulation
-		if not ember and sim.supplies>=70:
-			await pad(2);await press("build_ember");ember=true
-			check(sim.tower_at(2).get("kind","")=="ember","legal earned-supply Ember purchase")
-		if sim.status=="ready" and not game.buttons.wave.disabled:await press("wave")
-		if sim.status=="running" and sim.rally_cooldown<=0 and not sim.enemies.is_empty() and not game.buttons.rally.disabled:await press("rally")
+	var before_coins: int=int(game.progress.data.coins)
+	var before_xp: int=int(game.progress.data.xp)
+	var witnesses: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://tests/evidence/strategy-witnesses.json"))
+	var witness: Dictionary=witnesses.missions[0]
+	check(int(witness.mission)==1 and bool(witness.result.won),"first mission has a production legal-action witness")
+	for action in witness.actions:
+		while game.session.simulation.elapsed+0.00001<float(action.at) and game.session.simulation.status in ["ready","running"]:
+			game._process(0.05)
+		match str(action.action):
+			"build":
+				await pad(int(action.pad));await press("build_"+str(action.kind))
+			"upgrade":
+				await pad(int(action.pad));await press("upgrade")
+			"rally": await press("rally")
+			"next_wave": await press("wave")
+	for step in range(18000):
+		if game.page=="results":break
 		game._process(0.05)
-		steps+=1
-		if steps%80==0:await frames(1)
-	# Allow real production result dispatch; no direct finish/record or terminal writes.
-	for index in range(12):game._process(0.05)
+		if step%80==0:await frames(1)
 	await frames()
 	var sim=game.session.simulation
-	var snapshot={"run":number,"run_id":game.session.run_id,"page":game.page,"status":sim.status,"hearts":sim.hearts,"supplies":sim.supplies,"kills":sim.killed,"waves":sim.waves_cleared,"elapsed":sim.elapsed,"banked":game.session.banked,"ending":game._ending,"coins":game.progress.data.coins,"xp":game.progress.data.xp,"rounds":game.progress.data.rounds,"run_sequence":game.progress.data.run_sequence,"credited_runs":game.progress.data.credited_runs.duplicate(),"receipt":game.session.last_receipt.duplicate(true)}
-	runs.append(snapshot);print("MOSS_RETRY_NATURAL ",JSON.stringify(snapshot))
-	check(sim.status=="won" and sim.killed==10 and sim.waves_cleared==2 and sim.hearts==14 and not sim.assisted,"natural authored two-wave unassisted victory%d"%number)
+	var actual: Dictionary=sim.result()
+	var differences: Dictionary={}
+	for key in actual:
+		if actual[key]!=witness.result.get(key):differences[key]={"actual":actual[key],"expected":witness.result.get(key)}
+	if actual!=witness.result:print("RETRY EXACT RESULT DIAGNOSTIC direct_dictionary_equal=false scalar_differences=",differences," actual=",actual," expected=",witness.result)
+	# JSON numbers parse as floats. Compare the complete key set and every exact
+	# scalar as the independent core replay does, without type-strict Dictionary==.
+	check(sim.status=="won" and actual.size()==witness.result.size() and differences.is_empty() and not sim.assisted,"ordinary UI reproduces the legal five-wave boss victory%d"%number)
 	check(game.page=="results" and game.session.banked,"natural result shown and banked%d"%number)
 	check(int(game.progress.data.rounds)==number and game.progress.data.credited_runs.size()==number,"single bank for each legal run%d"%number)
-	if number==1:
-		check(int(game.progress.data.coins)==265 and int(game.progress.data.xp)==78,"nerfed first-clear exact source payout115coins78XP")
-	else:
-		check(int(game.progress.data.coins)==355 and int(game.progress.data.xp)==126,"nerfed replay exact source payout50coins48XP plus40level bonus")
+	var first: bool=number==1
+	var gained_xp: int=sim.killed*2+sim.waves_cleared*4+(50 if first else 20)
+	var bonus: int=(Progress.level_for(before_xp+gained_xp)-Progress.level_for(before_xp))*40
+	var earned_coins: int=sim.killed*2+(95 if first else 30)+bonus
+	check(game.progress.data.coins==before_coins+earned_coins and game.progress.data.xp==before_xp+gained_xp,"natural first/replay exact bank and level bonus%d"%number)
+	check(game.platform().menu and game._reserve()>0.0,"results request native bottom banner and reserve its space")
+	var star_row: Node=game.find_child("MissionStars",true,false)
+	check(star_row!=null and star_row.get_child_count()==3,"result uses three filled/unfilled Kenney stars")
 	var bank=game.progress.data.duplicate(true)
 	for index in range(40):game._process(0.05)
 	await frames()

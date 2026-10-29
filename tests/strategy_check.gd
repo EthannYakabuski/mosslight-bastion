@@ -14,6 +14,8 @@ func run() -> void:
 		for strategy in range(12):
 			var attempt: Dictionary = solve(Missions.campaign(number),strategy)
 			if attempt.result.won:
+				assert(int(attempt.observed_bosses)==1,"Winning production run must actually spawn its final-wave boss")
+				assert(int(attempt.result.waves)==Missions.campaign(number).waves.size(),"Each authored wave resolves exactly once")
 				best=attempt
 				break
 		if best.is_empty():
@@ -23,7 +25,7 @@ func run() -> void:
 			witnesses.append(best)
 			print("MISSION PASS ",number," hearts=",best.result.hearts," stars=",best.result.stars," strategy=",best.strategy," actions=",best.actions.size())
 	var file := FileAccess.open("res://tests/evidence/strategy-witnesses.json",FileAccess.WRITE)
-	file.store_string(JSON.stringify({"scope":"Production deterministic model; legal build/upgrade/Rally/next-wave/advance only; zero preparation or earned assistance. Not native QA.","missions":witnesses,"failed":failures},"  "))
+	file.store_string(JSON.stringify({"scope":"Production deterministic model with automatic wave timers; legal build/upgrade/Rally/advance only, no manual wave inputs; zero preparation or earned assistance. Not native QA.","missions":witnesses,"failed":failures},"  "))
 	file.close()
 	quit(0 if failures.is_empty() else 1)
 
@@ -72,14 +74,14 @@ func solve(mission: Dictionary, strategy: int) -> Dictionary:
 	var sim: BastionSimulation=Sim.new(mission,{"power":0,"fortify":0})
 	var actions: Array=[]
 	var steps: int=0
+	var boss_ids: Dictionary={}
 	while sim.status in ["ready","running"] and steps<18000:
-		if steps%10==0 or sim.status=="ready": purchase(sim,strategy,actions)
-		if sim.status=="ready":
-			assert(sim.next_wave())
-			actions.append({"at":sim.elapsed,"action":"next_wave","wave":sim.wave_index+1})
+		if steps%10==0: purchase(sim,strategy,actions)
 		if sim.rally_cooldown<=0 and not sim.enemies.is_empty():
 			assert(sim.rally())
 			actions.append({"at":sim.elapsed,"action":"rally"})
 		sim.advance(Sim.DT)
+		for enemy in sim.enemies:
+			if bool(Sim.ENEMIES[str(enemy.type)].get("boss",false)):boss_ids[int(enemy.id)]=true
 		steps+=1
-	return {"mission":int(mission.id),"name":str(mission.name),"budget":int(mission.budget),"preparation":{"power":0,"fortify":0},"strategy":strategy,"actions":actions,"result":sim.result()}
+	return {"mission":int(mission.id),"name":str(mission.name),"budget":int(mission.budget),"preparation":{"power":0,"fortify":0},"strategy":strategy,"observed_bosses":boss_ids.size(),"actions":actions,"result":sim.result()}

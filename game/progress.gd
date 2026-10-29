@@ -55,7 +55,7 @@ func _normalize(raw: Dictionary) -> Dictionary:
 		var stored: Variant = raw.get(key,{})
 		if stored is Dictionary:
 			for mission in stored:
-				if str(mission).is_valid_int() and int(mission)>=1 and int(mission)<=60:
+				if str(mission).is_valid_int() and int(mission)>=1 and int(mission)<=100:
 					var stars: int = _bounded(stored[mission],0,3)
 					if stars>0: clean[key][str(int(mission))] = stars
 	for key in ["day","login_day"]:
@@ -174,11 +174,12 @@ func _add_xp(amount: int) -> int:
 	return bonus
 
 func available(number: int) -> bool:
-	return number>=1 and number<=60 and (number==1 or data.completed.has(str(number-1)))
+	return number>=1 and number<=100 and (number==1 or data.completed.has(str(number-1)))
 
-func star_total(unassisted: bool = false) -> int:
+func star_total(_unassisted: bool = false) -> int:
 	var total: int = 0
-	for stars in (data.unassisted_stars if unassisted else data.completed).values(): total+=int(stars)
+	# Retain the argument for callers/saves that used the old competitive name.
+	for stars in data.completed.values(): total+=int(stars)
 	return total
 
 func record_result(run_id: String, result: Dictionary) -> Dictionary:
@@ -187,7 +188,7 @@ func record_result(run_id: String, result: Dictionary) -> Dictionary:
 	var mode: String = str(result.get("mode",""))
 	if mode not in ["campaign","daily","endless"]: return {"recorded":false}
 	var mission: int = int(result.get("mission",0))
-	if mode=="campaign" and (mission<1 or mission>60 or not available(mission)): return {"recorded":false}
+	if mode=="campaign" and (mission<1 or mission>100 or not available(mission)): return {"recorded":false}
 	roll_day()
 	var kills: int = _bounded(result.get("kills",0),0,1000000)
 	var waves: int = _bounded(result.get("waves",0),0,100000)
@@ -201,8 +202,7 @@ func record_result(run_id: String, result: Dictionary) -> Dictionary:
 		coins += 90+mission*5 if first_clear else 30
 		xp += 45+mission*5 if first_clear else 20
 		data.completed[str(mission)] = maxi(int(data.completed.get(str(mission),0)),clampi(int(result.get("stars",1)),1,3))
-		if not bool(result.get("assisted",false)):
-			data.unassisted_stars[str(mission)] = maxi(int(data.unassisted_stars.get(str(mission),0)),int(result.stars))
+		data.unassisted_stars[str(mission)] = int(data.completed[str(mission)])
 	elif mode=="daily" and won:
 		var day: String = str(result.get("day",""))
 		if day==str(data.day) and not data.daily_clears.has(day):
@@ -212,9 +212,9 @@ func record_result(run_id: String, result: Dictionary) -> Dictionary:
 			xp += 35
 		coins += 30
 		xp += 20
-		if day==str(data.day) and not bool(result.get("assisted",false)):
+		if day==str(data.day):
 			data.best_daily[day] = maxi(int(data.best_daily.get(day,0)),_bounded(result.get("score",0)))
-	if mode=="endless" and not bool(result.get("assisted",false)):
+	if mode=="endless":
 		data.best_endless.score = maxi(int(data.best_endless.score),_bounded(result.get("score",0)))
 		data.best_endless.wave = maxi(int(data.best_endless.wave),waves)
 	data.rounds = mini(CAP,int(data.rounds)+1)

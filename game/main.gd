@@ -6,6 +6,8 @@ const Board = preload("res://game/board.gd")
 const INK := Color("eef0cf")
 const MUTED := Color("b6cbb2")
 const GOLD := Color("efd58e")
+const STAR_FILLED = preload("res://assets/ui/star-filled.png")
+const STAR_EMPTY = preload("res://assets/ui/star-empty.png")
 var progress: BastionProgress
 var session: BastionSession
 var service_override: Node
@@ -110,12 +112,19 @@ func _fit() -> void:
 
 func _reserve() -> float:
 	var native: Node = platform()
-	if page!="home" or native==null or not native.has_method("menu_bottom_reserve"): return 0.0
+	if page not in ["home","results"] or native==null or not native.has_method("menu_bottom_reserve"): return 0.0
 	var scale_value: float = stage.scale.y if stage!=null else 1.0
 	return maxf(0.0,float(native.menu_bottom_reserve(self))/maxf(0.01,scale_value))
 
 func _menu_metrics_changed() -> void:
-	if page=="home": show_home.call_deferred()
+	if page in ["home","results"]: _refresh_menu_metrics.call_deferred(page,session.run_id if session!=null else "")
+
+func _refresh_menu_metrics(expected_page: String, expected_run: String) -> void:
+	# A delayed banner measurement must not undo navigation in the same frame.
+	if page!=expected_page:return
+	if (session==null and not expected_run.is_empty()) or (session!=null and session.run_id!=expected_run):return
+	if page=="home":show_home()
+	elif page=="results" and session!=null and session.banked:_show_banked_result()
 
 func _style(color: Color, border: Color = Color("577e61")) -> StyleBoxFlat:
 	var result := StyleBoxFlat.new()
@@ -190,7 +199,7 @@ func _page(name_value: String, title: String, subtitle: String) -> VBoxContainer
 	if name_value=="home": sub.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	stage.add_child(sub)
 	var native: Node = platform()
-	if native!=null and native.has_method("set_menu_visible"): native.set_menu_visible(page=="home")
+	if native!=null and native.has_method("set_menu_visible"): native.set_menu_visible(page in ["home","results"])
 	var scroll := ScrollContainer.new()
 	scroll.position=Vector2(18,142)
 	scroll.size=Vector2(504,maxf(260,960-154-_reserve()))
@@ -258,7 +267,7 @@ func show_home() -> void:
 	welcome.add_child(_label("A little light.\nA wall worth holding.",23,GOLD))
 	welcome.add_child(_label("Build. Rally. Hold the wall.",17,MUTED))
 	welcome.add_child(_label("Lantern: "+str(progress.data.settings.skin).capitalize(),15))
-	content.add_child(_button("Campaign ·60 authored missions",show_campaign,"campaign"))
+	content.add_child(_button("Campaign ·100 authored missions",show_campaign,"campaign"))
 	content.add_child(_button("Daily defense · "+progress.current_day(),func() -> void: launch_mission(Missions.daily(progress.current_day())),"daily"))
 	content.add_child(_button("Endless siege",func() -> void: launch_mission(Missions.endless()),"endless"))
 	content.add_child(_button("Workshop",show_workshop,"workshop"))
@@ -275,7 +284,7 @@ func _service_status() -> String:
 	return str(native.status()) if native!=null and native.has_method("status") else "Offline progress is available."
 
 func show_campaign() -> void:
-	var content: VBoxContainer = _page("campaign","The twelve woodland walls","%d/60 cleared · %d/180 stars"%[progress.data.completed.size(),progress.star_total()])
+	var content: VBoxContainer = _page("campaign","The twenty woodland walls","%d/100 cleared · %d/300 stars"%[progress.data.completed.size(),progress.star_total()])
 	content.add_child(_button("Back to Home",show_home,"back",true))
 	var data: Dictionary = Missions.data()
 	for region_index in range(data.regions.size()):
@@ -313,7 +322,13 @@ func _mission_card(mission: Dictionary) -> Button:
 	box.add_theme_constant_override("separation",4)
 	margin.add_child(box)
 	box.add_child(_label("%02d · %s"%[number,str(mission.name)],19,INK if not button.disabled else MUTED))
-	box.add_child(_label("%d waves · %d supplies · %d/%d stars"%[mission.waves.size(),int(mission.budget),stars,3],15,MUTED))
+	var details := HBoxContainer.new()
+	details.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	var summary: Label=_label("%d waves · %d supplies"%[mission.waves.size(),int(mission.budget)],15,MUTED)
+	summary.size_flags_horizontal=Control.SIZE_EXPAND_FILL
+	details.add_child(summary)
+	details.add_child(_stars_row(stars,22))
+	box.add_child(details)
 	var enemies := HBoxContainer.new()
 	enemies.name="MissionEnemies"
 	enemies.mouse_filter=Control.MOUSE_FILTER_IGNORE
@@ -322,13 +337,25 @@ func _mission_card(mission: Dictionary) -> Button:
 	var names: PackedStringArray=[]
 	for kind in _mission_enemy_types(mission):
 		var enemy: Dictionary=BastionSimulation.ENEMIES[kind]
-		var picture: TextureRect=_picture(_sprite_icon(int(enemy.sprite)),Vector2(27,27),"Enemy_"+kind)
+		var picture: TextureRect=_picture(Board.enemy_icon(kind),Vector2(27,27),"Enemy_"+kind)
 		picture.modulate=Color(1,1,1,0.55) if button.disabled else Color.WHITE
 		enemies.add_child(picture)
 		names.append(str(enemy.name))
 	button.tooltip_text="%d waves · %s"%[mission.waves.size(),", ".join(names)]
 	button.accessibility_name="Mission %d, %s. %d waves. Enemies: %s"%[number,str(mission.name),mission.waves.size(),", ".join(names)]
 	return button
+
+func _stars_row(count: int, pixels: int) -> HBoxContainer:
+	var row := HBoxContainer.new()
+	row.name="MissionStars"
+	row.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	row.add_theme_constant_override("separation",4)
+	row.accessibility_name="%d of 3 stars"%clampi(count,0,3)
+	for index in range(3):
+		var picture: TextureRect=_picture(STAR_FILLED if index<count else STAR_EMPTY,Vector2(pixels,pixels),"Star%d"%(index+1))
+		picture.set_meta("filled",index<count)
+		row.add_child(picture)
+	return row
 
 func launch_mission(mission: Dictionary) -> void:
 	if str(mission.get("mode","campaign"))=="campaign" and not progress.available(int(mission.id)): return
@@ -352,7 +379,7 @@ func _start_battle() -> void:
 	show_battle()
 
 func show_battle() -> void:
-	_page("play",str(session.simulation.definition.name),"Tap + to build. Call the next wave when ready.")
+	_page("play",str(session.simulation.definition.name),"Tap + to build. Waves arrive automatically; Send now starts sooner.")
 	# Battle uses fixed panels; menu ScrollContainer is removed.
 	for child in stage.get_children():
 		if child is ScrollContainer: child.queue_free()
@@ -389,7 +416,7 @@ func show_battle() -> void:
 	controls.add_theme_constant_override("separation",8)
 	stage.add_child(controls)
 	for item in [
-		_button("Next wave",_next_wave,"wave",true),
+		_button("Send now",_next_wave,"wave",true),
 		_button("Rally",_rally,"rally",true),
 		_button("Pause",_pause,"pause",true),
 		_button("1x",_toggle_speed,"speed",true)]:
@@ -501,7 +528,7 @@ func _show_pause() -> void:
 	var repair: Button = _button("Optional native repair · once this run",_request_repair,"repair",true)
 	repair.disabled=not session.can_request_repair()
 	box.add_child(repair)
-	box.add_child(_label("Earned repair restores up to 8 hearts and 40 supplies; marks this run assisted. No ad is required to retry or use Rally.",15,MUTED))
+	box.add_child(_label("Earned repair restores up to 8 hearts and 40 supplies. Normal records and rewards still count. No ad is required to retry or use Rally.",15,MUTED))
 	box.add_child(_button("Abandon to Home · no result credit",_abandon,"abandon",true))
 
 func _resume() -> void:
@@ -538,6 +565,7 @@ func _process(delta: float) -> void:
 		elif session.simulation.status=="lost" and not session.user_paused:
 			session.pause()
 			_show_defeat()
+		if page!="play": return
 		_elapsed_ui+=delta
 		if _elapsed_ui>=0.15:
 			_elapsed_ui=0
@@ -548,8 +576,22 @@ func _process(delta: float) -> void:
 			if session.simulation.status!=_last_battle_status:
 				_last_battle_status=session.simulation.status
 				_tower_panel()
+		_update_battle_controls()
 	elif page=="home" and status_label!=null:
 		status_label.text=_toast_text if not _toast_text.is_empty() else _service_status()
+
+func _update_battle_controls() -> void:
+	# Timed waves and kills change eligibility between throttled label refreshes.
+	# Input must reflect the current model on every frame, including new supplies.
+	if page!="play":return
+	var sim: BastionSimulation=session.simulation
+	var blocked: bool=session.user_paused or session.reward_pending or session.fullscreen_active()
+	buttons.wave.disabled=sim.status!="ready" or blocked
+	buttons.rally.disabled=sim.status!="running" or sim.rally_cooldown>0.0 or blocked
+	for kind in BastionSimulation.TOWERS:
+		var key: String="build_"+str(kind)
+		if buttons.has(key) and is_instance_valid(buttons[key]):buttons[key].disabled=blocked or sim.supplies<int(BastionSimulation.TOWERS[kind].cost)
+	if buttons.has("upgrade") and is_instance_valid(buttons.upgrade):buttons.upgrade.disabled=blocked or sim.upgrade_cost(selected_pad)<0 or sim.supplies<sim.upgrade_cost(selected_pad)
 
 func _update_battle_labels() -> void:
 	if page!="play" or battle_hud==null: return
@@ -562,7 +604,8 @@ func _update_battle_labels() -> void:
 	buttons.wave.disabled=sim.status!="ready" or session.user_paused
 	buttons.rally.disabled=sim.status!="running" or sim.rally_cooldown>0 or session.user_paused
 	buttons.rally.text="Rally %ds"%int(ceil(sim.rally_cooldown)) if sim.rally_cooldown>0 else "Rally"
-	battle_note.text="Assisted: ordinary rewards; no competitive best." if sim.assisted else ("Wave clear · build, upgrade, or call Next wave." if sim.status=="ready" else "%d defeated · %d reached the keep"%[sim.killed,sim.leaked])
+	var countdown: float=sim.seconds_to_next_wave()
+	battle_note.text=("Next wave in %ds · build or send now"%ceili(countdown)) if sim.status=="ready" else "%d defeated · %d reached the keep"%[sim.killed,sim.leaked]
 
 func _show_defeat() -> void:
 	_show_pause()
@@ -574,12 +617,17 @@ func _finish_result() -> void:
 	_ending=true
 	_click(true)
 	_sync_services()
+	_show_banked_result()
+
+func _show_banked_result() -> void:
+	if session==null or not session.banked: return
+	var receipt: Dictionary=session.last_receipt
 	var sim: BastionSimulation = session.simulation
-	var content: VBoxContainer = _page("results","The mosslight holds" if sim.status=="won" else "A lesson for the next wall","%d defeated · %d waves · %d seconds · %s"%[sim.killed,sim.waves_cleared,int(sim.elapsed),"assisted" if sim.assisted else "unassisted"])
+	var content: VBoxContainer = _page("results","The mosslight holds" if sim.status=="won" else "A lesson for the next wall","%d defeated · %d waves · %d seconds"%[sim.killed,sim.waves_cleared,int(sim.elapsed)])
 	content.add_child(_label("%d coins   +%d XP"%[int(receipt.coins),int(receipt.xp)],27,GOLD))
 	if int(receipt.get("level_bonus",0))>0: content.add_child(_label("Includes %d coins from your new keeper level."%int(receipt.level_bonus),17))
-	content.add_child(_label("★".repeat(sim.stars()) if sim.status=="won" else "Free retries. Your banked progress is safe.",25))
-	content.add_child(_label("Assisted successes keep ordinary progress. Only unassisted records can replace competitive bests.",16,MUTED))
+	content.add_child(_stars_row(sim.stars() if sim.status=="won" else 0,48))
+	if sim.status!="won": content.add_child(_label("Free retries. Your banked progress is safe.",25))
 	if sim.status=="won" and str(sim.definition.get("mode","campaign"))=="campaign" and int(sim.definition.id)<Missions.count():
 		content.add_child(_button("Next level · "+str(Missions.campaign(int(sim.definition.id)+1).name),_next_level,"next_level"))
 	content.add_child(_button("Try this wall again · free",func() -> void: launch_mission(selected_mission),"retry"))
@@ -655,7 +703,7 @@ func _choose_skin(key: String) -> void:
 	show_workshop()
 
 func show_journal() -> void:
-	var content: VBoxContainer = _page("journal","The field journal","Tower counters, readable enemy traits, local achievements and unassisted records.")
+	var content: VBoxContainer = _page("journal","The field journal","Tower counters, readable enemy traits, local achievements and records.")
 	content.add_child(_button("Back to Home",show_home,"back",true))
 	for kind in BastionSimulation.TOWERS:
 		var tower: Dictionary = BastionSimulation.TOWERS[kind]

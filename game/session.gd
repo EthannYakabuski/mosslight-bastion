@@ -73,7 +73,7 @@ func _reward_callback(earned: bool, token: int, expected_run: String) -> void:
 	reward_pending=false
 	pause()
 	if earned and simulation.accept_earned_repair():
-		notice="Earned: up to 8 keep hearts and 40 supplies. This run is assisted. Close the ad, then tap Resume."
+		notice="Earned: up to 8 keep hearts and 40 supplies. Close the ad, then tap Resume."
 	else:
 		notice="No reward earned; no assistance granted. Close the ad, then choose your next action."
 

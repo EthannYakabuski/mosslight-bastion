@@ -46,5 +46,109 @@
     "sha256": "15ff82332f342c30e469215539e1cc57e11b221aa2cf7e11e811d313a9927f3d",
     "license": "CC0",
     "notice": "LICENSES/Assets/kenney_impact-sounds-License.txt"
+  },
+  {
+    "asset": "assets/ui/star-filled.png",
+    "source_pack": "kenney_ui-pack",
+    "source_relative_path": "PNG/Yellow/Default/star.png",
+    "sha256": "9296db5d197a842bc8b9d52dfca39c3c2881dd45d6ce3cbcd6635af5152fcec6",
+    "license": "CC0",
+    "notice": "LICENSES/Assets/kenney_ui-pack-License.txt"
+  },
+  {
+    "asset": "assets/ui/star-empty.png",
+    "source_pack": "kenney_ui-pack",
+    "source_relative_path": "PNG/Grey/Default/star_outline.png",
+    "sha256": "9267eda99fd68a28d036beca7a606e334edb2957f74c6531da28bc79e92bc4a1",
+    "license": "CC0",
+    "notice": "LICENSES/Assets/kenney_ui-pack-License.txt"
+  },
+  {
+    "asset": "assets/monsters/sprout_sprite.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "sprout_sprite.png",
+    "sha256": "59706c13a800a6090b7a54f49929bd0016d07a7b88e0f1487fe93d7fa717e569",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
+  },
+  {
+    "asset": "assets/monsters/dust_rabbit.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "dust_rabbit.png",
+    "sha256": "b364c0213b7fab4767704c768d4abb8edd00866b57721df3f08b22a15594258a",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
+  },
+  {
+    "asset": "assets/monsters/jade_juggernaut.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "jade_juggernaut.png",
+    "sha256": "36ecbfe622215730c3f88676879f68980114b503ac3dce1188ab809d2292758b",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
+  },
+  {
+    "asset": "assets/monsters/moss_muzzle.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "moss_muzzle.png",
+    "sha256": "cbf34398b8892978b1f47d088949f358e49f8a25ec0c001f5555e217e98438d5",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
+  },
+  {
+    "asset": "assets/monsters/ghost_wisp.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "ghost_wisp.png",
+    "sha256": "c80e2de0da368cb7514fcb70509b74a903c9b9bb2b12617c0da8c2e9476fb292",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
+  },
+  {
+    "asset": "assets/monsters/witching_bough.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "witching_bough.png",
+    "sha256": "96184f037f16d49f72138ed56b777d13db60f6dc5cf0484712b361384920cea8",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
+  },
+  {
+    "asset": "assets/monsters/moss_moth.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "moss_moth.png",
+    "sha256": "126c32f19bd1345999fa62d8762c5db7a5c2367880afd606f290209f96e09719",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
+  },
+  {
+    "asset": "assets/monsters/orchid_ooze.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "orchid_ooze.png",
+    "sha256": "02ad9644fcdf0d8426359c97dcb997ba532052d8ec0313952b8f40dd6473229d",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
+  },
+  {
+    "asset": "assets/monsters/ivory_bulwark.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "ivory_bulwark.png",
+    "sha256": "11c54c5eefc38b63835f8dcb6911ea07938c126a4eef9a112ef7366d2458d225",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
+  },
+  {
+    "asset": "assets/monsters/honey_goliath.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "honey_goliath.png",
+    "sha256": "b2f820fdfc5fe1f787cf684c2b9b426a11c5e473a65cb2d830c5790f79810c1e",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
+  },
+  {
+    "asset": "assets/monsters/gravebone_hare.png",
+    "source_pack": "Kenney Creature Mixer supplied sheets",
+    "source_relative_path": "gravebone_hare.png",
+    "sha256": "d4da57b43b66ba1db8a5d457474ef2f619e08040eeed668015d1aeb47889816c",
+    "license": "Creature Mixer custom asset-use terms",
+    "notice": "LICENSES/Assets/CREATURE-MIXER-TERMS.txt"
   }
 ]

@@ -11,14 +11,14 @@ func check(value: bool, message: String) -> void:
 func _init() -> void: call_deferred("run")
 func run() -> void:
 	var data: Dictionary=Missions.data()
-	check(Missions.count()==60 and data.regions.size()==12,"60 missions across 12 regions")
+	check(Missions.count()==100 and data.regions.size()==20,"100 missions across 20 regions")
 	var baseline_dps: Dictionary={"archer":7.0/.45,"ember":17.0/1.15,"frost":5.0/.8,"prism":34.0/1.35}
 	for kind in baseline_dps:
 		check(float(Sim.TOWERS[kind].damage)/float(Sim.TOWERS[kind].period)<=float(baseline_dps[kind])*.6,"Substantial tower DPS reduction: "+str(kind))
-	var enemies: Dictionary={"sprig":[32.0,.65,0.0,6,1],"runner":[25.0,1.1,0.0,7,1],"shell":[80.0,.46,.6,10,2],"swarm":[17.0,.8,0.0,4,1],"wisp":[46.0,.9,0.0,9,1],"bramble":[175.0,.36,.3,18,3]}
+	var enemies: Dictionary={"sprig":[38.4,.65,0.0,6,1],"runner":[25.0,1.265,0.0,7,1],"shell":[96.0,.46,.6,10,2],"swarm":[20.4,.8,0.0,4,1],"wisp":[55.2,.9,0.0,9,1],"bramble":[210.0,.36,.3,18,3]}
 	for key in enemies:
 		var e: Dictionary=Sim.ENEMIES[key]
-		check([e.hp,e.speed,e.armor,e.bounty,e.leak]==enemies[key],"Enemy balance remains unchanged: "+str(key))
+		check([e.hp,e.speed,e.armor,e.bounty,e.leak]==enemies[key],"Round Five requested enemy buff: "+str(key))
 	var layouts: Dictionary={}
 	for index in range(60):
 		var mission: Dictionary=Missions.campaign(index+1)

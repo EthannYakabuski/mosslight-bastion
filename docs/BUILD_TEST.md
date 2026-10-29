@@ -11,6 +11,8 @@ data. Isolate both game saves and the Services pending store from real player da
 godot --headless --editor --path . --import
 godot --headless --path . --script tests/strategy_check.gd
 godot --headless --path . --script tests/test_core.gd
+godot --headless --path . --script tests/test_round_five.gd
+godot --headless --path . --script tests/test_retry_finalization.gd
 godot --headless --path . --script tests/test_ui.gd
 godot --headless --path . --script platform/tests/services_smoke.gd
 ```
@@ -36,6 +38,17 @@ That is a dated result, not a claim about later edits. Hosted artifacts have not
 received the original local APK's native QA. The deploy job remains `if: false`;
 no live Pages site is established.
 
-`HANDOFF.txt` selects current runtime `9f84e66e63c354692a6b514a670a801fe7ab6b51` and versioned Android/Web/package outputs. It preserves the current unresolved Chromium queue diagnostic and separately dated original E9CF cache errors. Keep strict checks intact; do not suppress errors to produce a pass.
+The dated Round Two section of `HANDOFF.txt` records runtime `9f84e66e63c354692a6b514a670a801fe7ab6b51` and its versioned Android/Web/package outputs; the current top entry separates later source status from historical artifact acceptance. It preserves the current unresolved Chromium queue diagnostic and separately dated original E9CF cache errors. Keep strict checks intact; do not suppress errors to produce a pass.
 Production configuration, physical-device/audio/interactive-Web checks and human
 acceptance remain separate. A documentation-only change does not require a new APK.
+
+## Round Five acceptance
+
+Run the strategy generator before independent replay and the natural-UI Retry
+fixture; the committed witness file is synthetic model evidence. The solver
+uses automatic scheduling and legal build/upgrade/Rally only at zero persistent
+preparation, requiring one actually observed final boss and all authored waves
+resolved for each of 100 wins. Core independently checks actions/accounting and
+absence of queued/orphan enemies. Do not remove error gates or replace actual
+native/device/reward/audio checks with fixture counts. See the current results
+and remaining gates in `docs/ROUND_FIVE_UPDATE.md`.

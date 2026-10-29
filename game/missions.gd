@@ -18,7 +18,7 @@ static func daily(day: String) -> Dictionary:
 	mission.mode = "daily"
 	mission.day = day
 	mission.name = "Daily lantern · "+day
-	mission.hint = "The day deterministically selects an authored mission. Preparation upgrades are disabled here. Optional earned repair marks this attempt assisted and excludes its competitive best."
+	mission.hint = "The day deterministically selects an authored mission. Preparation upgrades are disabled here. Waves arrive automatically; an earned repair can help defend the same record."
 	return mission
 
 static func endless() -> Dictionary:
@@ -29,5 +29,5 @@ static func endless() -> Dictionary:
 	mission.budget = 190
 	mission.hearts = 18
 	mission.hp_scale = 1.0
-	mission.hint = "Call each wave when ready. Free Rally is always available. Only unassisted runs replace competitive siege bests."
+	mission.hint = "Waves arrive automatically. Build during the countdown, use free Rally and hold the wall. Earned repairs can help set a new best."
 	return mission

@@ -10,10 +10,31 @@ var damage_flash: float = 0.0
 const KEEP = preload("res://assets/keep/woodland-keep.png")
 const TOWN = preload("res://assets/town/tilemap_packed.png")
 const DUNGEON = preload("res://assets/dungeon/tilemap_packed.png")
+const ENEMY_SHEETS = {
+	"sprig":preload("res://assets/monsters/sprout_sprite.png"),
+	"runner":preload("res://assets/monsters/dust_rabbit.png"),
+	"shell":preload("res://assets/monsters/jade_juggernaut.png"),
+	"swarm":preload("res://assets/monsters/moss_muzzle.png"),
+	"wisp":preload("res://assets/monsters/ghost_wisp.png"),
+	"bramble":preload("res://assets/monsters/witching_bough.png"),
+	"moth":preload("res://assets/monsters/moss_moth.png"),
+	"ooze":preload("res://assets/monsters/orchid_ooze.png"),
+	"bulwark":preload("res://assets/monsters/ivory_bulwark.png"),
+	"elderroot":preload("res://assets/monsters/honey_goliath.png"),
+	"stormhare":preload("res://assets/monsters/gravebone_hare.png"),
+	"broodmother":preload("res://assets/monsters/witching_bough.png")
+}
 const COLORS: Dictionary = {"archer":Color("e3ce84"),"ember":Color("f49b68"),"frost":Color("9ddcde"),"prism":Color("d7aff0")}
 
 func _ready() -> void:
 	mouse_filter=Control.MOUSE_FILTER_STOP
+
+static func enemy_icon(kind: String) -> AtlasTexture:
+	var texture: Texture2D=ENEMY_SHEETS[kind]
+	var icon := AtlasTexture.new()
+	icon.atlas=texture
+	icon.region=Rect2(0,0,texture.get_height(),texture.get_height())
+	return icon
 
 func cell_size() -> float:
 	return minf(size.x,size.y)/9.0
@@ -92,7 +113,12 @@ func _draw() -> void:
 		var pos: Vector2 = center(simulation.enemy_position(enemy))
 		var data: Dictionary = BastionSimulation.ENEMIES[str(enemy.type)]
 		if float(enemy.slow)>0: draw_circle(pos,cell*0.23,Color(0.6,0.9,1.0,0.5))
-		_tile(DUNGEON,int(data.sprite),Rect2(pos-Vector2.ONE*cell*0.25,Vector2.ONE*cell*0.5))
+		var texture: Texture2D=ENEMY_SHEETS[str(enemy.type)]
+		var frame_size: float=texture.get_height()
+		var frames: int=maxi(1,int(texture.get_width()/frame_size))
+		var frame: int=(int(simulation.elapsed*6.0)+int(enemy.id))%frames
+		var art_size: float=cell*(0.85 if bool(data.get("boss",false)) else 0.54)
+		draw_texture_rect_region(texture,Rect2(pos-Vector2.ONE*art_size*0.5,Vector2.ONE*art_size),Rect2(frame*frame_size,0,frame_size,frame_size))
 		if float(data.armor)>0: draw_arc(pos,cell*0.26,0,TAU,16,Color("c6d0c7"),1.4)
 		draw_rect(Rect2(pos+Vector2(-11,-cell*0.32),Vector2(22,3)),Color("23332e"))
 		draw_rect(Rect2(pos+Vector2(-11,-cell*0.32),Vector2(22*clampf(float(enemy.hp)/float(enemy.max_hp),0,1),3)),Color("b7e18d"))

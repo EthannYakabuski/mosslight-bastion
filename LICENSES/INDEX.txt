@@ -6,4 +6,4 @@ Engine font notices: ThirdParty/NOTO-CJK-OFL-1.1.txt and NOTO-CJK-SC-NOTICE.txt.
 Google Play Games plugin: ThirdParty/PLAY-GAMES-MIT.txt and addons/GodotPlayGameServices/LICENSE.
 Poing AdMob plugin: ThirdParty/POING-ADMOB-MIT.txt and addons/admob/LICENSE.
 Kenney Tiny Town, Tiny Dungeon, Interface Sounds and Impact Sounds: exact Assets/*-License.txt CC0 texts. See assets/SOURCE_MAP.json.
-Keep this complete directory with redistributed Android/Web binaries. Apache2.0 does not relicense third-party material. No Creature Mixer material is included.
+Keep this complete directory with redistributed Android/Web binaries. Apache2.0 does not relicense third-party material. Kenney UI Pack stars: Assets/kenney_ui-pack-License.txt (CC0). Supplied animated Creature Mixer sheets: Assets/CREATURE-MIXER-TERMS.txt (custom asset-use terms, not CC0). See assets/SOURCE_MAP.json.

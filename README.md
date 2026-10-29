@@ -1,5 +1,17 @@
 # Mosslight Bastion
 
+## Round Five source update
+
+The campaign now spans **100 missions across 20 regions** with **five to ten
+automatic waves per mission** and a boss in every final wave. Plan during the
+opening countdown or use Send now to start sooner; later waves advance without
+manual input. Twelve enemy roles use supplied animated monster sheets, including
+slow goliath, sprinting hare and splitting broodroot bosses. Campaign and Results
+show Kenney filled/empty star icons; Results reserves a bottom-banner safe area.
+See [Round Five acceptance and verification](docs/ROUND_FIVE_UPDATE.md) and the
+current status at the top of `HANDOFF.txt`. Earlier exports and screenshots keep
+their original source provenance.
+
 ## Round 4 build continuation (2026-10-24)
 
 The Android preset now defaults to **AAB** with Gradle, minimum API **24** and target API **35**. ARM64, x86 and x86_64 are selected; the [Round 4 Android guide](docs/ROUND_FOUR_ANDROID.md) explains the native ABI-pair validator and release-owner steps. These are current preset choices, not permanent engine restrictions.
@@ -8,8 +20,8 @@ Round Four public source `38f0e87b750a2c29a82e941e018c5de7e647c591` has [passing
 
 Hold the lane. Keep the mosslight burning.
 
-A portrait woodland defense game for Godot 4.5.1 Compatibility: sixty authored
-campaign missions across twelve regions, four complementary towers, six enemy roles,
+A portrait woodland defense game for Godot 4.5.1 Compatibility: one hundred authored
+campaign missions across twenty regions, four complementary towers, twelve enemy roles,
 Endless siege, date-seeded Daily defense, keeper progression, twenty achievements
 and four record categories. Preparation and cosmetic lantern upgrades use coins
 earned in ordinary play.
@@ -17,7 +29,7 @@ earned in ordinary play.
 ## Play
 
 Open `project.godot` and run `main.tscn`. Tap a build pad and choose a pictured guardian at its shown supply cost.
-The selected tower shows its range on the board. Upgrade or sell a selected tower, call Next wave and use
+The selected tower shows its range on the board. Upgrade or sell a selected tower, let timed waves arrive or tap Send now, and use
 free Rally when enemies cluster. Android Back pauses combat; Resume continues and
 Abandon returns Home without result credit. Ordinary retries are free. Campaign cards show wave count and enemy portraits and start the selected defense
 directly. Retry and Next level also enter the defense directly. Cycle the speed
@@ -25,8 +37,9 @@ button through 1x, 2x, 3x and 4x; Pause freezes every speed. The keep has a visi
 health meter and a distinct damage cue when enemies reach it.
 
 The optional native earned repair is limited once per run. It leaves combat paused
-through the fullscreen endcard until explicit Resume. Assisted runs keep ordinary
-rewards and cannot replace unassisted competitive bests. Banked progress persists;
+through the fullscreen endcard until explicit Resume. Earned-ad-assisted runs qualify for the same
+rewards, stars and competitive bests as ordinary runs. No reward is granted without
+a genuine earned callback. Banked progress persists;
 unfinished battles intentionally do not survive process death.
 
 ## Continue development
@@ -54,9 +67,9 @@ through Godot's `admob/general/android/app_id` Project Setting; changing only JS
 production ad unit IDs into test requests. See the platform guide before changing
 IDs, consent settings or signing configuration.
 
-## Round Two source status
+## Preserved Round Two source status
 
-The current source contains 60 missions across twelve regions, Next Level, revised tower balance and centered Home. Illustrated app/feature art and all 20 achievement/4 leaderboard badges are integrated. See [the engineering update](docs/ROUND_TWO_UPDATE.md) for verification and continuity. Current Android/Web exports are accepted at runtime `9f84e66e63c354692a6b514a670a801fe7ab6b51` under `build/round-two-9f84e66e-a1/`. Current affected copy/controls/save and nine raw native emulator views are complete; critical combat/ad/offline evidence belongs to the qualified D890 predecessor. The broad native diagnostic gate remains false for one unresolved Chromium image-reader buffer-queue diagnostic. See HANDOFF for exact selectors and limitations.
+The dated Round Two source contained 60 missions across twelve regions, Next Level, revised tower balance and centered Home. Illustrated app/feature art and all 20 achievement/4 leaderboard badges are integrated. See [the engineering update](docs/ROUND_TWO_UPDATE.md) for verification and continuity. Current Android/Web exports are accepted at runtime `9f84e66e63c354692a6b514a670a801fe7ab6b51` under `build/round-two-9f84e66e-a1/`. Current affected copy/controls/save and nine raw native emulator views are complete; critical combat/ad/offline evidence belongs to the qualified D890 predecessor. The broad native diagnostic gate remains false for one unresolved Chromium image-reader buffer-queue diagnostic. See HANDOFF for exact selectors and limitations.
 
 ## Verification and release
 

@@ -93,7 +93,7 @@ func run() -> void:
 	var swarm: BastionSimulation=Sim.new(swarm_def)
 	swarm.next_wave(); swarm.advance(0.05)
 	swarm._hit({"kind":"ember","damage":10.0,"splash":1.0,"slow":0.0},swarm.enemies[0])
-	check(float(swarm.enemies[1].hp)<17 and float(swarm.enemies[2].hp)<17,"Ember splash damages a real clustered group")
+	check(float(swarm.enemies[1].hp)<float(Sim.ENEMIES.swarm.hp) and float(swarm.enemies[2].hp)<float(Sim.ENEMIES.swarm.hp),"Ember splash damages a real clustered group")
 	var daily: BastionSimulation=Sim.new(Missions.daily("2026-10-20"),{"power":5,"fortify":5})
 	check(daily._power==0 and daily.max_hearts==int(daily.definition.hearts),"Daily disables persistent power and fortification")
 	check(Missions.daily("2026-10-20")==Missions.daily("2026-10-20") and Missions.daily("2026-10-21").id!=daily.definition.id,"Daily is deterministic by UTC date and varies next day")
@@ -133,12 +133,12 @@ func _test_progress() -> void:
 	var unfinished: Dictionary=result.duplicate(true); unfinished.finished=false
 	check(not p.record_result(p.begin_run(),unfinished).recorded,"Unfinished combat cannot bank a result")
 	var assisted: Dictionary=result.duplicate(true); assisted.mission=2; assisted.assisted=true
-	check(p.record_result(p.begin_run(),assisted).recorded and p.data.completed.has("2") and not p.data.unassisted_stars.has("2"),"Assisted clear earns ordinary unlock while excluded from competitive stars")
+	check(p.record_result(p.begin_run(),assisted).recorded and p.data.completed.has("2") and p.data.unassisted_stars.get("2")==3 and p.star_total(true)==6,"Earned-assisted clears count identically toward campaign stars")
 	var endless: Dictionary=result.duplicate(true); endless.mode="endless"; endless.won=false; endless.score=900
 	p.record_result(p.begin_run(),endless)
 	endless.assisted=true; endless.score=99999
 	p.record_result(p.begin_run(),endless)
-	check(p.data.best_endless.score==900,"Assisted endless cannot overwrite unassisted best")
+	check(p.data.best_endless.score==99999,"Earned-assisted endless can improve the same competitive best")
 	p.data.daily.kills=40
 	var quest: Dictionary=p.claim_quest("kills")
 	coins=p.data.coins
@@ -217,7 +217,7 @@ func _replay_witnesses() -> void:
 		var sim: BastionSimulation=Sim.new(Missions.campaign(int(witness.mission)),{"power":0,"fortify":0})
 		var valid: bool=true
 		for action in witness.actions:
-			while sim.elapsed+0.00001<float(action.at) and sim.status=="running": sim.advance(0.05)
+			while sim.elapsed+0.00001<float(action.at) and sim.status in ["ready","running"]: sim.advance(0.05)
 			if absf(sim.elapsed-float(action.at))>0.001: valid=false; break
 			match str(action.action):
 				"build": valid=sim.supplies==int(action.before) and sim.build(int(action.pad),str(action.kind)) and sim.supplies==int(action.after)
@@ -227,11 +227,12 @@ func _replay_witnesses() -> void:
 				_: valid=false
 			if not valid: break
 		for _index in range(18000):
-			if sim.status!="running": break
+			if sim.status not in ["ready","running"]: break
 			sim.advance(0.05)
 		var actual: Dictionary=sim.result()
 		var same: bool=true
 		for key in actual:
 			if actual[key]!=witness.result.get(key): same=false
 		if not valid or not same: print("REPLAY DIAGNOSTIC ",witness.mission," legal=",valid," actual=",actual," expected=",witness.result)
+		check(int(witness.get("observed_bosses",0))==1 and sim.waves_cleared==sim.definition.waves.size() and sim.enemies.is_empty() and sim._spawn_queue.is_empty(),"Mission%02d spawns one boss and resolves every wave with no orphaned enemies"%int(witness.mission))
 		check(valid and sim.status=="won" and not sim.assisted and same,"Mission%02d legal action replay reproduces exact win and accounting"%int(witness.mission))

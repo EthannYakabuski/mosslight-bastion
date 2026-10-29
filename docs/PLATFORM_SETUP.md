@@ -72,3 +72,13 @@ continuation task; leave the existing held configuration unchanged.
 ## Daily leaderboard reset policy
 
 For `unassisted_daily_score`, configure a suitable daily reset/period policy in the owner backend or leaderboard service and verify it with owner test accounts. Client labels and submissions do not configure the service policy. Keep this setup guidance outside player-facing collection descriptions.
+
+## Round Five record compatibility
+
+Keep existing leaderboard mapping keys `unassisted_endless_score`,
+`unassisted_daily_score`, `unassisted_stars` and `player_level`. The first three
+retain their legacy identifiers for compatibility; their current values include
+genuine earned-ad-assisted results, just as other banked results. Display names
+and descriptions are in `game/catalog.json`. Repair still requires an actual
+earned callback and grants at most once per run; this record rule does not
+enable simulated Web rewards or configure production sign-in/backend policy.

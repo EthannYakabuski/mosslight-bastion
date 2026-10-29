@@ -62,7 +62,7 @@ func run() -> void:
 		await capture(str(profile[0])+"-home")
 		await press("campaign")
 		check(app.page=="campaign" and app.buttons.mission_1.get_combined_minimum_size().y>=110,"concise touch campaign cards")
-		for number in range(1,61):
+		for number in range(1,101):
 			var card: Button=app.buttons["mission_"+str(number)]
 			var mission: Dictionary=Missions.campaign(number)
 			var icons: Node=card.find_child("MissionEnemies",true,false)
