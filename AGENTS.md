@@ -47,6 +47,14 @@ before editing. Preserve user edits.
 - Retain `LICENSE`, `NOTICE` and all `LICENSES/` notices. Original code's Apache-2.0
   does not relicense third-party assets or plugins.
 - Complete only the requested game update; do not start new games.
-  Do not activate Pages/Library, publish to Google Play or change security settings.
+  This repository's Pages deployment is authorized as documented in `docs/WEB_PAGES.md`; do not activate Library, publish to Google Play or change security settings.
   Production IDs/backend/signing, physical/audio/Web interaction and human balance
   acceptance remain owner setup or unverified tests as recorded in `HANDOFF.txt`.
+
+## Authorized Web hosting
+
+The user authorized this repository's main-branch GitHub Pages deployment on
+2026-11-05. Read `docs/WEB_PAGES.md` before changing publishing or iframe behavior.
+Preserve every existing strict source/Android/Web gate, owner changes and real
+saves. This authorization does not cover another repository, the website, custom
+domains, security-setting changes, Library actions or app-store releases.

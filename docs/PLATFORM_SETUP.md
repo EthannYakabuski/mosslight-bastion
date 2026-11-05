@@ -66,8 +66,7 @@ including `user://platform_pending_v1.json`, from the player's real data.
 
 The owner handles production IDs/backend/signing, release requirements and Google
 Play publication. Physical-device, audible-output, interactive Web and real-service
-verification are still needed. Live Pages/Library activation is outside this
-continuation task; leave the existing held configuration unchanged.
+verification are still needed. This repository's Pages deployment is separately authorized; see `WEB_PAGES.md`. Library activation remains outside scope.
 
 ## Daily leaderboard reset policy
 
@@ -82,3 +81,9 @@ genuine earned-ad-assisted results, just as other banked results. Display names
 and descriptions are in `game/catalog.json`. Repair still requires an actual
 earned callback and grants at most once per run; this record rule does not
 enable simulated Web rewards or configure production sign-in/backend policy.
+
+## Web deployment
+
+See [GitHub Pages and iframe guidance](WEB_PAGES.md) for this repository's
+main-branch Web publishing. Native services and real Android/device/backend
+acceptance remain separate; Web never simulates a successful native ad.

@@ -35,8 +35,8 @@ Android debug and Web artifacts, and includes license notices. The published
 baseline `6632ffd453ce2df2b882bba8a8772229210b300f` was verified on remote main on October 22, 2026 and passed
 [run 39701092106](https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/39701092106).
 That is a dated result, not a claim about later edits. Hosted artifacts have not
-received the original local APK's native QA. The deploy job remains `if: false`;
-no live Pages site is established.
+received the original local APK's native QA. The current main-branch deploy job follows all validation/build gates; see
+`WEB_PAGES.md`. Verify the actual deployment and live build-info.json for readiness.
 
 The dated Round Two section of `HANDOFF.txt` records runtime `9f84e66e63c354692a6b514a670a801fe7ab6b51` and its versioned Android/Web/package outputs; the current top entry separates later source status from historical artifact acceptance. It preserves the current unresolved Chromium queue diagnostic and separately dated original E9CF cache errors. Keep strict checks intact; do not suppress errors to produce a pass.
 Production configuration, physical-device/audio/interactive-Web checks and human

@@ -24,7 +24,7 @@ native QA. Keep private local artifacts and raw evidence outside public commits;
 inspect tracked documentation as well as untracked paths. No runtime rebuild is
 needed for a documentation-only update.
 
-Keep all required notices with source and builds. Pages/Library actions remain outside this task; production services and Play
+Keep all required notices with source and builds. Pages hosting for this repository is documented in `WEB_PAGES.md`; Library actions remain outside this task; production services and Play
 publication remain owner work. Do not claim physical/audio/Web/production/human acceptance from
 source tests or hosted CI.
 

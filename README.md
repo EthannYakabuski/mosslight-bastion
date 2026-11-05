@@ -1,5 +1,14 @@
 # Mosslight Bastion
 
+## Web hosting (2026-11-05)
+
+The validated main-branch Web build is configured for **https://ethannyakabuski.github.io/mosslight-bastion/**.
+See [deployment, controls and iframe guidance](docs/WEB_PAGES.md). The containing
+commit's Actions deployment and live `build-info.json` establish which revision
+is served; this configuration alone does not claim browser interaction or native
+acceptance. The owner's website is unchanged.
+
+
 ## Round Five source update
 
 The campaign now spans **100 missions across 20 regions** with **five to ten
@@ -81,8 +90,7 @@ The public source baseline `6632ffd453ce2df2b882bba8a8772229210b300f` was verifi
 [exact-commit hosted build/test CI](https://github.com/EthannYakabuski/mosslight-bastion/actions/runs/39701092106). This dated result does not cover the subsequent screenshot/document changes until their own commit and CI run are verified.
 That dated run built Android/Web artifacts; its binaries have not received the
 original local APK's native QA. Documentation-only changes do not rebuild or
-reverify that APK. Pages deployment remains disabled; no Library or Google Play
-publication is implied.
+reverify that APK. The current Pages workflow is documented in [Web hosting](docs/WEB_PAGES.md); no Library or Google Play publication is implied.
 
 Owner work includes production IDs/backend/signing, policy/contact/consent and
 Data safety details, release requirements and Google Play submission. Physical
