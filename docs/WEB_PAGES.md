@@ -1,6 +1,8 @@
 # Mosslight Bastion: GitHub Pages and iframe use
 
-Stable project URL: **https://ethannyakabuski.github.io/mosslight-bastion/**
+Project landing page: **https://ethannyakabuski.github.io/mosslight-bastion/**
+
+Direct playable game / iframe URL: **https://ethannyakabuski.github.io/mosslight-bastion/game/**
 
 ## Build and deployment
 
@@ -11,6 +13,10 @@ Only a successful main-branch build can deploy its `build/web` artifact to the
 `github-pages` environment. Source, raw logs, real saves, signing material and
 private local evidence are not uploaded as the Pages artifact. `LICENSE`, `NOTICE`
 and `LICENSES/` accompany the exported game.
+
+The existing `site/` landing/privacy source remains unchanged; the workflow
+exports Godot payloads under `game/`. Embed the direct game URL to avoid nesting
+the landing page and its own iframe inside the website.
 
 `build-info.json` at the project URL records only `source_commit` and `repository`.
 Compare its SHA to the successful Actions deployment; a workflow file or an HTTP
@@ -24,7 +30,7 @@ normally. No custom domain, website edit or app-store publication is part of thi
 The website remains unchanged. A later owner website update can use an iframe such as:
 
 ```html
-<iframe src="https://ethannyakabuski.github.io/mosslight-bastion/" title="Mosslight Bastion"
+<iframe src="https://ethannyakabuski.github.io/mosslight-bastion/game/" title="Mosslight Bastion"
         width="540" height="960" allow="autoplay; fullscreen" allowfullscreen>
 </iframe>
 ```

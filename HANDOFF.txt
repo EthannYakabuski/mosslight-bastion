@@ -1,5 +1,6 @@
 GITHUB PAGES WEB HOSTING - 2026-11-05
-Stable project URL: https://ethannyakabuski.github.io/mosslight-bastion/
+Project landing URL: https://ethannyakabuski.github.io/mosslight-bastion/
+Direct playable game / iframe URL: https://ethannyakabuski.github.io/mosslight-bastion/game/
 The requested workflow now configures public main-branch Web deployment only after the existing strict source/service/game, Web and Android build gates pass. build-info.json identifies the deployed commit. See docs/WEB_PAGES.md for publishing, controls, iframe and browser-storage limitations. The owner's website, gameplay, native service IDs, debug ad routing, genuine saves and unrelated export/artwork edits remain unchanged.
 
 Verify the containing commit's terminal Actions/Pages result and the live build-info.json before claiming availability. HTTP resource serving, actual browser interaction, cross-origin iframe operation, save retention, audible output and physical/native production acceptance are separate checks. This entry does not transfer any dated APK/screenshot QA to the Web site. No Play release, signing or Library action is included.

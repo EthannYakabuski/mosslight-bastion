@@ -2,7 +2,8 @@
 
 ## Web hosting (2026-11-05)
 
-The validated main-branch Web build is configured for **https://ethannyakabuski.github.io/mosslight-bastion/**.
+The validated main-branch Web build is configured for **https://ethannyakabuski.github.io/mosslight-bastion/game/**
+(the project landing page remains at **https://ethannyakabuski.github.io/mosslight-bastion/**).
 See [deployment, controls and iframe guidance](docs/WEB_PAGES.md). The containing
 commit's Actions deployment and live `build-info.json` establish which revision
 is served; this configuration alone does not claim browser interaction or native

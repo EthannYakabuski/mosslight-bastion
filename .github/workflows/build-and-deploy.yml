@@ -110,11 +110,12 @@ jobs:
           python3 - <<'PY'
           import json, os
           from pathlib import Path
-          output = Path("build/web")
+          output = Path("build/web/game")
+          assert Path("build/web/index.html").is_file(), "landing page"
           for name in ("index.html", "index.js", "index.wasm", "index.pck"):
               assert (output / name).is_file() and (output / name).stat().st_size > 0, name
           identity = {"source_commit": os.environ["GITHUB_SHA"], "repository": os.environ["GITHUB_REPOSITORY"]}
-          (output / "build-info.json").write_text(json.dumps(identity, indent=2) + "\n")
+          Path("build/web/build-info.json").write_text(json.dumps(identity, indent=2) + "\n")
           PY
       - name: Include accompanying license notices
         shell: bash
