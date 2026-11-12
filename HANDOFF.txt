@@ -1,3 +1,9 @@
+PLAY GAMES ACHIEVEMENT IMPORT PACKAGE - 2026-11-12
+Added marketing/play-games-achievements/mosslight-bastion-achievements-google-play.zip, ID worksheet, README and validation report for 20 achievements.
+Local archive/schema/CRC/512px-icon/source-hash checks pass; 755 total points. Standard unlock type matches the existing adapter; all states Revealed. Points and state are documented package assumptions.
+Rebuild/check with tools/build_play_games_achievements.py. No runtime/configuration changes, Play Console upload or new native acceptance. Exact pushed commit and hosted CI are verified separately.
+Original historical handoff follows unchanged.
+
 GITHUB PAGES WEB HOSTING - 2026-11-05
 Project landing URL: https://ethannyakabuski.github.io/mosslight-bastion/
 Direct playable game / iframe URL: https://ethannyakabuski.github.io/mosslight-bastion/game/

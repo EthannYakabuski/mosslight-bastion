@@ -1,0 +1,230 @@
+{
+  "status": "PASS",
+  "achievement_count": 20,
+  "file_count": 22,
+  "points_total": 755,
+  "zip_bytes": 10072987,
+  "zip_sha256": "c07d479b788e1184a7ed3a758cb0dc2cb217e1580e0eae9416e9ddc58cb51a2d",
+  "checks": [
+    "Exact CSV names; no headers; seven metadata columns; two icon-map columns",
+    "Unique flat member names; allowed extensions; conservative size limits",
+    "Unique names; valid lengths; no commas in names or descriptions",
+    "Standard unlock type; blank steps; Revealed state; valid points and order",
+    "All catalog achievements mapped exactly once; all PNGs 512x512",
+    "ZIP CRC; PNG chunk CRC; archived icon bytes equal original source icons"
+  ],
+  "catalog_path": "game/catalog.json",
+  "catalog_sha256": "a694877d81224af1ccfcef43dcee5726103f81e76dfeb0a38f7256ca821ec1d5",
+  "source_icons": [
+    {
+      "key": "first_wall",
+      "path": "assets/badges/first_wall.png",
+      "bytes": 503497,
+      "sha256": "4a4e15c876d83d3a6ec6645ffe10c7ac764808e9f7e0fb43c0832dfcae144f3b"
+    },
+    {
+      "key": "five_walls",
+      "path": "assets/badges/five_walls.png",
+      "bytes": 507636,
+      "sha256": "89d50570e438ffcc906b81ba160b4270050098cb6eefb5026c90ec350458f11c"
+    },
+    {
+      "key": "ten_walls",
+      "path": "assets/badges/ten_walls.png",
+      "bytes": 518827,
+      "sha256": "e9761eaf6fa578e9f22be1ee8b3073e81a2eccee2dc263f806fe4832201f12d4"
+    },
+    {
+      "key": "twenty_walls",
+      "path": "assets/badges/twenty_walls.png",
+      "bytes": 485895,
+      "sha256": "616771964ae8d5b30f09c769cc8015e002696eb37fa2ee5feed082579e491202"
+    },
+    {
+      "key": "all_walls",
+      "path": "assets/badges/all_walls.png",
+      "bytes": 536670,
+      "sha256": "d1d4892c6bc43121e87f0f6a8168760cf644579d6de170a73f29cb3353ee0e80"
+    },
+    {
+      "key": "stars_15",
+      "path": "assets/badges/stars_15.png",
+      "bytes": 487827,
+      "sha256": "b08ecd3aed2c8aef6b7826961178d54627947bd95bb09258db744535b29e68dd"
+    },
+    {
+      "key": "stars_45",
+      "path": "assets/badges/stars_45.png",
+      "bytes": 470209,
+      "sha256": "afeb71a8e19788042695393d85c79d49eda839ea706e320def31e9c8bcabf33f"
+    },
+    {
+      "key": "stars_90",
+      "path": "assets/badges/stars_90.png",
+      "bytes": 479119,
+      "sha256": "bb5bdff3aea91a5ddda94ac6892959de5bfe5b01ad4737a709a4677ae7491bf4"
+    },
+    {
+      "key": "kills_25",
+      "path": "assets/badges/kills_25.png",
+      "bytes": 515353,
+      "sha256": "4d66905fd82ea791ab5718e9608947eb304750d66cbe2382c60d3cc07a5fbb5e"
+    },
+    {
+      "key": "kills_250",
+      "path": "assets/badges/kills_250.png",
+      "bytes": 495141,
+      "sha256": "1bb739205268b6b40a8db32d28b1264482d5d6aa641139edf6fa630509df3ba7"
+    },
+    {
+      "key": "kills_1000",
+      "path": "assets/badges/kills_1000.png",
+      "bytes": 503220,
+      "sha256": "6345bbc0ecc8ada5fce1ea6bf6509694ed6653c2a88710a7bc2e696537f5839c"
+    },
+    {
+      "key": "built_20",
+      "path": "assets/badges/built_20.png",
+      "bytes": 506777,
+      "sha256": "5d70fc598bbf9153466543dbe0dd3c84d5c541b6798a08e8743f6d5183aae2df"
+    },
+    {
+      "key": "upgrades_20",
+      "path": "assets/badges/upgrades_20.png",
+      "bytes": 510507,
+      "sha256": "44ce892d9a026299abe2931115d1ab5859b96f773d74cecaf1490a8e9a9771ec"
+    },
+    {
+      "key": "rally_10",
+      "path": "assets/badges/rally_10.png",
+      "bytes": 511623,
+      "sha256": "da57c48416154a82cf5a3545db9fbdc73a35a810f664cdad1fdaeba5b32c97f5"
+    },
+    {
+      "key": "level_3",
+      "path": "assets/badges/level_3.png",
+      "bytes": 489634,
+      "sha256": "06f86edc648887dad2089644b159d21045c59dfc7416cf1bc9c9bc9ceeacc3a9"
+    },
+    {
+      "key": "level_6",
+      "path": "assets/badges/level_6.png",
+      "bytes": 491591,
+      "sha256": "cf48c198ac9d713a31287ff1f1d652cc5c055a39b20f788c7fce3a594b426a51"
+    },
+    {
+      "key": "level_10",
+      "path": "assets/badges/level_10.png",
+      "bytes": 526910,
+      "sha256": "85a087ad67173fb4231e9ada110d5349bdd8786960e8cd3e308df54312cc648e"
+    },
+    {
+      "key": "endless_5",
+      "path": "assets/badges/endless_5.png",
+      "bytes": 512225,
+      "sha256": "72b01edd33e2a1d4c3d8df22830666165e8afa545f159f51cb4cb1b63ecfa1b5"
+    },
+    {
+      "key": "daily_3",
+      "path": "assets/badges/daily_3.png",
+      "bytes": 522104,
+      "sha256": "c4df5793897742c1ce3a5f45b7f36e0c2545082bd38dab2b43cd3a2fc7cc9244"
+    },
+    {
+      "key": "streak_7",
+      "path": "assets/badges/streak_7.png",
+      "bytes": 491949,
+      "sha256": "b40060ff26e19a4bde1240e1d2029c6c0e07667463f3f8d022c4dfa77d8b984c"
+    }
+  ],
+  "import_only_copy_edits": [
+    {
+      "key": "kills_25",
+      "original_name": "Clear the footpath",
+      "import_name": "Clear the footpath",
+      "original_description": "Defeat25 enemies.",
+      "import_description": "Defeat 25 enemies."
+    },
+    {
+      "key": "kills_250",
+      "original_name": "Woodland watch",
+      "import_name": "Woodland watch",
+      "original_description": "Defeat250 enemies.",
+      "import_description": "Defeat 250 enemies."
+    },
+    {
+      "key": "kills_1000",
+      "original_name": "The long watch",
+      "import_name": "The long watch",
+      "original_description": "Defeat1000 enemies.",
+      "import_description": "Defeat 1000 enemies."
+    },
+    {
+      "key": "built_20",
+      "original_name": "A place for every tower",
+      "import_name": "A place for every tower",
+      "original_description": "Build20 towers in completed rounds.",
+      "import_description": "Build 20 towers in completed rounds."
+    },
+    {
+      "key": "upgrades_20",
+      "original_name": "Polished stone",
+      "import_name": "Polished stone",
+      "original_description": "Buy20 run tower upgrades.",
+      "import_description": "Buy 20 run tower upgrades."
+    },
+    {
+      "key": "rally_10",
+      "original_name": "Raise the lantern",
+      "import_name": "Raise the lantern",
+      "original_description": "Use free Rally10 times in completed rounds.",
+      "import_description": "Use free Rally 10 times in completed rounds."
+    },
+    {
+      "key": "level_3",
+      "original_name": "Keeper apprentice",
+      "import_name": "Keeper apprentice",
+      "original_description": "Reach keeper level3.",
+      "import_description": "Reach keeper level 3."
+    },
+    {
+      "key": "level_6",
+      "original_name": "Keeper of the glen",
+      "import_name": "Keeper of the glen",
+      "original_description": "Reach keeper level6.",
+      "import_description": "Reach keeper level 6."
+    },
+    {
+      "key": "level_10",
+      "original_name": "Old-light keeper",
+      "import_name": "Old-light keeper",
+      "original_description": "Reach keeper level10.",
+      "import_description": "Reach keeper level 10."
+    },
+    {
+      "key": "endless_5",
+      "original_name": "Long evening",
+      "import_name": "Long evening",
+      "original_description": "Clear5 waves in one endless siege.",
+      "import_description": "Clear 5 waves in one endless siege."
+    },
+    {
+      "key": "daily_3",
+      "original_name": "Three dawns",
+      "import_name": "Three dawns",
+      "original_description": "Complete daily defenses on3 different saved days.",
+      "import_description": "Complete daily defenses on 3 different saved days."
+    }
+  ],
+  "official_schema": "https://developer.android.com/games/pgs/integrate-achievements#zip-file-guidelines",
+  "assumptions": [
+    "English default locale",
+    "All achievements initially Revealed",
+    "Point values selected for this package; not specified by catalog"
+  ],
+  "limits": [
+    "Not uploaded to Play Console",
+    "No runtime or service configuration changed",
+    "No new Android/device acceptance claimed"
+  ]
+}
