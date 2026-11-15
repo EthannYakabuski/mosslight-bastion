@@ -11,7 +11,7 @@ routes, save keys, service IDs and production callback protections must remain
 compatible. Earned-ad-assisted scores and stars now qualify for ordinary records;
 the legacy `unassisted_*` identifiers remain only for save/backend compatibility.
 
-The Android default is Gradle **AAB**, min API **24** / target API **35**, with
+The Android default is Gradle **AAB**, min API **24** / target API **36**, with
 ARM64, x86 and x86_64. Follow `docs/ROUND_FOUR_ANDROID.md` for exports. Prior dated
 APKs, screenshots and qualified Round Four exports do not validate changed Round
 Five source. Preserve original evidence, real saves, owner edits and untracked
@@ -26,14 +26,18 @@ it inherits another chat. Inspect Git status, origin and the requested change
 before editing. Preserve user edits.
 
 - Use Godot 4.5.1 Compatibility. Android is primary; Web is single-threaded.
-  Current preset min API 24/target API 35 does not establish Play eligibility.
+  Current preset min API 24/target API 36 does not establish full Play eligibility.
+- Keep Android `package/app_category=2` (Godot's Game enum). Validate actual
+  `appCategory=game`, `isGame=true` and `allowBackup=false` in the bundle.
 - Service IDs: definitions use `id` in `game/catalog.json`; put console IDs in
   the matching `platform/config.json` maps. The numeric PGS game ID also belongs
   in Android `export_presets.cfg` at `godot_play_game_services/game_id`.
 - AdMob's manifest App ID comes from the Godot setting
   `admob/general/android/app_id`, serialized in `project.godot`. JSON `app_id` is
-  reference data. `test_mode` changes wording only; real ad unit IDs remain real
-  requests. Use official sample IDs or explicitly configured test devices.
+  reference data. Debug/editor builds always route ad units to Google's samples;
+  Android debug exports also use the sample manifest App ID. Release builds use
+  the owner units only with `test_mode=false`; `true` selects sample units. Verify
+  both packaged variants before delivery and use sample ads for all execution.
 - Run tests with isolated application data, including the shared Services store.
   Strategy/core/UI tests generate `tests/evidence` files; review any resulting
   diff. Synthetic fixtures do not establish native gameplay or ad acceptance.

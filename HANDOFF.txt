@@ -1,3 +1,29 @@
+OWNER-AUTHORIZED SOURCE PUBLICATION - 2026-11-15
+The owner approved committing the supplied config and prepared integration, pushing to this repository and monitoring exact-commit CI. The leaderboard UTC timing is explicitly deferred; its current implementation and documented limitation are unchanged. The scoped publication excludes owner artwork/import sidecars, all generated builds, QA keys, raw logs and genuine saves.
+The dated preparation and artifact evidence below remains preserved. Git text normalization can change public blob line endings; configuration values are unchanged. The final task delivery records the exact public commit and terminal CI/Pages result separately. Local a3 exports remain the same frozen pre-publication binaries and do not acquire hosted/native acceptance from a source push. Production OAuth/signing, native/physical/audio/Web interaction and Google Play publication remain unverified or owner work. No website or security setting changes are part of this game publication.
+
+PRESERVED LOCAL PREPARATION RECORD
+PRODUCTION INTEGRATION PREPARATION - 2026-11-15
+Local uncommitted preparation on base 962740e313af078bee07eb8548c72ba1554527ce. No commit, push, Play/Pages publication, website edit, owner signing access, production ad execution or real player-progress operation was performed.
+
+Owner config.json preserved byte-for-byte: SHA256 4AE7E80742D3378FDC4DBA355EF8883407CFD58532CEF3212D94315D58BCDD0D. PGS enabled=true, 20 achievement IDs, four leaderboard IDs and numeric game ID are wired; release AdMob App ID/units are preserved. Debug/editor units and Android debug manifest use Google's samples. Android now targets API36/min24 with ARM64/x86/x86_64 and correct Game category; actual manifest isGame=true and allowBackup=false verified.
+Services bind before authentication, replay banked progress, recover durable retry journals, acknowledge captured values and use bounded noninteractive retries. Daily queues are UTC-date bound; Google's UTC-7 daily windows still differ from UTC puzzles. All four boards require integer Number/zero decimals/larger-is-better; owner Console types/order remain unverified. Consent generations invalidate stale ads; active fullscreen, genuine earned-only grants, explicit Resume and once-only result banking remain protected.
+
+Final source suite: 3,473 game/service assertions, 100 campaign witnesses and service smoke pass in isolated a2 data. Final a3 proves every other source input unchanged after the preset/category + checker/test correction, reruns import/source checks and 10/10 Python package regressions, then rebuilds Web/debug/release packages. No prior native APK evidence is transferred. Strict source/export gates pass; retained warnings and initial environmental/reporting failures are described in docs/PRODUCTION_READINESS.md.
+
+FINAL ACCEPTED LOCAL DELIVERABLES - build/production-integration-20261115-a3/
+Unsigned release AAB: android-release-unsigned/mosslight-bastion-release-unsigned.aab
+Bytes 100332306; SHA256 87234EFDD28E1E104BE7BC2F2716DABE22F1EB614B7EE54E791263DE179B1268.
+QA-test-signed debug AAB: android-debug/mosslight-bastion-debug.aab
+Bytes 107962200; SHA256 BA9A7AC2F9DA24F25B8B1F2490061E46376E39013E68C153505B84782E2A3B1F.
+Web: web/index.html plus every sidecar. HTML SHA256 6C4086B1AE40088E8FE78A7DF3F2EAF272132A74A6E06CE116D4B2BCBC5C517C; PCK SHA256 3826F7F937157D47394C10AA3667A3FDFBD9265BAA5DD2C3594C8B7E98FE0D0E.
+BUILD-RECEIPT.json PASS; before/after source hashes match. Actual packaged IDs/resources/JSON, six ELF headers/ABI pairing and signatures are independently checked. The release is unsigned and NOT UPLOAD-READY; debug signing uses a newly generated QA key. LICENSE/NOTICE/LICENSES match in all output folders. Keep the parent private cache/log/key/source folders out of distribution and commits.
+Resolved SDKs: Poing5.1.0, GMA Next-Gen1.4.0, UMP4.0.0, PGS plugin3.4.0/SDK21.0.0, Gson2.13.2. All 64-bit bundled ELF PT_LOAD segments align to16KB; generated-APK alignment and a16KB device remain untested. No active game cloud-save, billing, standalone analytics or crash-reporting integration; advertising SDK measurement/identifiers still apply. Policy facts and eight packaged permissions: docs/PRODUCTION_DATA_PRACTICES.md. No runtime privacy-policy URL is currently wired; Settings opens UMP, and the separate website task owns policy pages.
+
+STILL UNVERIFIED/OWNER WORK
+Production OAuth/app linkage, correct app-signing fingerprints/test access, actual unlock/score acceptance and backend window behavior; owner release signing/unused version code/current full Play requirements; final policy/audience/consent/Data safety declarations. Current native/physical gameplay, test-ad consent/reward/banner/interstitial lifecycle, cold/offline save acceptance, audible output, Android16/16KB-device and interactive Web/iframe storage/human balance checks are not run. Hosted CI was not run for these uncommitted changes. No app-store release is claimed.
+
+PRESERVED ORIGINAL HANDOFF - all dated evidence below retains its named scope
 PLAY GAMES ACHIEVEMENT IMPORT PACKAGE - 2026-11-12
 Added marketing/play-games-achievements/mosslight-bastion-achievements-google-play.zip, ID worksheet, README and validation report for 20 achievements.
 Local archive/schema/CRC/512px-icon/source-hash checks pass; 755 total points. Standard unlock type matches the existing adapter; all states Revealed. Points and state are documented package assumptions.

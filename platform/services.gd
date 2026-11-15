@@ -8,6 +8,9 @@ signal menu_bottom_reserve_changed
 var settings: Dictionary = {}
 var _native_ads := false
 var _ads_ready := false
+var _consent_ready := false
+var _ad_request_generation := 0
+var _privacy_form_active := false
 var _pgs_ready := false
 var _signed_in := false
 var _menu_visible := true
@@ -20,17 +23,49 @@ var _reward_granted := false
 var _reward_showing := false
 var _reward_context := ""
 var _interstitial_showing := false
+var _interstitial_loading := false
 var _sign_in_client: PlayGamesSignInClient
 var _achievements_client: PlayGamesAchievementsClient
 var _leaderboards_client: PlayGamesLeaderboardsClient
 var _pending_unlocks: Dictionary = {}
 var _pending_scores: Dictionary = {}
+var _pending_daily_day := ""
+var _legacy_daily_score := -1
+var _submitted_unlocks: Dictionary = {}
+var _submitted_scores: Dictionary = {}
+var _inflight_unlocks: Dictionary = {}
+var _inflight_scores: Dictionary = {}
+var _uncertain_score_ids: Dictionary = {}
+var _uncertain_unlock_ids: Dictionary = {}
+var _last_unlock_attempts: Dictionary = {}
+var _last_score_attempts: Dictionary = {}
+var _progress_flush_scheduled := false
+var _pgs_clock := 0.0
+var _pgs_retry_at := 30.0
+var _pgs_auth_pending := false
+var _pgs_auth_interactive := false
+var _pgs_manual_sign_in_requested := false
+var _pgs_auth_started := 0.0
+var _pgs_needs_auth_check := false
+var _pgs_pending_view := ""
 var _notice := "Offline progress is available."
 var _menu_metric_elapsed := 0.0
 var _menu_metric_key := ""
 var _menu_metric_signal_pending := false
 
+const Progress = preload("res://game/progress.gd")
+const DAILY_BOARD := "unassisted_daily_score"
 const PENDING_PATH := "user://platform_pending_v1.json"
+const PGS_RETRY_SECONDS := 30.0
+const PGS_REQUEST_TIMEOUT_SECONDS := 20.0
+
+# Debug/editor builds always use Google's sample units. The owner's production
+# IDs remain in config.json and are used only by release builds with test_mode=false.
+const TEST_AD_UNIT_IDS := {
+	"banner": "ca-app-pub-3940256099942544/6300978111",
+	"interstitial": "ca-app-pub-3940256099942544/1033173712",
+	"rewarded": "ca-app-pub-3940256099942544/5224354917",
+}
 
 func _ready() -> void:
 	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://platform/config.json"))
@@ -50,6 +85,7 @@ func _ready() -> void:
 	_refresh_consent()
 
 func _process(delta: float) -> void:
+	_process_play_games(delta)
 	if OS.get_name() != "Android" or not _menu_visible:
 		return
 	_menu_metric_elapsed += delta
@@ -60,6 +96,7 @@ func _process(delta: float) -> void:
 func _notification(what: int) -> void:
 	if what == NOTIFICATION_APPLICATION_RESUMED and OS.get_name() == "Android":
 		_refresh_menu_metrics.call_deferred()
+		_refresh_play_games_connection.call_deferred()
 
 ## Bottom margin in reference-local units. Use the unscaled owner/root when
 ## fitting a child stage, to avoid feeding a stage's changed scale back into itself.
@@ -155,54 +192,110 @@ func _set_notice(message: String) -> void:
 	availability_changed.emit()
 
 func _refresh_consent() -> void:
+	_invalidate_cached_ads()
 	if not Engine.has_singleton("PoingGodotAdMobUserMessagingPlatform"):
 		_set_notice("Consent service unavailable; ad requests are paused.")
 		return
 	var parameters := ConsentRequestParameters.new()
 	parameters.tag_for_under_age_of_consent = bool(settings.get("admob", {}).get("tag_for_under_age_of_consent", false))
-	UserMessagingPlatform.consent_information.update(parameters, _consent_updated, _consent_update_failed)
+	UserMessagingPlatform.consent_information.update(parameters, _consent_updated.bind(_ad_request_generation), _consent_update_failed.bind(_ad_request_generation))
 
-func _consent_updated() -> void:
+func _consent_updated(generation: int) -> void:
+	if generation != _ad_request_generation:
+		return
 	var information := UserMessagingPlatform.consent_information
 	if information.get_consent_status() == ConsentInformation.ConsentStatus.REQUIRED and information.get_is_consent_form_available():
-		UserMessagingPlatform.load_consent_form(_consent_form_loaded, _consent_update_failed)
+		UserMessagingPlatform.load_consent_form(_consent_form_loaded.bind(generation), _consent_update_failed.bind(generation))
 	else:
-		_finish_consent()
+		_finish_consent(generation)
 
-func _consent_form_loaded(form: ConsentForm) -> void:
+func _consent_form_loaded(form: ConsentForm, generation: int) -> void:
+	if generation != _ad_request_generation:
+		return
 	UserMessagingPlatform.active_consent_form = form
-	form.show(func(_error: FormError) -> void: _finish_consent())
+	form.show(func(_error: FormError) -> void: _finish_consent(generation))
 
-func _consent_update_failed(error: FormError) -> void:
+func _consent_update_failed(error: FormError, generation: int) -> void:
+	if generation != _ad_request_generation:
+		return
 	_set_notice("Consent update unavailable: " + error.message)
-	_finish_consent()
+	_finish_consent(generation)
 
-func _finish_consent() -> void:
+func _finish_consent(generation: int) -> void:
+	if generation != _ad_request_generation:
+		return
 	var consent_status := UserMessagingPlatform.consent_information.get_consent_status()
-	if consent_status not in [ConsentInformation.ConsentStatus.OBTAINED, ConsentInformation.ConsentStatus.NOT_REQUIRED]:
+	if not _consent_status_allows_ads(consent_status):
+		_invalidate_cached_ads()
 		_set_notice("Ads are paused until consent information is available. Local play is unaffected.")
 		return
+	_consent_ready = true
 	if _ads_ready:
 		return
 	var listener := OnInitializationCompleteListener.new()
-	listener.on_initialization_complete = _on_ads_initialized
+	listener.on_initialization_complete = _on_ads_initialized.bind(generation)
 	MobileAds.initialize(listener)
 
 func privacy_options() -> void:
 	if OS.get_name() == "Android" and Engine.has_singleton("PoingGodotAdMobUserMessagingPlatform"):
-		UserMessagingPlatform.show_privacy_options_form(func(_error: FormError) -> void: _refresh_consent())
+		if _privacy_form_active or fullscreen_ad_active():
+			return
+		_privacy_form_active = true
+		_invalidate_cached_ads()
+		UserMessagingPlatform.show_privacy_options_form(func(_error: FormError) -> void:
+			_privacy_form_active = false
+			_refresh_consent()
+		)
 	else:
 		_set_notice("Privacy options for advertising are available in the Android app.")
 
-func _on_ads_initialized(_initialization: InitializationStatus) -> void:
+func _on_ads_initialized(_initialization: InitializationStatus, generation: int) -> void:
+	# Initialization may finish after a privacy form invalidated its request.
+	if generation != _ad_request_generation or not _consent_ready or _ads_ready:
+		return
 	_ads_ready = true
 	_load_banner()
 	_load_interstitial()
 	_load_rewarded()
-	_set_notice("Android test ads are enabled." if bool(settings.get("admob", {}).get("test_mode", true)) else "Android ad services are ready.")
+	_set_notice("Android test ads are enabled." if _use_test_ads() else "Android ad services are ready.")
+
+static func _consent_status_allows_ads(consent_status: int) -> bool:
+	return consent_status in [ConsentInformation.ConsentStatus.OBTAINED, ConsentInformation.ConsentStatus.NOT_REQUIRED]
+
+func _invalidate_cached_ads() -> void:
+	_consent_ready = false
+	_ads_ready = false
+	_ad_request_generation += 1
+	_interstitial_loading = false
+	if is_instance_valid(_banner):
+		_banner.destroy()
+	_banner = null
+	# Existing fullscreen completion and genuine earned callbacks retain their
+	# lifecycle. Privacy refresh cannot dismiss them or resume the simulation.
+	if not _interstitial_showing:
+		if is_instance_valid(_interstitial):
+			_interstitial.destroy()
+		_interstitial = null
+	if not _reward_showing:
+		if is_instance_valid(_rewarded):
+			_rewarded.destroy()
+		_rewarded = null
+	availability_changed.emit()
+	_refresh_menu_metrics()
+
+func _use_test_ads() -> bool:
+	return Engine.is_editor_hint() or OS.is_debug_build() or bool(settings.get("admob", {}).get("test_mode", true))
 
 func _ad_id(kind: String) -> String:
-	return str(settings.get("admob", {}).get(kind + "_unit_id", ""))
+	return _ad_id_for_build(settings, kind, Engine.is_editor_hint() or OS.is_debug_build())
+
+static func _ad_id_for_build(config: Dictionary, kind: String, development_build: bool) -> String:
+	if not TEST_AD_UNIT_IDS.has(kind):
+		return ""
+	var admob: Dictionary = config.get("admob", {})
+	if development_build or bool(admob.get("test_mode", true)):
+		return str(TEST_AD_UNIT_IDS[kind])
+	return str(admob.get(kind + "_unit_id", ""))
 
 func set_menu_visible(visible: bool) -> void:
 	_menu_visible = visible
@@ -229,34 +322,48 @@ func _load_banner() -> void:
 		_banner.hide()
 
 func _load_interstitial() -> void:
-	if not _ads_ready or _ad_id("interstitial").is_empty():
+	if not _ads_ready or _interstitial_loading or is_instance_valid(_interstitial) or _ad_id("interstitial").is_empty():
 		return
+	_interstitial_loading = true
+	var generation := _ad_request_generation
 	var callback := InterstitialAdLoadCallback.new()
-	callback.on_ad_loaded = func(ad: InterstitialAd) -> void:
-		_interstitial = ad
-		var content := FullScreenContentCallback.new()
-		content.on_ad_showed_full_screen_content = func() -> void: _ad_diagnostic("interstitial_presented")
-		content.on_ad_dismissed_full_screen_content = func() -> void:
-			_ad_diagnostic("interstitial_dismissed")
-			_interstitial_closed()
-		content.on_ad_failed_to_show_full_screen_content = func(error: AdError) -> void:
-			_ad_diagnostic("interstitial_failed", error.message)
-			_interstitial_closed()
-		ad.full_screen_content_callback = content
-	callback.on_ad_failed_to_load = func(error: LoadAdError) -> void: _set_notice("Interstitial unavailable: " + error.message)
+	callback.on_ad_loaded = _interstitial_loaded.bind(generation)
+	callback.on_ad_failed_to_load = func(error: LoadAdError) -> void:
+		if generation == _ad_request_generation:
+			_interstitial_loading = false
+			_set_notice("Interstitial unavailable: " + error.message)
 	InterstitialAdLoader.new().load(_ad_id("interstitial"), AdRequest.new(), callback)
+
+func _interstitial_loaded(ad: InterstitialAd, generation: int) -> void:
+	if generation == _ad_request_generation:
+		_interstitial_loading = false
+	if generation != _ad_request_generation or not _ads_ready or _interstitial_showing or is_instance_valid(_interstitial):
+		ad.destroy()
+		return
+	_interstitial = ad
+	var content := FullScreenContentCallback.new()
+	content.on_ad_showed_full_screen_content = func() -> void: _ad_diagnostic("interstitial_presented")
+	content.on_ad_dismissed_full_screen_content = func() -> void:
+		_ad_diagnostic("interstitial_dismissed")
+		_interstitial_closed()
+	content.on_ad_failed_to_show_full_screen_content = func(error: AdError) -> void:
+		_ad_diagnostic("interstitial_failed", error.message)
+		_interstitial_closed()
+	ad.full_screen_content_callback = content
 
 func round_finished() -> void:
 	_round_count += 1
 	if _round_count % 2 != 0 or _interstitial_showing or _reward_showing:
 		return
-	if is_instance_valid(_interstitial):
+	if _ads_ready and is_instance_valid(_interstitial):
 		_interstitial_showing = true
 		_interstitial.show()
 	elif _ads_ready:
 		_load_interstitial()
 
 func _interstitial_closed() -> void:
+	if not _interstitial_showing:
+		return
 	_interstitial_showing = false
 	if is_instance_valid(_interstitial):
 		_interstitial.destroy()
@@ -267,22 +374,27 @@ func _load_rewarded() -> void:
 	if not _ads_ready or _ad_id("rewarded").is_empty():
 		return
 	var callback := RewardedAdLoadCallback.new()
-	callback.on_ad_loaded = func(ad: RewardedAd) -> void:
-		_rewarded = ad
-		var content := FullScreenContentCallback.new()
-		content.on_ad_showed_full_screen_content = func() -> void: _ad_diagnostic("rewarded_presented", _reward_context)
-		content.on_ad_dismissed_full_screen_content = func() -> void:
-			_ad_diagnostic("rewarded_dismissed", _reward_context)
-			_rewarded_closed()
-		content.on_ad_failed_to_show_full_screen_content = func(error: AdError) -> void:
-			_ad_diagnostic("rewarded_failed", _reward_context + ": " + error.message)
-			_rewarded_closed()
-		ad.full_screen_content_callback = content
-		availability_changed.emit()
+	callback.on_ad_loaded = _rewarded_loaded.bind(_ad_request_generation)
 	callback.on_ad_failed_to_load = func(error: LoadAdError) -> void:
 		_set_notice("Rewarded ad unavailable: " + error.message)
 		availability_changed.emit()
 	RewardedAdLoader.new().load(_ad_id("rewarded"), AdRequest.new(), callback)
+
+func _rewarded_loaded(ad: RewardedAd, generation: int) -> void:
+	if generation != _ad_request_generation or not _ads_ready:
+		ad.destroy()
+		return
+	_rewarded = ad
+	var content := FullScreenContentCallback.new()
+	content.on_ad_showed_full_screen_content = func() -> void: _ad_diagnostic("rewarded_presented", _reward_context)
+	content.on_ad_dismissed_full_screen_content = func() -> void:
+		_ad_diagnostic("rewarded_dismissed", _reward_context)
+		_rewarded_closed()
+	content.on_ad_failed_to_show_full_screen_content = func(error: AdError) -> void:
+		_ad_diagnostic("rewarded_failed", _reward_context + ": " + error.message)
+		_rewarded_closed()
+	ad.full_screen_content_callback = content
+	availability_changed.emit()
 
 func fullscreen_ad_active() -> bool:
 	return _reward_showing or _interstitial_showing
@@ -336,93 +448,353 @@ func _rewarded_closed() -> void:
 	availability_changed.emit()
 
 func _start_play_games() -> void:
-	var pgs: Dictionary = settings.get("play_games", {})
-	if not bool(pgs.get("enabled", false)) or str(pgs.get("game_id", "")).is_empty():
-		_set_notice("Play Games configuration is pending; achievements and scores are saved locally.")
+	if _pgs_ready:
+		return
+	var pgs := _play_games_settings()
+	var game_id := str(pgs.get("game_id", "")).strip_edges()
+	if not bool(pgs.get("enabled", false)) or not game_id.is_valid_int() or game_id.to_int() <= 0:
+		_pgs_notice("Play Games is not configured. Achievements and records remain local.")
+		return
+	if OS.get_name() != "Android":
+		_pgs_notice("Play Games sign-in is available in the Android app. Your local progress is safe.")
 		return
 	var plugin := get_node_or_null("/root/GodotPlayGameServices")
 	if plugin == null or not Engine.has_singleton("GodotPlayGameServices"):
+		_pgs_notice("Play Games is unavailable in this Android build. Your local progress is safe.")
 		return
-	if plugin.initialize() != 0:
+	# The supplied plugin's initialize() returns an error on a second call.
+	if plugin.get("android_plugin") == null and plugin.initialize() != 0:
+		_pgs_notice("Play Games could not start. Your local progress is safe.")
 		return
-	_sign_in_client = PlayGamesSignInClient.new()
-	_achievements_client = PlayGamesAchievementsClient.new()
-	_leaderboards_client = PlayGamesLeaderboardsClient.new()
+	_bind_play_games_clients(PlayGamesSignInClient.new(), PlayGamesAchievementsClient.new(), PlayGamesLeaderboardsClient.new())
+
+func _bind_play_games_clients(sign_in_client: PlayGamesSignInClient, achievements_client: PlayGamesAchievementsClient, leaderboards_client: PlayGamesLeaderboardsClient) -> void:
+	_sign_in_client = sign_in_client
+	_achievements_client = achievements_client
+	_leaderboards_client = leaderboards_client
+	_sign_in_client.user_authenticated.connect(_authentication_changed)
+	_achievements_client.achievement_unlocked.connect(_achievement_submitted)
+	_leaderboards_client.score_submitted.connect(_score_submitted)
 	add_child(_sign_in_client)
 	add_child(_achievements_client)
 	add_child(_leaderboards_client)
 	_pgs_ready = true
-	_sign_in_client.user_authenticated.connect(_authentication_changed)
-	_sign_in_client.is_authenticated()
+	_request_play_games_auth.call_deferred(false)
 
 func sign_in() -> void:
+	if not _pgs_ready:
+		_start_play_games()
+	if not _pgs_ready:
+		_pgs_pending_view = ""
+		return
+	_request_play_games_auth(true)
+
+func _refresh_play_games_connection() -> void:
 	if _pgs_ready:
+		_request_play_games_auth(false)
+
+func _request_play_games_auth(interactive: bool) -> void:
+	if not _pgs_ready:
+		return
+	if _pgs_auth_pending:
+		_pgs_manual_sign_in_requested = _pgs_manual_sign_in_requested or (interactive and not _pgs_auth_interactive)
+		return
+	_invalidate_play_games_requests()
+	_signed_in = false
+	_pgs_auth_pending = true
+	_pgs_auth_interactive = interactive
+	_pgs_auth_started = _pgs_clock
+	_pgs_retry_at = _pgs_clock + PGS_RETRY_SECONDS
+	if interactive:
+		_pgs_notice("Connecting to Google Play Games...")
 		_sign_in_client.sign_in()
 	else:
-		_set_notice("Play Games requires your app ID, credentials and tester configuration. Local progress is saved.")
+		_sign_in_client.is_authenticated()
+
+func _invalidate_play_games_requests() -> void:
+	# Native score callbacks contain only an ID, not the submitted value/token.
+	# A timed-out/previous-session callback must not acknowledge a newer score.
+	for remote_id in _inflight_scores:
+		_uncertain_score_ids[remote_id] = true
+	for remote_id in _inflight_unlocks:
+		_uncertain_unlock_ids[remote_id] = true
+	_inflight_unlocks.clear()
+	_inflight_scores.clear()
 
 func _authentication_changed(authenticated: bool) -> void:
+	_pgs_auth_pending = false
+	_pgs_needs_auth_check = false
+	_pgs_retry_at = _pgs_clock + PGS_RETRY_SECONDS
+	_invalidate_play_games_requests()
 	_signed_in = authenticated
+	if not authenticated and _pgs_manual_sign_in_requested:
+		_pgs_manual_sign_in_requested = false
+		_request_play_games_auth(true)
+		return
+	_pgs_manual_sign_in_requested = false
 	if authenticated:
-		_flush_pending()
-		_set_notice("Signed in to Google Play Games.")
+		# Acknowledgements are deliberately session-only: another account must be
+		# able to receive this device's legitimate retained progress after sign-in.
+		_submitted_unlocks.clear()
+		_submitted_scores.clear()
+		_last_unlock_attempts.clear()
+		_last_score_attempts.clear()
+		_queue_progress_flush()
+		_pgs_notice("Signed in to Google Play Games. Syncing achievements and records.")
+		var view := _pgs_pending_view
+		_pgs_pending_view = ""
+		if view == "achievements":
+			open_achievements()
+		elif view.begins_with("leaderboard:"):
+			open_leaderboards(view.trim_prefix("leaderboard:"))
 	else:
-		_set_notice("Play Games sign-in was unavailable or cancelled; local progress is safe.")
+		_pgs_pending_view = ""
+		_pgs_notice("Play Games sign-in was unavailable or cancelled. Your local progress is safe.")
+
+func _process_play_games(delta: float) -> void:
+	if not _pgs_ready:
+		return
+	_pgs_clock += maxf(delta, 0.0)
+	if _pgs_auth_pending and _pgs_clock - _pgs_auth_started >= PGS_REQUEST_TIMEOUT_SECONDS:
+		var manual_requested := _pgs_manual_sign_in_requested
+		_pgs_auth_pending = false
+		_pgs_manual_sign_in_requested = false
+		_signed_in = false
+		if manual_requested:
+			_request_play_games_auth(true)
+		else:
+			_pgs_pending_view = ""
+			_pgs_notice("Play Games did not respond. Your local progress is safe; you can reconnect.")
+	if _pgs_clock < _pgs_retry_at:
+		return
+	_pgs_retry_at = _pgs_clock + PGS_RETRY_SECONDS
+	if not _signed_in or _pgs_needs_auth_check:
+		_request_play_games_auth(false)
+		return
+	for remote_id in _inflight_unlocks.keys():
+		if _pgs_clock - float(_inflight_unlocks[remote_id].started) >= PGS_REQUEST_TIMEOUT_SECONDS:
+			_uncertain_unlock_ids[remote_id] = true
+			_inflight_unlocks.erase(remote_id)
+	for remote_id in _inflight_scores.keys():
+		if _pgs_clock - float(_inflight_scores[remote_id].started) >= PGS_REQUEST_TIMEOUT_SECONDS:
+			_uncertain_score_ids[remote_id] = true
+			_inflight_scores.erase(remote_id)
+	_queue_progress_flush()
+
+func _play_games_settings() -> Dictionary:
+	var value: Variant = settings.get("play_games", {})
+	return value if value is Dictionary else {}
+
+func _play_games_ids(section: String) -> Dictionary:
+	var value: Variant = _play_games_settings().get(section, {})
+	return value if value is Dictionary else {}
+
+func _pgs_notice(message: String) -> void:
+	_set_notice(message)
 
 func unlock(key: String) -> void:
-	_pending_unlocks[key] = true
-	_save_pending()
-	_flush_pending()
+	if not _play_games_ids("achievements").has(key):
+		return
+	if not _pending_unlocks.has(key):
+		_pending_unlocks[key] = true
+		_save_pending()
+	_queue_progress_flush()
 
 func submit(key: String, value: int) -> void:
-	_pending_scores[key] = maxi(value, int(_pending_scores.get(key, value)))
-	_save_pending()
-	_flush_pending()
+	if key == DAILY_BOARD or value < 0 or not _play_games_ids("leaderboards").has(key):
+		return
+	if not _pending_scores.has(key) or value > int(_pending_scores[key]):
+		_pending_scores[key] = value
+		_save_pending()
+	_queue_progress_flush()
+
+## The SDK submits into the current backend period; an offline daily record must
+## never be relabelled as a later day's result. Existing undated journal values
+## are retained separately until the authoritative local profile supplies a day.
+func submit_daily(value: int, day: String) -> void:
+	if value < 0 or not Progress.valid_day(day) or not _play_games_ids("leaderboards").has(DAILY_BOARD):
+		return
+	if day != Time.get_date_string_from_system(true):
+		return
+	if _pending_daily_day != day:
+		if _pending_daily_day.is_empty() and _pending_scores.has(DAILY_BOARD):
+			_legacy_daily_score = maxi(_legacy_daily_score, int(_pending_scores[DAILY_BOARD]))
+		var remote_id := str(_play_games_ids("leaderboards").get(DAILY_BOARD, "")).strip_edges()
+		if _inflight_scores.has(remote_id):
+			_uncertain_score_ids[remote_id] = true
+			_inflight_scores.erase(remote_id)
+		_submitted_scores.erase(DAILY_BOARD)
+		_pending_daily_day = day
+		_pending_scores[DAILY_BOARD] = value
+		_save_pending()
+	elif not _pending_scores.has(DAILY_BOARD) or value > int(_pending_scores[DAILY_BOARD]):
+		_pending_scores[DAILY_BOARD] = value
+		_save_pending()
+	_queue_progress_flush()
+
+func _queue_progress_flush() -> void:
+	if not _progress_flush_scheduled:
+		_progress_flush_scheduled = true
+		_flush_pending.call_deferred()
 
 func _flush_pending() -> void:
-	if not _pgs_ready or not _signed_in:
+	_progress_flush_scheduled = false
+	if not _pgs_ready or not _signed_in or _pgs_needs_auth_check:
 		return
-	var pgs: Dictionary = settings.get("play_games", {})
-	var achievements: Dictionary = pgs.get("achievements", {})
-	var leaderboards: Dictionary = pgs.get("leaderboards", {})
-	for key in _pending_unlocks:
-		var remote_id := str(achievements.get(key, ""))
-		if not remote_id.is_empty():
-			_achievements_client.unlock_achievement(remote_id)
-	for key in _pending_scores:
-		var remote_id := str(leaderboards.get(key, ""))
-		if not remote_id.is_empty():
-			_leaderboards_client.submit_score(remote_id, int(_pending_scores[key]))
-	# Retain best scores and unlocks locally; resubmission is idempotent and survives failed uploads.
+	var achievements := _play_games_ids("achievements")
+	var leaderboards := _play_games_ids("leaderboards")
+	for key in _pending_unlocks.keys():
+		var remote_id := str(achievements.get(key, "")).strip_edges()
+		if remote_id.is_empty() or _submitted_unlocks.get(key, "") == remote_id or _inflight_unlocks.has(remote_id):
+			continue
+		if _uncertain_unlock_ids.has(remote_id) and _pgs_clock - float(_last_unlock_attempts.get(remote_id, -PGS_RETRY_SECONDS)) < PGS_RETRY_SECONDS:
+			continue
+		_inflight_unlocks[remote_id] = {"key": key, "started": _pgs_clock}
+		_last_unlock_attempts[remote_id] = _pgs_clock
+		_achievements_client.unlock_achievement(remote_id)
+	for key in _pending_scores.keys():
+		if key == DAILY_BOARD and _pending_daily_day != Time.get_date_string_from_system(true):
+			continue
+		var remote_id := str(leaderboards.get(key, "")).strip_edges()
+		var value := int(_pending_scores[key])
+		var sent: Dictionary = _submitted_scores.get(key, {})
+		if remote_id.is_empty() or _inflight_scores.has(remote_id):
+			continue
+		if sent.get("remote_id", "") == remote_id and int(sent.get("value", -1)) >= value:
+			continue
+		var last: Dictionary = _last_score_attempts.get(remote_id, {})
+		if _uncertain_score_ids.has(remote_id) and value <= int(last.get("value", -1)) and _pgs_clock - float(last.get("started", -PGS_RETRY_SECONDS)) < PGS_RETRY_SECONDS:
+			continue
+		_inflight_scores[remote_id] = {"key": key, "value": value, "started": _pgs_clock, "day": _pending_daily_day if key == DAILY_BOARD else ""}
+		_last_score_attempts[remote_id] = {"value": value, "started": _pgs_clock}
+		_leaderboards_client.submit_score(remote_id, value)
+
+func _achievement_submitted(success: bool, remote_id: String) -> void:
+	if not success:
+		for key in _play_games_ids("achievements"):
+			if str(_play_games_ids("achievements")[key]).strip_edges() == remote_id:
+				_submitted_unlocks.erase(key)
+				_pgs_needs_auth_check = true
+	if not _inflight_unlocks.has(remote_id):
+		return
+	var key := str(_inflight_unlocks[remote_id].key)
+	_inflight_unlocks.erase(remote_id)
+	if success:
+		if not _uncertain_unlock_ids.has(remote_id):
+			_submitted_unlocks[key] = remote_id
+	else:
+		_pgs_needs_auth_check = true
+		_pgs_notice("An achievement upload is pending. Play Games will retry; device progress is unchanged.")
+
+func _score_submitted(success: bool, remote_id: String) -> void:
+	if not success:
+		# A late failure still schedules retry even if a timeout replaced its flight.
+		var recognized := false
+		for key in _play_games_ids("leaderboards"):
+			if str(_play_games_ids("leaderboards")[key]).strip_edges() == remote_id:
+				_submitted_scores.erase(key)
+				recognized = true
+		_pgs_needs_auth_check = _pgs_needs_auth_check or recognized
+	if not _inflight_scores.has(remote_id):
+		return
+	var request: Dictionary = _inflight_scores[remote_id]
+	_inflight_scores.erase(remote_id)
+	var key := str(request.key)
+	if success:
+		if key == DAILY_BOARD and (str(request.get("day", "")) != _pending_daily_day or _pending_daily_day != Time.get_date_string_from_system(true)):
+			return
+		if not _uncertain_score_ids.has(remote_id):
+			_submitted_scores[key] = {"remote_id": remote_id, "value": int(request.value)}
+		if int(_pending_scores.get(key, 0)) > int(request.value):
+			_queue_progress_flush()
+	else:
+		_pgs_notice("A leaderboard upload is pending. Play Games will retry; device records are unchanged.")
+	# Desired progress stays durable even after success. Retry/reconnect is
+	# idempotent; the backend keeps the larger score, including endless points.
 
 func open_achievements() -> void:
 	if _pgs_ready and _signed_in:
 		_achievements_client.show_achievements()
 	else:
-		_set_notice("Local achievements remain available; online achievements need Play Games sign-in.")
+		_pgs_pending_view = "achievements"
+		sign_in()
 
 func open_leaderboards(key: String = "") -> void:
 	if not _pgs_ready or not _signed_in:
-		_set_notice("Local records remain available; online leaderboards need Play Games sign-in.")
+		_pgs_pending_view = "leaderboard:" + key
+		sign_in()
 		return
-	var remote_id := str(settings.get("play_games", {}).get("leaderboards", {}).get(key, ""))
-	if remote_id.is_empty():
+	var remote_id := str(_play_games_ids("leaderboards").get(key, "")).strip_edges()
+	if key.is_empty():
 		_leaderboards_client.show_all_leaderboards()
+	elif remote_id.is_empty():
+		_pgs_notice("This leaderboard has no configured Play Games ID. Its record remains local.")
 	else:
 		_leaderboards_client.show_leaderboard(remote_id)
 
 func _load_pending() -> void:
-	if not FileAccess.file_exists(PENDING_PATH):
-		return
-	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(PENDING_PATH))
-	if parsed is Dictionary:
-		_pending_unlocks = parsed.get("unlocks", {})
-		_pending_scores = parsed.get("scores", {})
+	_pending_unlocks.clear()
+	_pending_scores.clear()
+	_pending_daily_day = ""
+	_legacy_daily_score = -1
+	# Recover the union/best records from interrupted writes or the last good
+	# file, comparing daily values only within the same explicitly recorded day.
+	for path in [PENDING_PATH, PENDING_PATH + ".bak", PENDING_PATH + ".tmp"]:
+		if not FileAccess.file_exists(path):
+			continue
+		var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(path))
+		if not parsed is Dictionary:
+			continue
+		var unlocks: Variant = parsed.get("unlocks", {})
+		var scores: Variant = parsed.get("scores", {})
+		var legacy: Variant = parsed.get("legacy_daily_score", -1)
+		if _valid_pending_score(legacy):
+			_legacy_daily_score = maxi(_legacy_daily_score, int(legacy))
+		if unlocks is Dictionary:
+			for key in unlocks:
+				if key is String and unlocks[key] is bool and unlocks[key] and _play_games_ids("achievements").has(key):
+					_pending_unlocks[key] = true
+		if scores is Dictionary:
+			for key in scores:
+				var value: Variant = scores[key]
+				if not key is String or not _play_games_ids("leaderboards").has(key) or not _valid_pending_score(value):
+					continue
+				if key == DAILY_BOARD:
+					var day := str(parsed.get("daily_day", ""))
+					if not Progress.valid_day(day):
+						_legacy_daily_score = maxi(_legacy_daily_score, int(value))
+					elif day >= _pending_daily_day:
+						_pending_scores[key] = maxi(int(value), int(_pending_scores.get(key, 0))) if day == _pending_daily_day else int(value)
+						_pending_daily_day = day
+				else:
+					_pending_scores[key] = maxi(int(value), int(_pending_scores.get(key, 0)))
+
+static func _valid_pending_score(value: Variant) -> bool:
+	return (value is int or value is float) and is_finite(float(value)) and float(value) >= 0.0 and float(value) < 9223372036854775807.0 and floorf(float(value)) == float(value)
 
 func _save_pending() -> void:
-	var file := FileAccess.open(PENDING_PATH, FileAccess.WRITE)
-	if file:
-		file.store_string(JSON.stringify({"unlocks": _pending_unlocks, "scores": _pending_scores}))
+	var data := JSON.stringify({"unlocks": _pending_unlocks, "scores": _pending_scores, "daily_day": _pending_daily_day, "legacy_daily_score": _legacy_daily_score})
+	var file := FileAccess.open(PENDING_PATH + ".tmp", FileAccess.WRITE)
+	if file == null:
+		_pgs_notice("The Play Games retry file could not be written. Your device save is separate.")
+		return
+	file.store_string(data)
+	file.flush()
+	var error := file.get_error()
+	file.close()
+	if error != OK:
+		_pgs_notice("The Play Games retry file could not be written. Your device save is separate.")
+		return
+	if FileAccess.file_exists(PENDING_PATH):
+		var old := FileAccess.get_file_as_string(PENDING_PATH)
+		var parsed: Variant = JSON.parse_string(old)
+		if parsed is Dictionary and parsed.get("unlocks") is Dictionary and parsed.get("scores") is Dictionary:
+			var backup := FileAccess.open(PENDING_PATH + ".bak", FileAccess.WRITE)
+			if backup:
+				backup.store_string(old)
+				backup.close()
+	if DirAccess.rename_absolute(ProjectSettings.globalize_path(PENDING_PATH + ".tmp"), ProjectSettings.globalize_path(PENDING_PATH)) != OK:
+		_pgs_notice("Play Games retry storage is pending. Your device save is separate.")
 
 func _exit_tree() -> void:
 	if is_instance_valid(_banner):

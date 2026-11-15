@@ -735,7 +735,7 @@ func show_settings() -> void:
 		content.add_child(_button(str(key).capitalize()+ (" · on" if bool(progress.data.settings[key]) else " · off"),_toggle_setting.bind(key),key))
 	content.add_child(_button("Advertising privacy options",_privacy,"privacy"))
 	content.add_child(_button("Optional Play Games sign-in",_sign_in,"sign_in"))
-	content.add_child(_label("Native Android ads use official Google test IDs. Production Play Games IDs are placeholders and disabled pending owner configuration. No Web/offline reward is simulated.",18))
+	content.add_child(_label("Android advertising follows your available privacy choices. Optional Play Games shares unlocked achievements and best records when signed in. Web and offline play keep progress locally.",18))
 	content.add_child(_label("Banked campaign, currency, achievements and daily progress save locally with a previous-valid backup. Unfinished combat is not resumable after process death. Local clocks/saves are not anti-cheat secure.",18,MUTED))
 	content.add_child(_label(_service_status(),17,GOLD))
 	_footer(content)
@@ -768,7 +768,10 @@ func _sync_services() -> void:
 	for key in progress.data.unlocked:
 		if native.has_method("unlock"): native.unlock(str(key))
 	for key in progress.leaderboard_values():
-		if native.has_method("submit"): native.submit(str(key),int(progress.leaderboard_values()[key]))
+		if str(key)=="unassisted_daily_score" and native.has_method("submit_daily"):
+			native.submit_daily(int(progress.leaderboard_values()[key]),str(progress.data.day))
+		elif native.has_method("submit"):
+			native.submit(str(key),int(progress.leaderboard_values()[key]))
 
 func go_back() -> void:
 	if session!=null and (session.fullscreen_active() or session.reward_pending):

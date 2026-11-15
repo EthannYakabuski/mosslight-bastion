@@ -1,5 +1,12 @@
 # Round 4: Android App Bundle and native architectures
 
+Production preparation on 2026-11-15 raises the current target to API 36 while
+retaining min API 24 and the ABIs below. The Round Four records remain dated API
+35 evidence. New packages must pass `tools/verify_production_integration.py` as
+well as the ABI validator. Debug Godot AAB exports may be unsigned despite
+`package/signed=true`; inspect them with jarsigner and, when needed, sign only
+with a newly generated QA key. Owner release keys remain outside test workflows.
+
 The default `Android` export now produces `.aab` with Gradle. Previously x86
 32-bit was selected without its x86_64 counterpart. ARM64 alone does not provide
 the missing x86 64-bit native code. x86_64 is now enabled alongside the existing

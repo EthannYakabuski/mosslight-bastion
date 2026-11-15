@@ -1,7 +1,7 @@
 # Build and test
 
 Use Godot 4.5.1 Compatibility and matching templates. Android is primary; Java 17
-and the Android SDK are required. Current exports use min API 24/target API 35,
+and the Android SDK are required. Current exports use min API 24/target API 36,
 ARM64 plus x86 test support. Verify current release requirements separately.
 
 Run these commands from the project root with isolated per-process application
@@ -15,6 +15,12 @@ godot --headless --path . --script tests/test_round_five.gd
 godot --headless --path . --script tests/test_retry_finalization.gd
 godot --headless --path . --script tests/test_ui.gd
 godot --headless --path . --script platform/tests/services_smoke.gd
+godot --headless --path . --script platform/tests/test_admob_config.gd
+# For the guarded PGS fixture, also set MOSSLIGHT_PGS_TEST_ISOLATED=1 and
+# MOSSLIGHT_PGS_TEST_ROOT to the absolute parent of its isolated user-data path.
+godot --headless --path . --script platform/tests/test_play_games.gd -- --qa-isolated
+python tools/verify_production_integration.py
+python -m unittest discover -s tests -p test_production_package.py -v
 ```
 
 Strategy generates `tests/evidence/strategy-witnesses.json`; core independently

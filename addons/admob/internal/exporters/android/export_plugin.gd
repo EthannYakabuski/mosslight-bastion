@@ -116,6 +116,10 @@ func _get_android_manifest_application_element_contents(
 		)
 		as String
 	)
+	# Debug exports must use the sample application as well as sample ad units.
+	# The configured owner App ID is retained for production release exports.
+	if _debug:
+		app_id = ProjectSettingsService.ANDROID_DEFAULT_APP_ID
 	content.append(
 		"""
 	<meta-data

@@ -18,6 +18,14 @@ manifest/preset. Client IDs do not replace owner OAuth/signing/test-account setu
 For gameplay changes, run the relevant strategy/core/UI/service checks with
 isolated application data and test the affected native behavior when needed.
 
+Production service changes also run the guarded synthetic PGS and ad-config
+fixtures in `platform/tests`, plus the offline Python package-parser tests.
+`tools/verify_production_integration.py` checks exact source IDs and actual AAB
+manifest/resolved resources/JSON, or exported Web PCK JSON. Inspect signatures
+independently with jarsigner; signature file presence is not cryptographic
+verification. Current production target is API 36; older API 35 receipts retain
+their original scope. Never execute owner production ads as a test.
+
 Do not overwrite the original QA APK with a newly exported binary. Preserve its
 hash and identify new artifacts separately. CI builds are separate from original
 native QA. Keep private local artifacts and raw evidence outside public commits;

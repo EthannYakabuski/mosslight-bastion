@@ -1,5 +1,13 @@
 # Mosslight Bastion
 
+## Production configuration preparation (2026-11-15)
+
+The owner's service IDs are wired, debug/editor ads use Google samples, and the
+Android preset targets API 36 with the Game category. See the [readiness report](docs/PRODUCTION_READINESS.md)
+for exact local artifacts, tests, signature status and remaining acceptance, and
+the [data-practices checkpoint](docs/PRODUCTION_DATA_PRACTICES.md) for policy facts.
+An unsigned release AAB is not upload-ready. No Play release is implied.
+
 ## Web hosting (2026-11-05)
 
 The validated main-branch Web build is configured for **https://ethannyakabuski.github.io/mosslight-bastion/game/**
@@ -66,16 +74,18 @@ not assume access to this project's prior conversation.
 
 Android is primary. Web uses a single-threaded Compatibility export with graceful
 native-service fallbacks. Matching Godot templates, Java 17 and Android SDK are
-required for Android. The observed min API 24/target API 35 configuration does not
+required for Android. The current min API 24/target API 36 configuration does not
 establish current Google Play release eligibility.
 
 `game/catalog.json` defines achievement and leaderboard `id` values; matching
-console IDs belong in `platform/config.json`. PGS is currently disabled with blank
-IDs. AdMob uses Google's official sample IDs. Its manifest App ID must also be set
-through Godot's `admob/general/android/app_id` Project Setting; changing only JSON
-`app_id` is insufficient. `test_mode` changes status wording and does not convert
-production ad unit IDs into test requests. See the platform guide before changing
-IDs, consent settings or signing configuration.
+console IDs belong in `platform/config.json`. The owner configuration enables PGS
+with twenty achievement and four leaderboard mappings. Its numeric game ID also
+matches the Android export preset. Release AdMob units and the manifest App ID
+use the owner configuration. Debug/editor builds always select Google sample
+units, and Android debug exports use the sample App ID. `test_mode=true` also
+selects sample units in release builds. See the [platform guide](docs/PLATFORM_SETUP.md)
+for retry behavior, score units, consent and outstanding OAuth/signing checks,
+and [data practices](docs/PRODUCTION_DATA_PRACTICES.md) for policy drafting facts.
 
 ## Preserved Round Two source status
 
@@ -93,7 +103,7 @@ That dated run built Android/Web artifacts; its binaries have not received the
 original local APK's native QA. Documentation-only changes do not rebuild or
 reverify that APK. The current Pages workflow is documented in [Web hosting](docs/WEB_PAGES.md); no Library or Google Play publication is implied.
 
-Owner work includes production IDs/backend/signing, policy/contact/consent and
+Owner work includes production OAuth/service-console setup and signing, policy/contact/consent and
 Data safety details, release requirements and Google Play submission. Physical
 devices, audible Android output, interactive Web/audio/WebGL, production services
 and human balance remain unverified. Emulator audio was disabled.
